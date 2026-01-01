@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import '../models/session.dart';
 import '../models/student.dart';
+import '../models/session_template.dart';
 import '../services/session_service.dart';
 import '../services/student_service.dart';
+import '../services/session_template_service.dart';
 import 'student_dialog.dart';
+import 'template_name_dialog.dart';
 
 class StudentsPage extends StatefulWidget {
   final Session session;
@@ -22,6 +25,7 @@ class StudentsPage extends StatefulWidget {
 class _StudentsPageState extends State<StudentsPage> {
   final SessionService _sessionService = SessionService();
   final StudentService _studentService = StudentService();
+  final SessionTemplateService _templateService = SessionTemplateService();
   late Session _currentSession;
 
   @override
@@ -42,10 +46,31 @@ class _StudentsPageState extends State<StudentsPage> {
         name: result['name'] as String,
         nickname: result['nickname'] as String?,
         age: result['age'] as int?,
+        phoneNumber: result['phoneNumber'] as String?,
       );
 
       await _studentService.addStudent(student);
       await _addStudentToSession(student.id);
+      setState(() {}); // Refresh UI
+    }
+  }
+
+  Future<void> _editStudent(Student student) async {
+    final result = await showDialog<Map<String, dynamic>>(
+      context: context,
+      builder: (context) => StudentDialog(existingStudent: student),
+    );
+
+    if (result != null) {
+      final updatedStudent = student.copyWith(
+        name: result['name'] as String,
+        nickname: result['nickname'] as String?,
+        age: result['age'] as int?,
+        phoneNumber: result['phoneNumber'] as String?,
+      );
+
+      await _studentService.updateStudent(updatedStudent);
+      setState(() {}); // Refresh UI
     }
   }
 
@@ -85,6 +110,36 @@ class _StudentsPageState extends State<StudentsPage> {
         .toList();
   }
 
+  Future<void> _saveAsTemplate() async {
+    // Prompt for template name
+    final templateName = await showDialog<String>(
+      context: context,
+      builder: (context) => TemplateNameDialog(
+        defaultName: _currentSession.title,
+      ),
+    );
+
+    if (templateName != null && templateName.trim().isNotEmpty) {
+      // Create template from current session with all students
+      final template = SessionTemplate.fromSession(
+        _currentSession,
+        templateName.trim(),
+      );
+      
+      await _templateService.initialize();
+      await _templateService.addTemplate(template);
+      
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Template "${templateName.trim()}" saved successfully'),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final sessionStudents = _getSessionStudents();
@@ -92,21 +147,45 @@ class _StudentsPageState extends State<StudentsPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.session.title),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              widget.session.title,
+              style: const TextStyle(fontWeight: FontWeight.w600),
+            ),
+            Text(
+              '${sessionStudents.length} ${sessionStudents.length == 1 ? 'student' : 'students'}',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.normal,
+                color: Colors.white.withOpacity(0.8),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.save),
+            tooltip: 'Save as Template',
+            onPressed: _saveAsTemplate,
+          ),
+        ],
       ),
       body: Column(
         children: [
           // First Section: Students joining this session
           Expanded(
-            flex: 1,
+            flex: availableStudents.isEmpty ? 1 : 1,
             child: Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.05),
-                border: Border(
-                  bottom: BorderSide(color: Colors.grey.withOpacity(0.2)),
-                ),
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                border: availableStudents.isNotEmpty
+                    ? Border(
+                        bottom: BorderSide(color: Colors.grey.withOpacity(0.2)),
+                      )
+                    : null,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -121,11 +200,16 @@ class _StudentsPageState extends State<StudentsPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      IconButton(
-                        icon: const Icon(Icons.add_circle),
-                        color: Colors.blue,
-                        onPressed: _addNewStudent,
-                        tooltip: 'Add Member',
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondary,
+                          shape: BoxShape.circle,
+                        ),
+                        child: IconButton(
+                          icon: const Icon(Icons.add, color: Colors.white),
+                          onPressed: _addNewStudent,
+                          tooltip: 'Add Member',
+                        ),
                       ),
                     ],
                   ),
@@ -136,16 +220,33 @@ class _StudentsPageState extends State<StudentsPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
-                                  Icons.people_outline,
-                                  size: 48,
-                                  color: Colors.grey[400],
+                                Container(
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Icon(
+                                    Icons.people_outline,
+                                    size: 40,
+                                    color: Theme.of(context).colorScheme.secondary.withOpacity(0.7),
+                                  ),
                                 ),
-                                const SizedBox(height: 8),
+                                const SizedBox(height: 16),
                                 Text(
                                   'No students added yet',
                                   style: TextStyle(
-                                    color: Colors.grey[600],
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.grey.shade700,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  'Tap + to add a member',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.grey.shade500,
                                   ),
                                 ),
                               ],
@@ -157,19 +258,61 @@ class _StudentsPageState extends State<StudentsPage> {
                               final student = sessionStudents[index];
                               return Card(
                                 margin: const EdgeInsets.only(bottom: 8),
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  side: BorderSide(color: Colors.grey.shade200),
+                                ),
                                 child: ListTile(
+                                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                   title: Text(
                                     student.displayName,
                                     style: const TextStyle(
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
-                                  subtitle: Text(
-                                    _getStudentInfo(student),
+                                  subtitle: Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text(
+                                      _getStudentInfo(student),
+                                      style: TextStyle(fontSize: 13, color: Colors.grey.shade600),
+                                    ),
                                   ),
-                                  trailing: IconButton(
-                                    icon: const Icon(Icons.remove_circle, color: Colors.red),
-                                    onPressed: () => _removeStudentFromSession(student.id),
+                                  trailing: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.edit,
+                                            color: Theme.of(context).colorScheme.primary,
+                                            size: 20,
+                                          ),
+                                          onPressed: () => _editStudent(student),
+                                          tooltip: 'Edit',
+                                        ),
+                                      ),
+                                      const SizedBox(width: 8),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.red.withOpacity(0.1),
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: IconButton(
+                                          icon: const Icon(
+                                            Icons.remove,
+                                            color: Colors.red,
+                                            size: 20,
+                                          ),
+                                          onPressed: () => _removeStudentFromSession(student.id),
+                                          tooltip: 'Remove from session',
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               );
@@ -180,70 +323,95 @@ class _StudentsPageState extends State<StudentsPage> {
               ),
             ),
           ),
-          // Second Section: All available students
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'All Members',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+          // Second Section: All available students (only show if there are available students)
+          if (availableStudents.isNotEmpty)
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'All Members',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  Expanded(
-                    child: availableStudents.isEmpty
-                        ? Center(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  Icons.person_outline,
-                                  size: 48,
-                                  color: Colors.grey[400],
-                                ),
-                                const SizedBox(height: 8),
-                                Text(
-                                  'No members available',
-                                  style: TextStyle(
-                                    color: Colors.grey[600],
-                                  ),
-                                ),
-                              ],
+                    const SizedBox(height: 8),
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: availableStudents.length,
+                        itemBuilder: (context, index) {
+                          final student = availableStudents[index];
+                          return Card(
+                            margin: const EdgeInsets.only(bottom: 8),
+                            elevation: 0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                              side: BorderSide(color: Colors.grey.shade200),
                             ),
-                          )
-                        : ListView.builder(
-                            itemCount: availableStudents.length,
-                            itemBuilder: (context, index) {
-                              final student = availableStudents[index];
-                              return Card(
-                                margin: const EdgeInsets.only(bottom: 8),
-                                child: ListTile(
-                                  title: Text(
-                                    student.displayName,
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
+                            child: ListTile(
+                              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                              title: Text(
+                                student.displayName,
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              subtitle: Padding(
+                                padding: const EdgeInsets.only(top: 4),
+                                child: Text(
+                                  _getStudentInfo(student),
+                                  style: TextStyle(fontSize: 13, color: Colors.grey.shade600),
+                                ),
+                              ),
+                              trailing: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: IconButton(
+                                      icon: Icon(
+                                        Icons.edit,
+                                        color: Theme.of(context).colorScheme.primary,
+                                        size: 20,
+                                      ),
+                                      onPressed: () => _editStudent(student),
+                                      tooltip: 'Edit',
                                     ),
                                   ),
-                                  subtitle: Text(_getStudentInfo(student)),
-                                  trailing: IconButton(
-                                    icon: const Icon(Icons.add_circle, color: Colors.green),
-                                    onPressed: () => _addStudentToSession(student.id),
+                                  const SizedBox(width: 8),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: IconButton(
+                                      icon: Icon(
+                                        Icons.add,
+                                        color: Theme.of(context).colorScheme.secondary,
+                                        size: 20,
+                                      ),
+                                      onPressed: () => _addStudentToSession(student.id),
+                                      tooltip: 'Add to session',
+                                    ),
                                   ),
-                                ),
-                              );
-                            },
-                          ),
-                  ),
-                ],
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
         ],
       ),
     );
@@ -256,6 +424,9 @@ class _StudentsPageState extends State<StudentsPage> {
     }
     if (student.age != null) {
       parts.add('Age: ${student.age}');
+    }
+    if (student.phoneNumber != null && student.phoneNumber!.isNotEmpty) {
+      parts.add('Phone: ${student.phoneNumber}');
     }
     return parts.isEmpty ? 'Member' : parts.join(' • ');
   }

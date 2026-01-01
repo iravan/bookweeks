@@ -21,15 +21,15 @@ class Week {
     return '${date.day}/${date.month}';
   }
 
-  static Week getCurrentWeek() {
-    final now = DateTime.now();
+  static Week getCurrentWeek([DateTime? referenceDate]) {
+    final now = referenceDate ?? DateTime.now();
     final monday = now.subtract(Duration(days: now.weekday - 1));
     final sunday = monday.add(const Duration(days: 6));
     return Week(startDate: monday, endDate: sunday);
   }
 
-  static List<Week> getNext4Weeks() {
-    final currentWeek = getCurrentWeek();
+  static List<Week> getNext4Weeks([DateTime? referenceDate]) {
+    final currentWeek = getCurrentWeek(referenceDate);
     return List.generate(4, (index) {
       final startDate = currentWeek.startDate.add(Duration(days: index * 7));
       final endDate = startDate.add(const Duration(days: 6));

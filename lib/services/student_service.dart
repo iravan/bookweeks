@@ -57,6 +57,14 @@ class StudentService {
     await _saveToStorage();
   }
 
+  Future<void> updateStudent(Student updatedStudent) async {
+    final index = _students.indexWhere((s) => s.id == updatedStudent.id);
+    if (index != -1) {
+      _students[index] = updatedStudent;
+      await _saveToStorage();
+    }
+  }
+
   Student? getStudentById(String id) {
     try {
       return _students.firstWhere((s) => s.id == id);

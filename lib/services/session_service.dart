@@ -98,6 +98,15 @@ class SessionService {
     return sessions.isNotEmpty;
   }
 
+  // Get all sessions (for export)
+  List<Session> getAllSessions() {
+    final allSessions = <Session>[];
+    _sessions.forEach((dateKey, sessions) {
+      allSessions.addAll(sessions);
+    });
+    return allSessions;
+  }
+
   String _getDateKey(DateTime date) {
     return '${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
   }

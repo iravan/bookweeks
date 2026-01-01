@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import '../models/student.dart';
 
 class StudentDialog extends StatefulWidget {
-  const StudentDialog({super.key});
+  final Student? existingStudent;
+
+  const StudentDialog({super.key, this.existingStudent});
 
   @override
   State<StudentDialog> createState() => _StudentDialogState();
@@ -9,15 +12,26 @@ class StudentDialog extends StatefulWidget {
 
 class _StudentDialogState extends State<StudentDialog> {
   final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _nicknameController = TextEditingController();
-  final _ageController = TextEditingController();
+  late final TextEditingController _nameController;
+  late final TextEditingController _nicknameController;
+  late final TextEditingController _ageController;
+  late final TextEditingController _phoneController;
+
+  @override
+  void initState() {
+    super.initState();
+    _nameController = TextEditingController(text: widget.existingStudent?.name ?? '');
+    _nicknameController = TextEditingController(text: widget.existingStudent?.nickname ?? '');
+    _ageController = TextEditingController(text: widget.existingStudent?.age?.toString() ?? '');
+    _phoneController = TextEditingController(text: widget.existingStudent?.phoneNumber ?? '');
+  }
 
   @override
   void dispose() {
     _nameController.dispose();
     _nicknameController.dispose();
     _ageController.dispose();
+    _phoneController.dispose();
     super.dispose();
   }
 
@@ -32,6 +46,7 @@ class _StudentDialogState extends State<StudentDialog> {
         'name': name,
         'nickname': nickname.isEmpty ? null : nickname,
         'age': age,
+        'phoneNumber': _phoneController.text.trim().isEmpty ? null : _phoneController.text.trim(),
       });
     }
   }
@@ -39,7 +54,13 @@ class _StudentDialogState extends State<StudentDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Add Member'),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
+      title: Text(
+        widget.existingStudent == null ? 'Add Member' : 'Edit Member',
+        style: const TextStyle(fontWeight: FontWeight.bold),
+      ),
       content: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -86,6 +107,16 @@ class _StudentDialogState extends State<StudentDialog> {
                   return null;
                 },
               ),
+              const SizedBox(height: 16),
+              TextFormField(
+                controller: _phoneController,
+                decoration: const InputDecoration(
+                  labelText: 'Phone Number (optional)',
+                  border: OutlineInputBorder(),
+                  hintText: 'e.g., +1 234 567 8900',
+                ),
+                keyboardType: TextInputType.phone,
+              ),
             ],
           ),
         ),
@@ -97,7 +128,7 @@ class _StudentDialogState extends State<StudentDialog> {
         ),
         ElevatedButton(
           onPressed: _saveStudent,
-          child: const Text('Add'),
+          child: Text(widget.existingStudent == null ? 'Add' : 'Save'),
         ),
       ],
     );

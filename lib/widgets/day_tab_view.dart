@@ -31,24 +31,45 @@ class _DayTabViewState extends State<DayTabView> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.event_note,
-                    size: 64,
-                    color: Colors.grey[400],
+                  Container(
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.event_note_outlined,
+                      size: 48,
+                      color: Theme.of(context).colorScheme.primary.withOpacity(0.6),
+                    ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 24),
                   Text(
                     'No sessions scheduled',
                     style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.grey.shade700,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Tap the + button to add a session',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey.shade500,
                     ),
                   ),
                 ],
               ),
             )
           : ListView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.only(
+                left: 16,
+                right: 16,
+                top: 16,
+                bottom: 80, // Extra space for floating action button
+              ),
               itemCount: sessions.length,
               itemBuilder: (context, index) {
                 final session = sessions[index];
@@ -69,16 +90,20 @@ class _DayTabViewState extends State<DayTabView> {
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      elevation: 2,
+      elevation: 1,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
       child: InkWell(
         onTap: () => _openStudentsPage(session),
+        borderRadius: BorderRadius.circular(12),
         child: ListTile(
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           leading: Container(
             width: 60,
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.blue.withOpacity(0.1),
+              color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
@@ -86,10 +111,10 @@ class _DayTabViewState extends State<DayTabView> {
               children: [
                 Text(
                   startTime,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Theme.of(context).colorScheme.primary,
                   ),
                 ),
                 Text(
@@ -119,16 +144,17 @@ class _DayTabViewState extends State<DayTabView> {
               Row(
                 children: [
                   Icon(
-                    Icons.people,
+                    Icons.people_outline,
                     size: 16,
-                    color: Colors.grey[600],
+                    color: Theme.of(context).colorScheme.secondary,
                   ),
-                  const SizedBox(width: 4),
+                  const SizedBox(width: 6),
                   Text(
                     '$studentCount ${studentCount == 1 ? 'student' : 'students'}',
                     style: TextStyle(
                       fontSize: 12,
-                      color: Colors.grey[600],
+                      fontWeight: FontWeight.w500,
+                      color: Theme.of(context).colorScheme.secondary,
                     ),
                   ),
                 ],
@@ -139,7 +165,7 @@ class _DayTabViewState extends State<DayTabView> {
             mainAxisSize: MainAxisSize.min,
             children: [
               IconButton(
-                icon: const Icon(Icons.edit, color: Colors.blue),
+                icon: Icon(Icons.edit, color: Theme.of(context).colorScheme.primary),
                 onPressed: () => _editSession(session),
               ),
               IconButton(
@@ -206,7 +232,13 @@ class _DayTabViewState extends State<DayTabView> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Delete Session'),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        title: const Text(
+          'Delete Session',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         content: Text('Are you sure you want to delete "${session.title}"?'),
         actions: [
           TextButton(

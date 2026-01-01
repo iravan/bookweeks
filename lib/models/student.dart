@@ -3,12 +3,14 @@ class Student {
   final String name;
   final String? nickname;
   final int? age;
+  final String? phoneNumber;
 
   Student({
     required this.id,
     required this.name,
     this.nickname,
     this.age,
+    this.phoneNumber,
   });
 
   Student copyWith({
@@ -16,12 +18,14 @@ class Student {
     String? name,
     String? nickname,
     int? age,
+    String? phoneNumber,
   }) {
     return Student(
       id: id ?? this.id,
       name: name ?? this.name,
       nickname: nickname ?? this.nickname,
       age: age ?? this.age,
+      phoneNumber: phoneNumber ?? this.phoneNumber,
     );
   }
 
@@ -32,6 +36,7 @@ class Student {
       'name': name,
       'nickname': nickname,
       'age': age,
+      'phoneNumber': phoneNumber,
     };
   }
 
@@ -42,6 +47,7 @@ class Student {
       name: json['name'] as String,
       nickname: json['nickname'] as String?,
       age: json['age'] as int?,
+      phoneNumber: json['phoneNumber'] as String?,
     );
   }
 
