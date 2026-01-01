@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'dart:typed_data';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:file_picker/file_picker.dart';
@@ -418,69 +420,48 @@ class _MainPageState extends State<MainPage>
 
   Future<void> _exportData(BuildContext context) async {
     try {
-      // Export to YAML
+      // Export to YAML first (this is fast, no need for loading dialog)
       final yamlContent = await _exportImportService.exportToYaml();
 
       // Generate default filename with timestamp
       final timestamp = DateTime.now().toIso8601String().split('T')[0];
       final defaultFileName = 'bookweeks_export_$timestamp.yaml';
 
+      // Convert YAML content to UTF-8 bytes (required for Android & iOS)
+      final bytes = Uint8List.fromList(utf8.encode(yamlContent));
+
       // Let user select save location
+      // Use a small delay to ensure UI is ready
+      await Future.delayed(const Duration(milliseconds: 100));
+
       String? outputPath = await FilePicker.platform.saveFile(
         dialogTitle: 'Save Export File',
         fileName: defaultFileName,
-        type: FileType.custom,
-        allowedExtensions: ['yaml', 'yml'],
+        bytes: Uint8List.fromList(bytes),
       );
 
-      if (outputPath != null) {
-        // Show loading dialog
+      if (outputPath != null && outputPath.isNotEmpty) {
+        // Show success message
         if (mounted) {
-          showDialog(
-            context: context,
-            barrierDismissible: false,
-            builder: (context) =>
-                const Center(child: CircularProgressIndicator()),
-          );
-        }
-
-        // Write YAML content to selected path
-        final file = File(outputPath);
-        await file.writeAsString(yamlContent);
-
-        // Close loading dialog
-        if (mounted) Navigator.of(context).pop();
-
-        // Show success dialog
-        if (mounted) {
-          showDialog(
-            context: context,
-            builder: (context) => AlertDialog(
-              title: const Text('Export Successful'),
-              content: Text('Data exported to:\n${file.path}'),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('OK'),
-                ),
-              ],
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Export successful!\nSaved to: $outputPath'),
+              backgroundColor: Colors.green,
+              duration: const Duration(seconds: 3),
             ),
           );
         }
-      } else {
-        // User cancelled the save dialog
-        if (mounted) {
-          ScaffoldMessenger.of(
-            context,
-          ).showSnackBar(const SnackBar(content: Text('Export cancelled')));
-        }
       }
     } catch (e) {
+      // Show error message
       if (mounted) {
-        Navigator.of(context).pop(); // Close loading dialog if open
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Error: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Export failed: ${e.toString()}'),
+            backgroundColor: Colors.red,
+            duration: const Duration(seconds: 5),
+          ),
+        );
       }
     }
   }

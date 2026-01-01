@@ -3,44 +3,78 @@ import 'package:yaml/yaml.dart';
 import 'package:path_provider/path_provider.dart';
 import '../models/session.dart';
 import '../models/student.dart';
+import '../models/session_template.dart';
 import 'session_service.dart';
 import 'student_service.dart';
+import 'session_template_service.dart';
 
 class ExportImportService {
   final SessionService _sessionService = SessionService();
   final StudentService _studentService = StudentService();
+  final SessionTemplateService _templateService = SessionTemplateService();
 
   // Export all data to YAML format
   Future<String> exportToYaml() async {
-    // Get all sessions
-    final allSessions = _sessionService.getAllSessions();
+    try {
+      // Ensure all services are initialized
+      await _sessionService.initialize();
+      await _studentService.initialize();
+      await _templateService.initialize();
 
-    // Get all students
-    final allStudents = _studentService.getAllStudents();
+      // Get all sessions
+      final allSessions = _sessionService.getAllSessions();
 
-    // Build YAML structure
-    final yamlData = <String, dynamic>{
-      'version': '1.0',
-      'export_date': DateTime.now().toIso8601String(),
-      'sessions': allSessions.map((s) => {
-        'id': s.id,
-        'title': s.title,
-        'start_time': s.startTime.toIso8601String(),
-        'end_time': s.endTime.toIso8601String(),
-        'description': s.description,
-        'student_ids': s.studentIds,
-      }).toList(),
-      'students': allStudents.map((s) => {
-        'id': s.id,
-        'name': s.name,
-        'nickname': s.nickname,
-        'age': s.age,
-        'phoneNumber': s.phoneNumber,
-      }).toList(),
-    };
+      // Get all students
+      final allStudents = _studentService.getAllStudents();
 
-    // Convert to YAML string
-    return _mapToYaml(yamlData);
+      // Get all templates
+      final allTemplates = _templateService.getAllTemplates();
+
+      // Build YAML structure
+      final yamlData = <String, dynamic>{
+        'version': '1.1', // Updated version to include templates
+        'export_date': DateTime.now().toIso8601String(),
+        'sessions': allSessions.map((s) => {
+          'id': s.id,
+          'title': s.title,
+          'start_time': s.startTime.toIso8601String(),
+          'end_time': s.endTime.toIso8601String(),
+          'description': s.description,
+          'student_ids': s.studentIds,
+        }).toList(),
+        'students': allStudents.map((s) => {
+          'id': s.id,
+          'name': s.name,
+          'nickname': s.nickname,
+          'age': s.age,
+          'phoneNumber': s.phoneNumber,
+        }).toList(),
+        'templates': allTemplates.map((t) => {
+          'id': t.id,
+          'name': t.name,
+          'title': t.title,
+          'start_hour': t.startHour,
+          'start_minute': t.startMinute,
+          'end_hour': t.endHour,
+          'end_minute': t.endMinute,
+          'description': t.description,
+          'student_ids': t.studentIds,
+          'created_at': t.createdAt.toIso8601String(),
+        }).toList(),
+      };
+
+      // Convert to YAML string
+      final yamlString = _mapToYaml(yamlData);
+      
+      if (yamlString.isEmpty) {
+        throw Exception('Failed to generate YAML content');
+      }
+      
+      return yamlString;
+    } catch (e) {
+      print('Error exporting to YAML: $e');
+      rethrow;
+    }
   }
 
   // Import data from YAML
@@ -53,9 +87,11 @@ class ExportImportService {
 
       final sessionsData = yamlDoc['sessions'] as List? ?? [];
       final studentsData = yamlDoc['students'] as List? ?? [];
+      final templatesData = yamlDoc['templates'] as List? ?? [];
 
       int sessionsImported = 0;
       int studentsImported = 0;
+      int templatesImported = 0;
 
       // Import students first (check for duplicates)
       for (var studentData in studentsData) {
@@ -83,9 +119,42 @@ class ExportImportService {
       // Import sessions (check for duplicates by ID)
       for (var sessionData in sessionsData) {
         if (sessionData is Map) {
-          try {
+            try {
             final sessionId = sessionData['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString();
-            final startTime = DateTime.parse(sessionData['start_time'] as String);
+            
+            // Parse dates with better error handling for missing timezone
+            DateTime startTime;
+            DateTime endTime;
+            
+            final startTimeStr = sessionData['start_time'] as String;
+            final endTimeStr = sessionData['end_time'] as String;
+            
+            // Helper function to parse date string, adding timezone if missing
+            DateTime parseDateTime(String dateStr) {
+              // Clean the string - remove whitespace and newlines
+              final cleanStr = dateStr.trim().replaceAll('\n', '').replaceAll('\r', '').replaceAll(' ', '');
+              
+              try {
+                // Try parsing as-is first
+                return DateTime.parse(cleanStr);
+              } catch (e) {
+                // If parsing fails, check if timezone is missing
+                // Check for timezone indicators: Z, +HH:MM, -HH:MM, +HHMM, -HHMM
+                final hasTimezone = cleanStr.endsWith('Z') || 
+                                    RegExp(r'[+-]\d{2}:\d{2}$').hasMatch(cleanStr) ||
+                                    RegExp(r'[+-]\d{4}$').hasMatch(cleanStr);
+                
+                if (!hasTimezone) {
+                  // Add Z (UTC) if missing timezone
+                  return DateTime.parse('${cleanStr}Z');
+                }
+                // If it has timezone but still fails, rethrow with more info
+                throw FormatException('Invalid date format: $cleanStr', e);
+              }
+            }
+            
+            startTime = parseDateTime(startTimeStr);
+            endTime = parseDateTime(endTimeStr);
             
             // Check if session already exists by checking the date
             final existingSessions = _sessionService.getSessionsForDate(startTime);
@@ -96,7 +165,7 @@ class ExportImportService {
                 id: sessionId,
                 title: sessionData['title'] as String? ?? 'Untitled Session',
                 startTime: startTime,
-                endTime: DateTime.parse(sessionData['end_time'] as String),
+                endTime: endTime,
                 description: sessionData['description'] as String?,
                 studentIds: (sessionData['student_ids'] as List?)?.cast<String>() ?? [],
               );
@@ -109,11 +178,65 @@ class ExportImportService {
         }
       }
 
+      // Import templates (check for duplicates by ID)
+      await _templateService.initialize();
+      for (var templateData in templatesData) {
+        if (templateData is Map) {
+          try {
+            final templateId = templateData['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString();
+            
+            // Check if template already exists
+            final existingTemplate = _templateService.getTemplateById(templateId);
+            
+            if (existingTemplate == null) {
+              // Handle backward compatibility: if 'name' doesn't exist, use 'title' as name
+              final name = templateData['name'] as String? ?? templateData['title'] as String? ?? 'Untitled Template';
+              
+              final template = SessionTemplate(
+                id: templateId,
+                name: name,
+                title: templateData['title'] as String? ?? 'Untitled Session',
+                startHour: templateData['start_hour'] as int? ?? 9,
+                startMinute: templateData['start_minute'] as int? ?? 0,
+                endHour: templateData['end_hour'] as int? ?? 10,
+                endMinute: templateData['end_minute'] as int? ?? 0,
+                description: templateData['description'] as String?,
+                studentIds: (templateData['student_ids'] as List?)?.cast<String>() ?? [],
+                createdAt: templateData['created_at'] != null
+                    ? DateTime.parse(templateData['created_at'] as String)
+                    : DateTime.now(),
+              );
+              await _templateService.addTemplate(template);
+              templatesImported++;
+            }
+          } catch (e) {
+            print('Error importing template: $e');
+          }
+        }
+      }
+
+      // Build success message
+      final messageParts = <String>[];
+      if (sessionsImported > 0) {
+        messageParts.add('$sessionsImported ${sessionsImported == 1 ? 'session' : 'sessions'}');
+      }
+      if (studentsImported > 0) {
+        messageParts.add('$studentsImported ${studentsImported == 1 ? 'student' : 'students'}');
+      }
+      if (templatesImported > 0) {
+        messageParts.add('$templatesImported ${templatesImported == 1 ? 'template' : 'templates'}');
+      }
+      
+      final message = messageParts.isEmpty
+          ? 'No new data to import'
+          : 'Imported ${messageParts.join(', ')}';
+
       return ImportResult(
         success: true,
-        message: 'Imported $sessionsImported sessions and $studentsImported students',
+        message: message,
         sessionsImported: sessionsImported,
         studentsImported: studentsImported,
+        templatesImported: templatesImported,
       );
     } catch (e) {
       return ImportResult(success: false, message: 'Error parsing YAML: $e');
@@ -197,12 +320,14 @@ class ImportResult {
   final String message;
   final int sessionsImported;
   final int studentsImported;
+  final int templatesImported;
 
   ImportResult({
     required this.success,
     required this.message,
     this.sessionsImported = 0,
     this.studentsImported = 0,
+    this.templatesImported = 0,
   });
 }
 
