@@ -1,0 +1,329 @@
+{
+  "@@locale": "fi",
+  "appTitle": "Varaa Viikot",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Valitse Viikko",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Ma",
+  "tue": "Ti",
+  "wed": "Ke",
+  "thu": "To",
+  "fri": "Pe",
+  "sat": "La",
+  "sun": "Su",
+  "noSessionsScheduled": "Ei ajoitettuja istuntoja",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Napauta + -painiketta lisätäksesi istunnon",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "opiskelija",
+  "students": "opiskelijaa",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Poista Istunto",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Haluatko varmasti poistaa \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Peruuta",
+  "delete": "Poista",
+  "createSession": "Luo Istunto",
+  "editSession": "Muokkaa Istuntoa",
+  "title": "Otsikko",
+  "titleRequired": "Anna otsikko",
+  "startTime": "Aloitusaika",
+  "endTime": "Lopetusaika",
+  "endTimeAfterStart": "Lopetusaika on oltava aloitusajan jälkeen",
+  "descriptionOptional": "Kuvaus (valinnainen)",
+  "save": "Tallenna",
+  "add": "Lisää",
+  "edit": "Muokkaa",
+  "allEvents": "Kaikki Tapahtumat",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Hallitse Mallipohjia",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Vie Tiedot",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Tuo Tiedot",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Tallenna Vie-tiedosto",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Vienti onnistui!\nTallennettu: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Vienti epäonnistui: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Tuonti Onnistui",
+  "importFailed": "Tuonti Epäonnistui",
+  "errorReadingFile": "Virhe tiedoston lukemisessa",
+  "error": "Virhe: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Etsi tapahtumia...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Ei ajoitettuja tapahtumia",
+  "noEventsFound": "Tapahtumia ei löytynyt",
+  "createEventsFromCalendar": "Luo tapahtumia kalenterista",
+  "studentsJoiningThisSession": "Tähän Istuntoon Osallistuvat Opiskelijat",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Lisää Jäsen",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Opiskelijoita ei ole vielä lisätty",
+  "tapToAddMember": "Napauta + lisätäksesi jäsenen",
+  "allMembers": "Kaikki Jäsenet",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Lisää istuntoon",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Poista istunnosta",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Nimi",
+  "nameRequired": "Anna nimi",
+  "nicknameOptional": "Lempinimi (valinnainen)",
+  "ageOptional": "Ikä (valinnainen)",
+  "ageInvalid": "Anna kelvollinen ikä",
+  "phoneNumberOptional": "Puhelinnumero (valinnainen)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "esim. +358 12 345 6789",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Lisää Jäsen",
+  "editMemberTitle": "Muokkaa Jäsentä",
+  "member": "Jäsen",
+  "nameLabel": "Nimi: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Ikä: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Puhelin: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Mallipohja (valinnainen)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Ei mitään",
+  "saveAsTemplate": "Tallenna mallipohjaksi",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Käytä tätä istuntoa mallipohjana tuleville istunnoille",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Mallipohjan Nimi",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Nimi tämän mallipohjan tunnistamiseen",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Anna mallipohjan nimi",
+  "defaultSessionTitle": "Oletusistunnon Otsikko",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Otsikko, jota käytetään tämän mallipohjan perusteella luotavissa istunnoissa",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Anna istunnon otsikko",
+  "createTemplate": "Luo Mallipohja",
+  "editTemplate": "Muokkaa Mallipohjaa",
+  "create": "Luo",
+  "templateNameDialogTitle": "Mallipohjan Nimi",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Anna tälle mallipohjalle nimi helpon tunnistamisen vuoksi",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Mallipohjien Hallinta",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Ei vielä mallipohjia",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Luo istunto ja valitse \"Tallenna mallipohjaksi\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Poista Mallipohja",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Haluatko varmasti poistaa \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Istunto: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Tallenna Mallipohjaksi",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Mallipohja \"{name}\" tallennettu onnistuneesti",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "VIRHEENKORJAUS",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Virheenkorjauksen Päivämäärän Simulointi",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Aseta Mukautettu Päivämäärä",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Tyhjennä",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Nyt: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Tänään",
+  "yesterday": "Eilen",
+  "tomorrow": "Huomenna",
+  "daysAgo": "{count} päivää sitten",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} päivän kuluttua",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

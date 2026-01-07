@@ -1,0 +1,329 @@
+{
+  "@@locale": "fil",
+  "appTitle": "Mag-book ng Linggo",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Pumili ng Linggo",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Lun",
+  "tue": "Mar",
+  "wed": "Miy",
+  "thu": "Huw",
+  "fri": "Biy",
+  "sat": "Sab",
+  "sun": "Lin",
+  "noSessionsScheduled": "Walang naka-iskedyul na sesyon",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "I-tap ang + button upang magdagdag ng sesyon",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "estudyante",
+  "students": "mga estudyante",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Tanggalin ang Sesyon",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Sigurado ka bang gusto mong tanggalin ang \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Kanselahin",
+  "delete": "Tanggalin",
+  "createSession": "Gumawa ng Sesyon",
+  "editSession": "I-edit ang Sesyon",
+  "title": "Pamagat",
+  "titleRequired": "Pakipasok ang pamagat",
+  "startTime": "Oras ng Simula",
+  "endTime": "Oras ng Pagtatapos",
+  "endTimeAfterStart": "Ang oras ng pagtatapos ay dapat na pagkatapos ng oras ng simula",
+  "descriptionOptional": "Paglalarawan (opsyonal)",
+  "save": "I-save",
+  "add": "Magdagdag",
+  "edit": "I-edit",
+  "allEvents": "Lahat ng Mga Kaganapan",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Pamahalaan ang Mga Template",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "I-export ang Data",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "I-import ang Data",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "I-save ang Export File",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Matagumpay ang export!\nNai-save sa: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Nabigo ang export: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Matagumpay ang Import",
+  "importFailed": "Nabigo ang Import",
+  "errorReadingFile": "Error sa pagbabasa ng file",
+  "error": "Error: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Maghanap ng mga kaganapan...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Walang naka-iskedyul na kaganapan",
+  "noEventsFound": "Walang nahanap na kaganapan",
+  "createEventsFromCalendar": "Gumawa ng mga kaganapan mula sa kalendaryo",
+  "studentsJoiningThisSession": "Mga Estudyanteng Sumasali sa Sesyong Ito",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Magdagdag ng Miyembro",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Wala pang naidagdag na estudyante",
+  "tapToAddMember": "I-tap ang + upang magdagdag ng miyembro",
+  "allMembers": "Lahat ng Mga Miyembro",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Idagdag sa sesyon",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Tanggalin sa sesyon",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Pangalan",
+  "nameRequired": "Pakipasok ang pangalan",
+  "nicknameOptional": "Palayaw (opsyonal)",
+  "ageOptional": "Edad (opsyonal)",
+  "ageInvalid": "Pakipasok ang wastong edad",
+  "phoneNumberOptional": "Numero ng Telepono (opsyonal)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "hal. +63 912 345 6789",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Magdagdag ng Miyembro",
+  "editMemberTitle": "I-edit ang Miyembro",
+  "member": "Miyembro",
+  "nameLabel": "Pangalan: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Edad: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Telepono: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Template (opsyonal)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Wala",
+  "saveAsTemplate": "I-save bilang template",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Gamitin ang sesyong ito bilang template para sa mga susunod na sesyon",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Pangalan ng Template",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Pangalan upang makilala ang template na ito",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Pakipasok ang pangalan ng template",
+  "defaultSessionTitle": "Default na Pamagat ng Sesyon",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Pamagat na ginagamit kapag gumagawa ng mga sesyon mula sa template na ito",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Pakipasok ang pamagat ng sesyon",
+  "createTemplate": "Gumawa ng Template",
+  "editTemplate": "I-edit ang Template",
+  "create": "Gumawa",
+  "templateNameDialogTitle": "Pangalan ng Template",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Bigyan ng pangalan ang template na ito para sa madaling pagkakakilanlan",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Pamamahala ng Template",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Wala pang mga template",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Gumawa ng sesyon at i-check ang \"I-save bilang template\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Tanggalin ang Template",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Sigurado ka bang gusto mong tanggalin ang \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Sesyon: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "I-save bilang Template",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Matagumpay na nai-save ang template \"{name}\"",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "DEBUG",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Debug Date Simulation",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Itakda ang Custom Date",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Linisin",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Ngayon: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Ngayon",
+  "yesterday": "Kahapon",
+  "tomorrow": "Bukas",
+  "daysAgo": "{count} araw na ang nakalipas",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} araw mula ngayon",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

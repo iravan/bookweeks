@@ -1,0 +1,329 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Бронирование Недель",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Выбрать Неделю",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Пн",
+  "tue": "Вт",
+  "wed": "Ср",
+  "thu": "Чт",
+  "fri": "Пт",
+  "sat": "Сб",
+  "sun": "Вс",
+  "noSessionsScheduled": "Нет запланированных сессий",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Нажмите кнопку +, чтобы добавить сессию",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "студент",
+  "students": "студентов",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Удалить Сессию",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Вы уверены, что хотите удалить «{title}»?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Отмена",
+  "delete": "Удалить",
+  "createSession": "Создать Сессию",
+  "editSession": "Редактировать Сессию",
+  "title": "Название",
+  "titleRequired": "Пожалуйста, введите название",
+  "startTime": "Время Начала",
+  "endTime": "Время Окончания",
+  "endTimeAfterStart": "Время окончания должно быть позже времени начала",
+  "descriptionOptional": "Описание (необязательно)",
+  "save": "Сохранить",
+  "add": "Добавить",
+  "edit": "Редактировать",
+  "allEvents": "Все События",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Управление Шаблонами",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Экспорт Данных",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Импорт Данных",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Сохранить Файл Экспорта",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Экспорт успешен!\nСохранено в: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Ошибка экспорта: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Импорт Успешен",
+  "importFailed": "Ошибка Импорта",
+  "errorReadingFile": "Ошибка при чтении файла",
+  "error": "Ошибка: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ОК",
+  "searchEvents": "Поиск событий...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Нет запланированных событий",
+  "noEventsFound": "События не найдены",
+  "createEventsFromCalendar": "Создать события из календаря",
+  "studentsJoiningThisSession": "Студенты, Участвующие в Этой Сессии",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Добавить Участника",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Студенты еще не добавлены",
+  "tapToAddMember": "Нажмите +, чтобы добавить участника",
+  "allMembers": "Все Участники",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Добавить в сессию",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Удалить из сессии",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Имя",
+  "nameRequired": "Пожалуйста, введите имя",
+  "nicknameOptional": "Прозвище (необязательно)",
+  "ageOptional": "Возраст (необязательно)",
+  "ageInvalid": "Пожалуйста, введите действительный возраст",
+  "phoneNumberOptional": "Номер Телефона (необязательно)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "например: +7 912 345 67 89",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Добавить Участника",
+  "editMemberTitle": "Редактировать Участника",
+  "member": "Участник",
+  "nameLabel": "Имя: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Возраст: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Телефон: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Шаблон (необязательно)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Нет",
+  "saveAsTemplate": "Сохранить как шаблон",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Использовать эту сессию как шаблон для будущих сессий",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Название Шаблона",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Название для идентификации этого шаблона",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Пожалуйста, введите название шаблона",
+  "defaultSessionTitle": "Название Сессии по Умолчанию",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Название, используемое при создании сессий из этого шаблона",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Пожалуйста, введите название сессии",
+  "createTemplate": "Создать Шаблон",
+  "editTemplate": "Редактировать Шаблон",
+  "create": "Создать",
+  "templateNameDialogTitle": "Название Шаблона",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Дайте этому шаблону название для легкой идентификации",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Управление Шаблонами",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Пока нет шаблонов",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Создайте сессию и отметьте «Сохранить как шаблон»",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Удалить Шаблон",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Вы уверены, что хотите удалить «{title}»?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Сессия: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Сохранить как шаблон",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Шаблон «{name}» успешно сохранен",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ОТЛАДКА",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Симуляция Даты Отладки",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Установить Пользовательскую Дату",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Очистить",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Сейчас: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Сегодня",
+  "yesterday": "Вчера",
+  "tomorrow": "Завтра",
+  "daysAgo": "{count} дней назад",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "Через {count} дней",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

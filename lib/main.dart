@@ -3,7 +3,9 @@ import 'dart:typed_data';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import 'models/week.dart';
 import 'widgets/week_calendar.dart';
 import 'widgets/day_tab_view.dart';
@@ -25,6 +27,51 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Book Weeks',
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en'), // English
+        const Locale('zh', 'TW'), // Traditional Chinese
+        const Locale('zh', 'CN'), // Simplified Chinese
+        const Locale('ja'), // Japanese
+        const Locale('ko'), // Korean
+        const Locale('fr'), // French
+        const Locale('es'), // Spanish
+        const Locale('es', 'MX'), // Mexican Spanish
+        const Locale('th'), // Thai
+        const Locale('ru'), // Russian
+        const Locale('hi'), // Hindi
+        const Locale('bn'), // Bengali
+        const Locale('te'), // Telugu
+        const Locale('ta'), // Tamil
+        const Locale('mr'), // Marathi
+        const Locale('gu'), // Gujarati
+        const Locale('kn'), // Kannada
+        const Locale('ml'), // Malayalam
+        const Locale('pa'), // Punjabi
+        const Locale('vi'), // Vietnamese
+        const Locale('km'), // Khmer (Cambodian)
+        const Locale('fil'), // Filipino (Philippines)
+        const Locale('it'), // Italian
+        const Locale('de'), // German
+        const Locale('uk'), // Ukrainian
+        const Locale('pt'), // Portuguese
+        const Locale('mn'), // Mongolian
+        const Locale('fi'), // Finnish
+        const Locale('sv'), // Swedish
+        const Locale('pl'), // Polish
+        const Locale('lo'), // Lao (Laos)
+        const Locale('hr'), // Croatian
+        const Locale('is'), // Icelandic
+        const Locale('tr'), // Turkish
+        const Locale('he'), // Hebrew (Israel)
+        const Locale('rm'), // Romansh
+        const Locale('el'), // Greek
+      ],
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.light(
@@ -104,7 +151,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage>
-    with SingleTickerProviderStateMixin, WidgetsBindingObserver {
+    with TickerProviderStateMixin, WidgetsBindingObserver {
   late TabController _tabController;
   late List<Week> _weeks;
   late Week _selectedWeek;
@@ -122,7 +169,10 @@ class _MainPageState extends State<MainPage>
     final debugService = DebugService();
     _lastCheckedDate = debugService.getCurrentDate();
     _updateWeeks();
-    _tabController = TabController(length: 7, vsync: this);
+    _tabController = TabController(
+      length: _selectedWeekDays.length,
+      vsync: this,
+    );
     _initializeServices();
 
     // Set initial tab to today if current week is selected
@@ -161,7 +211,15 @@ class _MainPageState extends State<MainPage>
       setState(() {
         _updateWeeks();
         _selectedWeek = _weeks[0]; // Current week
-        _selectedWeekDays = _selectedWeek.days;
+        _selectedWeekDays = _getFilteredWeekDays(_selectedWeek);
+        // Update TabController length if needed
+        if (_tabController.length != _selectedWeekDays.length) {
+          _tabController.dispose();
+          _tabController = TabController(
+            length: _selectedWeekDays.length,
+            vsync: this,
+          );
+        }
         _tabController.animateTo(0);
         _setTabToCurrentDay();
       });
@@ -173,7 +231,36 @@ class _MainPageState extends State<MainPage>
     final referenceDate = debugService.getCurrentDate();
     _weeks = Week.getNext4Weeks(referenceDate);
     _selectedWeek = _weeks[0]; // Current week
-    _selectedWeekDays = _selectedWeek.days;
+    _selectedWeekDays = _getFilteredWeekDays(_selectedWeek);
+  }
+
+  List<DateTime> _getFilteredWeekDays(Week week) {
+    final debugService = DebugService();
+    final currentDate = debugService.getCurrentDate();
+    final today = DateTime(
+      currentDate.year,
+      currentDate.month,
+      currentDate.day,
+    );
+
+    // Check if this is the current week
+    final isCurrentWeek = week.days.any(
+      (day) =>
+          day.year == currentDate.year &&
+          day.month == currentDate.month &&
+          day.day == currentDate.day,
+    );
+
+    if (isCurrentWeek) {
+      // Filter out days before today
+      return week.days.where((day) {
+        final dayDate = DateTime(day.year, day.month, day.day);
+        return !dayDate.isBefore(today);
+      }).toList();
+    } else {
+      // For future weeks, show all days
+      return week.days;
+    }
   }
 
   void _setTabToCurrentDay() {
@@ -210,6 +297,9 @@ class _MainPageState extends State<MainPage>
     final debugService = DebugService();
     final currentDate = debugService.getCurrentDate();
 
+    // Get filtered days (excludes past days if current week)
+    final filteredDays = _getFilteredWeekDays(week);
+
     // Check if this is the current week
     final isCurrentWeek = week.days.any(
       (day) =>
@@ -220,8 +310,8 @@ class _MainPageState extends State<MainPage>
 
     int tabIndex = 0;
     if (isCurrentWeek) {
-      // Find the index of today in the week
-      final todayIndex = week.days.indexWhere(
+      // Find the index of today in the filtered days
+      final todayIndex = filteredDays.indexWhere(
         (day) =>
             day.year == currentDate.year &&
             day.month == currentDate.month &&
@@ -231,30 +321,50 @@ class _MainPageState extends State<MainPage>
         tabIndex = todayIndex;
       }
     } else {
-      // For non-current weeks, find the first day with events
-      for (int i = 0; i < week.days.length; i++) {
-        if (_sessionService.hasSessionsForDate(week.days[i])) {
+      // For non-current weeks, find the first day with events in filtered days
+      for (int i = 0; i < filteredDays.length; i++) {
+        if (_sessionService.hasSessionsForDate(filteredDays[i])) {
           tabIndex = i;
           break;
         }
       }
-      // If no events found, tabIndex remains 0 (Monday)
+      // If no events found, tabIndex remains 0 (first day in filtered list)
     }
 
     setState(() {
       _selectedWeek = week;
-      _selectedWeekDays = week.days;
-      _tabController.animateTo(tabIndex);
+      _selectedWeekDays = filteredDays;
+      // Update TabController length if needed
+      if (_tabController.length != filteredDays.length) {
+        _tabController.dispose();
+        _tabController = TabController(
+          length: filteredDays.length,
+          vsync: this,
+          initialIndex: tabIndex < filteredDays.length ? tabIndex : 0,
+        );
+      } else {
+        _tabController.animateTo(tabIndex);
+      }
     });
   }
 
-  String _getDayName(DateTime date) {
-    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  String _getDayName(DateTime date, BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final days = [
+      l10n.mon,
+      l10n.tue,
+      l10n.wed,
+      l10n.thu,
+      l10n.fri,
+      l10n.sat,
+      l10n.sun,
+    ];
     return days[date.weekday - 1];
   }
 
-  String _getDayTabLabel(DateTime date) {
-    return '${_getDayName(date)}\n${date.day}/${date.month}';
+  String _getDayTabLabel(DateTime date, BuildContext context) {
+    final dayName = _getDayName(date, context);
+    return '$dayName\n${date.day}/${date.month}';
   }
 
   @override
@@ -267,7 +377,7 @@ class _MainPageState extends State<MainPage>
       appBar: AppBar(
         title: Row(
           children: [
-            const Text('Book Weeks'),
+            Text(AppLocalizations.of(context)!.appTitle),
             if (kDebugMode && DebugService().isSimulating())
               Padding(
                 padding: const EdgeInsets.only(left: 8),
@@ -281,7 +391,7 @@ class _MainPageState extends State<MainPage>
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
-                    'DEBUG',
+                    AppLocalizations.of(context)!.debug,
                     style: TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
@@ -295,7 +405,7 @@ class _MainPageState extends State<MainPage>
         actions: [
           IconButton(
             icon: const Icon(Icons.event_note),
-            tooltip: 'All Events',
+            tooltip: AppLocalizations.of(context)!.allEvents,
             onPressed: () async {
               await Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => const EventsListPage()),
@@ -329,7 +439,7 @@ class _MainPageState extends State<MainPage>
                       color: Theme.of(context).colorScheme.primary,
                     ),
                     const SizedBox(width: 8),
-                    const Text('Manage Templates'),
+                    Text(AppLocalizations.of(context)!.manageTemplates),
                   ],
                 ),
               ),
@@ -343,17 +453,17 @@ class _MainPageState extends State<MainPage>
                       color: Theme.of(context).colorScheme.primary,
                     ),
                     const SizedBox(width: 8),
-                    const Text('Export Data'),
+                    Text(AppLocalizations.of(context)!.exportData),
                   ],
                 ),
               ),
-              const PopupMenuItem<String>(
+              PopupMenuItem<String>(
                 value: 'import',
                 child: Row(
                   children: [
-                    Icon(Icons.download, color: Colors.green),
-                    SizedBox(width: 8),
-                    Text('Import Data'),
+                    const Icon(Icons.download, color: Colors.green),
+                    const SizedBox(width: 8),
+                    Text(AppLocalizations.of(context)!.importData),
                   ],
                 ),
               ),
@@ -365,13 +475,20 @@ class _MainPageState extends State<MainPage>
         child: Column(
           children: [
             // Week Calendar Section
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: WeekCalendar(
-                weeks: _weeks,
-                selectedWeek: _selectedWeek,
-                onWeekSelected: _onWeekSelected,
-                sessionService: _sessionService,
+            ConstrainedBox(
+              constraints: BoxConstraints(
+                maxHeight: MediaQuery.of(context).size.height * 0.4,
+              ),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: WeekCalendar(
+                    weeks: _weeks,
+                    selectedWeek: _selectedWeek,
+                    onWeekSelected: _onWeekSelected,
+                    sessionService: _sessionService,
+                  ),
+                ),
               ),
             ),
             // Day Tabs Section
@@ -392,7 +509,7 @@ class _MainPageState extends State<MainPage>
                 tabs: _selectedWeekDays.map((date) {
                   return Tab(
                     child: Text(
-                      _getDayTabLabel(date),
+                      _getDayTabLabel(date, context),
                       textAlign: TextAlign.center,
                     ),
                   );
@@ -435,7 +552,7 @@ class _MainPageState extends State<MainPage>
       await Future.delayed(const Duration(milliseconds: 100));
 
       String? outputPath = await FilePicker.platform.saveFile(
-        dialogTitle: 'Save Export File',
+        dialogTitle: AppLocalizations.of(context)!.saveExportFile,
         fileName: defaultFileName,
         bytes: Uint8List.fromList(bytes),
       );
@@ -445,7 +562,9 @@ class _MainPageState extends State<MainPage>
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text('Export successful!\nSaved to: $outputPath'),
+              content: Text(
+                AppLocalizations.of(context)!.exportSuccessful(outputPath),
+              ),
               backgroundColor: Colors.green,
               duration: const Duration(seconds: 3),
             ),
@@ -457,7 +576,9 @@ class _MainPageState extends State<MainPage>
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Export failed: ${e.toString()}'),
+            content: Text(
+              AppLocalizations.of(context)!.exportFailed(e.toString()),
+            ),
             backgroundColor: Colors.red,
             duration: const Duration(seconds: 5),
           ),
@@ -503,7 +624,9 @@ class _MainPageState extends State<MainPage>
               context: context,
               builder: (context) => AlertDialog(
                 title: Text(
-                  importResult.success ? 'Import Successful' : 'Import Failed',
+                  importResult.success
+                      ? AppLocalizations.of(context)!.importSuccessful
+                      : AppLocalizations.of(context)!.importFailed,
                 ),
                 content: Text(importResult.message),
                 actions: [
@@ -515,7 +638,7 @@ class _MainPageState extends State<MainPage>
                         setState(() {});
                       }
                     },
-                    child: const Text('OK'),
+                    child: Text(AppLocalizations.of(context)!.ok),
                   ),
                 ],
               ),
@@ -524,18 +647,22 @@ class _MainPageState extends State<MainPage>
         } else {
           if (mounted) {
             Navigator.of(context).pop(); // Close loading dialog
-            ScaffoldMessenger.of(
-              context,
-            ).showSnackBar(const SnackBar(content: Text('Error reading file')));
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.errorReadingFile),
+              ),
+            );
           }
         }
       }
     } catch (e) {
       if (mounted) {
         Navigator.of(context).pop(); // Close loading dialog if open
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Error: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.error(e.toString())),
+          ),
+        );
       }
     }
   }
@@ -546,7 +673,7 @@ class _MainPageState extends State<MainPage>
 
     return PopupMenuButton<String>(
       icon: const Icon(Icons.bug_report),
-      tooltip: 'Debug Date Simulation',
+      tooltip: AppLocalizations.of(context)!.debugDateSimulation,
       onSelected: (value) async {
         if (value == 'set_date') {
           final DateTime? picked = await showDatePicker(
@@ -601,11 +728,11 @@ class _MainPageState extends State<MainPage>
       itemBuilder: (BuildContext context) => [
         PopupMenuItem<String>(
           value: 'set_date',
-          child: const Row(
+          child: Row(
             children: [
-              Icon(Icons.calendar_today, size: 20),
-              SizedBox(width: 8),
-              Text('Set Custom Date'),
+              const Icon(Icons.calendar_today, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.setCustomDate),
             ],
           ),
         ),
@@ -616,54 +743,59 @@ class _MainPageState extends State<MainPage>
               children: [
                 const Icon(Icons.clear, size: 20),
                 const SizedBox(width: 8),
-                Text('Clear (Now: ${_formatDate(simulatedDate)})'),
+                Text(
+                  '${AppLocalizations.of(context)!.clear} (${AppLocalizations.of(context)!.now(_formatDate(simulatedDate))})',
+                ),
               ],
             ),
           ),
         const PopupMenuDivider(),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'today',
           child: Row(
             children: [
-              Icon(Icons.today, size: 20),
-              SizedBox(width: 8),
-              Text('Today'),
+              const Icon(Icons.today, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.today),
             ],
           ),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'yesterday',
           child: Row(
             children: [
-              Icon(Icons.arrow_back, size: 20),
-              SizedBox(width: 8),
-              Text('Yesterday'),
+              const Icon(Icons.arrow_back, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.yesterday),
             ],
           ),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'tomorrow',
           child: Row(
             children: [
-              Icon(Icons.arrow_forward, size: 20),
-              SizedBox(width: 8),
-              Text('Tomorrow'),
+              const Icon(Icons.arrow_forward, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.tomorrow),
             ],
           ),
         ),
         const PopupMenuDivider(),
-        const PopupMenuItem<String>(value: 'day_-7', child: Text('7 days ago')),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
+          value: 'day_-7',
+          child: Text(AppLocalizations.of(context)!.daysAgo(7)),
+        ),
+        PopupMenuItem<String>(
           value: 'day_-14',
-          child: Text('14 days ago'),
+          child: Text(AppLocalizations.of(context)!.daysAgo(14)),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'day_7',
-          child: Text('7 days later'),
+          child: Text(AppLocalizations.of(context)!.daysLater(7)),
         ),
-        const PopupMenuItem<String>(
+        PopupMenuItem<String>(
           value: 'day_14',
-          child: Text('14 days later'),
+          child: Text(AppLocalizations.of(context)!.daysLater(14)),
         ),
       ],
     );

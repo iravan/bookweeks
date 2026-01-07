@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session.dart';
 import '../models/student.dart';
 import '../models/session_template.dart';
@@ -132,7 +133,7 @@ class _StudentsPageState extends State<StudentsPage> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Template "${templateName.trim()}" saved successfully'),
+            content: Text(AppLocalizations.of(context)!.templateSavedSuccessfully(templateName.trim())),
             backgroundColor: Colors.green,
           ),
         );
@@ -155,7 +156,7 @@ class _StudentsPageState extends State<StudentsPage> {
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
             Text(
-              '${sessionStudents.length} ${sessionStudents.length == 1 ? 'student' : 'students'}',
+              '${sessionStudents.length} ${sessionStudents.length == 1 ? AppLocalizations.of(context)!.student(sessionStudents.length) : AppLocalizations.of(context)!.students(sessionStudents.length)}',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.normal,
@@ -167,7 +168,7 @@ class _StudentsPageState extends State<StudentsPage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.save),
-            tooltip: 'Save as Template',
+            tooltip: AppLocalizations.of(context)!.saveAsTemplateTooltip,
             onPressed: _saveAsTemplate,
           ),
         ],
@@ -193,9 +194,9 @@ class _StudentsPageState extends State<StudentsPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
-                        'Students Joining This Session',
-                        style: TextStyle(
+                      Text(
+                        AppLocalizations.of(context)!.studentsJoiningThisSession,
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
@@ -208,7 +209,7 @@ class _StudentsPageState extends State<StudentsPage> {
                         child: IconButton(
                           icon: const Icon(Icons.add, color: Colors.white),
                           onPressed: _addNewStudent,
-                          tooltip: 'Add Member',
+                          tooltip: AppLocalizations.of(context)!.addMember,
                         ),
                       ),
                     ],
@@ -234,7 +235,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                 ),
                                 const SizedBox(height: 16),
                                 Text(
-                                  'No students added yet',
+                                  AppLocalizations.of(context)!.noStudentsAddedYet,
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600,
@@ -243,7 +244,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  'Tap + to add a member',
+                                  AppLocalizations.of(context)!.tapToAddMember,
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Colors.grey.shade500,
@@ -293,7 +294,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                             size: 20,
                                           ),
                                           onPressed: () => _editStudent(student),
-                                          tooltip: 'Edit',
+                                          tooltip: AppLocalizations.of(context)!.edit,
                                         ),
                                       ),
                                       const SizedBox(width: 8),
@@ -309,7 +310,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                             size: 20,
                                           ),
                                           onPressed: () => _removeStudentFromSession(student.id),
-                                          tooltip: 'Remove from session',
+                                          tooltip: AppLocalizations.of(context)!.removeFromSession,
                                         ),
                                       ),
                                     ],
@@ -332,9 +333,9 @@ class _StudentsPageState extends State<StudentsPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      'All Members',
-                      style: TextStyle(
+                    Text(
+                      AppLocalizations.of(context)!.allMembers,
+                      style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -382,7 +383,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                         size: 20,
                                       ),
                                       onPressed: () => _editStudent(student),
-                                      tooltip: 'Edit',
+                                      tooltip: AppLocalizations.of(context)!.edit,
                                     ),
                                   ),
                                   const SizedBox(width: 8),
@@ -398,7 +399,7 @@ class _StudentsPageState extends State<StudentsPage> {
                                         size: 20,
                                       ),
                                       onPressed: () => _addStudentToSession(student.id),
-                                      tooltip: 'Add to session',
+                                      tooltip: AppLocalizations.of(context)!.addToSession,
                                     ),
                                   ),
                                 ],
@@ -418,17 +419,18 @@ class _StudentsPageState extends State<StudentsPage> {
   }
 
   String _getStudentInfo(Student student) {
+    final l10n = AppLocalizations.of(context)!;
     final parts = <String>[];
     if (student.nickname?.isNotEmpty == true && student.nickname != student.name) {
-      parts.add('Name: ${student.name}');
+      parts.add(l10n.nameLabel(student.name));
     }
     if (student.age != null) {
-      parts.add('Age: ${student.age}');
+      parts.add(l10n.ageLabel(student.age!));
     }
     if (student.phoneNumber != null && student.phoneNumber!.isNotEmpty) {
-      parts.add('Phone: ${student.phoneNumber}');
+      parts.add(l10n.phoneLabel(student.phoneNumber!));
     }
-    return parts.isEmpty ? 'Member' : parts.join(' • ');
+    return parts.isEmpty ? l10n.member : parts.join(' • ');
   }
 }
 

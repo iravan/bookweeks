@@ -1,0 +1,329 @@
+{
+  "@@locale": "kn",
+  "appTitle": "ವಾರಗಳ ಬುಕಿಂಗ್",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "ವಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "ಸೋಮ",
+  "tue": "ಮಂಗಳ",
+  "wed": "ಬುಧ",
+  "thu": "ಗುರು",
+  "fri": "ಶುಕ್ರ",
+  "sat": "ಶನಿ",
+  "sun": "ಭಾನು",
+  "noSessionsScheduled": "ಯಾವುದೇ ಸೆಷನ್ಗಳು ಶೆಡ್ಯೂಲ್ ಮಾಡಲಾಗಿಲ್ಲ",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "ಸೆಷನ್ ಸೇರಿಸಲು + ಬಟನ್ ಟ್ಯಾಪ್ ಮಾಡಿ",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "ವಿದ್ಯಾರ್ಥಿ",
+  "students": "ವಿದ್ಯಾರ್ಥಿಗಳು",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "ಸೆಷನ್ ಅಳಿಸಿ",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "ನೀವು \"{title}\" ಅನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "ರದ್ದುಮಾಡಿ",
+  "delete": "ಅಳಿಸಿ",
+  "createSession": "ಸೆಷನ್ ರಚಿಸಿ",
+  "editSession": "ಸೆಷನ್ ಸಂಪಾದಿಸಿ",
+  "title": "ಶೀರ್ಷಿಕೆ",
+  "titleRequired": "ದಯವಿಟ್ಟು ಶೀರ್ಷಿಕೆ ನಮೂದಿಸಿ",
+  "startTime": "ಪ್ರಾರಂಭ ಸಮಯ",
+  "endTime": "ಕೊನೆ ಸಮಯ",
+  "endTimeAfterStart": "ಕೊನೆ ಸಮಯ ಪ್ರಾರಂಭ ಸಮಯದ ನಂತರ ಇರಬೇಕು",
+  "descriptionOptional": "ವಿವರಣೆ (ಐಚ್ಛಿಕ)",
+  "save": "ಉಳಿಸಿ",
+  "add": "ಸೇರಿಸಿ",
+  "edit": "ಸಂಪಾದಿಸಿ",
+  "allEvents": "ಎಲ್ಲಾ ಈವೆಂಟ್ಗಳು",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "ಟೆಂಪ್ಲೇಟ್ಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "ಡೇಟಾವನ್ನು ರಫ್ತು ಮಾಡಿ",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "ಡೇಟಾವನ್ನು ಆಮದು ಮಾಡಿ",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "ರಫ್ತು ಫೈಲ್ ಉಳಿಸಿ",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "ರಫ್ತು ಯಶಸ್ವಿ!\nಉಳಿಸಲಾಗಿದೆ: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "ರಫ್ತು ವಿಫಲ: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "ಆಮದು ಯಶಸ್ವಿ",
+  "importFailed": "ಆಮದು ವಿಫಲ",
+  "errorReadingFile": "ಫೈಲ್ ಓದುವಲ್ಲಿ ದೋಷ",
+  "error": "ದೋಷ: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ಸರಿ",
+  "searchEvents": "ಈವೆಂಟ್ಗಳನ್ನು ಹುಡುಕಿ...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "ಯಾವುದೇ ಈವೆಂಟ್ಗಳು ಶೆಡ್ಯೂಲ್ ಮಾಡಲಾಗಿಲ್ಲ",
+  "noEventsFound": "ಈವೆಂಟ್ಗಳು ಕಂಡುಬಂದಿಲ್ಲ",
+  "createEventsFromCalendar": "ಕ್ಯಾಲೆಂಡರ್ನಿಂದ ಈವೆಂಟ್ಗಳನ್ನು ರಚಿಸಿ",
+  "studentsJoiningThisSession": "ಈ ಸೆಷನ್‌ಗೆ ಸೇರುವ ವಿದ್ಯಾರ್ಥಿಗಳು",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "ಇನ್ನೂ ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ",
+  "tapToAddMember": "+ ಟ್ಯಾಪ್ ಮಾಡಿ ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ",
+  "allMembers": "ಎಲ್ಲಾ ಸದಸ್ಯರು",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "ಸೆಷನ್‌ಗೆ ಸೇರಿಸಿ",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "ಸೆಷನ್‌ನಿಂದ ತೆಗೆದುಹಾಕಿ",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "ಹೆಸರು",
+  "nameRequired": "ದಯವಿಟ್ಟು ಹೆಸರು ನಮೂದಿಸಿ",
+  "nicknameOptional": "ಅಡ್ಡಹೆಸರು (ಐಚ್ಛಿಕ)",
+  "ageOptional": "ವಯಸ್ಸು (ಐಚ್ಛಿಕ)",
+  "ageInvalid": "ದಯವಿಟ್ಟು ಮಾನ್ಯ ವಯಸ್ಸು ನಮೂದಿಸಿ",
+  "phoneNumberOptional": "ಫೋನ್ ಸಂಖ್ಯೆ (ಐಚ್ಛಿಕ)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "ಉದಾ: +91 98765 43210",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ",
+  "editMemberTitle": "ಸದಸ್ಯರನ್ನು ಸಂಪಾದಿಸಿ",
+  "member": "ಸದಸ್ಯ",
+  "nameLabel": "ಹೆಸರು: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "ವಯಸ್ಸು: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "ಫೋನ್: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "ಟೆಂಪ್ಲೇಟ್ (ಐಚ್ಛಿಕ)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "ಯಾವುದೂ ಇಲ್ಲ",
+  "saveAsTemplate": "ಟೆಂಪ್ಲೇಟ್ ಆಗಿ ಉಳಿಸಿ",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "ಭವಿಷ್ಯದ ಸೆಷನ್‌ಗಳಿಗೆ ಈ ಸೆಷನ್ ಅನ್ನು ಟೆಂಪ್ಲೇಟ್ ಆಗಿ ಬಳಸಿ",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "ಟೆಂಪ್ಲೇಟ್ ಹೆಸರು",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "ಈ ಟೆಂಪ್ಲೇಟ್ ಅನ್ನು ಗುರುತಿಸಲು ಹೆಸರು",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "ದಯವಿಟ್ಟು ಟೆಂಪ್ಲೇಟ್ ಹೆಸರು ನಮೂದಿಸಿ",
+  "defaultSessionTitle": "ಡೀಫಾಲ್ಟ್ ಸೆಷನ್ ಶೀರ್ಷಿಕೆ",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "ಈ ಟೆಂಪ್ಲೇಟ್‌ನಿಂದ ಸೆಷನ್‌ಗಳನ್ನು ರಚಿಸುವಾಗ ಬಳಸುವ ಶೀರ್ಷಿಕೆ",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "ದಯವಿಟ್ಟು ಸೆಷನ್ ಶೀರ್ಷಿಕೆ ನಮೂದಿಸಿ",
+  "createTemplate": "ಟೆಂಪ್ಲೇಟ್ ರಚಿಸಿ",
+  "editTemplate": "ಟೆಂಪ್ಲೇಟ್ ಸಂಪಾದಿಸಿ",
+  "create": "ರಚಿಸಿ",
+  "templateNameDialogTitle": "ಟೆಂಪ್ಲೇಟ್ ಹೆಸರು",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "ಸುಲಭ ಗುರುತಿಸುವಿಕೆಗಾಗಿ ಈ ಟೆಂಪ್ಲೇಟ್‌ಗೆ ಹೆಸರು ನೀಡಿ",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "ಟೆಂಪ್ಲೇಟ್ ನಿರ್ವಹಣೆ",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "ಇನ್ನೂ ಟೆಂಪ್ಲೇಟ್ಗಳು ಇಲ್ಲ",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "ಸೆಷನ್ ರಚಿಸಿ ಮತ್ತು \"ಟೆಂಪ್ಲೇಟ್ ಆಗಿ ಉಳಿಸಿ\" ಆಯ್ಕೆಮಾಡಿ",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "ಟೆಂಪ್ಲೇಟ್ ಅಳಿಸಿ",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "ನೀವು \"{title}\" ಅನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "ಸೆಷನ್: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "ಟೆಂಪ್ಲೇಟ್ ಆಗಿ ಉಳಿಸಿ",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "ಟೆಂಪ್ಲೇಟ್ \"{name}\" ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ಡೀಬಗ್",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "ಡೀಬಗ್ ದಿನಾಂಕ ಸಿಮ್ಯುಲೇಷನ್",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "ಕಸ್ಟಮ್ ದಿನಾಂಕವನ್ನು ಹೊಂದಿಸಿ",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "ಸ್ಪಷ್ಟಗೊಳಿಸಿ",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "ಈಗ: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "ಇಂದು",
+  "yesterday": "ನಿನ್ನೆ",
+  "tomorrow": "ನಾಳೆ",
+  "daysAgo": "{count} ದಿನಗಳ ಹಿಂದೆ",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} ದಿನಗಳ ನಂತರ",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,329 @@
+{
+  "@@locale": "uk",
+  "appTitle": "Бронювання Тижнів",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Вибрати Тиждень",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Пн",
+  "tue": "Вт",
+  "wed": "Ср",
+  "thu": "Чт",
+  "fri": "Пт",
+  "sat": "Сб",
+  "sun": "Нд",
+  "noSessionsScheduled": "Немає запланованих сесій",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Натисніть кнопку +, щоб додати сесію",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "студент",
+  "students": "студентів",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Видалити Сесію",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Ви впевнені, що хочете видалити \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Скасувати",
+  "delete": "Видалити",
+  "createSession": "Створити Сесію",
+  "editSession": "Редагувати Сесію",
+  "title": "Назва",
+  "titleRequired": "Будь ласка, введіть назву",
+  "startTime": "Час Початку",
+  "endTime": "Час Завершення",
+  "endTimeAfterStart": "Час завершення повинен бути після часу початку",
+  "descriptionOptional": "Опис (необов'язково)",
+  "save": "Зберегти",
+  "add": "Додати",
+  "edit": "Редагувати",
+  "allEvents": "Всі Події",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Керування Шаблонами",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Експорт Даних",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Імпорт Даних",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Зберегти Файл Експорту",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Експорт успішний!\nЗбережено в: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Експорт не вдався: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Імпорт Успішний",
+  "importFailed": "Імпорт Не Вдався",
+  "errorReadingFile": "Помилка читання файлу",
+  "error": "Помилка: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ОК",
+  "searchEvents": "Пошук подій...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Немає запланованих подій",
+  "noEventsFound": "Події не знайдено",
+  "createEventsFromCalendar": "Створити події з календаря",
+  "studentsJoiningThisSession": "Студенти, Які Приєднуються до Цієї Сесії",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Додати Учасника",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Студентів ще не додано",
+  "tapToAddMember": "Натисніть +, щоб додати учасника",
+  "allMembers": "Всі Учасники",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Додати до сесії",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Видалити з сесії",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Ім'я",
+  "nameRequired": "Будь ласка, введіть ім'я",
+  "nicknameOptional": "Прізвисько (необов'язково)",
+  "ageOptional": "Вік (необов'язково)",
+  "ageInvalid": "Будь ласка, введіть дійсний вік",
+  "phoneNumberOptional": "Номер Телефону (необов'язково)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "напр: +380 12 345 6789",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Додати Учасника",
+  "editMemberTitle": "Редагувати Учасника",
+  "member": "Учасник",
+  "nameLabel": "Ім'я: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Вік: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Телефон: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Шаблон (необов'язково)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Немає",
+  "saveAsTemplate": "Зберегти як шаблон",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Використовувати цю сесію як шаблон для майбутніх сесій",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Назва Шаблону",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Назва для ідентифікації цього шаблону",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Будь ласка, введіть назву шаблону",
+  "defaultSessionTitle": "Назва Сесії за Замовчуванням",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Назва, яка використовується при створенні сесій з цього шаблону",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Будь ласка, введіть назву сесії",
+  "createTemplate": "Створити Шаблон",
+  "editTemplate": "Редагувати Шаблон",
+  "create": "Створити",
+  "templateNameDialogTitle": "Назва Шаблону",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Дайте цьому шаблону назву для легкої ідентифікації",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Керування Шаблонами",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Поки що немає шаблонів",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Створіть сесію та оберіть \"Зберегти як шаблон\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Видалити Шаблон",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Ви впевнені, що хочете видалити \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Сесія: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Зберегти як Шаблон",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Шаблон \"{name}\" успішно збережено",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ВІДЛАДКА",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Симуляція Дати Відладки",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Встановити Користувацьку Дату",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Очистити",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Зараз: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Сьогодні",
+  "yesterday": "Вчора",
+  "tomorrow": "Завтра",
+  "daysAgo": "{count} днів тому",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "через {count} днів",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

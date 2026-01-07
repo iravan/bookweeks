@@ -1,0 +1,329 @@
+{
+  "@@locale": "te",
+  "appTitle": "వారాల బుకింగ్",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "వారం ఎంచుకోండి",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "సోమ",
+  "tue": "మంగళ",
+  "wed": "బుధ",
+  "thu": "గురు",
+  "fri": "శుక్ర",
+  "sat": "శని",
+  "sun": "ఆది",
+  "noSessionsScheduled": "సెషన్లు షెడ్యూల్ చేయబడలేదు",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "సెషన్ జోడించడానికి + బటన్ నొక్కండి",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "విద్యార్థి",
+  "students": "విద్యార్థులు",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "సెషన్ తొలగించు",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "మీరు \"{title}\" ను తొలగించాలని ఖచ్చితంగా అనుకుంటున్నారా?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "రద్దు చేయి",
+  "delete": "తొలగించు",
+  "createSession": "సెషన్ సృష్టించు",
+  "editSession": "సెషన్ సవరించు",
+  "title": "శీర్షిక",
+  "titleRequired": "దయచేసి శీర్షిక నమోదు చేయండి",
+  "startTime": "ప్రారంభ సమయం",
+  "endTime": "ముగింపు సమయం",
+  "endTimeAfterStart": "ముగింపు సమయం ప్రారంభ సమయం తర్వాత ఉండాలి",
+  "descriptionOptional": "వివరణ (ఐచ్ఛికం)",
+  "save": "సేవ్ చేయి",
+  "add": "జోడించు",
+  "edit": "సవరించు",
+  "allEvents": "అన్ని ఈవెంట్లు",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "టెంప్లేట్లను నిర్వహించండి",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "డేటా ఎగుమతి చేయండి",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "డేటా దిగుమతి చేయండి",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "ఎగుమతి ఫైల్ సేవ్ చేయండి",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "ఎగుమతి విజయవంతమైంది!\nసేవ్ చేయబడింది: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "ఎగుమతి విఫలమైంది: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "దిగుమతి విజయవంతమైంది",
+  "importFailed": "దిగుమతి విఫలమైంది",
+  "errorReadingFile": "ఫైల్ చదవడంలో లోపం",
+  "error": "లోపం: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "సరే",
+  "searchEvents": "ఈవెంట్లను శోధించండి...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "ఈవెంట్లు షెడ్యూల్ చేయబడలేదు",
+  "noEventsFound": "ఈవెంట్లు కనుగొనబడలేదు",
+  "createEventsFromCalendar": "క్యాలెండర్ నుండి ఈవెంట్లను సృష్టించండి",
+  "studentsJoiningThisSession": "ఈ సెషన్‌లో చేరే విద్యార్థులు",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "సభ్యుడిని జోడించండి",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "ఇంకా విద్యార్థులు జోడించబడలేదు",
+  "tapToAddMember": "+ నొక్కి సభ్యుడిని జోడించండి",
+  "allMembers": "అన్ని సభ్యులు",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "సెషన్‌కు జోడించు",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "సెషన్ నుండి తొలగించు",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "పేరు",
+  "nameRequired": "దయచేసి పేరు నమోదు చేయండి",
+  "nicknameOptional": "మారుపేరు (ఐచ్ఛికం)",
+  "ageOptional": "వయసు (ఐచ్ఛికం)",
+  "ageInvalid": "దయచేసి చెల్లుబాటు అయ్యే వయసు నమోదు చేయండి",
+  "phoneNumberOptional": "ఫోన్ నంబర్ (ఐచ్ఛికం)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "ఉదా: +91 98765 43210",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "సభ్యుడిని జోడించండి",
+  "editMemberTitle": "సభ్యుడిని సవరించండి",
+  "member": "సభ్యుడు",
+  "nameLabel": "పేరు: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "వయసు: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "ఫోన్: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "టెంప్లేట్ (ఐచ్ఛికం)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "ఏదీ లేదు",
+  "saveAsTemplate": "టెంప్లేట్‌గా సేవ్ చేయి",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "భవిష్యత్ సెషన్‌ల కోసం ఈ సెషన్‌ను టెంప్లేట్‌గా ఉపయోగించండి",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "టెంప్లేట్ పేరు",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "ఈ టెంప్లేట్‌ను గుర్తించడానికి పేరు",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "దయచేసి టెంప్లేట్ పేరు నమోదు చేయండి",
+  "defaultSessionTitle": "డిఫాల్ట్ సెషన్ శీర్షిక",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "ఈ టెంప్లేట్ నుండి సెషన్‌లను సృష్టించేటప్పుడు ఉపయోగించే శీర్షిక",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "దయచేసి సెషన్ శీర్షిక నమోదు చేయండి",
+  "createTemplate": "టెంప్లేట్ సృష్టించు",
+  "editTemplate": "టెంప్లేట్ సవరించు",
+  "create": "సృష్టించు",
+  "templateNameDialogTitle": "టెంప్లేట్ పేరు",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "సులభమైన గుర్తింపు కోసం ఈ టెంప్లేట్‌కు పేరు ఇవ్వండి",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "టెంప్లేట్ నిర్వహణ",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "ఇంకా టెంప్లేట్లు లేవు",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "సెషన్ సృష్టించి \"టెంప్లేట్‌గా సేవ్ చేయి\" చెక్ చేయండి",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "టెంప్లేట్ తొలగించు",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "మీరు \"{title}\" ను తొలగించాలని ఖచ్చితంగా అనుకుంటున్నారా?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "సెషన్: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "టెంప్లేట్‌గా సేవ్ చేయి",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "టెంప్లేట్ \"{name}\" విజయవంతంగా సేవ్ చేయబడింది",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "డీబగ్",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "డీబగ్ తేదీ సిమ్యులేషన్",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "కస్టమ్ తేదీ సెట్ చేయండి",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "క్లియర్ చేయి",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "ఇప్పుడు: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "ఈరోజు",
+  "yesterday": "నిన్న",
+  "tomorrow": "రేపు",
+  "daysAgo": "{count} రోజుల క్రితం",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} రోజుల తర్వాత",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,329 @@
+{
+  "@@locale": "hr",
+  "appTitle": "Rezerviraj Tjedne",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Odaberi Tjedan",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Pon",
+  "tue": "Uto",
+  "wed": "Sri",
+  "thu": "Čet",
+  "fri": "Pet",
+  "sat": "Sub",
+  "sun": "Ned",
+  "noSessionsScheduled": "Nema zakazanih sesija",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Dodirni gumb + za dodavanje sesije",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "učenik",
+  "students": "učenika",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Obriši Sesiju",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Jeste li sigurni da želite obrisati \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Odustani",
+  "delete": "Obriši",
+  "createSession": "Kreiraj Sesiju",
+  "editSession": "Uredi Sesiju",
+  "title": "Naslov",
+  "titleRequired": "Molimo unesite naslov",
+  "startTime": "Vrijeme Početka",
+  "endTime": "Vrijeme Završetka",
+  "endTimeAfterStart": "Vrijeme završetka mora biti nakon vremena početka",
+  "descriptionOptional": "Opis (opcionalno)",
+  "save": "Spremi",
+  "add": "Dodaj",
+  "edit": "Uredi",
+  "allEvents": "Svi Događaji",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Upravljaj Predlošcima",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Izvezi Podatke",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Uvezi Podatke",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Spremi Datoteku za Izvoz",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Izvoz uspješan!\nSpremljeno u: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Izvoz neuspješan: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Uvoz Uspješan",
+  "importFailed": "Uvoz Neuspješan",
+  "errorReadingFile": "Greška pri čitanju datoteke",
+  "error": "Greška: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "U redu",
+  "searchEvents": "Pretraži događaje...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Nema zakazanih događaja",
+  "noEventsFound": "Nema pronađenih događaja",
+  "createEventsFromCalendar": "Kreiraj događaje iz kalendara",
+  "studentsJoiningThisSession": "Učenici koji Sudjeluju u Ovoj Sesiji",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Dodaj Člana",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Učenici još nisu dodani",
+  "tapToAddMember": "Dodirni + za dodavanje člana",
+  "allMembers": "Svi Članovi",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Dodaj u sesiju",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Ukloni iz sesije",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Ime",
+  "nameRequired": "Molimo unesite ime",
+  "nicknameOptional": "Nadimak (opcionalno)",
+  "ageOptional": "Dob (opcionalno)",
+  "ageInvalid": "Molimo unesite valjanu dob",
+  "phoneNumberOptional": "Broj Telefona (opcionalno)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "npr. +385 12 345 678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Dodaj Člana",
+  "editMemberTitle": "Uredi Člana",
+  "member": "Član",
+  "nameLabel": "Ime: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Dob: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Telefon: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Predložak (opcionalno)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Nijedan",
+  "saveAsTemplate": "Spremi kao predložak",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Koristi ovu sesiju kao predložak za buduće sesije",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Naziv Predloška",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Naziv za identifikaciju ovog predloška",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Molimo unesite naziv predloška",
+  "defaultSessionTitle": "Zadani Naslov Sesije",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Naslov koji se koristi pri kreiranju sesija iz ovog predloška",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Molimo unesite naslov sesije",
+  "createTemplate": "Kreiraj Predložak",
+  "editTemplate": "Uredi Predložak",
+  "create": "Kreiraj",
+  "templateNameDialogTitle": "Naziv Predloška",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Dajte ovom predlošku naziv za lakšu identifikaciju",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Upravljanje Predlošcima",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Još nema predložaka",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Kreiraj sesiju i označi \"Spremi kao predložak\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Obriši Predložak",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Jeste li sigurni da želite obrisati \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Sesija: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Spremi kao Predložak",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Predložak \"{name}\" uspješno spremljen",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "OTKLANJANJE GREŠAKA",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Simulacija Datuma za Otklanjanje Grešaka",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Postavi Prilagođeni Datum",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Očisti",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Sada: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Danas",
+  "yesterday": "Jučer",
+  "tomorrow": "Sutra",
+  "daysAgo": "prije {count} dana",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "za {count} dana",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

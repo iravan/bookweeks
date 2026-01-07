@@ -1,0 +1,329 @@
+{
+  "@@locale": "km",
+  "appTitle": "ការកក់សប្តាហ៍",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "ជ្រើសរើសសប្តាហ៍",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "ច័ន្ទ",
+  "tue": "អង្គារ",
+  "wed": "ពុធ",
+  "thu": "ព្រហស្បតិ៍",
+  "fri": "សុក្រ",
+  "sat": "សៅរ៍",
+  "sun": "អាទិត្យ",
+  "noSessionsScheduled": "មិនមានសម័យប្រជុំត្រូវបានកំណត់ពេល",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "ចុចប៊ូតុង + ដើម្បីបន្ថែមសម័យប្រជុំ",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "សិស្ស",
+  "students": "សិស្ស",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "លុបសម័យប្រជុំ",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "តើអ្នកប្រាកដថាចង់លុប \"{title}\" ឬ?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "បោះបង់",
+  "delete": "លុប",
+  "createSession": "បង្កើតសម័យប្រជុំ",
+  "editSession": "កែសម្រួលសម័យប្រជុំ",
+  "title": "ចំណងជើង",
+  "titleRequired": "សូមបញ្ចូលចំណងជើង",
+  "startTime": "ពេលវេលាចាប់ផ្តើម",
+  "endTime": "ពេលវេលាបញ្ចប់",
+  "endTimeAfterStart": "ពេលវេលាបញ្ចប់ត្រូវតែក្រោយពេលវេលាចាប់ផ្តើម",
+  "descriptionOptional": "ការពិពណ៌នា (ជម្រើស)",
+  "save": "រក្សាទុក",
+  "add": "បន្ថែម",
+  "edit": "កែសម្រួល",
+  "allEvents": "ព្រឹត្តិការណ៍ទាំងអស់",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "គ្រប់គ្រងពុម្ព",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "នាំចេញទិន្នន័យ",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "នាំចូលទិន្នន័យ",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "រក្សាទុកឯកសារនាំចេញ",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "នាំចេញជោគជ័យ!\nបានរក្សាទុកទៅ: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "នាំចេញបរាជ័យ: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "នាំចូលជោគជ័យ",
+  "importFailed": "នាំចូលបរាជ័យ",
+  "errorReadingFile": "កំហុសក្នុងការអានឯកសារ",
+  "error": "កំហុស: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "យល់ព្រម",
+  "searchEvents": "ស្វែងរកព្រឹត្តិការណ៍...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "មិនមានព្រឹត្តិការណ៍ត្រូវបានកំណត់ពេល",
+  "noEventsFound": "រកមិនឃើញព្រឹត្តិការណ៍",
+  "createEventsFromCalendar": "បង្កើតព្រឹត្តិការណ៍ពីប្រតិទិន",
+  "studentsJoiningThisSession": "សិស្សដែលចូលរួមសម័យប្រជុំនេះ",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "បន្ថែមសមាជិក",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "មិនទាន់មានសិស្សត្រូវបានបន្ថែម",
+  "tapToAddMember": "ចុច + ដើម្បីបន្ថែមសមាជិក",
+  "allMembers": "សមាជិកទាំងអស់",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "បន្ថែមទៅសម័យប្រជុំ",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "ដកចេញពីសម័យប្រជុំ",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "ឈ្មោះ",
+  "nameRequired": "សូមបញ្ចូលឈ្មោះ",
+  "nicknameOptional": "ឈ្មោះហៅក្រៅ (ជម្រើស)",
+  "ageOptional": "អាយុ (ជម្រើស)",
+  "ageInvalid": "សូមបញ្ចូលអាយុដែលត្រឹមត្រូវ",
+  "phoneNumberOptional": "លេខទូរស័ព្ទ (ជម្រើស)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "ឧ. +855 12 345 678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "បន្ថែមសមាជិក",
+  "editMemberTitle": "កែសម្រួលសមាជិក",
+  "member": "សមាជិក",
+  "nameLabel": "ឈ្មោះ: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "អាយុ: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "ទូរស័ព្ទ: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "ពុម្ព (ជម្រើស)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "គ្មាន",
+  "saveAsTemplate": "រក្សាទុកជាពុម្ព",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "ប្រើប្រាស់សម័យប្រជុំនេះជាពុម្ពសម្រាប់សម័យប្រជុំនាពេលអនាគត",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "ឈ្មោះពុម្ព",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "ឈ្មោះដើម្បីកំណត់អត្តសញ្ញាណពុម្ពនេះ",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "សូមបញ្ចូលឈ្មោះពុម្ព",
+  "defaultSessionTitle": "ចំណងជើងសម័យប្រជុំលំនាំដើម",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "ចំណងជើងដែលប្រើប្រាស់នៅពេលបង្កើតសម័យប្រជុំពីពុម្ពនេះ",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "សូមបញ្ចូលចំណងជើងសម័យប្រជុំ",
+  "createTemplate": "បង្កើតពុម្ព",
+  "editTemplate": "កែសម្រួលពុម្ព",
+  "create": "បង្កើត",
+  "templateNameDialogTitle": "ឈ្មោះពុម្ព",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "ផ្តល់ឈ្មោះឱ្យពុម្ពនេះសម្រាប់ការកំណត់អត្តសញ្ញាណងាយស្រួល",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "គ្រប់គ្រងពុម្ព",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "មិនទាន់មានពុម្ព",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "បង្កើតសម័យប្រជុំមួយហើយជ្រើសរើស \"រក្សាទុកជាពុម្ព\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "លុបពុម្ព",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "តើអ្នកប្រាកដថាចង់លុប \"{title}\" ឬ?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "សម័យប្រជុំ: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "រក្សាទុកជាពុម្ព",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "ពុម្ព \"{name}\" ត្រូវបានរក្សាទុកដោយជោគជ័យ",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "កំហុស",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "ការធ្វើត្រាប់តាមកាលបរិច្ឆេទកំហុស",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "កំណត់កាលបរិច្ឆេទផ្ទាល់",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "សម្អាត",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "ឥឡូវនេះ: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "ថ្ងៃនេះ",
+  "yesterday": "ម្សិលមិញ",
+  "tomorrow": "ស្អែក",
+  "daysAgo": "{count} ថ្ងៃមុន",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} ថ្ងៃក្រោយ",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

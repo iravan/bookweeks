@@ -1,0 +1,337 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Russian (`ru`).
+class AppLocalizationsRu extends AppLocalizations {
+  AppLocalizationsRu([String locale = 'ru']) : super(locale);
+
+  @override
+  String get appTitle => 'Бронирование Недель';
+
+  @override
+  String get selectWeek => 'Выбрать Неделю';
+
+  @override
+  String get mon => 'Пн';
+
+  @override
+  String get tue => 'Вт';
+
+  @override
+  String get wed => 'Ср';
+
+  @override
+  String get thu => 'Чт';
+
+  @override
+  String get fri => 'Пт';
+
+  @override
+  String get sat => 'Сб';
+
+  @override
+  String get sun => 'Вс';
+
+  @override
+  String get noSessionsScheduled => 'Нет запланированных сессий';
+
+  @override
+  String get tapToAddSession => 'Нажмите кнопку +, чтобы добавить сессию';
+
+  @override
+  String student(int count) {
+    return 'студент';
+  }
+
+  @override
+  String students(int count) {
+    return 'студентов';
+  }
+
+  @override
+  String get deleteSession => 'Удалить Сессию';
+
+  @override
+  String deleteSessionConfirm(String title) {
+    return 'Вы уверены, что хотите удалить «$title»?';
+  }
+
+  @override
+  String get cancel => 'Отмена';
+
+  @override
+  String get delete => 'Удалить';
+
+  @override
+  String get createSession => 'Создать Сессию';
+
+  @override
+  String get editSession => 'Редактировать Сессию';
+
+  @override
+  String get title => 'Название';
+
+  @override
+  String get titleRequired => 'Пожалуйста, введите название';
+
+  @override
+  String get startTime => 'Время Начала';
+
+  @override
+  String get endTime => 'Время Окончания';
+
+  @override
+  String get endTimeAfterStart =>
+      'Время окончания должно быть позже времени начала';
+
+  @override
+  String get descriptionOptional => 'Описание (необязательно)';
+
+  @override
+  String get save => 'Сохранить';
+
+  @override
+  String get add => 'Добавить';
+
+  @override
+  String get edit => 'Редактировать';
+
+  @override
+  String get allEvents => 'Все События';
+
+  @override
+  String get manageTemplates => 'Управление Шаблонами';
+
+  @override
+  String get exportData => 'Экспорт Данных';
+
+  @override
+  String get importData => 'Импорт Данных';
+
+  @override
+  String get saveExportFile => 'Сохранить Файл Экспорта';
+
+  @override
+  String exportSuccessful(String path) {
+    return 'Экспорт успешен!\nСохранено в: $path';
+  }
+
+  @override
+  String exportFailed(String error) {
+    return 'Ошибка экспорта: $error';
+  }
+
+  @override
+  String get importSuccessful => 'Импорт Успешен';
+
+  @override
+  String get importFailed => 'Ошибка Импорта';
+
+  @override
+  String get errorReadingFile => 'Ошибка при чтении файла';
+
+  @override
+  String error(String error) {
+    return 'Ошибка: $error';
+  }
+
+  @override
+  String get ok => 'ОК';
+
+  @override
+  String get searchEvents => 'Поиск событий...';
+
+  @override
+  String get noEventsScheduled => 'Нет запланированных событий';
+
+  @override
+  String get noEventsFound => 'События не найдены';
+
+  @override
+  String get createEventsFromCalendar => 'Создать события из календаря';
+
+  @override
+  String get studentsJoiningThisSession =>
+      'Студенты, Участвующие в Этой Сессии';
+
+  @override
+  String get addMember => 'Добавить Участника';
+
+  @override
+  String get noStudentsAddedYet => 'Студенты еще не добавлены';
+
+  @override
+  String get tapToAddMember => 'Нажмите +, чтобы добавить участника';
+
+  @override
+  String get allMembers => 'Все Участники';
+
+  @override
+  String get addToSession => 'Добавить в сессию';
+
+  @override
+  String get removeFromSession => 'Удалить из сессии';
+
+  @override
+  String get name => 'Имя';
+
+  @override
+  String get nameRequired => 'Пожалуйста, введите имя';
+
+  @override
+  String get nicknameOptional => 'Прозвище (необязательно)';
+
+  @override
+  String get ageOptional => 'Возраст (необязательно)';
+
+  @override
+  String get ageInvalid => 'Пожалуйста, введите действительный возраст';
+
+  @override
+  String get phoneNumberOptional => 'Номер Телефона (необязательно)';
+
+  @override
+  String get phoneNumberHint => 'например: +7 912 345 67 89';
+
+  @override
+  String get addMemberTitle => 'Добавить Участника';
+
+  @override
+  String get editMemberTitle => 'Редактировать Участника';
+
+  @override
+  String get member => 'Участник';
+
+  @override
+  String nameLabel(String name) {
+    return 'Имя: $name';
+  }
+
+  @override
+  String ageLabel(int age) {
+    return 'Возраст: $age';
+  }
+
+  @override
+  String phoneLabel(String phone) {
+    return 'Телефон: $phone';
+  }
+
+  @override
+  String get templateOptional => 'Шаблон (необязательно)';
+
+  @override
+  String get none => 'Нет';
+
+  @override
+  String get saveAsTemplate => 'Сохранить как шаблон';
+
+  @override
+  String get saveAsTemplateSubtitle =>
+      'Использовать эту сессию как шаблон для будущих сессий';
+
+  @override
+  String get templateName => 'Название Шаблона';
+
+  @override
+  String get templateNameHelper => 'Название для идентификации этого шаблона';
+
+  @override
+  String get templateNameRequired => 'Пожалуйста, введите название шаблона';
+
+  @override
+  String get defaultSessionTitle => 'Название Сессии по Умолчанию';
+
+  @override
+  String get defaultSessionTitleHelper =>
+      'Название, используемое при создании сессий из этого шаблона';
+
+  @override
+  String get sessionTitleRequired => 'Пожалуйста, введите название сессии';
+
+  @override
+  String get createTemplate => 'Создать Шаблон';
+
+  @override
+  String get editTemplate => 'Редактировать Шаблон';
+
+  @override
+  String get create => 'Создать';
+
+  @override
+  String get templateNameDialogTitle => 'Название Шаблона';
+
+  @override
+  String get templateNameDialogHelper =>
+      'Дайте этому шаблону название для легкой идентификации';
+
+  @override
+  String get templateManagement => 'Управление Шаблонами';
+
+  @override
+  String get noTemplatesYet => 'Пока нет шаблонов';
+
+  @override
+  String get createSessionAndSaveAsTemplate =>
+      'Создайте сессию и отметьте «Сохранить как шаблон»';
+
+  @override
+  String get deleteTemplate => 'Удалить Шаблон';
+
+  @override
+  String deleteTemplateConfirm(String title) {
+    return 'Вы уверены, что хотите удалить «$title»?';
+  }
+
+  @override
+  String session(String title) {
+    return 'Сессия: $title';
+  }
+
+  @override
+  String get saveAsTemplateTooltip => 'Сохранить как шаблон';
+
+  @override
+  String templateSavedSuccessfully(String name) {
+    return 'Шаблон «$name» успешно сохранен';
+  }
+
+  @override
+  String get debug => 'ОТЛАДКА';
+
+  @override
+  String get debugDateSimulation => 'Симуляция Даты Отладки';
+
+  @override
+  String get setCustomDate => 'Установить Пользовательскую Дату';
+
+  @override
+  String get clear => 'Очистить';
+
+  @override
+  String now(String date) {
+    return 'Сейчас: $date';
+  }
+
+  @override
+  String get today => 'Сегодня';
+
+  @override
+  String get yesterday => 'Вчера';
+
+  @override
+  String get tomorrow => 'Завтра';
+
+  @override
+  String daysAgo(int count) {
+    return '$count дней назад';
+  }
+
+  @override
+  String daysLater(int count) {
+    return 'Через $count дней';
+  }
+}

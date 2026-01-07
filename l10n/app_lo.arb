@@ -1,0 +1,329 @@
+{
+  "@@locale": "lo",
+  "appTitle": "ຈອງອາທິດ",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "ເລືອກອາທິດ",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "ຈັນ",
+  "tue": "ອັງຄານ",
+  "wed": "ພຸດ",
+  "thu": "ພະຫັດ",
+  "fri": "ສຸກ",
+  "sat": "ເສົາ",
+  "sun": "ອາທິດ",
+  "noSessionsScheduled": "ບໍ່ມີການນັດພົບທີ່ກຳນົດໄວ້",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "ແຕະປຸ່ມ + ເພື່ອເພີ່ມການນັດພົບ",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "ນັກຮຽນ",
+  "students": "ນັກຮຽນ",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "ລຶບການນັດພົບ",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບ \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "ຍົກເລີກ",
+  "delete": "ລຶບ",
+  "createSession": "ສ້າງການນັດພົບ",
+  "editSession": "ແກ້ໄຂການນັດພົບ",
+  "title": "ຫົວຂໍ້",
+  "titleRequired": "ກະລຸນາໃສ່ຫົວຂໍ້",
+  "startTime": "ເວລາເລີ່ມຕົ້ນ",
+  "endTime": "ເວລາສິ້ນສຸດ",
+  "endTimeAfterStart": "ເວລາສິ້ນສຸດຕ້ອງຫຼັງເວລາເລີ່ມຕົ້ນ",
+  "descriptionOptional": "ລາຍລະອຽດ (ທາງເລືອກ)",
+  "save": "ບັນທຶກ",
+  "add": "ເພີ່ມ",
+  "edit": "ແກ້ໄຂ",
+  "allEvents": "ເຫດການທັງໝົດ",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "ຈັດການແມ່ແບບ",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "ສົ່ງອອກຂໍ້ມູນ",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "ນຳເຂົ້າຂໍ້ມູນ",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "ບັນທຶກໄຟລ໌ສົ່ງອອກ",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "ສົ່ງອອກສຳເລັດ!\nບັນທຶກໄວ້ທີ່: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "ສົ່ງອອກບໍ່ສຳເລັດ: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "ນຳເຂົ້າສຳເລັດ",
+  "importFailed": "ນຳເຂົ້າບໍ່ສຳເລັດ",
+  "errorReadingFile": "ຂໍ້ຜິດພາດໃນການອ່ານໄຟລ໌",
+  "error": "ຂໍ້ຜິດພາດ: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ຕົກລົງ",
+  "searchEvents": "ຄົ້ນຫາເຫດການ...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "ບໍ່ມີເຫດການທີ່ກຳນົດໄວ້",
+  "noEventsFound": "ບໍ່ພົບເຫດການ",
+  "createEventsFromCalendar": "ສ້າງເຫດການຈາກປະຕິທິນ",
+  "studentsJoiningThisSession": "ນັກຮຽນທີ່ເຂົ້າຮ່ວມການນັດພົບນີ້",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "ເພີ່ມສະມາຊິກ",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "ຍັງບໍ່ໄດ້ເພີ່ມນັກຮຽນ",
+  "tapToAddMember": "ແຕະ + ເພື່ອເພີ່ມສະມາຊິກ",
+  "allMembers": "ສະມາຊິກທັງໝົດ",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "ເພີ່ມເຂົ້າການນັດພົບ",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "ລຶບອອກຈາກການນັດພົບ",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "ຊື່",
+  "nameRequired": "ກະລຸນາໃສ່ຊື່",
+  "nicknameOptional": "ຊື່ຫຼິ້ນ (ທາງເລືອກ)",
+  "ageOptional": "ອາຍຸ (ທາງເລືອກ)",
+  "ageInvalid": "ກະລຸນາໃສ່ອາຍຸທີ່ຖືກຕ້ອງ",
+  "phoneNumberOptional": "ເບີໂທລະສັບ (ທາງເລືອກ)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "ຕົວຢ່າງ: +856 20 1234 5678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "ເພີ່ມສະມາຊິກ",
+  "editMemberTitle": "ແກ້ໄຂສະມາຊິກ",
+  "member": "ສະມາຊິກ",
+  "nameLabel": "ຊື່: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "ອາຍຸ: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "ໂທລະສັບ: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "ແມ່ແບບ (ທາງເລືອກ)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "ບໍ່ມີ",
+  "saveAsTemplate": "ບັນທຶກເປັນແມ່ແບບ",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "ໃຊ້ການນັດພົບນີ້ເປັນແມ່ແບບສຳລັບການນັດພົບໃນອະນາຄົດ",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "ຊື່ແມ່ແບບ",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "ຊື່ເພື່ອກຳນົດແມ່ແບບນີ້",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "ກະລຸນາໃສ່ຊື່ແມ່ແບບ",
+  "defaultSessionTitle": "ຫົວຂໍ້ການນັດພົບເລີ່ມຕົ້ນ",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "ຫົວຂໍ້ທີ່ໃຊ້ເມື່ອສ້າງການນັດພົບຈາກແມ່ແບບນີ້",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "ກະລຸນາໃສ່ຫົວຂໍ້ການນັດພົບ",
+  "createTemplate": "ສ້າງແມ່ແບບ",
+  "editTemplate": "ແກ້ໄຂແມ່ແບບ",
+  "create": "ສ້າງ",
+  "templateNameDialogTitle": "ຊື່ແມ່ແບບ",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "ໃຫ້ຊື່ແມ່ແບບນີ້ເພື່ອກຳນົດງ່າຍ",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "ການຈັດການແມ່ແບບ",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "ຍັງບໍ່ມີແມ່ແບບ",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "ສ້າງການນັດພົບແລະເລືອກ \"ບັນທຶກເປັນແມ່ແບບ\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "ລຶບແມ່ແບບ",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບ \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "ການນັດພົບ: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "ບັນທຶກເປັນແມ່ແບບ",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "ແມ່ແບບ \"{name}\" ບັນທຶກສຳເລັດແລ້ວ",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ດີບັກ",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "ການຈຳລອງວັນທີດີບັກ",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "ຕັ້ງວັນທີແບບກຳນົດເອງ",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "ລ້າງ",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "ດຽວນີ້: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "ມື້ນີ້",
+  "yesterday": "ມື້ວານ",
+  "tomorrow": "ມື້ອື່ນ",
+  "daysAgo": "{count} ມື້ກ່ອນໜ້ານີ້",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "ໃນ {count} ມື້ຂ້າງໜ້າ",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

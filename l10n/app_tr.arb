@@ -1,0 +1,329 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Hafta Rezervasyonu",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Hafta Seç",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Pzt",
+  "tue": "Sal",
+  "wed": "Çar",
+  "thu": "Per",
+  "fri": "Cum",
+  "sat": "Cmt",
+  "sun": "Paz",
+  "noSessionsScheduled": "Planlanmış oturum yok",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Oturum eklemek için + düğmesine dokunun",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "öğrenci",
+  "students": "öğrenci",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Oturumu Sil",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "\"{title}\" oturumunu silmek istediğinizden emin misiniz?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "İptal",
+  "delete": "Sil",
+  "createSession": "Oturum Oluştur",
+  "editSession": "Oturumu Düzenle",
+  "title": "Başlık",
+  "titleRequired": "Lütfen bir başlık girin",
+  "startTime": "Başlangıç Saati",
+  "endTime": "Bitiş Saati",
+  "endTimeAfterStart": "Bitiş saati başlangıç saatinden sonra olmalıdır",
+  "descriptionOptional": "Açıklama (isteğe bağlı)",
+  "save": "Kaydet",
+  "add": "Ekle",
+  "edit": "Düzenle",
+  "allEvents": "Tüm Etkinlikler",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Şablonları Yönet",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Verileri Dışa Aktar",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Verileri İçe Aktar",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Dışa Aktarma Dosyasını Kaydet",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Dışa aktarma başarılı!\nKaydedildi: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Dışa aktarma başarısız: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "İçe Aktarma Başarılı",
+  "importFailed": "İçe Aktarma Başarısız",
+  "errorReadingFile": "Dosya okuma hatası",
+  "error": "Hata: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "Tamam",
+  "searchEvents": "Etkinlik ara...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Planlanmış etkinlik yok",
+  "noEventsFound": "Etkinlik bulunamadı",
+  "createEventsFromCalendar": "Takvimden etkinlik oluştur",
+  "studentsJoiningThisSession": "Bu Oturuma Katılan Öğrenciler",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Üye Ekle",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Henüz öğrenci eklenmedi",
+  "tapToAddMember": "Üye eklemek için + dokunun",
+  "allMembers": "Tüm Üyeler",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Oturuma ekle",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Oturumdan çıkar",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "İsim",
+  "nameRequired": "Lütfen bir isim girin",
+  "nicknameOptional": "Takma ad (isteğe bağlı)",
+  "ageOptional": "Yaş (isteğe bağlı)",
+  "ageInvalid": "Lütfen geçerli bir yaş girin",
+  "phoneNumberOptional": "Telefon Numarası (isteğe bağlı)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "örn: +90 212 123 4567",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Üye Ekle",
+  "editMemberTitle": "Üyeyi Düzenle",
+  "member": "Üye",
+  "nameLabel": "İsim: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Yaş: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Telefon: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Şablon (isteğe bağlı)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Yok",
+  "saveAsTemplate": "Şablon olarak kaydet",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Bu oturumu gelecekteki oturumlar için şablon olarak kullan",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Şablon Adı",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Bu şablonu tanımlamak için ad",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Lütfen bir şablon adı girin",
+  "defaultSessionTitle": "Varsayılan Oturum Başlığı",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Bu şablondan oturum oluştururken kullanılan başlık",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Lütfen bir oturum başlığı girin",
+  "createTemplate": "Şablon Oluştur",
+  "editTemplate": "Şablonu Düzenle",
+  "create": "Oluştur",
+  "templateNameDialogTitle": "Şablon Adı",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Kolay tanımlama için bu şablona bir ad verin",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Şablon Yönetimi",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Henüz şablon yok",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Bir oturum oluşturun ve \"Şablon olarak kaydet\" seçeneğini işaretleyin",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Şablonu Sil",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "\"{title}\" şablonunu silmek istediğinizden emin misiniz?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Oturum: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Şablon Olarak Kaydet",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Şablon \"{name}\" başarıyla kaydedildi",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "HATA AYIKLAMA",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Hata Ayıklama Tarih Simülasyonu",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Özel Tarih Ayarla",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Temizle",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Şimdi: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Bugün",
+  "yesterday": "Dün",
+  "tomorrow": "Yarın",
+  "daysAgo": "{count} gün önce",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} gün sonra",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

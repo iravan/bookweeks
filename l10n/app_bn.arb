@@ -1,0 +1,329 @@
+{
+  "@@locale": "bn",
+  "appTitle": "সপ্তাহ বুকিং",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "সপ্তাহ নির্বাচন করুন",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "সোম",
+  "tue": "মঙ্গল",
+  "wed": "বুধ",
+  "thu": "বৃহস্পতি",
+  "fri": "শুক্র",
+  "sat": "শনি",
+  "sun": "রবি",
+  "noSessionsScheduled": "কোন সেশন নির্ধারিত নেই",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "সেশন যোগ করতে + বোতাম ট্যাপ করুন",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "ছাত্র",
+  "students": "ছাত্র",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "সেশন মুছুন",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "আপনি কি নিশ্চিত যে \"{title}\" মুছতে চান?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "বাতিল",
+  "delete": "মুছুন",
+  "createSession": "সেশন তৈরি করুন",
+  "editSession": "সেশন সম্পাদনা করুন",
+  "title": "শিরোনাম",
+  "titleRequired": "অনুগ্রহ করে একটি শিরোনাম লিখুন",
+  "startTime": "শুরুর সময়",
+  "endTime": "শেষের সময়",
+  "endTimeAfterStart": "শেষের সময় শুরুর সময়ের পরে হতে হবে",
+  "descriptionOptional": "বিবরণ (ঐচ্ছিক)",
+  "save": "সংরক্ষণ করুন",
+  "add": "যোগ করুন",
+  "edit": "সম্পাদনা করুন",
+  "allEvents": "সব ইভেন্ট",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "টেমপ্লেট পরিচালনা করুন",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "ডেটা রপ্তানি করুন",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "ডেটা আমদানি করুন",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "রপ্তানি ফাইল সংরক্ষণ করুন",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "রপ্তানি সফল!\nসংরক্ষিত: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "রপ্তানি ব্যর্থ: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "আমদানি সফল",
+  "importFailed": "আমদানি ব্যর্থ",
+  "errorReadingFile": "ফাইল পড়তে ত্রুটি",
+  "error": "ত্রুটি: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ঠিক আছে",
+  "searchEvents": "ইভেন্ট খুঁজুন...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "কোন ইভেন্ট নির্ধারিত নেই",
+  "noEventsFound": "কোন ইভেন্ট পাওয়া যায়নি",
+  "createEventsFromCalendar": "ক্যালেন্ডার থেকে ইভেন্ট তৈরি করুন",
+  "studentsJoiningThisSession": "এই সেশনে যোগদানকারী ছাত্র",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "সদস্য যোগ করুন",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "এখনও কোন ছাত্র যোগ করা হয়নি",
+  "tapToAddMember": "+ ট্যাপ করে সদস্য যোগ করুন",
+  "allMembers": "সব সদস্য",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "সেশনে যোগ করুন",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "সেশন থেকে সরান",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "নাম",
+  "nameRequired": "অনুগ্রহ করে একটি নাম লিখুন",
+  "nicknameOptional": "ডাকনাম (ঐচ্ছিক)",
+  "ageOptional": "বয়স (ঐচ্ছিক)",
+  "ageInvalid": "অনুগ্রহ করে একটি বৈধ বয়স লিখুন",
+  "phoneNumberOptional": "ফোন নম্বর (ঐচ্ছিক)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "যেমন: +91 98765 43210",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "সদস্য যোগ করুন",
+  "editMemberTitle": "সদস্য সম্পাদনা করুন",
+  "member": "সদস্য",
+  "nameLabel": "নাম: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "বয়স: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "ফোন: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "টেমপ্লেট (ঐচ্ছিক)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "কোনটিই নয়",
+  "saveAsTemplate": "টেমপ্লেট হিসাবে সংরক্ষণ করুন",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "ভবিষ্যতের সেশনের জন্য এই সেশনটি টেমপ্লেট হিসাবে ব্যবহার করুন",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "টেমপ্লেট নাম",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "এই টেমপ্লেট সনাক্ত করার জন্য নাম",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "অনুগ্রহ করে একটি টেমপ্লেট নাম লিখুন",
+  "defaultSessionTitle": "ডিফল্ট সেশন শিরোনাম",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "এই টেমপ্লেট থেকে সেশন তৈরি করার সময় ব্যবহৃত শিরোনাম",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "অনুগ্রহ করে একটি সেশন শিরোনাম লিখুন",
+  "createTemplate": "টেমপ্লেট তৈরি করুন",
+  "editTemplate": "টেমপ্লেট সম্পাদনা করুন",
+  "create": "তৈরি করুন",
+  "templateNameDialogTitle": "টেমপ্লেট নাম",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "সহজ সনাক্তকরণের জন্য এই টেমপ্লেটটিকে একটি নাম দিন",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "টেমপ্লেট পরিচালনা",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "এখনও কোন টেমপ্লেট নেই",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "একটি সেশন তৈরি করুন এবং \"টেমপ্লেট হিসাবে সংরক্ষণ করুন\" চেক করুন",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "টেমপ্লেট মুছুন",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "আপনি কি নিশ্চিত যে \"{title}\" মুছতে চান?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "সেশন: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "টেমপ্লেট হিসাবে সংরক্ষণ করুন",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "টেমপ্লেট \"{name}\" সফলভাবে সংরক্ষিত হয়েছে",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ডিবাগ",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "ডিবাগ তারিখ সিমুলেশন",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "কাস্টম তারিখ সেট করুন",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "পরিষ্কার করুন",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "এখন: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "আজ",
+  "yesterday": "গতকাল",
+  "tomorrow": "আগামীকাল",
+  "daysAgo": "{count} দিন আগে",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} দিন পরে",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

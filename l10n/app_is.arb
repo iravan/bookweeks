@@ -1,0 +1,329 @@
+{
+  "@@locale": "is",
+  "appTitle": "Bóka Vikur",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Veldu Viku",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Mán",
+  "tue": "Þri",
+  "wed": "Mið",
+  "thu": "Fim",
+  "fri": "Fös",
+  "sat": "Lau",
+  "sun": "Sun",
+  "noSessionsScheduled": "Engar fundir áætlaðir",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Smelltu á + hnappinn til að bæta við fundi",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "nemandi",
+  "students": "nemendur",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Eyða Fundi",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Ertu viss um að þú viljir eyða \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Hætta við",
+  "delete": "Eyða",
+  "createSession": "Búa til Fund",
+  "editSession": "Breyta Fundi",
+  "title": "Titill",
+  "titleRequired": "Vinsamlegast sláðu inn titil",
+  "startTime": "Upphafstími",
+  "endTime": "Lokatími",
+  "endTimeAfterStart": "Lokatíminn verður að vera eftir upphafstímann",
+  "descriptionOptional": "Lýsing (valfrjálst)",
+  "save": "Vista",
+  "add": "Bæta við",
+  "edit": "Breyta",
+  "allEvents": "Allir Viðburðir",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Stjórna Sniðmátum",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Flytja út Gögn",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Flytja inn Gögn",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Vista Útflutningsskrá",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Útflutningur tókst!\nVistað í: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Útflutningur mistókst: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Innflutningur Tókst",
+  "importFailed": "Innflutningur Mistókst",
+  "errorReadingFile": "Villa við að lesa skrá",
+  "error": "Villa: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "Í lagi",
+  "searchEvents": "Leita að viðburðum...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Engir viðburðir áætlaðir",
+  "noEventsFound": "Engir viðburðir fundust",
+  "createEventsFromCalendar": "Búa til viðburði úr dagatali",
+  "studentsJoiningThisSession": "Nemendur sem Taka Þátt í Þessum Fundi",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Bæta við Meðlimi",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Engir nemendur hafa verið bættir við enn",
+  "tapToAddMember": "Smelltu á + til að bæta við meðlimi",
+  "allMembers": "Allir Meðlimir",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Bæta við fundi",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Fjarlægja úr fundi",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Nafn",
+  "nameRequired": "Vinsamlegast sláðu inn nafn",
+  "nicknameOptional": "Gælunafn (valfrjálst)",
+  "ageOptional": "Aldur (valfrjálst)",
+  "ageInvalid": "Vinsamlegast sláðu inn gildan aldur",
+  "phoneNumberOptional": "Símanúmer (valfrjálst)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "t.d. +354 123 4567",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Bæta við Meðlimi",
+  "editMemberTitle": "Breyta Meðlimi",
+  "member": "Meðlimur",
+  "nameLabel": "Nafn: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Aldur: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Sími: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Sniðmát (valfrjálst)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Ekkert",
+  "saveAsTemplate": "Vista sem sniðmát",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Nota þennan fund sem sniðmát fyrir framtíðarfundi",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Heiti Sniðmáts",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Heiti til að auðkenna þetta sniðmát",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Vinsamlegast sláðu inn heiti sniðmáts",
+  "defaultSessionTitle": "Sjálfgefinn Titill Fundar",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Titill sem notaður er þegar fundir eru búnir til úr þessu sniðmáti",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Vinsamlegast sláðu inn titil fundar",
+  "createTemplate": "Búa til Sniðmát",
+  "editTemplate": "Breyta Sniðmáti",
+  "create": "Búa til",
+  "templateNameDialogTitle": "Heiti Sniðmáts",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Gefðu þessu sniðmáti nafn til auðkenningar",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Stjórnun Sniðmáta",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Engin sniðmát enn",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Búðu til fund og merktu \"Vista sem sniðmát\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Eyða Sniðmáti",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Ertu viss um að þú viljir eyða \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Fundur: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Vista sem Sniðmát",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Sniðmátið \"{name}\" var vistað með góðum árangri",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "VILLULEIT",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Dagsetningarsimulering fyrir Villuleit",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Setja Sérsniðna Dagsetningu",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Hreinsa",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Núna: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Í dag",
+  "yesterday": "Í gær",
+  "tomorrow": "Á morgun",
+  "daysAgo": "fyrir {count} dögum",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "eftir {count} daga",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

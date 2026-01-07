@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session.dart';
 import '../services/session_service.dart';
 import 'session_dialog.dart';
@@ -55,22 +56,18 @@ class _EventsListPageState extends State<EventsListPage> {
   }
 
   String _formatDate(DateTime date) {
-    const months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec'
+    final l10n = AppLocalizations.of(context)!;
+    final days = [
+      l10n.mon,
+      l10n.tue,
+      l10n.wed,
+      l10n.thu,
+      l10n.fri,
+      l10n.sat,
+      l10n.sun,
     ];
-    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    return '${days[date.weekday - 1]}, ${date.day} ${months[date.month - 1]} ${date.year}';
+    // Use Intl for month names - for now, use numeric format
+    return '${days[date.weekday - 1]}, ${date.day}/${date.month}/${date.year}';
   }
 
   String _formatTime(DateTime date) {
@@ -111,15 +108,15 @@ class _EventsListPageState extends State<EventsListPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        title: const Text(
-          'Delete Session',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: Text(
+          AppLocalizations.of(context)!.deleteSession,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
-        content: Text('Are you sure you want to delete "${session.title}"?'),
+        content: Text(AppLocalizations.of(context)!.deleteSessionConfirm(session.title)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () async {
@@ -129,9 +126,9 @@ class _EventsListPageState extends State<EventsListPage> {
                 _loadAllSessions();
               }
             },
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: Colors.red),
+            child: Text(
+              AppLocalizations.of(context)!.delete,
+              style: const TextStyle(color: Colors.red),
             ),
           ),
         ],
@@ -143,9 +140,9 @@ class _EventsListPageState extends State<EventsListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'All Events',
-          style: TextStyle(fontWeight: FontWeight.w600),
+        title: Text(
+          AppLocalizations.of(context)!.allEvents,
+          style: const TextStyle(fontWeight: FontWeight.w600),
         ),
       ),
       body: SafeArea(
@@ -157,7 +154,7 @@ class _EventsListPageState extends State<EventsListPage> {
               child: TextField(
                 controller: _searchController,
                 decoration: InputDecoration(
-                  hintText: 'Search events...',
+                  hintText: AppLocalizations.of(context)!.searchEvents,
                   prefixIcon: const Icon(Icons.search),
                   suffixIcon: _searchController.text.isNotEmpty
                       ? IconButton(
@@ -203,8 +200,8 @@ class _EventsListPageState extends State<EventsListPage> {
                         const SizedBox(height: 24),
                         Text(
                           _searchController.text.isEmpty
-                              ? 'No events scheduled'
-                              : 'No events found',
+                              ? AppLocalizations.of(context)!.noEventsScheduled
+                              : AppLocalizations.of(context)!.noEventsFound,
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
@@ -215,7 +212,7 @@ class _EventsListPageState extends State<EventsListPage> {
                           Padding(
                             padding: const EdgeInsets.only(top: 8),
                             child: Text(
-                              'Create events from the calendar',
+                              AppLocalizations.of(context)!.createEventsFromCalendar,
                               style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.grey.shade500,
@@ -335,7 +332,7 @@ class _EventsListPageState extends State<EventsListPage> {
                                         ),
                                         const SizedBox(width: 6),
                                         Text(
-                                          '$studentCount ${studentCount == 1 ? 'student' : 'students'}',
+                                          '$studentCount ${studentCount == 1 ? AppLocalizations.of(context)!.student(studentCount) : AppLocalizations.of(context)!.students(studentCount)}',
                                           style: TextStyle(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,

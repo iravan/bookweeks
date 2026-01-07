@@ -1,0 +1,329 @@
+{
+  "@@locale": "zh",
+  "appTitle": "週次預約",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "選擇週次",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "週一",
+  "tue": "週二",
+  "wed": "週三",
+  "thu": "週四",
+  "fri": "週五",
+  "sat": "週六",
+  "sun": "週日",
+  "noSessionsScheduled": "沒有排定的課程",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "點擊 + 按鈕新增課程",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "學生",
+  "students": "學生",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "刪除課程",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "確定要刪除「{title}」嗎？",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "取消",
+  "delete": "刪除",
+  "createSession": "建立課程",
+  "editSession": "編輯課程",
+  "title": "標題",
+  "titleRequired": "請輸入標題",
+  "startTime": "開始時間",
+  "endTime": "結束時間",
+  "endTimeAfterStart": "結束時間必須晚於開始時間",
+  "descriptionOptional": "描述（選填）",
+  "save": "儲存",
+  "add": "新增",
+  "edit": "編輯",
+  "allEvents": "所有活動",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "管理範本",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "匯出資料",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "匯入資料",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "儲存匯出檔案",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "匯出成功！\n已儲存至：{path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "匯出失敗：{error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "匯入成功",
+  "importFailed": "匯入失敗",
+  "errorReadingFile": "讀取檔案時發生錯誤",
+  "error": "錯誤：{error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "確定",
+  "searchEvents": "搜尋活動...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "沒有排定的活動",
+  "noEventsFound": "找不到活動",
+  "createEventsFromCalendar": "從日曆建立活動",
+  "studentsJoiningThisSession": "參加此課程的學生",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "新增成員",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "尚未新增學生",
+  "tapToAddMember": "點擊 + 新增成員",
+  "allMembers": "所有成員",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "加入課程",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "從課程移除",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "姓名",
+  "nameRequired": "請輸入姓名",
+  "nicknameOptional": "暱稱（選填）",
+  "ageOptional": "年齡（選填）",
+  "ageInvalid": "請輸入有效的年齡",
+  "phoneNumberOptional": "電話號碼（選填）",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "例如：+886 912 345 678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "新增成員",
+  "editMemberTitle": "編輯成員",
+  "member": "成員",
+  "nameLabel": "姓名：{name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "年齡：{age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "電話：{phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "範本（選填）",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "無",
+  "saveAsTemplate": "儲存為範本",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "將此課程作為未來課程的範本",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "範本名稱",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "用於識別此範本的名稱",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "請輸入範本名稱",
+  "defaultSessionTitle": "預設課程標題",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "使用此範本建立課程時使用的標題",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "請輸入課程標題",
+  "createTemplate": "建立範本",
+  "editTemplate": "編輯範本",
+  "create": "建立",
+  "templateNameDialogTitle": "範本名稱",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "為此範本命名以便識別",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "範本管理",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "尚無範本",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "建立課程並勾選「儲存為範本」",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "刪除範本",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "確定要刪除「{title}」嗎？",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "課程：{title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "儲存為範本",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "範本「{name}」已成功儲存",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "除錯",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "除錯日期模擬",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "設定自訂日期",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "清除",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "現在：{date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "今天",
+  "yesterday": "昨天",
+  "tomorrow": "明天",
+  "daysAgo": "{count} 天前",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} 天後",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

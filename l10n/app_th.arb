@@ -1,0 +1,329 @@
+{
+  "@@locale": "th",
+  "appTitle": "จองสัปดาห์",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "เลือกสัปดาห์",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "จันทร์",
+  "tue": "อังคาร",
+  "wed": "พุธ",
+  "thu": "พฤหัสบดี",
+  "fri": "ศุกร์",
+  "sat": "เสาร์",
+  "sun": "อาทิตย์",
+  "noSessionsScheduled": "ไม่มีเซสชันที่กำหนดไว้",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "แตะปุ่ม + เพื่อเพิ่มเซสชัน",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "นักเรียน",
+  "students": "นักเรียน",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "ลบเซสชัน",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบ \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "ยกเลิก",
+  "delete": "ลบ",
+  "createSession": "สร้างเซสชัน",
+  "editSession": "แก้ไขเซสชัน",
+  "title": "หัวข้อ",
+  "titleRequired": "กรุณากรอกหัวข้อ",
+  "startTime": "เวลาเริ่มต้น",
+  "endTime": "เวลาสิ้นสุด",
+  "endTimeAfterStart": "เวลาสิ้นสุดต้องอยู่หลังเวลาเริ่มต้น",
+  "descriptionOptional": "คำอธิบาย (ไม่บังคับ)",
+  "save": "บันทึก",
+  "add": "เพิ่ม",
+  "edit": "แก้ไข",
+  "allEvents": "กิจกรรมทั้งหมด",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "จัดการเทมเพลต",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "ส่งออกข้อมูล",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "นำเข้าข้อมูล",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "บันทึกไฟล์ส่งออก",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "ส่งออกสำเร็จ!\nบันทึกไว้ที่: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "ส่งออกล้มเหลว: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "นำเข้าสำเร็จ",
+  "importFailed": "นำเข้าล้มเหลว",
+  "errorReadingFile": "เกิดข้อผิดพลาดในการอ่านไฟล์",
+  "error": "ข้อผิดพลาด: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ตกลง",
+  "searchEvents": "ค้นหากิจกรรม...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "ไม่มีกิจกรรมที่กำหนดไว้",
+  "noEventsFound": "ไม่พบกิจกรรม",
+  "createEventsFromCalendar": "สร้างกิจกรรมจากปฏิทิน",
+  "studentsJoiningThisSession": "นักเรียนที่เข้าร่วมเซสชันนี้",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "เพิ่มสมาชิก",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "ยังไม่ได้เพิ่มนักเรียน",
+  "tapToAddMember": "แตะ + เพื่อเพิ่มสมาชิก",
+  "allMembers": "สมาชิกทั้งหมด",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "เพิ่มในเซสชัน",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "ลบออกจากเซสชัน",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "ชื่อ",
+  "nameRequired": "กรุณากรอกชื่อ",
+  "nicknameOptional": "ชื่อเล่น (ไม่บังคับ)",
+  "ageOptional": "อายุ (ไม่บังคับ)",
+  "ageInvalid": "กรุณากรอกอายุที่ถูกต้อง",
+  "phoneNumberOptional": "หมายเลขโทรศัพท์ (ไม่บังคับ)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "เช่น: +66 81 234 5678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "เพิ่มสมาชิก",
+  "editMemberTitle": "แก้ไขสมาชิก",
+  "member": "สมาชิก",
+  "nameLabel": "ชื่อ: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "อายุ: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "โทรศัพท์: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "เทมเพลต (ไม่บังคับ)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "ไม่มี",
+  "saveAsTemplate": "บันทึกเป็นเทมเพลต",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "ใช้เซสชันนี้เป็นเทมเพลตสำหรับเซสชันในอนาคต",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "ชื่อเทมเพลต",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "ชื่อสำหรับระบุเทมเพลตนี้",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "กรุณากรอกชื่อเทมเพลต",
+  "defaultSessionTitle": "หัวข้อเซสชันเริ่มต้น",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "หัวข้อที่ใช้เมื่อสร้างเซสชันจากเทมเพลตนี้",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "กรุณากรอกหัวข้อเซสชัน",
+  "createTemplate": "สร้างเทมเพลต",
+  "editTemplate": "แก้ไขเทมเพลต",
+  "create": "สร้าง",
+  "templateNameDialogTitle": "ชื่อเทมเพลต",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "ตั้งชื่อเทมเพลตนี้เพื่อให้ระบุได้ง่าย",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "จัดการเทมเพลต",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "ยังไม่มีเทมเพลต",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "สร้างเซสชันและเลือก \"บันทึกเป็นเทมเพลต\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "ลบเทมเพลต",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบ \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "เซสชัน: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "บันทึกเป็นเทมเพลต",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "เทมเพลต \"{name}\" บันทึกสำเร็จ",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ดีบัก",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "จำลองวันที่ดีบัก",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "ตั้งค่าวันที่กำหนดเอง",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "ล้าง",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "ตอนนี้: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "วันนี้",
+  "yesterday": "เมื่อวาน",
+  "tomorrow": "พรุ่งนี้",
+  "daysAgo": "{count} วันที่แล้ว",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} วันต่อมา",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 
 class TemplateNameDialog extends StatefulWidget {
   final String defaultName;
@@ -37,23 +38,23 @@ class _TemplateNameDialogState extends State<TemplateNameDialog> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
       ),
-      title: const Text(
-        'Template Name',
-        style: TextStyle(fontWeight: FontWeight.bold),
+      title: Text(
+        AppLocalizations.of(context)!.templateNameDialogTitle,
+        style: const TextStyle(fontWeight: FontWeight.bold),
       ),
       content: Form(
         key: _formKey,
         child: TextFormField(
           controller: _nameController,
-          decoration: const InputDecoration(
-            labelText: 'Template Name',
-            border: OutlineInputBorder(),
-            helperText: 'Give this template a name for easy identification',
+          decoration: InputDecoration(
+            labelText: AppLocalizations.of(context)!.templateName,
+            border: const OutlineInputBorder(),
+            helperText: AppLocalizations.of(context)!.templateNameDialogHelper,
           ),
           autofocus: true,
           validator: (value) {
             if (value == null || value.trim().isEmpty) {
-              return 'Please enter a template name';
+              return AppLocalizations.of(context)!.templateNameRequired;
             }
             return null;
           },
@@ -62,11 +63,11 @@ class _TemplateNameDialogState extends State<TemplateNameDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(AppLocalizations.of(context)!.cancel),
         ),
         ElevatedButton(
           onPressed: _save,
-          child: const Text('Save'),
+          child: Text(AppLocalizations.of(context)!.save),
         ),
       ],
     );

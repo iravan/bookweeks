@@ -1,0 +1,329 @@
+{
+  "@@locale": "zh_CN",
+  "appTitle": "周次预约",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "选择周次",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "周一",
+  "tue": "周二",
+  "wed": "周三",
+  "thu": "周四",
+  "fri": "周五",
+  "sat": "周六",
+  "sun": "周日",
+  "noSessionsScheduled": "没有安排的课程",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "点击 + 按钮添加课程",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "学生",
+  "students": "学生",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "删除课程",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "确定要删除「{title}」吗？",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "取消",
+  "delete": "删除",
+  "createSession": "创建课程",
+  "editSession": "编辑课程",
+  "title": "标题",
+  "titleRequired": "请输入标题",
+  "startTime": "开始时间",
+  "endTime": "结束时间",
+  "endTimeAfterStart": "结束时间必须晚于开始时间",
+  "descriptionOptional": "描述（可选）",
+  "save": "保存",
+  "add": "添加",
+  "edit": "编辑",
+  "allEvents": "所有活动",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "管理模板",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "导出数据",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "导入数据",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "保存导出文件",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "导出成功！\n已保存至：{path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "导出失败：{error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "导入成功",
+  "importFailed": "导入失败",
+  "errorReadingFile": "读取文件时发生错误",
+  "error": "错误：{error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "确定",
+  "searchEvents": "搜索活动...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "没有安排的活动",
+  "noEventsFound": "找不到活动",
+  "createEventsFromCalendar": "从日历创建活动",
+  "studentsJoiningThisSession": "参加此课程的学生",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "添加成员",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "尚未添加学生",
+  "tapToAddMember": "点击 + 添加成员",
+  "allMembers": "所有成员",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "加入课程",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "从课程移除",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "姓名",
+  "nameRequired": "请输入姓名",
+  "nicknameOptional": "昵称（可选）",
+  "ageOptional": "年龄（可选）",
+  "ageInvalid": "请输入有效的年龄",
+  "phoneNumberOptional": "电话号码（可选）",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "例如：+86 138 0013 8000",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "添加成员",
+  "editMemberTitle": "编辑成员",
+  "member": "成员",
+  "nameLabel": "姓名：{name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "年龄：{age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "电话：{phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "模板（可选）",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "无",
+  "saveAsTemplate": "保存为模板",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "将此课程作为未来课程的模板",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "模板名称",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "用于识别此模板的名称",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "请输入模板名称",
+  "defaultSessionTitle": "默认课程标题",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "使用此模板创建课程时使用的标题",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "请输入课程标题",
+  "createTemplate": "创建模板",
+  "editTemplate": "编辑模板",
+  "create": "创建",
+  "templateNameDialogTitle": "模板名称",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "为此模板命名以便识别",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "模板管理",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "尚无模板",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "创建课程并勾选「保存为模板」",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "删除模板",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "确定要删除「{title}」吗？",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "课程：{title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "保存为模板",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "模板「{name}」已成功保存",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "调试",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "调试日期模拟",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "设置自定义日期",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "清除",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "现在：{date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "今天",
+  "yesterday": "昨天",
+  "tomorrow": "明天",
+  "daysAgo": "{count} 天前",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} 天后",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

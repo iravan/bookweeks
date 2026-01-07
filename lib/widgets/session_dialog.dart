@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session.dart';
 import '../models/session_template.dart';
 import '../services/session_template_service.dart';
@@ -160,7 +161,7 @@ class _SessionDialogState extends State<SessionDialog> {
         });
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('End time must be after start time')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.endTimeAfterStart)),
         );
       }
     }
@@ -208,7 +209,9 @@ class _SessionDialogState extends State<SessionDialog> {
         borderRadius: BorderRadius.circular(16),
       ),
       title: Text(
-        widget.existingSession == null ? 'Create Session' : 'Edit Session',
+        widget.existingSession == null 
+            ? AppLocalizations.of(context)!.createSession 
+            : AppLocalizations.of(context)!.editSession,
         style: const TextStyle(fontWeight: FontWeight.bold),
       ),
       content: _isLoading
@@ -230,14 +233,14 @@ class _SessionDialogState extends State<SessionDialog> {
                         children: [
                           DropdownButtonFormField<SessionTemplate>(
                             value: _selectedTemplate,
-                            decoration: const InputDecoration(
-                              labelText: 'Template (optional)',
-                              border: OutlineInputBorder(),
+                            decoration: InputDecoration(
+                              labelText: AppLocalizations.of(context)!.templateOptional,
+                              border: const OutlineInputBorder(),
                             ),
                             items: [
-                              const DropdownMenuItem<SessionTemplate>(
+                              DropdownMenuItem<SessionTemplate>(
                                 value: null,
-                                child: Text('None'),
+                                child: Text(AppLocalizations.of(context)!.none),
                               ),
                               ..._templates.map((template) {
                                 return DropdownMenuItem<SessionTemplate>(
@@ -265,13 +268,13 @@ class _SessionDialogState extends State<SessionDialog> {
                       ),
                     TextFormField(
                 controller: _titleController,
-                decoration: const InputDecoration(
-                  labelText: 'Title',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.title,
+                  border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
-                    return 'Please enter a title';
+                    return AppLocalizations.of(context)!.titleRequired;
                   }
                   return null;
                 },
@@ -283,9 +286,9 @@ class _SessionDialogState extends State<SessionDialog> {
                     child: InkWell(
                       onTap: _selectStartTime,
                       child: InputDecorator(
-                        decoration: const InputDecoration(
-                          labelText: 'Start Time',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText: AppLocalizations.of(context)!.startTime,
+                          border: const OutlineInputBorder(),
                         ),
                         child: Text(
                           '${_startTime.hour.toString().padLeft(2, '0')}:${_startTime.minute.toString().padLeft(2, '0')}',
@@ -298,9 +301,9 @@ class _SessionDialogState extends State<SessionDialog> {
                     child: InkWell(
                       onTap: _selectEndTime,
                       child: InputDecorator(
-                        decoration: const InputDecoration(
-                          labelText: 'End Time',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText: AppLocalizations.of(context)!.endTime,
+                          border: const OutlineInputBorder(),
                         ),
                         child: Text(
                           '${_endTime.hour.toString().padLeft(2, '0')}:${_endTime.minute.toString().padLeft(2, '0')}',
@@ -313,9 +316,9 @@ class _SessionDialogState extends State<SessionDialog> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _descriptionController,
-                decoration: const InputDecoration(
-                  labelText: 'Description (optional)',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.descriptionOptional,
+                  border: const OutlineInputBorder(),
                 ),
                 maxLines: 3,
               ),
@@ -330,8 +333,8 @@ class _SessionDialogState extends State<SessionDialog> {
                         _saveAsTemplate = value ?? false;
                       });
                     },
-                    title: const Text('Save as template'),
-                    subtitle: const Text('Use this session as a template for future sessions'),
+                    title: Text(AppLocalizations.of(context)!.saveAsTemplate),
+                    subtitle: Text(AppLocalizations.of(context)!.saveAsTemplateSubtitle),
                     contentPadding: EdgeInsets.zero,
                     controlAffinity: ListTileControlAffinity.leading,
                   ),
@@ -343,11 +346,11 @@ class _SessionDialogState extends State<SessionDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(AppLocalizations.of(context)!.cancel),
         ),
         ElevatedButton(
           onPressed: _saveSession,
-          child: const Text('Save'),
+          child: Text(AppLocalizations.of(context)!.save),
         ),
       ],
     );

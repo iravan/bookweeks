@@ -1,0 +1,329 @@
+{
+  "@@locale": "ta",
+  "appTitle": "வாரங்கள் முன்பதிவு",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "வாரத்தைத் தேர்ந்தெடுக்கவும்",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "திங்கள்",
+  "tue": "செவ்வாய்",
+  "wed": "புதன்",
+  "thu": "வியாழன்",
+  "fri": "வெள்ளி",
+  "sat": "சனி",
+  "sun": "ஞாயிறு",
+  "noSessionsScheduled": "அமர்வுகள் திட்டமிடப்படவில்லை",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "அமர்வைச் சேர்க்க + பொத்தானைத் தட்டவும்",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "மாணவர்",
+  "students": "மாணவர்கள்",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "அமர்வை நீக்கு",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "\"{title}\" ஐ நீக்க விரும்புகிறீர்களா?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "ரத்துசெய்",
+  "delete": "நீக்கு",
+  "createSession": "அமர்வை உருவாக்கு",
+  "editSession": "அமர்வைத் திருத்து",
+  "title": "தலைப்பு",
+  "titleRequired": "தயவுசெய்து தலைப்பை உள்ளிடவும்",
+  "startTime": "தொடக்க நேரம்",
+  "endTime": "முடிவு நேரம்",
+  "endTimeAfterStart": "முடிவு நேரம் தொடக்க நேரத்திற்குப் பிறகு இருக்க வேண்டும்",
+  "descriptionOptional": "விளக்கம் (விருப்பமானது)",
+  "save": "சேமி",
+  "add": "சேர்",
+  "edit": "திருத்து",
+  "allEvents": "அனைத்து நிகழ்வுகள்",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "டெம்ப்ளேட்டுகளை நிர்வகிக்கவும்",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "தரவை ஏற்றுமதி செய்யவும்",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "தரவை இறக்குமதி செய்யவும்",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "ஏற்றுமதி கோப்பைச் சேமிக்கவும்",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "ஏற்றுமதி வெற்றிகரமாக!\nசேமிக்கப்பட்டது: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "ஏற்றுமதி தோல்வி: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "இறக்குமதி வெற்றிகரமாக",
+  "importFailed": "இறக்குமதி தோல்வி",
+  "errorReadingFile": "கோப்பைப் படிக்கும்போது பிழை",
+  "error": "பிழை: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "சரி",
+  "searchEvents": "நிகழ்வுகளைத் தேடவும்...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "நிகழ்வுகள் திட்டமிடப்படவில்லை",
+  "noEventsFound": "நிகழ்வுகள் கிடைக்கவில்லை",
+  "createEventsFromCalendar": "நாட்காட்டியிலிருந்து நிகழ்வுகளை உருவாக்கவும்",
+  "studentsJoiningThisSession": "இந்த அமர்வில் சேரும் மாணவர்கள்",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "உறுப்பினரைச் சேர்க்கவும்",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "இன்னும் மாணவர்கள் சேர்க்கப்படவில்லை",
+  "tapToAddMember": "+ ஐத் தட்டி உறுப்பினரைச் சேர்க்கவும்",
+  "allMembers": "அனைத்து உறுப்பினர்கள்",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "அமர்வில் சேர்",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "அமர்விலிருந்து நீக்கு",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "பெயர்",
+  "nameRequired": "தயவுசெய்து பெயரை உள்ளிடவும்",
+  "nicknameOptional": "புனைப்பெயர் (விருப்பமானது)",
+  "ageOptional": "வயது (விருப்பமானது)",
+  "ageInvalid": "தயவுசெய்து சரியான வயதை உள்ளிடவும்",
+  "phoneNumberOptional": "தொலைபேசி எண் (விருப்பமானது)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "எ.கா: +91 98765 43210",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "உறுப்பினரைச் சேர்க்கவும்",
+  "editMemberTitle": "உறுப்பினரைத் திருத்தவும்",
+  "member": "உறுப்பினர்",
+  "nameLabel": "பெயர்: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "வயது: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "தொலைபேசி: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "டெம்ப்ளேட் (விருப்பமானது)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "எதுவும் இல்லை",
+  "saveAsTemplate": "டெம்ப்ளேட்டாகச் சேமி",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "எதிர்கால அமர்வுகளுக்கு இந்த அமர்வை டெம்ப்ளேட்டாகப் பயன்படுத்தவும்",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "டெம்ப்ளேட் பெயர்",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "இந்த டெம்ப்ளேட்டை அடையாளம் காண பெயர்",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "தயவுசெய்து டெம்ப்ளேட் பெயரை உள்ளிடவும்",
+  "defaultSessionTitle": "இயல்புநிலை அமர்வு தலைப்பு",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "இந்த டெம்ப்ளேட்டிலிருந்து அமர்வுகளை உருவாக்கும்போது பயன்படுத்தப்படும் தலைப்பு",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "தயவுசெய்து அமர்வு தலைப்பை உள்ளிடவும்",
+  "createTemplate": "டெம்ப்ளேட்டை உருவாக்கு",
+  "editTemplate": "டெம்ப்ளேட்டைத் திருத்து",
+  "create": "உருவாக்கு",
+  "templateNameDialogTitle": "டெம்ப்ளேட் பெயர்",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "எளிதான அடையாளத்திற்காக இந்த டெம்ப்ளேட்டிற்கு பெயரைக் கொடுங்கள்",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "டெம்ப்ளேட் நிர்வாகம்",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "இன்னும் டெம்ப்ளேட்டுகள் இல்லை",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "அமர்வை உருவாக்கி \"டெம்ப்ளேட்டாகச் சேமி\" என்பதைத் தேர்ந்தெடுக்கவும்",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "டெம்ப்ளேட்டை நீக்கு",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "\"{title}\" ஐ நீக்க விரும்புகிறீர்களா?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "அமர்வு: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "டெம்ப்ளேட்டாகச் சேமி",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "டெம்ப்ளேட் \"{name}\" வெற்றிகரமாகச் சேமிக்கப்பட்டது",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "டீபக்",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "டீபக் தேதி சிமுலேஷன்",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "தனிப்பயன் தேதியை அமைக்கவும்",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "அழிக்கவும்",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "இப்போது: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "இன்று",
+  "yesterday": "நேற்று",
+  "tomorrow": "நாளை",
+  "daysAgo": "{count} நாட்களுக்கு முன்பு",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} நாட்களுக்குப் பிறகு",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

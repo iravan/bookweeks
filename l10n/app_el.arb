@@ -1,0 +1,329 @@
+{
+  "@@locale": "el",
+  "appTitle": "Κράτηση Εβδομάδων",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Επιλέξτε Εβδομάδα",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Δευ",
+  "tue": "Τρι",
+  "wed": "Τετ",
+  "thu": "Πεμ",
+  "fri": "Παρ",
+  "sat": "Σαβ",
+  "sun": "Κυρ",
+  "noSessionsScheduled": "Δεν υπάρχουν προγραμματισμένες συνεδρίες",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Πατήστε το κουμπί + για να προσθέσετε συνεδρία",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "φοιτητής",
+  "students": "φοιτητές",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Διαγραφή Συνεδρίας",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"{title}\";",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Ακύρωση",
+  "delete": "Διαγραφή",
+  "createSession": "Δημιουργία Συνεδρίας",
+  "editSession": "Επεξεργασία Συνεδρίας",
+  "title": "Τίτλος",
+  "titleRequired": "Παρακαλώ εισάγετε τίτλο",
+  "startTime": "Ώρα Έναρξης",
+  "endTime": "Ώρα Λήξης",
+  "endTimeAfterStart": "Η ώρα λήξης πρέπει να είναι μετά την ώρα έναρξης",
+  "descriptionOptional": "Περιγραφή (προαιρετικό)",
+  "save": "Αποθήκευση",
+  "add": "Προσθήκη",
+  "edit": "Επεξεργασία",
+  "allEvents": "Όλα τα Γεγονότα",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Διαχείριση Προτύπων",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Εξαγωγή Δεδομένων",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Εισαγωγή Δεδομένων",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Αποθήκευση Αρχείου Εξαγωγής",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Η εξαγωγή ήταν επιτυχής!\nΑποθηκεύτηκε σε: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Η εξαγωγή απέτυχε: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Η Εισαγωγή Ήταν Επιτυχής",
+  "importFailed": "Η Εισαγωγή Απέτυχε",
+  "errorReadingFile": "Σφάλμα ανάγνωσης αρχείου",
+  "error": "Σφάλμα: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "Εντάξει",
+  "searchEvents": "Αναζήτηση γεγονότων...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Δεν υπάρχουν προγραμματισμένα γεγονότα",
+  "noEventsFound": "Δεν βρέθηκαν γεγονότα",
+  "createEventsFromCalendar": "Δημιουργία γεγονότων από το ημερολόγιο",
+  "studentsJoiningThisSession": "Φοιτητές που Συμμετέχουν σε Αυτή τη Συνεδρία",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Προσθήκη Μέλους",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Δεν έχουν προστεθεί ακόμα φοιτητές",
+  "tapToAddMember": "Πατήστε + για να προσθέσετε μέλος",
+  "allMembers": "Όλα τα Μέλη",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Προσθήκη στη συνεδρία",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Αφαίρεση από τη συνεδρία",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Όνομα",
+  "nameRequired": "Παρακαλώ εισάγετε όνομα",
+  "nicknameOptional": "Ψευδώνυμο (προαιρετικό)",
+  "ageOptional": "Ηλικία (προαιρετικό)",
+  "ageInvalid": "Παρακαλώ εισάγετε έγκυρη ηλικία",
+  "phoneNumberOptional": "Αριθμός Τηλεφώνου (προαιρετικό)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "π.χ. +30 210 123 4567",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Προσθήκη Μέλους",
+  "editMemberTitle": "Επεξεργασία Μέλους",
+  "member": "Μέλος",
+  "nameLabel": "Όνομα: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Ηλικία: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Τηλέφωνο: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Πρότυπο (προαιρετικό)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Κανένα",
+  "saveAsTemplate": "Αποθήκευση ως πρότυπο",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Χρήση αυτής της συνεδρίας ως πρότυπο για μελλοντικές συνεδρίες",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Όνομα Προτύπου",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Όνομα για τον προσδιορισμό αυτού του προτύπου",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Παρακαλώ εισάγετε όνομα προτύπου",
+  "defaultSessionTitle": "Προεπιλεγμένος Τίτλος Συνεδρίας",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Τίτλος που χρησιμοποιείται κατά τη δημιουργία συνεδριών από αυτό το πρότυπο",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Παρακαλώ εισάγετε τίτλο συνεδρίας",
+  "createTemplate": "Δημιουργία Προτύπου",
+  "editTemplate": "Επεξεργασία Προτύπου",
+  "create": "Δημιουργία",
+  "templateNameDialogTitle": "Όνομα Προτύπου",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Δώστε ένα όνομα σε αυτό το πρότυπο για εύκολη αναγνώριση",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Διαχείριση Προτύπων",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Δεν υπάρχουν ακόμα πρότυπα",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Δημιουργήστε μια συνεδρία και επιλέξτε \"Αποθήκευση ως πρότυπο\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Διαγραφή Προτύπου",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"{title}\";",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Συνεδρία: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Αποθήκευση ως Πρότυπο",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Το πρότυπο \"{name}\" αποθηκεύτηκε με επιτυχία",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "ΕΝΤΟΠΙΣΜΟΣ ΣΦΑΛΜΑΤΩΝ",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Προσομοίωση Ημερομηνίας Εντοπισμού Σφαλμάτων",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Ορισμός Προσαρμοσμένης Ημερομηνίας",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Καθαρισμός",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Τώρα: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Σήμερα",
+  "yesterday": "Χθες",
+  "tomorrow": "Αύριο",
+  "daysAgo": "πριν {count} ημέρες",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "σε {count} ημέρες",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

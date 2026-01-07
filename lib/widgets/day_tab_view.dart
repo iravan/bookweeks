@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session.dart';
 import '../services/session_service.dart';
 import 'session_dialog.dart';
@@ -45,7 +46,7 @@ class _DayTabViewState extends State<DayTabView> {
                   ),
                   const SizedBox(height: 24),
                   Text(
-                    'No sessions scheduled',
+                    AppLocalizations.of(context)!.noSessionsScheduled,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
@@ -54,7 +55,7 @@ class _DayTabViewState extends State<DayTabView> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Tap the + button to add a session',
+                    AppLocalizations.of(context)!.tapToAddSession,
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.grey.shade500,
@@ -150,7 +151,7 @@ class _DayTabViewState extends State<DayTabView> {
                   ),
                   const SizedBox(width: 6),
                   Text(
-                    '$studentCount ${studentCount == 1 ? 'student' : 'students'}',
+                    '$studentCount ${studentCount == 1 ? AppLocalizations.of(context)!.student(studentCount) : AppLocalizations.of(context)!.students(studentCount)}',
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
@@ -235,15 +236,15 @@ class _DayTabViewState extends State<DayTabView> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        title: const Text(
-          'Delete Session',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: Text(
+          AppLocalizations.of(context)!.deleteSession,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
-        content: Text('Are you sure you want to delete "${session.title}"?'),
+        content: Text(AppLocalizations.of(context)!.deleteSessionConfirm(session.title)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () async {
@@ -254,9 +255,9 @@ class _DayTabViewState extends State<DayTabView> {
                 widget.onSessionChanged?.call();
               }
             },
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: Colors.red),
+            child: Text(
+              AppLocalizations.of(context)!.delete,
+              style: const TextStyle(color: Colors.red),
             ),
           ),
         ],

@@ -1,0 +1,329 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Đặt Tuần",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Chọn Tuần",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "T2",
+  "tue": "T3",
+  "wed": "T4",
+  "thu": "T5",
+  "fri": "T6",
+  "sat": "T7",
+  "sun": "CN",
+  "noSessionsScheduled": "Không có phiên nào được lên lịch",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Nhấn nút + để thêm phiên",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "học sinh",
+  "students": "học sinh",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Xóa Phiên",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Bạn có chắc chắn muốn xóa \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Hủy",
+  "delete": "Xóa",
+  "createSession": "Tạo Phiên",
+  "editSession": "Chỉnh Sửa Phiên",
+  "title": "Tiêu đề",
+  "titleRequired": "Vui lòng nhập tiêu đề",
+  "startTime": "Thời Gian Bắt Đầu",
+  "endTime": "Thời Gian Kết Thúc",
+  "endTimeAfterStart": "Thời gian kết thúc phải sau thời gian bắt đầu",
+  "descriptionOptional": "Mô tả (tùy chọn)",
+  "save": "Lưu",
+  "add": "Thêm",
+  "edit": "Chỉnh Sửa",
+  "allEvents": "Tất Cả Sự Kiện",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Quản Lý Mẫu",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Xuất Dữ Liệu",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Nhập Dữ Liệu",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Lưu Tệp Xuất",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Xuất thành công!\nĐã lưu vào: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Xuất thất bại: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Nhập Thành Công",
+  "importFailed": "Nhập Thất Bại",
+  "errorReadingFile": "Lỗi đọc tệp",
+  "error": "Lỗi: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Tìm kiếm sự kiện...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Không có sự kiện nào được lên lịch",
+  "noEventsFound": "Không tìm thấy sự kiện",
+  "createEventsFromCalendar": "Tạo sự kiện từ lịch",
+  "studentsJoiningThisSession": "Học Sinh Tham Gia Phiên Này",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Thêm Thành Viên",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Chưa có học sinh nào được thêm",
+  "tapToAddMember": "Nhấn + để thêm thành viên",
+  "allMembers": "Tất Cả Thành Viên",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Thêm vào phiên",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Xóa khỏi phiên",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Tên",
+  "nameRequired": "Vui lòng nhập tên",
+  "nicknameOptional": "Biệt danh (tùy chọn)",
+  "ageOptional": "Tuổi (tùy chọn)",
+  "ageInvalid": "Vui lòng nhập tuổi hợp lệ",
+  "phoneNumberOptional": "Số Điện Thoại (tùy chọn)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "vd: +84 123 456 789",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Thêm Thành Viên",
+  "editMemberTitle": "Chỉnh Sửa Thành Viên",
+  "member": "Thành Viên",
+  "nameLabel": "Tên: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Tuổi: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Điện thoại: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Mẫu (tùy chọn)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Không",
+  "saveAsTemplate": "Lưu làm mẫu",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Sử dụng phiên này làm mẫu cho các phiên sau",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Tên Mẫu",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Tên để nhận dạng mẫu này",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Vui lòng nhập tên mẫu",
+  "defaultSessionTitle": "Tiêu Đề Phiên Mặc Định",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Tiêu đề được sử dụng khi tạo phiên từ mẫu này",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Vui lòng nhập tiêu đề phiên",
+  "createTemplate": "Tạo Mẫu",
+  "editTemplate": "Chỉnh Sửa Mẫu",
+  "create": "Tạo",
+  "templateNameDialogTitle": "Tên Mẫu",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Đặt tên cho mẫu này để dễ nhận dạng",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Quản Lý Mẫu",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Chưa có mẫu nào",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Tạo một phiên và chọn \"Lưu làm mẫu\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Xóa Mẫu",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Bạn có chắc chắn muốn xóa \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Phiên: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Lưu làm Mẫu",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Mẫu \"{name}\" đã được lưu thành công",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "GỠ LỖI",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Mô Phỏng Ngày Gỡ Lỗi",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Đặt Ngày Tùy Chỉnh",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Xóa",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Bây giờ: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Hôm nay",
+  "yesterday": "Hôm qua",
+  "tomorrow": "Ngày mai",
+  "daysAgo": "{count} ngày trước",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} ngày sau",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

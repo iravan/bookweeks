@@ -1,0 +1,329 @@
+{
+  "@@locale": "rm",
+  "appTitle": "Reservar Emnas",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Tscherner Emna",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Glindesdi",
+  "tue": "Mardi",
+  "wed": "Mesemna",
+  "thu": "Gievgia",
+  "fri": "Venderdi",
+  "sat": "Sonda",
+  "sun": "Dumengia",
+  "noSessionsScheduled": "Naginas sessiuns planisadas",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Tippar sin il buttun + per agiuntar ina sessiun",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "student",
+  "students": "students",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Stizzar Sessiun",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Es ti segir che ti vuls stizzar \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Annullar",
+  "delete": "Stizzar",
+  "createSession": "Crear Sessiun",
+  "editSession": "Modifitgar Sessiun",
+  "title": "Titel",
+  "titleRequired": "Endatescha per plaschair in titel",
+  "startTime": "Ura da Cumenzament",
+  "endTime": "Ura da Fin",
+  "endTimeAfterStart": "L'ura da fin sto esser suenter l'ura da cumenzament",
+  "descriptionOptional": "Descripziun (opziunala)",
+  "save": "Memorisar",
+  "add": "Agiuntar",
+  "edit": "Modifitgar",
+  "allEvents": "Tut las Eveniments",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Administrar Models",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Exportar Datas",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Importar Datas",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Memorisar Datoteca d'Export",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Export reussì!\nMemorisà en: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Export na reussì betg: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Import Reussì",
+  "importFailed": "Import na Reussì Betg",
+  "errorReadingFile": "Errur cun leger la datoteca",
+  "error": "Errur: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Tschertgar eveniments...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Nagins eveniments planisads",
+  "noEventsFound": "Nagins eveniments chattads",
+  "createEventsFromCalendar": "Crear eveniments dal chalender",
+  "studentsJoiningThisSession": "Students che Participeschan a Questa Sessiun",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Agiuntar Membra",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Nagins students agiuntads anc",
+  "tapToAddMember": "Tippar sin + per agiuntar ina membra",
+  "allMembers": "Tut las Membras",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Agiuntar a la sessiun",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Allontanar da la sessiun",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Num",
+  "nameRequired": "Endatescha per plaschair in num",
+  "nicknameOptional": "Sur num (opziunal)",
+  "ageOptional": "Etad (opziunala)",
+  "ageInvalid": "Endatescha per plaschair ina etad valida",
+  "phoneNumberOptional": "Numer da Telefon (opziunal)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "p.ex. +41 79 123 45 67",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Agiuntar Membra",
+  "editMemberTitle": "Modifitgar Membra",
+  "member": "Membra",
+  "nameLabel": "Num: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Etad: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Telefon: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Model (opziunal)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Nagins",
+  "saveAsTemplate": "Memorisar sco model",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Duai questa sessiun sco model per sessiuns futuricas",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Num dal Model",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Num per identifitgar quest model",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Endatescha per plaschair in num da model",
+  "defaultSessionTitle": "Titel da Sessiun Predefinì",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Titel che vegn duvrà cura che sessiuns vegnan creadas da quest model",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Endatescha per plaschair in titel da sessiun",
+  "createTemplate": "Crear Model",
+  "editTemplate": "Modifitgar Model",
+  "create": "Crear",
+  "templateNameDialogTitle": "Num dal Model",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Dai a quest model in num per simpla identifitgaziun",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Administraziun da Models",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Anc nagins models",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Crear ina sessiun e tippar \"Memorisar sco model\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Stizzar Model",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Es ti segir che ti vuls stizzar \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Sessiun: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Memorisar sco Model",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Il model \"{name}\" è vegnì memorisà cun success",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "DEBUG",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Simulaziun da Data da Debug",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Definir Data Persunalisada",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Sgarrer",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Usa: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Oz",
+  "yesterday": "Ier",
+  "tomorrow": "Damaun",
+  "daysAgo": "avant {count} dis",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "en {count} dis",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

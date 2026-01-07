@@ -1,0 +1,329 @@
+{
+  "@@locale": "sv",
+  "appTitle": "Boka Veckor",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Välj Vecka",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Mån",
+  "tue": "Tis",
+  "wed": "Ons",
+  "thu": "Tor",
+  "fri": "Fre",
+  "sat": "Lör",
+  "sun": "Sön",
+  "noSessionsScheduled": "Inga sessioner schemalagda",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Tryck på + -knappen för att lägga till en session",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "elev",
+  "students": "elever",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Ta Bort Session",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Är du säker på att du vill ta bort \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Avbryt",
+  "delete": "Ta Bort",
+  "createSession": "Skapa Session",
+  "editSession": "Redigera Session",
+  "title": "Titel",
+  "titleRequired": "Vänligen ange en titel",
+  "startTime": "Starttid",
+  "endTime": "Sluttid",
+  "endTimeAfterStart": "Sluttiden måste vara efter starttiden",
+  "descriptionOptional": "Beskrivning (valfritt)",
+  "save": "Spara",
+  "add": "Lägg Till",
+  "edit": "Redigera",
+  "allEvents": "Alla Händelser",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Hantera Mallar",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Exportera Data",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Importera Data",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Spara Exportfil",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Export lyckades!\nSparad till: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Export misslyckades: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Import Lyckades",
+  "importFailed": "Import Misslyckades",
+  "errorReadingFile": "Fel vid läsning av fil",
+  "error": "Fel: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Sök händelser...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Inga händelser schemalagda",
+  "noEventsFound": "Inga händelser hittades",
+  "createEventsFromCalendar": "Skapa händelser från kalendern",
+  "studentsJoiningThisSession": "Elever som Deltar i Denna Session",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Lägg Till Medlem",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Inga elever har lagts till ännu",
+  "tapToAddMember": "Tryck på + för att lägga till en medlem",
+  "allMembers": "Alla Medlemmar",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Lägg till i session",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Ta bort från session",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Namn",
+  "nameRequired": "Vänligen ange ett namn",
+  "nicknameOptional": "Smeknamn (valfritt)",
+  "ageOptional": "Ålder (valfritt)",
+  "ageInvalid": "Vänligen ange en giltig ålder",
+  "phoneNumberOptional": "Telefonnummer (valfritt)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "t.ex. +46 12 345 67 89",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Lägg Till Medlem",
+  "editMemberTitle": "Redigera Medlem",
+  "member": "Medlem",
+  "nameLabel": "Namn: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Ålder: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Telefon: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Mall (valfritt)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Ingen",
+  "saveAsTemplate": "Spara som mall",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Använd denna session som mall för framtida sessioner",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Mallnamn",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Namn för att identifiera denna mall",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Vänligen ange ett mallnamn",
+  "defaultSessionTitle": "Standard Sessions Titel",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Titel som används när sessioner skapas från denna mall",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Vänligen ange en sessionstitel",
+  "createTemplate": "Skapa Mall",
+  "editTemplate": "Redigera Mall",
+  "create": "Skapa",
+  "templateNameDialogTitle": "Mallnamn",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Ge denna mall ett namn för enkel identifiering",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Mallhantering",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Inga mallar ännu",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Skapa en session och välj \"Spara som mall\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Ta Bort Mall",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Är du säker på att du vill ta bort \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Session: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Spara som Mall",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Mall \"{name}\" sparades framgångsrikt",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "FELSÖKNING",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Felsöknings Datumsimulering",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Ange Anpassat Datum",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Rensa",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Nu: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Idag",
+  "yesterday": "Igår",
+  "tomorrow": "Imorgon",
+  "daysAgo": "för {count} dagar sedan",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "om {count} dagar",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

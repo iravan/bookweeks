@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session_template.dart';
 import '../services/session_template_service.dart';
 import 'session_template_dialog.dart';
@@ -48,21 +49,21 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        title: const Text(
-          'Delete Template',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: Text(
+          AppLocalizations.of(context)!.deleteTemplate,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
-        content: Text('Are you sure you want to delete "${template.title}"?'),
+        content: Text(AppLocalizations.of(context)!.deleteTemplateConfirm(template.title)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: Colors.red),
+            child: Text(
+              AppLocalizations.of(context)!.delete,
+              style: const TextStyle(color: Colors.red),
             ),
           ),
         ],
@@ -87,9 +88,9 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Template Management',
-          style: TextStyle(fontWeight: FontWeight.w600),
+        title: Text(
+          AppLocalizations.of(context)!.templateManagement,
+          style: const TextStyle(fontWeight: FontWeight.w600),
         ),
       ),
       body: SafeArea(
@@ -120,7 +121,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                         ),
                         const SizedBox(height: 24),
                         Text(
-                          'No templates yet',
+                          AppLocalizations.of(context)!.noTemplatesYet,
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
@@ -129,7 +130,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          'Create a session and check "Save as template"',
+                          AppLocalizations.of(context)!.createSessionAndSaveAsTemplate,
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.grey.shade500,
@@ -198,7 +199,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                               Padding(
                                 padding: const EdgeInsets.only(bottom: 4),
                                 child: Text(
-                                  'Session: ${template.title}',
+                                  AppLocalizations.of(context)!.session(template.title),
                                   style: TextStyle(
                                     fontSize: 13,
                                     fontWeight: FontWeight.w500,
@@ -225,7 +226,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                                       ),
                                       const SizedBox(width: 4),
                                       Text(
-                                        '${template.studentIds.length} ${template.studentIds.length == 1 ? 'student' : 'students'}',
+                                        '${template.studentIds.length} ${template.studentIds.length == 1 ? AppLocalizations.of(context)!.student(template.studentIds.length) : AppLocalizations.of(context)!.students(template.studentIds.length)}',
                                         style: TextStyle(
                                           fontSize: 12,
                                           color: Colors.grey.shade600,
@@ -265,7 +266,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                                   size: 20,
                                 ),
                                 onPressed: () => _editTemplate(template),
-                                tooltip: 'Edit',
+                                tooltip: AppLocalizations.of(context)!.edit,
                                 padding: const EdgeInsets.all(8),
                                 constraints: const BoxConstraints(
                                   minWidth: 36,
@@ -279,7 +280,7 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                                   size: 20,
                                 ),
                                 onPressed: () => _deleteTemplate(template),
-                                tooltip: 'Delete',
+                                tooltip: AppLocalizations.of(context)!.delete,
                                 padding: const EdgeInsets.all(8),
                                 constraints: const BoxConstraints(
                                   minWidth: 36,

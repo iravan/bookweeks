@@ -1,0 +1,329 @@
+{
+  "@@locale": "mr",
+  "appTitle": "आठवडे बुकिंग",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "आठवडा निवडा",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "सोम",
+  "tue": "मंगळ",
+  "wed": "बुध",
+  "thu": "गुरु",
+  "fri": "शुक्र",
+  "sat": "शनि",
+  "sun": "रवि",
+  "noSessionsScheduled": "कोणतेही सत्र नियोजित नाही",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "सत्र जोडण्यासाठी + बटण टॅप करा",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "विद्यार्थी",
+  "students": "विद्यार्थी",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "सत्र हटवा",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "तुम्हाला \"{title}\" हटवायचे आहे याची खात्री आहे?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "रद्द करा",
+  "delete": "हटवा",
+  "createSession": "सत्र तयार करा",
+  "editSession": "सत्र संपादित करा",
+  "title": "शीर्षक",
+  "titleRequired": "कृपया शीर्षक प्रविष्ट करा",
+  "startTime": "सुरुवातीची वेळ",
+  "endTime": "समाप्तीची वेळ",
+  "endTimeAfterStart": "समाप्तीची वेळ सुरुवातीच्या वेळेनंतर असली पाहिजे",
+  "descriptionOptional": "वर्णन (पर्यायी)",
+  "save": "जतन करा",
+  "add": "जोडा",
+  "edit": "संपादित करा",
+  "allEvents": "सर्व कार्यक्रम",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "टेम्प्लेट व्यवस्थापित करा",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "डेटा निर्यात करा",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "डेटा आयात करा",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "निर्यात फाइल जतन करा",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "निर्यात यशस्वी!\nजतन केले: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "निर्यात अयशस्वी: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "आयात यशस्वी",
+  "importFailed": "आयात अयशस्वी",
+  "errorReadingFile": "फाइल वाचताना त्रुटी",
+  "error": "त्रुटी: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "ठीक आहे",
+  "searchEvents": "कार्यक्रम शोधा...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "कोणतेही कार्यक्रम नियोजित नाहीत",
+  "noEventsFound": "कार्यक्रम सापडले नाहीत",
+  "createEventsFromCalendar": "कॅलेंडरमधून कार्यक्रम तयार करा",
+  "studentsJoiningThisSession": "या सत्रात सामील होणारे विद्यार्थी",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "सदस्य जोडा",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "अद्याप कोणतेही विद्यार्थी जोडलेले नाहीत",
+  "tapToAddMember": "+ टॅप करून सदस्य जोडा",
+  "allMembers": "सर्व सदस्य",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "सत्रात जोडा",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "सत्रातून काढा",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "नाव",
+  "nameRequired": "कृपया नाव प्रविष्ट करा",
+  "nicknameOptional": "टोपणनाव (पर्यायी)",
+  "ageOptional": "वय (पर्यायी)",
+  "ageInvalid": "कृपया वैध वय प्रविष्ट करा",
+  "phoneNumberOptional": "फोन नंबर (पर्यायी)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "उदा: +91 98765 43210",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "सदस्य जोडा",
+  "editMemberTitle": "सदस्य संपादित करा",
+  "member": "सदस्य",
+  "nameLabel": "नाव: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "वय: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "फोन: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "टेम्प्लेट (पर्यायी)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "काहीही नाही",
+  "saveAsTemplate": "टेम्प्लेट म्हणून जतन करा",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "भविष्यातील सत्रांसाठी हे सत्र टेम्प्लेट म्हणून वापरा",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "टेम्प्लेट नाव",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "या टेम्प्लेटला ओळखण्यासाठी नाव",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "कृपया टेम्प्लेट नाव प्रविष्ट करा",
+  "defaultSessionTitle": "डीफॉल्ट सत्र शीर्षक",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "या टेम्प्लेटमधून सत्र तयार करताना वापरलेले शीर्षक",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "कृपया सत्र शीर्षक प्रविष्ट करा",
+  "createTemplate": "टेम्प्लेट तयार करा",
+  "editTemplate": "टेम्प्लेट संपादित करा",
+  "create": "तयार करा",
+  "templateNameDialogTitle": "टेम्प्लेट नाव",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "सोप्या ओळखीसाठी या टेम्प्लेटला नाव द्या",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "टेम्प्लेट व्यवस्थापन",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "अद्याप कोणतेही टेम्प्लेट नाहीत",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "सत्र तयार करा आणि \"टेम्प्लेट म्हणून जतन करा\" निवडा",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "टेम्प्लेट हटवा",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "तुम्हाला \"{title}\" हटवायचे आहे याची खात्री आहे?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "सत्र: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "टेम्प्लेट म्हणून जतन करा",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "टेम्प्लेट \"{name}\" यशस्वीरित्या जतन केले",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "डीबग",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "डीबग तारीख सिम्युलेशन",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "सानुकूल तारीख सेट करा",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "साफ करा",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "आता: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "आज",
+  "yesterday": "काल",
+  "tomorrow": "उद्या",
+  "daysAgo": "{count} दिवसांपूर्वी",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} दिवसांनंतर",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

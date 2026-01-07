@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/week.dart';
 import '../services/session_service.dart';
 import '../services/debug_service.dart';
@@ -37,7 +38,7 @@ class WeekCalendar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Select Week',
+            AppLocalizations.of(context)!.selectWeek,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -51,13 +52,13 @@ class WeekCalendar extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    _buildDayHeader('Mon', context),
-                    _buildDayHeader('Tue', context),
-                    _buildDayHeader('Wed', context),
-                    _buildDayHeader('Thu', context),
-                    _buildDayHeader('Fri', context),
-                    _buildDayHeader('Sat', context),
-                    _buildDayHeader('Sun', context),
+                    _buildDayHeader(AppLocalizations.of(context)!.mon, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.tue, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.wed, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.thu, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.fri, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.sat, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.sun, context),
                   ],
                 ),
               ),

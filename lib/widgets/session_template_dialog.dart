@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/session_template.dart';
 
 class SessionTemplateDialog extends StatefulWidget {
@@ -90,7 +91,7 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
         });
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('End time must be after start time')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.endTimeAfterStart)),
         );
       }
     }
@@ -125,8 +126,8 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
       ),
       title: Text(
         widget.existingTemplate == null
-            ? 'Create Template'
-            : 'Edit Template',
+            ? AppLocalizations.of(context)!.createTemplate
+            : AppLocalizations.of(context)!.editTemplate,
         style: const TextStyle(fontWeight: FontWeight.bold),
       ),
       content: Form(
@@ -138,14 +139,14 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
             children: [
               TextFormField(
                 controller: _nameController,
-                decoration: const InputDecoration(
-                  labelText: 'Template Name',
-                  border: OutlineInputBorder(),
-                  helperText: 'Name to identify this template',
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.templateName,
+                  border: const OutlineInputBorder(),
+                  helperText: AppLocalizations.of(context)!.templateNameHelper,
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
-                    return 'Please enter a template name';
+                    return AppLocalizations.of(context)!.templateNameRequired;
                   }
                   return null;
                 },
@@ -153,14 +154,14 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _titleController,
-                decoration: const InputDecoration(
-                  labelText: 'Default Session Title',
-                  border: OutlineInputBorder(),
-                  helperText: 'Title used when creating sessions from this template',
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.defaultSessionTitle,
+                  border: const OutlineInputBorder(),
+                  helperText: AppLocalizations.of(context)!.defaultSessionTitleHelper,
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
-                    return 'Please enter a session title';
+                    return AppLocalizations.of(context)!.sessionTitleRequired;
                   }
                   return null;
                 },
@@ -172,9 +173,9 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
                     child: InkWell(
                       onTap: _selectStartTime,
                       child: InputDecorator(
-                        decoration: const InputDecoration(
-                          labelText: 'Start Time',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText: AppLocalizations.of(context)!.startTime,
+                          border: const OutlineInputBorder(),
                         ),
                         child: Text(
                           _startTime.format(context),
@@ -187,9 +188,9 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
                     child: InkWell(
                       onTap: _selectEndTime,
                       child: InputDecorator(
-                        decoration: const InputDecoration(
-                          labelText: 'End Time',
-                          border: OutlineInputBorder(),
+                        decoration: InputDecoration(
+                          labelText: AppLocalizations.of(context)!.endTime,
+                          border: const OutlineInputBorder(),
                         ),
                         child: Text(
                           _endTime.format(context),
@@ -202,9 +203,9 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _descriptionController,
-                decoration: const InputDecoration(
-                  labelText: 'Description (optional)',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.descriptionOptional,
+                  border: const OutlineInputBorder(),
                 ),
                 maxLines: 3,
               ),
@@ -215,11 +216,13 @@ class _SessionTemplateDialogState extends State<SessionTemplateDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(AppLocalizations.of(context)!.cancel),
         ),
         ElevatedButton(
           onPressed: _saveTemplate,
-          child: Text(widget.existingTemplate == null ? 'Create' : 'Save'),
+          child: Text(widget.existingTemplate == null 
+              ? AppLocalizations.of(context)!.create 
+              : AppLocalizations.of(context)!.save),
         ),
       ],
     );

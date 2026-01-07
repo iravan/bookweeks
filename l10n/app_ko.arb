@@ -1,0 +1,329 @@
+{
+  "@@locale": "ko",
+  "appTitle": "주간 예약",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "주 선택",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "월",
+  "tue": "화",
+  "wed": "수",
+  "thu": "목",
+  "fri": "금",
+  "sat": "토",
+  "sun": "일",
+  "noSessionsScheduled": "예정된 세션이 없습니다",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "+ 버튼을 탭하여 세션 추가",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "학생",
+  "students": "학생",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "세션 삭제",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "「{title}」을(를) 삭제하시겠습니까?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "취소",
+  "delete": "삭제",
+  "createSession": "세션 만들기",
+  "editSession": "세션 편집",
+  "title": "제목",
+  "titleRequired": "제목을 입력하세요",
+  "startTime": "시작 시간",
+  "endTime": "종료 시간",
+  "endTimeAfterStart": "종료 시간은 시작 시간보다 늦어야 합니다",
+  "descriptionOptional": "설명 (선택사항)",
+  "save": "저장",
+  "add": "추가",
+  "edit": "편집",
+  "allEvents": "모든 이벤트",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "템플릿 관리",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "데이터 내보내기",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "데이터 가져오기",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "내보내기 파일 저장",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "내보내기 성공！\n저장 위치：{path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "내보내기 실패：{error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "가져오기 성공",
+  "importFailed": "가져오기 실패",
+  "errorReadingFile": "파일 읽기 오류",
+  "error": "오류：{error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "확인",
+  "searchEvents": "이벤트 검색...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "예정된 이벤트가 없습니다",
+  "noEventsFound": "이벤트를 찾을 수 없습니다",
+  "createEventsFromCalendar": "캘린더에서 이벤트 만들기",
+  "studentsJoiningThisSession": "이 세션에 참여하는 학생",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "멤버 추가",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "아직 학생이 추가되지 않았습니다",
+  "tapToAddMember": "+를 탭하여 멤버 추가",
+  "allMembers": "모든 멤버",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "세션에 추가",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "세션에서 제거",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "이름",
+  "nameRequired": "이름을 입력하세요",
+  "nicknameOptional": "별명 (선택사항)",
+  "ageOptional": "나이 (선택사항)",
+  "ageInvalid": "유효한 나이를 입력하세요",
+  "phoneNumberOptional": "전화번호 (선택사항)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "예：+82 10-1234-5678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "멤버 추가",
+  "editMemberTitle": "멤버 편집",
+  "member": "멤버",
+  "nameLabel": "이름：{name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "나이：{age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "전화：{phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "템플릿 (선택사항)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "없음",
+  "saveAsTemplate": "템플릿으로 저장",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "이 세션을 향후 세션의 템플릿으로 사용",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "템플릿 이름",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "이 템플릿을 식별하기 위한 이름",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "템플릿 이름을 입력하세요",
+  "defaultSessionTitle": "기본 세션 제목",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "이 템플릿에서 세션을 만들 때 사용되는 제목",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "세션 제목을 입력하세요",
+  "createTemplate": "템플릿 만들기",
+  "editTemplate": "템플릿 편집",
+  "create": "만들기",
+  "templateNameDialogTitle": "템플릿 이름",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "이 템플릿에 이름을 지정하여 쉽게 식별할 수 있도록 합니다",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "템플릿 관리",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "아직 템플릿이 없습니다",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "세션을 만들고 「템플릿으로 저장」을 선택하세요",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "템플릿 삭제",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "「{title}」을(를) 삭제하시겠습니까?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "세션：{title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "템플릿으로 저장",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "템플릿 「{name}」이(가) 성공적으로 저장되었습니다",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "디버그",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "디버그 날짜 시뮬레이션",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "사용자 지정 날짜 설정",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "지우기",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "현재：{date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "오늘",
+  "yesterday": "어제",
+  "tomorrow": "내일",
+  "daysAgo": "{count}일 전",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count}일 후",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,329 @@
+{
+  "@@locale": "ja",
+  "appTitle": "週次予約",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "週を選択",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "月",
+  "tue": "火",
+  "wed": "水",
+  "thu": "木",
+  "fri": "金",
+  "sat": "土",
+  "sun": "日",
+  "noSessionsScheduled": "予定されたセッションがありません",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "+ ボタンをタップしてセッションを追加",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "学生",
+  "students": "学生",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "セッションを削除",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "「{title}」を削除してもよろしいですか？",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "キャンセル",
+  "delete": "削除",
+  "createSession": "セッションを作成",
+  "editSession": "セッションを編集",
+  "title": "タイトル",
+  "titleRequired": "タイトルを入力してください",
+  "startTime": "開始時間",
+  "endTime": "終了時間",
+  "endTimeAfterStart": "終了時間は開始時間より後である必要があります",
+  "descriptionOptional": "説明（任意）",
+  "save": "保存",
+  "add": "追加",
+  "edit": "編集",
+  "allEvents": "すべてのイベント",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "テンプレートを管理",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "データをエクスポート",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "データをインポート",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "エクスポートファイルを保存",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "エクスポート成功！\n保存先：{path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "エクスポート失敗：{error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "インポート成功",
+  "importFailed": "インポート失敗",
+  "errorReadingFile": "ファイルの読み取りエラー",
+  "error": "エラー：{error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "イベントを検索...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "予定されたイベントがありません",
+  "noEventsFound": "イベントが見つかりません",
+  "createEventsFromCalendar": "カレンダーからイベントを作成",
+  "studentsJoiningThisSession": "このセッションに参加する学生",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "メンバーを追加",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "まだ学生が追加されていません",
+  "tapToAddMember": "+ をタップしてメンバーを追加",
+  "allMembers": "すべてのメンバー",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "セッションに追加",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "セッションから削除",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "名前",
+  "nameRequired": "名前を入力してください",
+  "nicknameOptional": "ニックネーム（任意）",
+  "ageOptional": "年齢（任意）",
+  "ageInvalid": "有効な年齢を入力してください",
+  "phoneNumberOptional": "電話番号（任意）",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "例：+81 90-1234-5678",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "メンバーを追加",
+  "editMemberTitle": "メンバーを編集",
+  "member": "メンバー",
+  "nameLabel": "名前：{name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "年齢：{age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "電話：{phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "テンプレート（任意）",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "なし",
+  "saveAsTemplate": "テンプレートとして保存",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "このセッションを今後のセッションのテンプレートとして使用",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "テンプレート名",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "このテンプレートを識別するための名前",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "テンプレート名を入力してください",
+  "defaultSessionTitle": "デフォルトセッションタイトル",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "このテンプレートからセッションを作成する際に使用されるタイトル",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "セッションタイトルを入力してください",
+  "createTemplate": "テンプレートを作成",
+  "editTemplate": "テンプレートを編集",
+  "create": "作成",
+  "templateNameDialogTitle": "テンプレート名",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "このテンプレートに名前を付けて識別しやすくします",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "テンプレート管理",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "まだテンプレートがありません",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "セッションを作成し、「テンプレートとして保存」にチェックを入れます",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "テンプレートを削除",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "「{title}」を削除してもよろしいですか？",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "セッション：{title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "テンプレートとして保存",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "テンプレート「{name}」が正常に保存されました",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "デバッグ",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "デバッグ日付シミュレーション",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "カスタム日付を設定",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "クリア",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "現在：{date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "今日",
+  "yesterday": "昨日",
+  "tomorrow": "明日",
+  "daysAgo": "{count} 日前",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} 日後",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

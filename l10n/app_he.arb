@@ -1,0 +1,329 @@
+{
+  "@@locale": "he",
+  "appTitle": "הזמנת שבועות",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "בחר שבוע",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "ב׳",
+  "tue": "ג׳",
+  "wed": "ד׳",
+  "thu": "ה׳",
+  "fri": "ו׳",
+  "sat": "ש׳",
+  "sun": "א׳",
+  "noSessionsScheduled": "אין מפגשים מתוזמנים",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "הקש על כפתור + כדי להוסיף מפגש",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "תלמיד",
+  "students": "תלמידים",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "מחק מפגש",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "האם אתה בטוח שברצונך למחוק את \"{title}\"?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "ביטול",
+  "delete": "מחק",
+  "createSession": "צור מפגש",
+  "editSession": "ערוך מפגש",
+  "title": "כותרת",
+  "titleRequired": "אנא הזן כותרת",
+  "startTime": "שעת התחלה",
+  "endTime": "שעת סיום",
+  "endTimeAfterStart": "שעת הסיום חייבת להיות אחרי שעת ההתחלה",
+  "descriptionOptional": "תיאור (אופציונלי)",
+  "save": "שמור",
+  "add": "הוסף",
+  "edit": "ערוך",
+  "allEvents": "כל האירועים",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "נהל תבניות",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "ייצא נתונים",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "ייבא נתונים",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "שמור קובץ ייצוא",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "הייצוא הצליח!\nנשמר ב: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "הייצוא נכשל: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "הייבוא הצליח",
+  "importFailed": "הייבוא נכשל",
+  "errorReadingFile": "שגיאה בקריאת הקובץ",
+  "error": "שגיאה: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "אישור",
+  "searchEvents": "חפש אירועים...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "אין אירועים מתוזמנים",
+  "noEventsFound": "לא נמצאו אירועים",
+  "createEventsFromCalendar": "צור אירועים מהלוח שנה",
+  "studentsJoiningThisSession": "תלמידים המצטרפים למפגש זה",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "הוסף חבר",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "עדיין לא נוספו תלמידים",
+  "tapToAddMember": "הקש + כדי להוסיף חבר",
+  "allMembers": "כל החברים",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "הוסף למפגש",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "הסר מהמפגש",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "שם",
+  "nameRequired": "אנא הזן שם",
+  "nicknameOptional": "כינוי (אופציונלי)",
+  "ageOptional": "גיל (אופציונלי)",
+  "ageInvalid": "אנא הזן גיל תקין",
+  "phoneNumberOptional": "מספר טלפון (אופציונלי)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "לדוגמה: +972 50 123 4567",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "הוסף חבר",
+  "editMemberTitle": "ערוך חבר",
+  "member": "חבר",
+  "nameLabel": "שם: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "גיל: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "טלפון: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "תבנית (אופציונלי)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "אין",
+  "saveAsTemplate": "שמור כתבנית",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "השתמש במפגש זה כתבנית למפגשים עתידיים",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "שם התבנית",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "שם לזיהוי תבנית זו",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "אנא הזן שם תבנית",
+  "defaultSessionTitle": "כותרת מפגש ברירת מחדל",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "כותרת המשמשת בעת יצירת מפגשים מתבנית זו",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "אנא הזן כותרת מפגש",
+  "createTemplate": "צור תבנית",
+  "editTemplate": "ערוך תבנית",
+  "create": "צור",
+  "templateNameDialogTitle": "שם התבנית",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "תן לתבנית זו שם לזיהוי קל",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "ניהול תבניות",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "עדיין אין תבניות",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "צור מפגש וסמן \"שמור כתבנית\"",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "מחק תבנית",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "האם אתה בטוח שברצונך למחוק את \"{title}\"?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "מפגש: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "שמור כתבנית",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "התבנית \"{name}\" נשמרה בהצלחה",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "דיבוג",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "סימולציית תאריך דיבוג",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "הגדר תאריך מותאם אישית",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "נקה",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "עכשיו: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "היום",
+  "yesterday": "אתמול",
+  "tomorrow": "מחר",
+  "daysAgo": "לפני {count} ימים",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "בעוד {count} ימים",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

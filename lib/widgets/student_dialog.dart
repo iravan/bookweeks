@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookweeks/l10n/app_localizations.dart';
 import '../models/student.dart';
 
 class StudentDialog extends StatefulWidget {
@@ -58,7 +59,9 @@ class _StudentDialogState extends State<StudentDialog> {
         borderRadius: BorderRadius.circular(16),
       ),
       title: Text(
-        widget.existingStudent == null ? 'Add Member' : 'Edit Member',
+        widget.existingStudent == null 
+            ? AppLocalizations.of(context)!.addMemberTitle 
+            : AppLocalizations.of(context)!.editMemberTitle,
         style: const TextStyle(fontWeight: FontWeight.bold),
       ),
       content: Form(
@@ -70,13 +73,13 @@ class _StudentDialogState extends State<StudentDialog> {
             children: [
               TextFormField(
                 controller: _nameController,
-                decoration: const InputDecoration(
-                  labelText: 'Name *',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: '${AppLocalizations.of(context)!.name} *',
+                  border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.trim().isEmpty) {
-                    return 'Please enter a name';
+                    return AppLocalizations.of(context)!.nameRequired;
                   }
                   return null;
                 },
@@ -84,24 +87,24 @@ class _StudentDialogState extends State<StudentDialog> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _nicknameController,
-                decoration: const InputDecoration(
-                  labelText: 'Nickname (optional)',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.nicknameOptional,
+                  border: const OutlineInputBorder(),
                 ),
               ),
               const SizedBox(height: 16),
               TextFormField(
                 controller: _ageController,
-                decoration: const InputDecoration(
-                  labelText: 'Age (optional)',
-                  border: OutlineInputBorder(),
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.ageOptional,
+                  border: const OutlineInputBorder(),
                 ),
                 keyboardType: TextInputType.number,
                 validator: (value) {
                   if (value != null && value.trim().isNotEmpty) {
                     final age = int.tryParse(value.trim());
                     if (age == null || age < 0) {
-                      return 'Please enter a valid age';
+                      return AppLocalizations.of(context)!.ageInvalid;
                     }
                   }
                   return null;
@@ -110,10 +113,10 @@ class _StudentDialogState extends State<StudentDialog> {
               const SizedBox(height: 16),
               TextFormField(
                 controller: _phoneController,
-                decoration: const InputDecoration(
-                  labelText: 'Phone Number (optional)',
-                  border: OutlineInputBorder(),
-                  hintText: 'e.g., +1 234 567 8900',
+                decoration: InputDecoration(
+                  labelText: AppLocalizations.of(context)!.phoneNumberOptional,
+                  border: const OutlineInputBorder(),
+                  hintText: AppLocalizations.of(context)!.phoneNumberHint,
                 ),
                 keyboardType: TextInputType.phone,
               ),
@@ -124,11 +127,13 @@ class _StudentDialogState extends State<StudentDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(AppLocalizations.of(context)!.cancel),
         ),
         ElevatedButton(
           onPressed: _saveStudent,
-          child: Text(widget.existingStudent == null ? 'Add' : 'Save'),
+          child: Text(widget.existingStudent == null 
+              ? AppLocalizations.of(context)!.add 
+              : AppLocalizations.of(context)!.save),
         ),
       ],
     );

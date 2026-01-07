@@ -1,0 +1,329 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Réservation Semaines",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Sélectionner la semaine",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Lun",
+  "tue": "Mar",
+  "wed": "Mer",
+  "thu": "Jeu",
+  "fri": "Ven",
+  "sat": "Sam",
+  "sun": "Dim",
+  "noSessionsScheduled": "Aucune session prévue",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Appuyez sur le bouton + pour ajouter une session",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "étudiant",
+  "students": "étudiants",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Supprimer la session",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Êtes-vous sûr de vouloir supprimer « {title} » ?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "createSession": "Créer une session",
+  "editSession": "Modifier la session",
+  "title": "Titre",
+  "titleRequired": "Veuillez saisir un titre",
+  "startTime": "Heure de début",
+  "endTime": "Heure de fin",
+  "endTimeAfterStart": "L'heure de fin doit être postérieure à l'heure de début",
+  "descriptionOptional": "Description (facultatif)",
+  "save": "Enregistrer",
+  "add": "Ajouter",
+  "edit": "Modifier",
+  "allEvents": "Tous les événements",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Gérer les modèles",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Exporter les données",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Importer les données",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Enregistrer le fichier d'exportation",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Exportation réussie !\nEnregistré dans : {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Échec de l'exportation : {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Importation réussie",
+  "importFailed": "Échec de l'importation",
+  "errorReadingFile": "Erreur lors de la lecture du fichier",
+  "error": "Erreur : {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Rechercher des événements...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Aucun événement prévu",
+  "noEventsFound": "Aucun événement trouvé",
+  "createEventsFromCalendar": "Créer des événements depuis le calendrier",
+  "studentsJoiningThisSession": "Étudiants participant à cette session",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Ajouter un membre",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Aucun étudiant ajouté pour le moment",
+  "tapToAddMember": "Appuyez sur + pour ajouter un membre",
+  "allMembers": "Tous les membres",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Ajouter à la session",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Retirer de la session",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Nom",
+  "nameRequired": "Veuillez saisir un nom",
+  "nicknameOptional": "Surnom (facultatif)",
+  "ageOptional": "Âge (facultatif)",
+  "ageInvalid": "Veuillez saisir un âge valide",
+  "phoneNumberOptional": "Numéro de téléphone (facultatif)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "ex. : +33 6 12 34 56 78",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Ajouter un membre",
+  "editMemberTitle": "Modifier le membre",
+  "member": "Membre",
+  "nameLabel": "Nom : {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Âge : {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Téléphone : {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Modèle (facultatif)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Aucun",
+  "saveAsTemplate": "Enregistrer comme modèle",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Utiliser cette session comme modèle pour les sessions futures",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Nom du modèle",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Nom pour identifier ce modèle",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Veuillez saisir un nom de modèle",
+  "defaultSessionTitle": "Titre de session par défaut",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Titre utilisé lors de la création de sessions à partir de ce modèle",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Veuillez saisir un titre de session",
+  "createTemplate": "Créer un modèle",
+  "editTemplate": "Modifier le modèle",
+  "create": "Créer",
+  "templateNameDialogTitle": "Nom du modèle",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Donnez un nom à ce modèle pour faciliter son identification",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Gestion des modèles",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Aucun modèle pour le moment",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Créez une session et cochez « Enregistrer comme modèle »",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Supprimer le modèle",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Êtes-vous sûr de vouloir supprimer « {title} » ?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Session : {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Enregistrer comme modèle",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Le modèle « {name} » a été enregistré avec succès",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "DEBUG",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Simulation de date de débogage",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Définir une date personnalisée",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Effacer",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Maintenant : {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Aujourd'hui",
+  "yesterday": "Hier",
+  "tomorrow": "Demain",
+  "daysAgo": "Il y a {count} jour",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "Dans {count} jour",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

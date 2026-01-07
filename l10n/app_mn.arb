@@ -1,0 +1,329 @@
+{
+  "@@locale": "mn",
+  "appTitle": "Долоо Хоног Захиалах",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "selectWeek": "Долоо Хоног Сонгох",
+  "@selectWeek": {
+    "description": "Label for the week selection section"
+  },
+  "mon": "Да",
+  "tue": "Мя",
+  "wed": "Лх",
+  "thu": "Пү",
+  "fri": "Ба",
+  "sat": "Бя",
+  "sun": "Ня",
+  "noSessionsScheduled": "Төлөвлөсөн хичээл байхгүй",
+  "@noSessionsScheduled": {
+    "description": "Message shown when there are no sessions for a day"
+  },
+  "tapToAddSession": "Хичээл нэмэхийн тулд + товч дарах",
+  "@tapToAddSession": {
+    "description": "Hint text for adding sessions"
+  },
+  "student": "суралцагч",
+  "students": "суралцагчид",
+  "@student": {
+    "description": "Singular form of student",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@students": {
+    "description": "Plural form of students",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSession": "Хичээл Устгах",
+  "@deleteSession": {
+    "description": "Title of delete session dialog"
+  },
+  "deleteSessionConfirm": "Та \"{title}\" устгахдаа итгэлтэй байна уу?",
+  "@deleteSessionConfirm": {
+    "description": "Confirmation message for deleting a session",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Цуцлах",
+  "delete": "Устгах",
+  "createSession": "Хичээл Үүсгэх",
+  "editSession": "Хичээл Засах",
+  "title": "Гарчиг",
+  "titleRequired": "Гарчиг оруулна уу",
+  "startTime": "Эхлэх Цаг",
+  "endTime": "Дуусах Цаг",
+  "endTimeAfterStart": "Дуусах цаг нь эхлэх цагаас хойш байх ёстой",
+  "descriptionOptional": "Тайлбар (сонголттой)",
+  "save": "Хадгалах",
+  "add": "Нэмэх",
+  "edit": "Засах",
+  "allEvents": "Бүх Үйл явдал",
+  "@allEvents": {
+    "description": "Title for the events list page"
+  },
+  "manageTemplates": "Загварууд Удирдах",
+  "@manageTemplates": {
+    "description": "Menu item for managing templates"
+  },
+  "exportData": "Өгөгдөл Экспортлох",
+  "@exportData": {
+    "description": "Menu item for exporting data"
+  },
+  "importData": "Өгөгдөл Импортлох",
+  "@importData": {
+    "description": "Menu item for importing data"
+  },
+  "saveExportFile": "Экспортын Файл Хадгалах",
+  "@saveExportFile": {
+    "description": "Dialog title for saving export file"
+  },
+  "exportSuccessful": "Экспорт амжилттай!\nХадгалсан газар: {path}",
+  "@exportSuccessful": {
+    "description": "Success message after export",
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFailed": "Экспорт амжилтгүй: {error}",
+  "@exportFailed": {
+    "description": "Error message when export fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importSuccessful": "Импорт Амжилттай",
+  "importFailed": "Импорт Амжилтгүй",
+  "errorReadingFile": "Файл унших алдаа",
+  "error": "Алдаа: {error}",
+  "@error": {
+    "description": "Generic error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ok": "OK",
+  "searchEvents": "Үйл явдал хайх...",
+  "@searchEvents": {
+    "description": "Placeholder text for search field"
+  },
+  "noEventsScheduled": "Төлөвлөсөн үйл явдал байхгүй",
+  "noEventsFound": "Үйл явдал олдсонгүй",
+  "createEventsFromCalendar": "Календараас үйл явдал үүсгэх",
+  "studentsJoiningThisSession": "Энэ Хичээлд Оролцож Буй Суралцагчид",
+  "@studentsJoiningThisSession": {
+    "description": "Section title for students in a session"
+  },
+  "addMember": "Гишүүн Нэмэх",
+  "@addMember": {
+    "description": "Tooltip for add member button"
+  },
+  "noStudentsAddedYet": "Суралцагч хараахан нэмэгдээгүй байна",
+  "tapToAddMember": "+ дарах замаар гишүүн нэмэх",
+  "allMembers": "Бүх Гишүүд",
+  "@allMembers": {
+    "description": "Section title for all available members"
+  },
+  "addToSession": "Хичээлд нэмэх",
+  "@addToSession": {
+    "description": "Tooltip for adding a student to session"
+  },
+  "removeFromSession": "Хичээлээс хасах",
+  "@removeFromSession": {
+    "description": "Tooltip for removing a student from session"
+  },
+  "name": "Нэр",
+  "nameRequired": "Нэр оруулна уу",
+  "nicknameOptional": "Хоч нэр (сонголттой)",
+  "ageOptional": "Нас (сонголттой)",
+  "ageInvalid": "Зөв нас оруулна уу",
+  "phoneNumberOptional": "Утасны Дугаар (сонголттой)",
+  "@phoneNumberOptional": {
+    "description": "Label for phone number field"
+  },
+  "phoneNumberHint": "жишээ: +976 9123 4567",
+  "@phoneNumberHint": {
+    "description": "Hint text for phone number field"
+  },
+  "addMemberTitle": "Гишүүн Нэмэх",
+  "editMemberTitle": "Гишүүн Засах",
+  "member": "Гишүүн",
+  "nameLabel": "Нэр: {name}",
+  "@nameLabel": {
+    "description": "Label showing student name",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ageLabel": "Нас: {age}",
+  "@ageLabel": {
+    "description": "Label showing student age",
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "phoneLabel": "Утас: {phone}",
+  "@phoneLabel": {
+    "description": "Label showing student phone number",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "templateOptional": "Загвар (сонголттой)",
+  "@templateOptional": {
+    "description": "Label for template dropdown"
+  },
+  "none": "Байхгүй",
+  "saveAsTemplate": "Загвар болгон хадгалах",
+  "@saveAsTemplate": {
+    "description": "Checkbox label for saving session as template"
+  },
+  "saveAsTemplateSubtitle": "Энэ хичээлийг ирээдүйн хичээлүүдийн загвар болгон ашиглах",
+  "@saveAsTemplateSubtitle": {
+    "description": "Subtitle for save as template checkbox"
+  },
+  "templateName": "Загварын Нэр",
+  "@templateName": {
+    "description": "Label for template name field"
+  },
+  "templateNameHelper": "Энэ загварыг тодорхойлох нэр",
+  "@templateNameHelper": {
+    "description": "Helper text for template name field"
+  },
+  "templateNameRequired": "Загварын нэр оруулна уу",
+  "defaultSessionTitle": "Анхдагч Хичээлийн Гарчиг",
+  "@defaultSessionTitle": {
+    "description": "Label for default session title field"
+  },
+  "defaultSessionTitleHelper": "Энэ загвараас хичээл үүсгэхэд ашиглах гарчиг",
+  "@defaultSessionTitleHelper": {
+    "description": "Helper text for default session title field"
+  },
+  "sessionTitleRequired": "Хичээлийн гарчиг оруулна уу",
+  "createTemplate": "Загвар Үүсгэх",
+  "editTemplate": "Загвар Засах",
+  "create": "Үүсгэх",
+  "templateNameDialogTitle": "Загварын Нэр",
+  "@templateNameDialogTitle": {
+    "description": "Title of template name dialog"
+  },
+  "templateNameDialogHelper": "Энэ загварт хялбар танихын тулд нэр өгөх",
+  "@templateNameDialogHelper": {
+    "description": "Helper text in template name dialog"
+  },
+  "templateManagement": "Загварын Удирдлага",
+  "@templateManagement": {
+    "description": "Title of template management page"
+  },
+  "noTemplatesYet": "Хараахан загвар байхгүй байна",
+  "@noTemplatesYet": {
+    "description": "Message when no templates exist"
+  },
+  "createSessionAndSaveAsTemplate": "Хичээл үүсгэж \"Загвар болгон хадгалах\" сонгоно уу",
+  "@createSessionAndSaveAsTemplate": {
+    "description": "Hint for creating templates"
+  },
+  "deleteTemplate": "Загвар Устгах",
+  "@deleteTemplate": {
+    "description": "Title of delete template dialog"
+  },
+  "deleteTemplateConfirm": "Та \"{title}\" устгахдаа итгэлтэй байна уу?",
+  "@deleteTemplateConfirm": {
+    "description": "Confirmation message for deleting a template",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "session": "Хичээл: {title}",
+  "@session": {
+    "description": "Label showing session title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "saveAsTemplateTooltip": "Загвар болгон Хадгалах",
+  "@saveAsTemplateTooltip": {
+    "description": "Tooltip for save as template button"
+  },
+  "templateSavedSuccessfully": "Загвар \"{name}\" амжилттай хадгалагдлаа",
+  "@templateSavedSuccessfully": {
+    "description": "Success message when template is saved",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "debug": "АЛДАА ЗАСВАР",
+  "@debug": {
+    "description": "Debug mode indicator"
+  },
+  "debugDateSimulation": "Алдаа Засварын Огнооны Симуляци",
+  "@debugDateSimulation": {
+    "description": "Tooltip for debug menu"
+  },
+  "setCustomDate": "Хувийн Огноо Тохируулах",
+  "@setCustomDate": {
+    "description": "Menu item for setting custom date"
+  },
+  "clear": "Цэвэрлэх",
+  "@clear": {
+    "description": "Menu item for clearing simulated date"
+  },
+  "now": "Одоо: {date}",
+  "@now": {
+    "description": "Label showing current simulated date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "today": "Өнөөдөр",
+  "yesterday": "Өчигдөр",
+  "tomorrow": "Маргааш",
+  "daysAgo": "{count} өдрийн өмнө",
+  "@daysAgo": {
+    "description": "Label for days ago",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysLater": "{count} өдрийн дараа",
+  "@daysLater": {
+    "description": "Label for days later",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+
