@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Tema-inställningar",
+  "selectTheme": "Välj tema",
+  "selectThemeDescription": "Välj ett färgtema för appen. Temat kommer att tillämpas i hela applikationen.",
+  "themeChanged": "Tema ändrat framgångsrikt!",
+  "aboutTheme": "Om teman",
+  "themeInfo": "Att ändra temat kommer att uppdatera färgerna i hela appen, inklusive knappar, appfält och andra UI-element. Din temapreferens kommer att sparas och tillämpas automatiskt när du startar om appen.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

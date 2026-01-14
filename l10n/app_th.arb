@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "การตั้งค่าธีม",
+  "selectTheme": "เลือกธีม",
+  "selectThemeDescription": "เลือกธีมสีสำหรับแอป ธีมจะถูกนำไปใช้ทั่วทั้งแอปพลิเคชัน",
+  "themeChanged": "เปลี่ยนธีมสำเร็จแล้ว!",
+  "aboutTheme": "เกี่ยวกับธีม",
+  "themeInfo": "การเปลี่ยนธีมจะอัปเดตสีทั่วทั้งแอป รวมถึงปุ่ม แถบแอป และองค์ประกอบ UI อื่นๆ การตั้งค่าธีมของคุณจะถูกบันทึกและนำไปใช้โดยอัตโนมัติเมื่อคุณเริ่มแอปใหม่",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

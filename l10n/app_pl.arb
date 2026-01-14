@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Ustawienia motywu",
+  "selectTheme": "Wybierz motyw",
+  "selectThemeDescription": "Wybierz motyw kolorystyczny aplikacji. Motyw zostanie zastosowany w całej aplikacji.",
+  "themeChanged": "Motyw zmieniony pomyślnie!",
+  "aboutTheme": "O motywach",
+  "themeInfo": "Zmiana motywu zaktualizuje kolory w całej aplikacji, w tym przyciski, paski aplikacji i inne elementy interfejsu. Twoja preferencja motywu zostanie zapisana i zastosowana automatycznie po ponownym uruchomieniu aplikacji.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

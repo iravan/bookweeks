@@ -466,4 +466,24 @@ class AppLocalizationsTr extends AppLocalizations {
   String startsAt(String time) {
     return '$time da başlıyor';
   }
+
+  @override
+  String get themeSettings => 'Tema ayarları';
+
+  @override
+  String get selectTheme => 'Tema seç';
+
+  @override
+  String get selectThemeDescription =>
+      'Uygulama için bir renk teması seçin. Tema tüm uygulamaya uygulanacaktır.';
+
+  @override
+  String get themeChanged => 'Tema başarıyla değiştirildi!';
+
+  @override
+  String get aboutTheme => 'Temalar hakkında';
+
+  @override
+  String get themeInfo =>
+      'Temayı değiştirmek, uygulama çubukları, düğmeler ve diğer kullanıcı arayüzü öğeleri dahil olmak üzere uygulama genelindeki renkleri güncelleyecektir. Tema tercihiniz kaydedilecek ve uygulamayı yeniden başlattığınızda otomatik olarak uygulanacaktır.';
 }

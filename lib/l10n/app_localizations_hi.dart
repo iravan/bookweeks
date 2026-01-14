@@ -466,4 +466,24 @@ class AppLocalizationsHi extends AppLocalizations {
   String startsAt(String time) {
     return '$time पर शुरू होता है';
   }
+
+  @override
+  String get themeSettings => 'थीम सेटिंग्स';
+
+  @override
+  String get selectTheme => 'थीम चुनें';
+
+  @override
+  String get selectThemeDescription =>
+      'ऐप के लिए एक रंग थीम चुनें। थीम पूरे एप्लिकेशन में लागू होगी।';
+
+  @override
+  String get themeChanged => 'थीम सफलतापूर्वक बदली गई!';
+
+  @override
+  String get aboutTheme => 'थीम के बारे में';
+
+  @override
+  String get themeInfo =>
+      'थीम बदलने से ऐप भर में रंग अपडेट होंगे, जिसमें बटन, ऐप बार और अन्य UI तत्व शामिल हैं। आपकी थीम प्राथमिकता सहेजी जाएगी और जब आप ऐप को पुनरारंभ करेंगे तो स्वचालित रूप से लागू हो जाएगी।';
 }

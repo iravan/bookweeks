@@ -396,4 +396,29 @@
       }
     }
   }
+,
+  "themeSettings": "テーマ設定",
+  "selectTheme": "テーマを選択",
+  "selectThemeDescription": "アプリのカラーテーマを選択してください。テーマはアプリ全体に適用されます。",
+  "themeChanged": "テーマが正常に変更されました！",
+  "aboutTheme": "テーマについて",
+  "themeInfo": "テーマを変更すると、ボタン、アプリバー、その他のUI要素を含む、アプリ全体の色が更新されます。テーマの設定は保存され、アプリを再起動すると自動的に適用されます。",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

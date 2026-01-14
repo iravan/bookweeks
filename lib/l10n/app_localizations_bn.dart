@@ -466,4 +466,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String startsAt(String time) {
     return '$time এ শুরু হয়';
   }
+
+  @override
+  String get themeSettings => 'থিম সেটিংস';
+
+  @override
+  String get selectTheme => 'থিম নির্বাচন করুন';
+
+  @override
+  String get selectThemeDescription =>
+      'অ্যাপের জন্য একটি রঙের থিম চয়ন করুন। থিমটি পুরো অ্যাপ্লিকেশনে প্রয়োগ করা হবে।';
+
+  @override
+  String get themeChanged => 'থিম সফলভাবে পরিবর্তন করা হয়েছে!';
+
+  @override
+  String get aboutTheme => 'থিম সম্পর্কে';
+
+  @override
+  String get themeInfo =>
+      'থিম পরিবর্তন করলে অ্যাপ জুড়ে রঙ আপডেট হবে, যার মধ্যে রয়েছে বোতাম, অ্যাপ বার এবং অন্যান্য UI উপাদান। আপনার থিম পছন্দ সংরক্ষণ করা হবে এবং আপনি অ্যাপটি পুনরায় চালু করলে স্বয়ংক্রিয়ভাবে প্রয়োগ করা হবে।';
 }

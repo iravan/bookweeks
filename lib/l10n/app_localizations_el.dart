@@ -473,4 +473,24 @@ class AppLocalizationsEl extends AppLocalizations {
   String startsAt(String time) {
     return 'Ξεκινάει στις $time';
   }
+
+  @override
+  String get themeSettings => 'Ρυθμίσεις θέματος';
+
+  @override
+  String get selectTheme => 'Επιλέξτε θέμα';
+
+  @override
+  String get selectThemeDescription =>
+      'Επιλέξτε ένα θέμα χρώματος για την εφαρμογή. Το θέμα θα εφαρμοστεί σε ολόκληρη την εφαρμογή.';
+
+  @override
+  String get themeChanged => 'Το θέμα άλλαξε με επιτυχία!';
+
+  @override
+  String get aboutTheme => 'Σχετικά με τα θέματα';
+
+  @override
+  String get themeInfo =>
+      'Η αλλαγή του θέματος θα ενημερώσει τα χρώματα σε όλη την εφαρμογή, συμπεριλαμβανομένων των κουμπιών, των γραμμών εφαρμογής και άλλων στοιχείων διεπαφής. Η προτίμησή σας για το θέμα θα αποθηκευτεί και θα εφαρμοστεί αυτόματα όταν κάνετε επανεκκίνηση της εφαρμογής.';
 }

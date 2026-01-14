@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Configurações do tema",
+  "selectTheme": "Selecionar tema",
+  "selectThemeDescription": "Escolha um tema de cores para o aplicativo. O tema será aplicado em todo o aplicativo.",
+  "themeChanged": "Tema alterado com sucesso!",
+  "aboutTheme": "Sobre os temas",
+  "themeInfo": "Alterar o tema atualizará as cores em todo o aplicativo, incluindo botões, barras de aplicativo e outros elementos da interface. Sua preferência de tema será salva e aplicada automaticamente quando você reiniciar o aplicativo.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

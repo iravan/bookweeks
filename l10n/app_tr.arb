@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Tema ayarları",
+  "selectTheme": "Tema seç",
+  "selectThemeDescription": "Uygulama için bir renk teması seçin. Tema tüm uygulamaya uygulanacaktır.",
+  "themeChanged": "Tema başarıyla değiştirildi!",
+  "aboutTheme": "Temalar hakkında",
+  "themeInfo": "Temayı değiştirmek, uygulama çubukları, düğmeler ve diğer kullanıcı arayüzü öğeleri dahil olmak üzere uygulama genelindeki renkleri güncelleyecektir. Tema tercihiniz kaydedilecek ve uygulamayı yeniden başlattığınızda otomatik olarak uygulanacaktır.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

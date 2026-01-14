@@ -970,6 +970,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Starts at {time}'**
   String startsAt(String time);
+
+  /// Title for theme settings page
+  ///
+  /// In en, this message translates to:
+  /// **'Theme Settings'**
+  String get themeSettings;
+
+  /// Title for theme selection section
+  ///
+  /// In en, this message translates to:
+  /// **'Select Theme'**
+  String get selectTheme;
+
+  /// Description text for theme selection
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a color theme for the app. The theme will be applied throughout the entire application.'**
+  String get selectThemeDescription;
+
+  /// Success message when theme is changed
+  ///
+  /// In en, this message translates to:
+  /// **'Theme changed successfully!'**
+  String get themeChanged;
+
+  /// Title for theme info section
+  ///
+  /// In en, this message translates to:
+  /// **'About Themes'**
+  String get aboutTheme;
+
+  /// Information text about themes
+  ///
+  /// In en, this message translates to:
+  /// **'Changing the theme will update the colors throughout the app, including buttons, app bars, and other UI elements. Your theme preference will be saved and applied automatically when you restart the app.'**
+  String get themeInfo;
 }
 
 class _AppLocalizationsDelegate

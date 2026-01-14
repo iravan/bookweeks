@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "ਥੀਮ ਸੈਟਿੰਗਾਂ",
+  "selectTheme": "ਥੀਮ ਚੁਣੋ",
+  "selectThemeDescription": "ਐਪ ਲਈ ਇੱਕ ਰੰਗ ਥੀਮ ਚੁਣੋ। ਥੀਮ ਪੂਰੀ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚ ਲਾਗੂ ਕੀਤੀ ਜਾਵੇਗੀ।",
+  "themeChanged": "ਥੀਮ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲੀ ਗਈ!",
+  "aboutTheme": "ਥੀਮਾਂ ਬਾਰੇ",
+  "themeInfo": "ਥੀਮ ਬਦਲਣਾ ਐਪ ਦੇ ਸਾਰੇ ਰੰਗਾਂ ਨੂੰ ਅਪਡੇਟ ਕਰੇਗਾ, ਜਿਸ ਵਿੱਚ ਬਟਨ, ਐਪ ਬਾਰ ਅਤੇ ਹੋਰ UI ਤੱਤ ਸ਼ਾਮਲ ਹਨ। ਤੁਹਾਡੀ ਥੀਮ ਪਸੰਦ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਐਪ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋਗੇ ਤਾਂ ਆਪਣੇ ਆਪ ਲਾਗੂ ਹੋਵੇਗੀ।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

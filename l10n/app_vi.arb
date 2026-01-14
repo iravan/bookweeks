@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Cài đặt giao diện",
+  "selectTheme": "Chọn giao diện",
+  "selectThemeDescription": "Chọn một chủ đề màu cho ứng dụng. Chủ đề sẽ được áp dụng cho toàn bộ ứng dụng.",
+  "themeChanged": "Đã thay đổi giao diện thành công!",
+  "aboutTheme": "Về giao diện",
+  "themeInfo": "Thay đổi giao diện sẽ cập nhật màu sắc trong toàn bộ ứng dụng, bao gồm nút, thanh ứng dụng và các phần tử giao diện khác. Tùy chọn giao diện của bạn sẽ được lưu và tự động áp dụng khi bạn khởi động lại ứng dụng.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

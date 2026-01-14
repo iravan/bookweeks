@@ -471,4 +471,24 @@ class AppLocalizationsFil extends AppLocalizations {
   String startsAt(String time) {
     return 'Nagsisimula sa $time';
   }
+
+  @override
+  String get themeSettings => 'Mga Setting ng Theme';
+
+  @override
+  String get selectTheme => 'Pumili ng Theme';
+
+  @override
+  String get selectThemeDescription =>
+      'Pumili ng color theme para sa app. Ang theme ay ilalapat sa buong application.';
+
+  @override
+  String get themeChanged => 'Matagumpay na nabago ang theme!';
+
+  @override
+  String get aboutTheme => 'Tungkol sa mga Theme';
+
+  @override
+  String get themeInfo =>
+      'Ang pagbabago ng theme ay mag-u-update ng mga kulay sa buong app, kasama ang mga button, app bar, at iba pang UI elements. Ang iyong theme preference ay mai-save at awtomatikong ilalapat kapag muling sinimulan mo ang app.';
 }

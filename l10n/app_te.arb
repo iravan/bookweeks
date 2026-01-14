@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "థీమ్ సెట్టింగ్‌లు",
+  "selectTheme": "థీమ్ ఎంచుకోండి",
+  "selectThemeDescription": "యాప్ కోసం రంగు థీమ్‌ను ఎంచుకోండి। థీమ్ మొత్తం అనువర్తనంలో వర్తింపజేయబడుతుంది।",
+  "themeChanged": "థీమ్ విజయవంతంగా మార్చబడింది!",
+  "aboutTheme": "థీమ్‌ల గురించి",
+  "themeInfo": "థీమ్‌ను మార్చడం వలన ఆప్‌లోని రంగులు నవీకరించబడతాయి, దీనిలో బటన్‌లు, ఆప్ బార్‌లు మరియు ఇతర UI అంశాలు ఉన్నాయి। మీ థీమ్ ప్రాధాన్యత సేవ్ చేయబడుతుంది మరియు మీరు ఆప్‌ను పునఃప్రారంభించినప్పుడు స్వయంచాలకంగా వర్తింపజేయబడుతుంది।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

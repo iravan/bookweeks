@@ -466,4 +466,24 @@ class AppLocalizationsTh extends AppLocalizations {
   String startsAt(String time) {
     return 'เริ่มเวลา $time';
   }
+
+  @override
+  String get themeSettings => 'การตั้งค่าธีม';
+
+  @override
+  String get selectTheme => 'เลือกธีม';
+
+  @override
+  String get selectThemeDescription =>
+      'เลือกธีมสีสำหรับแอป ธีมจะถูกนำไปใช้ทั่วทั้งแอปพลิเคชัน';
+
+  @override
+  String get themeChanged => 'เปลี่ยนธีมสำเร็จแล้ว!';
+
+  @override
+  String get aboutTheme => 'เกี่ยวกับธีม';
+
+  @override
+  String get themeInfo =>
+      'การเปลี่ยนธีมจะอัปเดตสีทั่วทั้งแอป รวมถึงปุ่ม แถบแอป และองค์ประกอบ UI อื่นๆ การตั้งค่าธีมของคุณจะถูกบันทึกและนำไปใช้โดยอัตโนมัติเมื่อคุณเริ่มแอปใหม่';
 }

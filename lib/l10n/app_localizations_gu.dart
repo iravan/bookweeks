@@ -464,4 +464,24 @@ class AppLocalizationsGu extends AppLocalizations {
   String startsAt(String time) {
     return '$time પર શરૂ થાય છે';
   }
+
+  @override
+  String get themeSettings => 'થીમ સેટિંગ્સ';
+
+  @override
+  String get selectTheme => 'થીમ પસંદ કરો';
+
+  @override
+  String get selectThemeDescription =>
+      'એપ્લિકેશન માટે રંગ થીમ પસંદ કરો। થીમ સમગ્ર એપ્લિકેશનમાં લાગુ પડશે।';
+
+  @override
+  String get themeChanged => 'થીમ સફળતાપૂર્વક બદલાઈ!';
+
+  @override
+  String get aboutTheme => 'થીમ્સ વિશે';
+
+  @override
+  String get themeInfo =>
+      'થીમ બદલવાથી આપમાં રંગો અપડેટ થશે, જેમાં બટનો, આપ બાર અને અન્ય UI તત્વોનો સમાવેશ થાય છે। તમારી થીમ પસંદગી સાચવવામાં આવશે અને જ્યારે તમે આપને પુનઃપ્રારંભ કરશો ત્યારે આપમેળે લાગુ પડશે।';
 }

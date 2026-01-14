@@ -466,4 +466,24 @@ class AppLocalizationsHr extends AppLocalizations {
   String startsAt(String time) {
     return 'Počinje u $time';
   }
+
+  @override
+  String get themeSettings => 'Postavke teme';
+
+  @override
+  String get selectTheme => 'Odaberi temu';
+
+  @override
+  String get selectThemeDescription =>
+      'Odaberite tematsku boju za aplikaciju. Tema će biti primijenjena u cijeloj aplikaciji.';
+
+  @override
+  String get themeChanged => 'Tema je uspješno promijenjena!';
+
+  @override
+  String get aboutTheme => 'O temama';
+
+  @override
+  String get themeInfo =>
+      'Promjena teme će ažurirati boje u cijeloj aplikaciji, uključujući gumbove, trake aplikacije i druge elemente korisničkog sučelja. Vaša preferencija teme bit će spremljena i automatski primijenjena kada ponovno pokrenete aplikaciju.';
 }

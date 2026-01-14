@@ -467,4 +467,24 @@ class AppLocalizationsMr extends AppLocalizations {
   String startsAt(String time) {
     return '$time वाजता सुरू होते';
   }
+
+  @override
+  String get themeSettings => 'थीम सेटिंग्ज';
+
+  @override
+  String get selectTheme => 'थीम निवडा';
+
+  @override
+  String get selectThemeDescription =>
+      'अ‍ॅपसाठी रंग थीम निवडा। थीम संपूर्ण अ‍ॅप्लिकेशनमध्ये लागू केली जाईल।';
+
+  @override
+  String get themeChanged => 'थीम यशस्वीरित्या बदलली!';
+
+  @override
+  String get aboutTheme => 'थीम बद्दल';
+
+  @override
+  String get themeInfo =>
+      'थीम बदलल्याने अ‍ॅपमधील रंग अपडेट होतील, यात बटणे, अ‍ॅप बार आणि इतर UI घटक समाविष्ट आहेत। तुमची थीम प्राधान्य जतन केली जाईल आणि जेव्हा तुम्ही अ‍ॅप पुन्हा सुरू कराल तेव्हा स्वयंचलितपणे लागू केली जाईल।';
 }

@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Postavke teme",
+  "selectTheme": "Odaberi temu",
+  "selectThemeDescription": "Odaberite tematsku boju za aplikaciju. Tema će biti primijenjena u cijeloj aplikaciji.",
+  "themeChanged": "Tema je uspješno promijenjena!",
+  "aboutTheme": "O temama",
+  "themeInfo": "Promjena teme će ažurirati boje u cijeloj aplikaciji, uključujući gumbove, trake aplikacije i druge elemente korisničkog sučelja. Vaša preferencija teme bit će spremljena i automatski primijenjena kada ponovno pokrenete aplikaciju.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

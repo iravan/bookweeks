@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "થીમ સેટિંગ્સ",
+  "selectTheme": "થીમ પસંદ કરો",
+  "selectThemeDescription": "એપ્લિકેશન માટે રંગ થીમ પસંદ કરો। થીમ સમગ્ર એપ્લિકેશનમાં લાગુ પડશે।",
+  "themeChanged": "થીમ સફળતાપૂર્વક બદલાઈ!",
+  "aboutTheme": "થીમ્સ વિશે",
+  "themeInfo": "થીમ બદલવાથી આપમાં રંગો અપડેટ થશે, જેમાં બટનો, આપ બાર અને અન્ય UI તત્વોનો સમાવેશ થાય છે। તમારી થીમ પસંદગી સાચવવામાં આવશે અને જ્યારે તમે આપને પુનઃપ્રારંભ કરશો ત્યારે આપમેળે લાગુ પડશે।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

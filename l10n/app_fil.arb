@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Mga Setting ng Theme",
+  "selectTheme": "Pumili ng Theme",
+  "selectThemeDescription": "Pumili ng color theme para sa app. Ang theme ay ilalapat sa buong application.",
+  "themeChanged": "Matagumpay na nabago ang theme!",
+  "aboutTheme": "Tungkol sa mga Theme",
+  "themeInfo": "Ang pagbabago ng theme ay mag-u-update ng mga kulay sa buong app, kasama ang mga button, app bar, at iba pang UI elements. Ang iyong theme preference ay mai-save at awtomatikong ilalapat kapag muling sinimulan mo ang app.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

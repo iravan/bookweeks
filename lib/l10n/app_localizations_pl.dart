@@ -469,4 +469,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String startsAt(String time) {
     return 'Zaczyna się o $time';
   }
+
+  @override
+  String get themeSettings => 'Ustawienia motywu';
+
+  @override
+  String get selectTheme => 'Wybierz motyw';
+
+  @override
+  String get selectThemeDescription =>
+      'Wybierz motyw kolorystyczny aplikacji. Motyw zostanie zastosowany w całej aplikacji.';
+
+  @override
+  String get themeChanged => 'Motyw zmieniony pomyślnie!';
+
+  @override
+  String get aboutTheme => 'O motywach';
+
+  @override
+  String get themeInfo =>
+      'Zmiana motywu zaktualizuje kolory w całej aplikacji, w tym przyciski, paski aplikacji i inne elementy interfejsu. Twoja preferencja motywu zostanie zapisana i zastosowana automatycznie po ponownym uruchomieniu aplikacji.';
 }

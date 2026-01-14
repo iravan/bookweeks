@@ -465,4 +465,24 @@ class AppLocalizationsFi extends AppLocalizations {
   String startsAt(String time) {
     return 'Alkaa klo $time';
   }
+
+  @override
+  String get themeSettings => 'Teeman asetukset';
+
+  @override
+  String get selectTheme => 'Valitse teema';
+
+  @override
+  String get selectThemeDescription =>
+      'Valitse sovelluksen väriteema. Teema sovelletaan koko sovellukseen.';
+
+  @override
+  String get themeChanged => 'Teema vaihdettu onnistuneesti!';
+
+  @override
+  String get aboutTheme => 'Tietoja teemoista';
+
+  @override
+  String get themeInfo =>
+      'Teeman muuttaminen päivittää värit koko sovelluksessa, mukaan lukien painikkeet, sovelluspalkit ja muut käyttöliittymän elementit. Teemamieltymyksesi tallennetaan ja sovelletaan automaattisesti, kun käynnistät sovelluksen uudelleen.';
 }

@@ -396,4 +396,29 @@
       }
     }
   }
+,
+  "themeSettings": "Theme-Einstellungen",
+  "selectTheme": "Thema auswählen",
+  "selectThemeDescription": "Wählen Sie ein Farbschema für die App. Das Thema wird in der gesamten Anwendung angewendet.",
+  "themeChanged": "Thema erfolgreich geändert!",
+  "aboutTheme": "Über Themen",
+  "themeInfo": "Das Ändern des Themas aktualisiert die Farben in der gesamten App, einschließlich Schaltflächen, App-Leisten und anderen UI-Elementen. Ihre Theme-Präferenz wird gespeichert und beim Neustart der App automatisch angewendet.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

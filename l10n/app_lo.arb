@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "ການຕັ້ງຄ່າຮູບແບບ",
+  "selectTheme": "ເລືອກຮູບແບບ",
+  "selectThemeDescription": "ເລືອກຮູບແບບສີສໍາລັບແອັບ. ຮູບແບບຈະຖືກນໍາໃຊ້ທົ່ວທັງແອັບພລິເຄຊັນ.",
+  "themeChanged": "ຮູບແບບຖືກປ່ຽນສຳເລັດແລ້ວ!",
+  "aboutTheme": "ກ່ຽວກັບຮູບແບບ",
+  "themeInfo": "ການປ່ຽນຮູບແບບຈະອັບເດດສີໃນທົ່ວແອັບ, ລວມທັງປຸ່ມ, ແຖບແອັບ, ແລະອົງປະກອບ UI ອື່ນໆ. ການຕັ້ງຄ່າຮູບແບບຂອງທ່ານຈະຖືກບັນທຶກແລະນໍາໃຊ້ອັດຕະໂນມັດເມື່ອທ່ານເປີດແອັບຄືນໃໝ່.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

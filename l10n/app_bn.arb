@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "থিম সেটিংস",
+  "selectTheme": "থিম নির্বাচন করুন",
+  "selectThemeDescription": "অ্যাপের জন্য একটি রঙের থিম চয়ন করুন। থিমটি পুরো অ্যাপ্লিকেশনে প্রয়োগ করা হবে।",
+  "themeChanged": "থিম সফলভাবে পরিবর্তন করা হয়েছে!",
+  "aboutTheme": "থিম সম্পর্কে",
+  "themeInfo": "থিম পরিবর্তন করলে অ্যাপ জুড়ে রঙ আপডেট হবে, যার মধ্যে রয়েছে বোতাম, অ্যাপ বার এবং অন্যান্য UI উপাদান। আপনার থিম পছন্দ সংরক্ষণ করা হবে এবং আপনি অ্যাপটি পুনরায় চালু করলে স্বয়ংক্রিয়ভাবে প্রয়োগ করা হবে।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

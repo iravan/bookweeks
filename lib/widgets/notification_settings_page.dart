@@ -292,10 +292,6 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                       onPressed: _testNotification,
                       icon: const Icon(Icons.notifications_active),
                       label: Text(AppLocalizations.of(context)!.sendTestNotification),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue,
-                        foregroundColor: Colors.white,
-                      ),
                     ),
                   ),
                 ],
@@ -320,7 +316,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(AppLocalizations.of(context)!.testNotificationScheduled),
-          backgroundColor: Colors.blue,
+          backgroundColor: Theme.of(context).colorScheme.primary,
           duration: const Duration(seconds: 3),
         ),
       );

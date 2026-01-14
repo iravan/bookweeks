@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Teeman asetukset",
+  "selectTheme": "Valitse teema",
+  "selectThemeDescription": "Valitse sovelluksen väriteema. Teema sovelletaan koko sovellukseen.",
+  "themeChanged": "Teema vaihdettu onnistuneesti!",
+  "aboutTheme": "Tietoja teemoista",
+  "themeInfo": "Teeman muuttaminen päivittää värit koko sovelluksessa, mukaan lukien painikkeet, sovelluspalkit ja muut käyttöliittymän elementit. Teemamieltymyksesi tallennetaan ja sovelletaan automaattisesti, kun käynnistät sovelluksen uudelleen.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

@@ -468,4 +468,24 @@ class AppLocalizationsMn extends AppLocalizations {
   String startsAt(String time) {
     return '$time цагт эхэлнэ';
   }
+
+  @override
+  String get themeSettings => 'Сэдвийн тохиргоо';
+
+  @override
+  String get selectTheme => 'Сэдвийг сонгох';
+
+  @override
+  String get selectThemeDescription =>
+      'Апп-д зориулсан өнгөний сэдвийг сонгоно уу. Сэдэв нь бүхэлдээ апп-д хэрэглэгдэнэ.';
+
+  @override
+  String get themeChanged => 'Сэдэв амжилттай өөрчлөгдлөө!';
+
+  @override
+  String get aboutTheme => 'Сэдвийн тухай';
+
+  @override
+  String get themeInfo =>
+      'Сэдвийг өөрчлөх нь товчлуур, апп-ийн самбар болон бусад UI элементүүдийг багтааж, апп-ийн бүх өнгөг шинэчлэх болно. Таны сэдвийн сонголт хадгалагдаж, апп-ийг дахин эхлүүлэхэд автоматаар хэрэглэгдэнэ.';
 }

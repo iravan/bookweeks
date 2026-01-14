@@ -470,6 +470,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String startsAt(String time) {
     return 'Comienza a las $time';
   }
+
+  @override
+  String get themeSettings => 'Configuración del tema';
+
+  @override
+  String get selectTheme => 'Seleccionar tema';
+
+  @override
+  String get selectThemeDescription =>
+      'Elige un tema de color para la aplicación. El tema se aplicará en toda la aplicación.';
+
+  @override
+  String get themeChanged => '¡Tema cambiado con éxito!';
+
+  @override
+  String get aboutTheme => 'Acerca de los temas';
+
+  @override
+  String get themeInfo =>
+      'Cambiar el tema actualizará los colores en toda la aplicación, incluyendo botones, barras de aplicación y otros elementos de la interfaz. Tu preferencia de tema se guardará y se aplicará automáticamente cuando reinicies la aplicación.';
 }
 
 /// The translations for Spanish Castilian, as used in Mexico (`es_MX`).
@@ -937,4 +957,24 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   String startsAt(String time) {
     return 'Comienza a las $time';
   }
+
+  @override
+  String get themeSettings => 'Configuración del tema';
+
+  @override
+  String get selectTheme => 'Seleccionar tema';
+
+  @override
+  String get selectThemeDescription =>
+      'Elige un tema de color para la aplicación. El tema se aplicará en toda la aplicación.';
+
+  @override
+  String get themeChanged => '¡Tema cambiado con éxito!';
+
+  @override
+  String get aboutTheme => 'Acerca de los temas';
+
+  @override
+  String get themeInfo =>
+      'Cambiar el tema actualizará los colores en toda la aplicación, incluyendo botones, barras de aplicación y otros elementos de la interfaz. Tu preferencia de tema se guardará y se aplicará automáticamente cuando reinicies la aplicación.';
 }

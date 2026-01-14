@@ -467,4 +467,24 @@ class AppLocalizationsKn extends AppLocalizations {
   String startsAt(String time) {
     return '$time ರಂದು ಪ್ರಾರಂಭವಾಗುತ್ತದೆ';
   }
+
+  @override
+  String get themeSettings => 'ಥೀಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
+
+  @override
+  String get selectTheme => 'ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ';
+
+  @override
+  String get selectThemeDescription =>
+      'ಅಪ್ಲಿಕೇಶನ್‌ಗಾಗಿ ಬಣ್ಣದ ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ। ಥೀಮ್ ಸಂಪೂರ್ಣ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ।';
+
+  @override
+  String get themeChanged => 'ಥೀಮ್ ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿತು!';
+
+  @override
+  String get aboutTheme => 'ಥೀಮ್‌ಗಳ ಬಗ್ಗೆ';
+
+  @override
+  String get themeInfo =>
+      'ಥೀಮ್ ಅನ್ನು ಬದಲಾಯಿಸುವುದು ಆಪ್‌ನಾದ್ಯಂತ ಬಣ್ಣಗಳನ್ನು ನವೀಕರಿಸುತ್ತದೆ, ಇದರಲ್ಲಿ ಬಟನ್‌ಗಳು, ಆಪ್ ಬಾರ್‌ಗಳು ಮತ್ತು ಇತರ UI ಅಂಶಗಳು ಸೇರಿವೆ। ನಿಮ್ಮ ಥೀಮ್ ಆದ್ಯತೆಯನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಆಪ್‌ನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿದಾಗ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ।';
 }

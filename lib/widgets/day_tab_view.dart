@@ -29,39 +29,44 @@ class _DayTabViewState extends State<DayTabView> {
     return Scaffold(
       body: sessions.isEmpty
           ? Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                      shape: BoxShape.circle,
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.event_note_outlined,
+                        size: 48,
+                        color: Theme.of(context).colorScheme.primary.withOpacity(0.6),
+                      ),
                     ),
-                    child: Icon(
-                      Icons.event_note_outlined,
-                      size: 48,
-                      color: Theme.of(context).colorScheme.primary.withOpacity(0.6),
+                    const SizedBox(height: 24),
+                    Text(
+                      AppLocalizations.of(context)!.noSessionsScheduled,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.grey.shade700,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 24),
-                  Text(
-                    AppLocalizations.of(context)!.noSessionsScheduled,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey.shade700,
+                    const SizedBox(height: 8),
+                    Text(
+                      AppLocalizations.of(context)!.tapToAddSession,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey.shade500,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    AppLocalizations.of(context)!.tapToAddSession,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey.shade500,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           : ListView.builder(
@@ -78,6 +83,7 @@ class _DayTabViewState extends State<DayTabView> {
               },
             ),
       floatingActionButton: FloatingActionButton(
+        heroTag: 'fab_${widget.date.year}_${widget.date.month}_${widget.date.day}',
         onPressed: () => _showAddSessionDialog(),
         child: const Icon(Icons.add),
       ),

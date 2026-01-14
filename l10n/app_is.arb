@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Þema stillingar",
+  "selectTheme": "Veldu þema",
+  "selectThemeDescription": "Veldu litaþema fyrir appið. Þema verður beitt um allan forritið.",
+  "themeChanged": "Þema breytt með góðum árangri!",
+  "aboutTheme": "Um þemu",
+  "themeInfo": "Að breyta þemanu mun uppfæra litina um allan forritið, þar á meðal hnappa, forritsstiku og aðra UI þætti. Þemaforgangurinn þinn verður vistaður og beittur sjálfkrafa þegar þú endurræsir forritið.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

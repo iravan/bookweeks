@@ -396,4 +396,29 @@
       }
     }
   }
+,
+  "themeSettings": "主题设置",
+  "selectTheme": "选择主题",
+  "selectThemeDescription": "为应用选择颜色主题。主题将应用于整个应用程序。",
+  "themeChanged": "主题更改成功！",
+  "aboutTheme": "关于主题",
+  "themeInfo": "更改主题将更新整个应用中的颜色，包括按钮、应用栏和其他UI元素。您的主题偏好将被保存，并在您重新启动应用时自动应用。",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

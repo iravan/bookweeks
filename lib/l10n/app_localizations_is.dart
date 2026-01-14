@@ -467,4 +467,24 @@ class AppLocalizationsIs extends AppLocalizations {
   String startsAt(String time) {
     return 'Byrjar kl $time';
   }
+
+  @override
+  String get themeSettings => 'Þema stillingar';
+
+  @override
+  String get selectTheme => 'Veldu þema';
+
+  @override
+  String get selectThemeDescription =>
+      'Veldu litaþema fyrir appið. Þema verður beitt um allan forritið.';
+
+  @override
+  String get themeChanged => 'Þema breytt með góðum árangri!';
+
+  @override
+  String get aboutTheme => 'Um þemu';
+
+  @override
+  String get themeInfo =>
+      'Að breyta þemanu mun uppfæra litina um allan forritið, þar á meðal hnappa, forritsstiku og aðra UI þætti. Þemaforgangurinn þinn verður vistaður og beittur sjálfkrafa þegar þú endurræsir forritið.';
 }

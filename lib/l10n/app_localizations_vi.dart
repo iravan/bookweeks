@@ -467,4 +467,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String startsAt(String time) {
     return 'Bắt đầu lúc $time';
   }
+
+  @override
+  String get themeSettings => 'Cài đặt giao diện';
+
+  @override
+  String get selectTheme => 'Chọn giao diện';
+
+  @override
+  String get selectThemeDescription =>
+      'Chọn một chủ đề màu cho ứng dụng. Chủ đề sẽ được áp dụng cho toàn bộ ứng dụng.';
+
+  @override
+  String get themeChanged => 'Đã thay đổi giao diện thành công!';
+
+  @override
+  String get aboutTheme => 'Về giao diện';
+
+  @override
+  String get themeInfo =>
+      'Thay đổi giao diện sẽ cập nhật màu sắc trong toàn bộ ứng dụng, bao gồm nút, thanh ứng dụng và các phần tử giao diện khác. Tùy chọn giao diện của bạn sẽ được lưu và tự động áp dụng khi bạn khởi động lại ứng dụng.';
 }

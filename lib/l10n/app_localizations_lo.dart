@@ -465,4 +465,24 @@ class AppLocalizationsLo extends AppLocalizations {
   String startsAt(String time) {
     return 'ເລີ່ມຕົ້ນທີ່ $time';
   }
+
+  @override
+  String get themeSettings => 'ການຕັ້ງຄ່າຮູບແບບ';
+
+  @override
+  String get selectTheme => 'ເລືອກຮູບແບບ';
+
+  @override
+  String get selectThemeDescription =>
+      'ເລືອກຮູບແບບສີສໍາລັບແອັບ. ຮູບແບບຈະຖືກນໍາໃຊ້ທົ່ວທັງແອັບພລິເຄຊັນ.';
+
+  @override
+  String get themeChanged => 'ຮູບແບບຖືກປ່ຽນສຳເລັດແລ້ວ!';
+
+  @override
+  String get aboutTheme => 'ກ່ຽວກັບຮູບແບບ';
+
+  @override
+  String get themeInfo =>
+      'ການປ່ຽນຮູບແບບຈະອັບເດດສີໃນທົ່ວແອັບ, ລວມທັງປຸ່ມ, ແຖບແອັບ, ແລະອົງປະກອບ UI ອື່ນໆ. ການຕັ້ງຄ່າຮູບແບບຂອງທ່ານຈະຖືກບັນທຶກແລະນໍາໃຊ້ອັດຕະໂນມັດເມື່ອທ່ານເປີດແອັບຄືນໃໝ່.';
 }

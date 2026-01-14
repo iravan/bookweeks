@@ -396,4 +396,29 @@
       }
     }
   }
+,
+  "themeSettings": "테마 설정",
+  "selectTheme": "테마 선택",
+  "selectThemeDescription": "앱의 색상 테마를 선택하세요. 테마는 전체 앱에 적용됩니다.",
+  "themeChanged": "테마가 성공적으로 변경되었습니다！",
+  "aboutTheme": "테마 정보",
+  "themeInfo": "테마를 변경하면 버튼, 앱 바 및 기타 UI 요소를 포함하여 앱 전체의 색상이 업데이트됩니다. 테마 설정은 저장되며 앱을 다시 시작하면 자동으로 적용됩니다.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

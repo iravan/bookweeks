@@ -467,4 +467,24 @@ class AppLocalizationsMl extends AppLocalizations {
   String startsAt(String time) {
     return '$time ൽ ആരംഭിക്കുന്നു';
   }
+
+  @override
+  String get themeSettings => 'തീം സെറ്റിംഗുകൾ';
+
+  @override
+  String get selectTheme => 'തീം തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get selectThemeDescription =>
+      'ആപ്പിനായി ഒരു നിറ തീം തിരഞ്ഞെടുക്കുക। തീം മുഴുവൻ ആപ്ലിക്കേഷനിലും പ്രയോഗിക്കും।';
+
+  @override
+  String get themeChanged => 'തീം വിജയകരമായി മാറ്റി!';
+
+  @override
+  String get aboutTheme => 'തീമുകളെക്കുറിച്ച്';
+
+  @override
+  String get themeInfo =>
+      'തീം മാറ്റുന്നത് ആപ്പിലുടനീളം നിറങ്ങൾ അപ്‌ഡേറ്റ് ചെയ്യും, ഇതിൽ ബട്ടണുകൾ, ആപ്പ് ബാറുകൾ, മറ്റ് UI ഘടകങ്ങൾ എന്നിവ ഉൾപ്പെടുന്നു। നിങ്ങളുടെ തീം പ്രാധാന്യം സംരക്ഷിക്കപ്പെടുകയും നിങ്ങൾ ആപ്പ് പുനരാരംഭിക്കുമ്പോൾ സ്വയമേവ പ്രയോഗിക്കുകയും ചെയ്യും।';
 }

@@ -461,4 +461,24 @@ class AppLocalizationsHe extends AppLocalizations {
   String startsAt(String time) {
     return 'מתחיל ב-$time';
   }
+
+  @override
+  String get themeSettings => 'הגדרות ערכת נושא';
+
+  @override
+  String get selectTheme => 'בחר ערכת נושא';
+
+  @override
+  String get selectThemeDescription =>
+      'בחר ערכת נושא צבעים לאפליקציה. הערכת נושא תוחל על כל האפליקציה.';
+
+  @override
+  String get themeChanged => 'ערכת הנושא שונתה בהצלחה!';
+
+  @override
+  String get aboutTheme => 'על ערכות נושא';
+
+  @override
+  String get themeInfo =>
+      'שינוי ערכת הנושא יעדכן את הצבעים בכל האפליקציה, כולל כפתורים, פסי אפליקציה ואלמנטי ממשק משתמש אחרים. העדפת הערכת הנושא שלך תישמר ותוחל אוטומטית בעת הפעלה מחדש של האפליקציה.';
 }

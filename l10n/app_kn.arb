@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "ಥೀಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "selectTheme": "ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ",
+  "selectThemeDescription": "ಅಪ್ಲಿಕೇಶನ್‌ಗಾಗಿ ಬಣ್ಣದ ಥೀಮ್ ಆಯ್ಕೆಮಾಡಿ। ಥೀಮ್ ಸಂಪೂರ್ಣ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ।",
+  "themeChanged": "ಥೀಮ್ ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿತು!",
+  "aboutTheme": "ಥೀಮ್‌ಗಳ ಬಗ್ಗೆ",
+  "themeInfo": "ಥೀಮ್ ಅನ್ನು ಬದಲಾಯಿಸುವುದು ಆಪ್‌ನಾದ್ಯಂತ ಬಣ್ಣಗಳನ್ನು ನವೀಕರಿಸುತ್ತದೆ, ಇದರಲ್ಲಿ ಬಟನ್‌ಗಳು, ಆಪ್ ಬಾರ್‌ಗಳು ಮತ್ತು ಇತರ UI ಅಂಶಗಳು ಸೇರಿವೆ। ನಿಮ್ಮ ಥೀಮ್ ಆದ್ಯತೆಯನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಆಪ್‌ನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿದಾಗ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

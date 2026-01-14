@@ -396,4 +396,29 @@
       }
     }
   }
+,
+  "themeSettings": "主題設定",
+  "selectTheme": "選擇主題",
+  "selectThemeDescription": "為應用程式選擇顏色主題。主題將應用於整個應用程式。",
+  "themeChanged": "主題變更成功！",
+  "aboutTheme": "關於主題",
+  "themeInfo": "更改主題將更新整個應用程式中的顏色，包括按鈕、應用程式列和其他UI元素。您的主題偏好將被儲存，並在您重新啟動應用程式時自動套用。",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

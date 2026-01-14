@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Налаштування теми",
+  "selectTheme": "Вибрати тему",
+  "selectThemeDescription": "Виберіть кольорову тему для додатку. Тема буде застосована в усьому додатку.",
+  "themeChanged": "Тему успішно змінено!",
+  "aboutTheme": "Про теми",
+  "themeInfo": "Зміна теми оновить кольори в усьому додатку, включаючи кнопки, панелі додатку та інші елементи інтерфейсу. Ваші налаштування теми будуть збережені та застосовані автоматично при перезапуску додатку.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

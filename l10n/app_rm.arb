@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Configuraziuns da tema",
+  "selectTheme": "Tscherner in tema",
+  "selectThemeDescription": "Tscherner in tema da colurs per l'app. Il tema vegn applitgà en tut l'applicaziun.",
+  "themeChanged": "Il tema è vegnì midà cun success!",
+  "aboutTheme": "Davart temas",
+  "themeInfo": "Il midar dal tema actualisescha las colurs en tut l'applicaziun, inclusiv buttuns, barras da l'app ed auters elements da l'UI. Tia preferenza dal tema vegn memorisada ed applitgada automaticamain cura che ti reavras l'app.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Сэдвийн тохиргоо",
+  "selectTheme": "Сэдвийг сонгох",
+  "selectThemeDescription": "Апп-д зориулсан өнгөний сэдвийг сонгоно уу. Сэдэв нь бүхэлдээ апп-д хэрэглэгдэнэ.",
+  "themeChanged": "Сэдэв амжилттай өөрчлөгдлөө!",
+  "aboutTheme": "Сэдвийн тухай",
+  "themeInfo": "Сэдвийг өөрчлөх нь товчлуур, апп-ийн самбар болон бусад UI элементүүдийг багтааж, апп-ийн бүх өнгөг шинэчлэх болно. Таны сэдвийн сонголт хадгалагдаж, апп-ийг дахин эхлүүлэхэд автоматаар хэрэглэгдэнэ.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

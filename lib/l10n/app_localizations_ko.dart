@@ -457,4 +457,23 @@ class AppLocalizationsKo extends AppLocalizations {
   String startsAt(String time) {
     return '$time에 시작';
   }
+
+  @override
+  String get themeSettings => '테마 설정';
+
+  @override
+  String get selectTheme => '테마 선택';
+
+  @override
+  String get selectThemeDescription => '앱의 색상 테마를 선택하세요. 테마는 전체 앱에 적용됩니다.';
+
+  @override
+  String get themeChanged => '테마가 성공적으로 변경되었습니다！';
+
+  @override
+  String get aboutTheme => '테마 정보';
+
+  @override
+  String get themeInfo =>
+      '테마를 변경하면 버튼, 앱 바 및 기타 UI 요소를 포함하여 앱 전체의 색상이 업데이트됩니다. 테마 설정은 저장되며 앱을 다시 시작하면 자동으로 적용됩니다.';
 }

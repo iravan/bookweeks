@@ -507,6 +507,30 @@
         "type": "String"
       }
     }
+  },
+  "themeSettings": "Theme Settings",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "selectTheme": "Select Theme",
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "selectThemeDescription": "Choose a color theme for the app. The theme will be applied throughout the entire application.",
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "themeChanged": "Theme changed successfully!",
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "aboutTheme": "About Themes",
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "themeInfo": "Changing the theme will update the colors throughout the app, including buttons, app bars, and other UI elements. Your theme preference will be saved and applied automatically when you restart the app.",
+  "@themeInfo": {
+    "description": "Information text about themes"
   }
 }
 

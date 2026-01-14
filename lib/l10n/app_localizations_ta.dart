@@ -468,4 +468,24 @@ class AppLocalizationsTa extends AppLocalizations {
   String startsAt(String time) {
     return '$time இல் தொடங்குகிறது';
   }
+
+  @override
+  String get themeSettings => 'தீம் அமைப்புகள்';
+
+  @override
+  String get selectTheme => 'தீம் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String get selectThemeDescription =>
+      'ஆப்பிற்கான வண்ண தீமைத் தேர்ந்தெடுக்கவும்। தீம் முழு பயன்பாட்டிலும் பயன்படுத்தப்படும்।';
+
+  @override
+  String get themeChanged => 'தீம் வெற்றிகரமாக மாற்றப்பட்டது!';
+
+  @override
+  String get aboutTheme => 'தீம்கள் பற்றி';
+
+  @override
+  String get themeInfo =>
+      'தீமை மாற்றுவது ஆப்பில் உள்ள வண்ணங்களைப் புதுப்பிக்கும், இதில் பொத்தான்கள், ஆப் பட்டைகள் மற்றும் பிற UI கூறுகள் அடங்கும்। உங்கள் தீம் விருப்பம் சேமிக்கப்படும் மற்றும் நீங்கள் ஆப்பை மீண்டும் தொடங்கும்போது தானாகப் பயன்படுத்தப்படும்।';
 }

@@ -472,4 +472,24 @@ class AppLocalizationsFr extends AppLocalizations {
   String startsAt(String time) {
     return 'Commence à $time';
   }
+
+  @override
+  String get themeSettings => 'Paramètres du thème';
+
+  @override
+  String get selectTheme => 'Sélectionner un thème';
+
+  @override
+  String get selectThemeDescription =>
+      'Choisissez un thème de couleur pour l\'application. Le thème sera appliqué dans toute l\'application.';
+
+  @override
+  String get themeChanged => 'Thème modifié avec succès !';
+
+  @override
+  String get aboutTheme => 'À propos des thèmes';
+
+  @override
+  String get themeInfo =>
+      'Changer le thème mettra à jour les couleurs dans toute l\'application, y compris les boutons, les barres d\'application et autres éléments de l\'interface. Votre préférence de thème sera enregistrée et appliquée automatiquement lorsque vous redémarrerez l\'application.';
 }

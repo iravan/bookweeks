@@ -468,4 +468,24 @@ class AppLocalizationsPa extends AppLocalizations {
   String startsAt(String time) {
     return '$time \'ਤੇ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ';
   }
+
+  @override
+  String get themeSettings => 'ਥੀਮ ਸੈਟਿੰਗਾਂ';
+
+  @override
+  String get selectTheme => 'ਥੀਮ ਚੁਣੋ';
+
+  @override
+  String get selectThemeDescription =>
+      'ਐਪ ਲਈ ਇੱਕ ਰੰਗ ਥੀਮ ਚੁਣੋ। ਥੀਮ ਪੂਰੀ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚ ਲਾਗੂ ਕੀਤੀ ਜਾਵੇਗੀ।';
+
+  @override
+  String get themeChanged => 'ਥੀਮ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲੀ ਗਈ!';
+
+  @override
+  String get aboutTheme => 'ਥੀਮਾਂ ਬਾਰੇ';
+
+  @override
+  String get themeInfo =>
+      'ਥੀਮ ਬਦਲਣਾ ਐਪ ਦੇ ਸਾਰੇ ਰੰਗਾਂ ਨੂੰ ਅਪਡੇਟ ਕਰੇਗਾ, ਜਿਸ ਵਿੱਚ ਬਟਨ, ਐਪ ਬਾਰ ਅਤੇ ਹੋਰ UI ਤੱਤ ਸ਼ਾਮਲ ਹਨ। ਤੁਹਾਡੀ ਥੀਮ ਪਸੰਦ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਐਪ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋਗੇ ਤਾਂ ਆਪਣੇ ਆਪ ਲਾਗੂ ਹੋਵੇਗੀ।';
 }

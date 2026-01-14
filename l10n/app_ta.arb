@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "தீம் அமைப்புகள்",
+  "selectTheme": "தீம் தேர்ந்தெடுக்கவும்",
+  "selectThemeDescription": "ஆப்பிற்கான வண்ண தீமைத் தேர்ந்தெடுக்கவும்। தீம் முழு பயன்பாட்டிலும் பயன்படுத்தப்படும்।",
+  "themeChanged": "தீம் வெற்றிகரமாக மாற்றப்பட்டது!",
+  "aboutTheme": "தீம்கள் பற்றி",
+  "themeInfo": "தீமை மாற்றுவது ஆப்பில் உள்ள வண்ணங்களைப் புதுப்பிக்கும், இதில் பொத்தான்கள், ஆப் பட்டைகள் மற்றும் பிற UI கூறுகள் அடங்கும்। உங்கள் தீம் விருப்பம் சேமிக்கப்படும் மற்றும் நீங்கள் ஆப்பை மீண்டும் தொடங்கும்போது தானாகப் பயன்படுத்தப்படும்।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

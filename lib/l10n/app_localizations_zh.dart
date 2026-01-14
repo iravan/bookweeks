@@ -455,6 +455,25 @@ class AppLocalizationsZh extends AppLocalizations {
   String startsAt(String time) {
     return '开始时间：$time';
   }
+
+  @override
+  String get themeSettings => '主题设置';
+
+  @override
+  String get selectTheme => '选择主题';
+
+  @override
+  String get selectThemeDescription => '为应用选择颜色主题。主题将应用于整个应用程序。';
+
+  @override
+  String get themeChanged => '主题更改成功！';
+
+  @override
+  String get aboutTheme => '关于主题';
+
+  @override
+  String get themeInfo =>
+      '更改主题将更新整个应用中的颜色，包括按钮、应用栏和其他UI元素。您的主题偏好将被保存，并在您重新启动应用时自动应用。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -908,6 +927,25 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String startsAt(String time) {
     return '开始时间：$time';
   }
+
+  @override
+  String get themeSettings => '主题设置';
+
+  @override
+  String get selectTheme => '选择主题';
+
+  @override
+  String get selectThemeDescription => '为应用选择颜色主题。主题将应用于整个应用程序。';
+
+  @override
+  String get themeChanged => '主题更改成功！';
+
+  @override
+  String get aboutTheme => '关于主题';
+
+  @override
+  String get themeInfo =>
+      '更改主题将更新整个应用中的颜色，包括按钮、应用栏和其他UI元素。您的主题偏好将被保存，并在您重新启动应用时自动应用。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1361,4 +1399,23 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String startsAt(String time) {
     return '開始時間：$time';
   }
+
+  @override
+  String get themeSettings => '主題設定';
+
+  @override
+  String get selectTheme => '選擇主題';
+
+  @override
+  String get selectThemeDescription => '為應用程式選擇顏色主題。主題將應用於整個應用程式。';
+
+  @override
+  String get themeChanged => '主題變更成功！';
+
+  @override
+  String get aboutTheme => '關於主題';
+
+  @override
+  String get themeInfo =>
+      '更改主題將更新整個應用程式中的顏色，包括按鈕、應用程式列和其他UI元素。您的主題偏好將被儲存，並在您重新啟動應用程式時自動套用。';
 }

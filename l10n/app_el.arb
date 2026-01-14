@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Ρυθμίσεις θέματος",
+  "selectTheme": "Επιλέξτε θέμα",
+  "selectThemeDescription": "Επιλέξτε ένα θέμα χρώματος για την εφαρμογή. Το θέμα θα εφαρμοστεί σε ολόκληρη την εφαρμογή.",
+  "themeChanged": "Το θέμα άλλαξε με επιτυχία!",
+  "aboutTheme": "Σχετικά με τα θέματα",
+  "themeInfo": "Η αλλαγή του θέματος θα ενημερώσει τα χρώματα σε όλη την εφαρμογή, συμπεριλαμβανομένων των κουμπιών, των γραμμών εφαρμογής και άλλων στοιχείων διεπαφής. Η προτίμησή σας για το θέμα θα αποθηκευτεί και θα εφαρμοστεί αυτόματα όταν κάνετε επανεκκίνηση της εφαρμογής.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

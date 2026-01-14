@@ -467,4 +467,24 @@ class AppLocalizationsUk extends AppLocalizations {
   String startsAt(String time) {
     return 'Починається о $time';
   }
+
+  @override
+  String get themeSettings => 'Налаштування теми';
+
+  @override
+  String get selectTheme => 'Вибрати тему';
+
+  @override
+  String get selectThemeDescription =>
+      'Виберіть кольорову тему для додатку. Тема буде застосована в усьому додатку.';
+
+  @override
+  String get themeChanged => 'Тему успішно змінено!';
+
+  @override
+  String get aboutTheme => 'Про теми';
+
+  @override
+  String get themeInfo =>
+      'Зміна теми оновить кольори в усьому додатку, включаючи кнопки, панелі додатку та інші елементи інтерфейсу. Ваші налаштування теми будуть збережені та застосовані автоматично при перезапуску додатку.';
 }

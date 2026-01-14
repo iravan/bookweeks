@@ -467,4 +467,24 @@ class AppLocalizationsKm extends AppLocalizations {
   String startsAt(String time) {
     return 'ចាប់ផ្តើមនៅ $time';
   }
+
+  @override
+  String get themeSettings => 'ការកំណត់រចនាប័ទ្ម';
+
+  @override
+  String get selectTheme => 'ជ្រើសរចនាប័ទ្ម';
+
+  @override
+  String get selectThemeDescription =>
+      'ជ្រើសរចនាប័ទ្មពណ៌សម្រាប់កម្មវិធី។ រចនាប័ទ្មនឹងត្រូវបានអនុវត្តនៅទូទាំងកម្មវិធីទាំងមូល។';
+
+  @override
+  String get themeChanged => 'រចនាប័ទ្មត្រូវបានផ្លាស់ប្តូរដោយជោគជ័យ!';
+
+  @override
+  String get aboutTheme => 'អំពីរចនាប័ទ្ម';
+
+  @override
+  String get themeInfo =>
+      'ការផ្លាស់ប្តូររចនាប័ទ្មនឹងធ្វើបច្ចុប្បន្នភាពពណ៌នៅទូទាំងកម្មវិធី រួមមានប៊ូតុង របារកម្មវិធី និងធាតុ UI ផ្សេងៗ។ ចំណូលចិត្តរចនាប័ទ្មរបស់អ្នកនឹងត្រូវបានរក្សាទុក និងអនុវត្តដោយស្វ័យប្រវត្តិនៅពេលអ្នកចាប់ផ្តើមកម្មវិធីឡើងវិញ។';
 }

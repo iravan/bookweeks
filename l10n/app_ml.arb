@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "തീം സെറ്റിംഗുകൾ",
+  "selectTheme": "തീം തിരഞ്ഞെടുക്കുക",
+  "selectThemeDescription": "ആപ്പിനായി ഒരു നിറ തീം തിരഞ്ഞെടുക്കുക। തീം മുഴുവൻ ആപ്ലിക്കേഷനിലും പ്രയോഗിക്കും।",
+  "themeChanged": "തീം വിജയകരമായി മാറ്റി!",
+  "aboutTheme": "തീമുകളെക്കുറിച്ച്",
+  "themeInfo": "തീം മാറ്റുന്നത് ആപ്പിലുടനീളം നിറങ്ങൾ അപ്‌ഡേറ്റ് ചെയ്യും, ഇതിൽ ബട്ടണുകൾ, ആപ്പ് ബാറുകൾ, മറ്റ് UI ഘടകങ്ങൾ എന്നിവ ഉൾപ്പെടുന്നു। നിങ്ങളുടെ തീം പ്രാധാന്യം സംരക്ഷിക്കപ്പെടുകയും നിങ്ങൾ ആപ്പ് പുനരാരംഭിക്കുമ്പോൾ സ്വയമേവ പ്രയോഗിക്കുകയും ചെയ്യും।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

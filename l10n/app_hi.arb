@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "थीम सेटिंग्स",
+  "selectTheme": "थीम चुनें",
+  "selectThemeDescription": "ऐप के लिए एक रंग थीम चुनें। थीम पूरे एप्लिकेशन में लागू होगी।",
+  "themeChanged": "थीम सफलतापूर्वक बदली गई!",
+  "aboutTheme": "थीम के बारे में",
+  "themeInfo": "थीम बदलने से ऐप भर में रंग अपडेट होंगे, जिसमें बटन, ऐप बार और अन्य UI तत्व शामिल हैं। आपकी थीम प्राथमिकता सहेजी जाएगी और जब आप ऐप को पुनरारंभ करेंगे तो स्वचालित रूप से लागू हो जाएगी।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

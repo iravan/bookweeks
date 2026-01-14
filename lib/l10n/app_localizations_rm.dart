@@ -471,4 +471,24 @@ class AppLocalizationsRm extends AppLocalizations {
   String startsAt(String time) {
     return 'Cumenza a $time';
   }
+
+  @override
+  String get themeSettings => 'Configuraziuns da tema';
+
+  @override
+  String get selectTheme => 'Tscherner in tema';
+
+  @override
+  String get selectThemeDescription =>
+      'Tscherner in tema da colurs per l\'app. Il tema vegn applitgà en tut l\'applicaziun.';
+
+  @override
+  String get themeChanged => 'Il tema è vegnì midà cun success!';
+
+  @override
+  String get aboutTheme => 'Davart temas';
+
+  @override
+  String get themeInfo =>
+      'Il midar dal tema actualisescha las colurs en tut l\'applicaziun, inclusiv buttuns, barras da l\'app ed auters elements da l\'UI. Tia preferenza dal tema vegn memorisada ed applitgada automaticamain cura che ti reavras l\'app.';
 }

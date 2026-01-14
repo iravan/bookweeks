@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "थीम सेटिंग्ज",
+  "selectTheme": "थीम निवडा",
+  "selectThemeDescription": "अ‍ॅपसाठी रंग थीम निवडा। थीम संपूर्ण अ‍ॅप्लिकेशनमध्ये लागू केली जाईल।",
+  "themeChanged": "थीम यशस्वीरित्या बदलली!",
+  "aboutTheme": "थीम बद्दल",
+  "themeInfo": "थीम बदलल्याने अ‍ॅपमधील रंग अपडेट होतील, यात बटणे, अ‍ॅप बार आणि इतर UI घटक समाविष्ट आहेत। तुमची थीम प्राधान्य जतन केली जाईल आणि जेव्हा तुम्ही अ‍ॅप पुन्हा सुरू कराल तेव्हा स्वयंचलितपणे लागू केली जाईल।",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

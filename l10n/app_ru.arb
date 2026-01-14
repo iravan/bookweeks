@@ -398,4 +398,29 @@
       }
     }
   }
+,
+  "themeSettings": "Настройки темы",
+  "selectTheme": "Выбрать тему",
+  "selectThemeDescription": "Выберите цветовую тему для приложения. Тема будет применена во всем приложении.",
+  "themeChanged": "Тема успешно изменена!",
+  "aboutTheme": "О темах",
+  "themeInfo": "Изменение темы обновит цвета во всем приложении, включая кнопки, панели приложения и другие элементы интерфейса. Ваши настройки темы будут сохранены и применены автоматически при перезапуске приложения.",
+  "@themeSettings": {
+    "description": "Title for theme settings page"
+  },
+  "@selectTheme": {
+    "description": "Title for theme selection section"
+  },
+  "@selectThemeDescription": {
+    "description": "Description text for theme selection"
+  },
+  "@themeChanged": {
+    "description": "Success message when theme is changed"
+  },
+  "@aboutTheme": {
+    "description": "Title for theme info section"
+  },
+  "@themeInfo": {
+    "description": "Information text about themes"
+  }
 }

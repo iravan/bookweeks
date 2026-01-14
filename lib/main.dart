@@ -16,7 +16,9 @@ import 'services/student_service.dart';
 import 'services/export_import_service.dart';
 import 'services/debug_service.dart';
 import 'services/notification_service.dart';
+import 'services/theme_service.dart';
 import 'widgets/notification_settings_page.dart';
+import 'widgets/theme_settings_page.dart';
 import 'widgets/foreground_notification_banner.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
@@ -30,125 +32,92 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final ThemeService _themeService = ThemeService();
+
+  @override
+  void initState() {
+    super.initState();
+    _themeService.initialize();
+    // Listen to theme changes
+    _themeService.themeNotifier.addListener(_onThemeChanged);
+  }
+
+  @override
+  void dispose() {
+    _themeService.themeNotifier.removeListener(_onThemeChanged);
+    super.dispose();
+  }
+
+  void _onThemeChanged() {
+    setState(() {
+      // Rebuild when theme changes
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Book Weeks',
-      localizationsDelegates: const [
-        AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: [
-        const Locale('en'), // English
-        const Locale('zh', 'TW'), // Traditional Chinese
-        const Locale('zh', 'CN'), // Simplified Chinese
-        const Locale('ja'), // Japanese
-        const Locale('ko'), // Korean
-        const Locale('fr'), // French
-        const Locale('es'), // Spanish
-        const Locale('es', 'MX'), // Mexican Spanish
-        const Locale('th'), // Thai
-        const Locale('ru'), // Russian
-        const Locale('hi'), // Hindi
-        const Locale('bn'), // Bengali
-        const Locale('te'), // Telugu
-        const Locale('ta'), // Tamil
-        const Locale('mr'), // Marathi
-        const Locale('gu'), // Gujarati
-        const Locale('kn'), // Kannada
-        const Locale('ml'), // Malayalam
-        const Locale('pa'), // Punjabi
-        const Locale('vi'), // Vietnamese
-        const Locale('km'), // Khmer (Cambodian)
-        const Locale('fil'), // Filipino (Philippines)
-        const Locale('it'), // Italian
-        const Locale('de'), // German
-        const Locale('uk'), // Ukrainian
-        const Locale('pt'), // Portuguese
-        const Locale('mn'), // Mongolian
-        const Locale('fi'), // Finnish
-        const Locale('sv'), // Swedish
-        const Locale('pl'), // Polish
-        const Locale('lo'), // Lao (Laos)
-        const Locale('hr'), // Croatian
-        const Locale('is'), // Icelandic
-        const Locale('tr'), // Turkish
-        const Locale('he'), // Hebrew (Israel)
-        const Locale('rm'), // Romansh
-        const Locale('el'), // Greek
-      ],
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.light(
-          primary: const Color(0xFF4fb7ae), // Primary teal
-          secondary: const Color(0xFFf8785b), // Secondary coral
-          tertiary: const Color(0xFFf67a5e), // Secondary highlight
-          surface: const Color(0xFFfbf2e9), // Background
-          background: const Color(0xFFfbf2e9), // Background
-          onPrimary: Colors.white,
-          onSecondary: Colors.white,
-          onSurface: Colors.black87,
-          onBackground: Colors.black87,
-        ),
-        scaffoldBackgroundColor: const Color(0xFFfbf2e9), // Background
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF4fb7ae), // Primary
-          foregroundColor: Colors.white,
-          elevation: 0,
-        ),
-        cardTheme: CardThemeData(
-          color: Colors.white,
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
-        floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFFf8785b), // Secondary
-          foregroundColor: Colors.white,
-        ),
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF4fb7ae), // Primary
-            foregroundColor: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8),
-            ),
-          ),
-        ),
-        tabBarTheme: const TabBarThemeData(
-          labelColor: Color(0xFF4fb7ae), // Primary
-          unselectedLabelColor: Color(0xFF9E9E9E),
-          indicatorColor: Color(0xFF4fb7ae), // Primary
-          labelStyle: TextStyle(fontWeight: FontWeight.w600),
-          unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
-        ),
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: Colors.grey.shade300),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: Colors.grey.shade300),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8),
-            borderSide: const BorderSide(color: Color(0xFF4fb7ae), width: 2),
-          ),
-        ),
-        textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(foregroundColor: const Color(0xFF4fb7ae)),
-        ),
-      ),
-      home: const MainPage(),
+    return ValueListenableBuilder<AppTheme>(
+      valueListenable: _themeService.themeNotifier,
+      builder: (context, currentTheme, child) {
+        return MaterialApp(
+          title: 'Book Weeks',
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: [
+            const Locale('en'), // English
+            const Locale('zh', 'TW'), // Traditional Chinese
+            const Locale('zh', 'CN'), // Simplified Chinese
+            const Locale('ja'), // Japanese
+            const Locale('ko'), // Korean
+            const Locale('fr'), // French
+            const Locale('es'), // Spanish
+            const Locale('es', 'MX'), // Mexican Spanish
+            const Locale('th'), // Thai
+            const Locale('ru'), // Russian
+            const Locale('hi'), // Hindi
+            const Locale('bn'), // Bengali
+            const Locale('te'), // Telugu
+            const Locale('ta'), // Tamil
+            const Locale('mr'), // Marathi
+            const Locale('gu'), // Gujarati
+            const Locale('kn'), // Kannada
+            const Locale('ml'), // Malayalam
+            const Locale('pa'), // Punjabi
+            const Locale('vi'), // Vietnamese
+            const Locale('km'), // Khmer (Cambodian)
+            const Locale('fil'), // Filipino (Philippines)
+            const Locale('it'), // Italian
+            const Locale('de'), // German
+            const Locale('uk'), // Ukrainian
+            const Locale('pt'), // Portuguese
+            const Locale('mn'), // Mongolian
+            const Locale('fi'), // Finnish
+            const Locale('sv'), // Swedish
+            const Locale('pl'), // Polish
+            const Locale('lo'), // Lao (Laos)
+            const Locale('hr'), // Croatian
+            const Locale('is'), // Icelandic
+            const Locale('tr'), // Turkish
+            const Locale('he'), // Hebrew (Israel)
+            const Locale('rm'), // Romansh
+            const Locale('el'), // Greek
+          ],
+          theme: currentTheme.themeData,
+          home: const MainPage(),
+        );
+      },
     );
   }
 }
@@ -340,6 +309,7 @@ class _MainPageState extends State<MainPage>
       _sessionService.initialize(),
       _studentService.initialize(),
       NotificationService().initialize(),
+      ThemeService().initialize(),
     ]);
 
     // Set custom notification sound if needed
@@ -478,6 +448,17 @@ class _MainPageState extends State<MainPage>
           ],
         ),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.palette),
+            tooltip: 'Theme Settings',
+            onPressed: () async {
+              await Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const ThemeSettingsPage(),
+                ),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.event_note),
             tooltip: AppLocalizations.of(context)!.allEvents,

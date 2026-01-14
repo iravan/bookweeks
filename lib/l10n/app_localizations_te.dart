@@ -468,4 +468,24 @@ class AppLocalizationsTe extends AppLocalizations {
   String startsAt(String time) {
     return '$time వద్ద ప్రారంభమవుతుంది';
   }
+
+  @override
+  String get themeSettings => 'థీమ్ సెట్టింగ్‌లు';
+
+  @override
+  String get selectTheme => 'థీమ్ ఎంచుకోండి';
+
+  @override
+  String get selectThemeDescription =>
+      'యాప్ కోసం రంగు థీమ్‌ను ఎంచుకోండి। థీమ్ మొత్తం అనువర్తనంలో వర్తింపజేయబడుతుంది।';
+
+  @override
+  String get themeChanged => 'థీమ్ విజయవంతంగా మార్చబడింది!';
+
+  @override
+  String get aboutTheme => 'థీమ్‌ల గురించి';
+
+  @override
+  String get themeInfo =>
+      'థీమ్‌ను మార్చడం వలన ఆప్‌లోని రంగులు నవీకరించబడతాయి, దీనిలో బటన్‌లు, ఆప్ బార్‌లు మరియు ఇతర UI అంశాలు ఉన్నాయి। మీ థీమ్ ప్రాధాన్యత సేవ్ చేయబడుతుంది మరియు మీరు ఆప్‌ను పునఃప్రారంభించినప్పుడు స్వయంచాలకంగా వర్తింపజేయబడుతుంది।';
 }
