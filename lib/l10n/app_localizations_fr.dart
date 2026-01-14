@@ -336,4 +336,140 @@ class AppLocalizationsFr extends AppLocalizations {
   String daysLater(int count) {
     return 'Dans $count jour';
   }
+
+  @override
+  String get notificationSettings => 'Paramètres de notification';
+
+  @override
+  String get notificationTiming => 'Horaire des notifications';
+
+  @override
+  String get notificationTimingDescription =>
+      'Choisissez quand recevoir des notifications avant le début de chaque session';
+
+  @override
+  String get atEventStart => 'Au début de l\'événement';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing avant le début de l\'événement';
+  }
+
+  @override
+  String get notificationTimingUpdated =>
+      'Horaire des notifications mis à jour';
+
+  @override
+  String get aboutNotifications => 'À propos des notifications';
+
+  @override
+  String get notificationInfo =>
+      'Vous recevrez des notifications avant le début de chaque session programmée. Les notifications sont automatiquement programmées lors de la création ou de la mise à jour des sessions, et toutes les sessions existantes sont programmées au lancement de l\'application.';
+
+  @override
+  String get rescheduleNotifications => 'Reprogrammer les notifications';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      'Reprogrammez manuellement les notifications pour toutes les sessions futures existantes. Utile si vous venez d\'activer les notifications ou si vous souhaitez vous assurer que tous les événements ont des notifications programmées.';
+
+  @override
+  String get rescheduleNow => 'Reprogrammer maintenant';
+
+  @override
+  String get rescheduling => 'Reprogrammation...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return 'Notifications reprogrammées pour $count session(s) future(s)';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return 'Erreur lors de la reprogrammation des notifications : $error';
+  }
+
+  @override
+  String get permissionsRequired => 'Autorisations de notification requises';
+
+  @override
+  String get permissionsRequiredDescription =>
+      'Veuillez accorder les autorisations de notification pour recevoir des rappels pour vos sessions. Appuyez sur le bouton ci-dessous pour demander les autorisations.';
+
+  @override
+  String get requestPermissions => 'Demander les autorisations';
+
+  @override
+  String get permissionsGranted => 'Autorisations de notification accordées !';
+
+  @override
+  String get permissionsDenied =>
+      'Les autorisations de notification ont été refusées. Veuillez les activer dans les paramètres.';
+
+  @override
+  String get timing0Min => '0 min';
+
+  @override
+  String get timing1Min => '1 min';
+
+  @override
+  String get timing5Mins => '5 min';
+
+  @override
+  String get timing30Mins => '30 min';
+
+  @override
+  String get timing1Hour => '1 heure';
+
+  @override
+  String get timing6Hours => '6 heures';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count min';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count heure';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count heures';
+  }
+
+  @override
+  String get testNotifications => 'Notifications de test';
+
+  @override
+  String get testNotificationsDescription =>
+      'Envoyer une notification de test dans 2 secondes pour vérifier que les notifications fonctionnent.';
+
+  @override
+  String get sendTestNotification => 'Envoyer une notification de test';
+
+  @override
+  String get testNotificationScheduled =>
+      'Notification de test programmée ! Vérifiez dans 2 secondes.';
+
+  @override
+  String get testNotificationTitle => 'Notification de test';
+
+  @override
+  String get testNotificationBody =>
+      'Si vous voyez ceci, les notifications fonctionnent !';
+
+  @override
+  String get scheduledTestNotificationTitle =>
+      'Notification de test programmée';
+
+  @override
+  String get scheduledTestNotificationBody =>
+      'Ceci a été programmé il y a 2 secondes';
+
+  @override
+  String startsAt(String time) {
+    return 'Commence à $time';
+  }
 }

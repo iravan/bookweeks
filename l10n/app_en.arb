@@ -324,6 +324,189 @@
         "type": "int"
       }
     }
+  },
+  "notificationSettings": "Notification Settings",
+  "@notificationSettings": {
+    "description": "Title for notification settings page"
+  },
+  "notificationTiming": "Notification Timing",
+  "@notificationTiming": {
+    "description": "Title for notification timing section"
+  },
+  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
+  "@notificationTimingDescription": {
+    "description": "Description text for notification timing"
+  },
+  "atEventStart": "At event start",
+  "@atEventStart": {
+    "description": "Label for 0 minutes notification timing"
+  },
+  "beforeEventStart": "{timing} before event start",
+  "@beforeEventStart": {
+    "description": "Label for notification timing before event",
+    "placeholders": {
+      "timing": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationTimingUpdated": "Notification timing updated",
+  "@notificationTimingUpdated": {
+    "description": "Success message when notification timing is updated"
+  },
+  "aboutNotifications": "About Notifications",
+  "@aboutNotifications": {
+    "description": "Title for notification info section"
+  },
+  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
+  "@notificationInfo": {
+    "description": "Information text about notifications"
+  },
+  "rescheduleNotifications": "Reschedule Notifications",
+  "@rescheduleNotifications": {
+    "description": "Title for reschedule notifications section"
+  },
+  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you've just enabled notifications or want to ensure all events have notifications scheduled.",
+  "@rescheduleNotificationsDescription": {
+    "description": "Description for reschedule notifications section"
+  },
+  "rescheduleNow": "Reschedule Now",
+  "@rescheduleNow": {
+    "description": "Button text to reschedule notifications"
+  },
+  "rescheduling": "Rescheduling...",
+  "@rescheduling": {
+    "description": "Loading text when rescheduling notifications"
+  },
+  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
+  "@notificationsRescheduled": {
+    "description": "Success message when notifications are rescheduled",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
+  "@errorReschedulingNotifications": {
+    "description": "Error message when rescheduling fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "permissionsRequired": "Notification Permissions Required",
+  "@permissionsRequired": {
+    "description": "Title for permissions warning"
+  },
+  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
+  "@permissionsRequiredDescription": {
+    "description": "Description for permissions warning"
+  },
+  "requestPermissions": "Request Permissions",
+  "@requestPermissions": {
+    "description": "Button text to request notification permissions"
+  },
+  "permissionsGranted": "Notification permissions granted!",
+  "@permissionsGranted": {
+    "description": "Success message when permissions are granted"
+  },
+  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings.",
+  "@permissionsDenied": {
+    "description": "Message when permissions are denied"
+  },
+  "timing0Min": "0 min",
+  "@timing0Min": {
+    "description": "Display text for 0 minutes timing"
+  },
+  "timing1Min": "1 min",
+  "@timing1Min": {
+    "description": "Display text for 1 minute timing"
+  },
+  "timing5Mins": "5 mins",
+  "@timing5Mins": {
+    "description": "Display text for 5 minutes timing"
+  },
+  "timing30Mins": "30 mins",
+  "@timing30Mins": {
+    "description": "Display text for 30 minutes timing"
+  },
+  "timing1Hour": "1 hour",
+  "@timing1Hour": {
+    "description": "Display text for 1 hour timing"
+  },
+  "timing6Hours": "6 hours",
+  "@timing6Hours": {
+    "description": "Display text for 6 hours timing"
+  },
+  "timingMinutes": "{count} mins",
+  "@timingMinutes": {
+    "description": "Display text for minutes timing",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timingHours": "{count} hour",
+  "@timingHours": {
+    "description": "Display text for hours timing (singular)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "timingHoursPlural": "{count} hours",
+  "@timingHoursPlural": {
+    "description": "Display text for hours timing (plural)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "testNotifications": "Test Notifications",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "testNotificationsDescription": "Send a test notification in 2 seconds to verify notifications are working.",
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "sendTestNotification": "Send Test Notification",
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "testNotificationScheduled": "Test notification scheduled! Check in 2 seconds.",
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  },
+  "testNotificationTitle": "Test Notification",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "testNotificationBody": "If you see this, notifications are working!",
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "scheduledTestNotificationTitle": "Scheduled Test Notification",
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "scheduledTestNotificationBody": "This was scheduled 2 seconds ago",
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "startsAt": "Starts at {time}",
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
 

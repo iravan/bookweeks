@@ -324,6 +324,76 @@
         "type": "int"
       }
     }
+  },
+  "notificationSettings": "알림 설정",
+  "notificationTiming": "알림 시간",
+  "notificationTimingDescription": "각 세션이 시작되기 전 알림을 받을 시점을 선택하세요",
+  "atEventStart": "이벤트 시작 시",
+  "beforeEventStart": "이벤트 시작 {timing} 전",
+  "notificationTimingUpdated": "알림 시간이 업데이트되었습니다",
+  "aboutNotifications": "알림 정보",
+  "notificationInfo": "예정된 각 세션 시작 전에 알림을 받게 됩니다. 세션을 생성하거나 업데이트할 때 알림이 자동으로 예약되며, 앱 시작 시 모든 기존 세션이 예약됩니다.",
+  "rescheduleNotifications": "알림 재예약",
+  "rescheduleNotificationsDescription": "모든 기존 향후 세션의 알림을 수동으로 재예약합니다. 알림을 방금 활성화했거나 모든 이벤트에 알림이 예약되어 있는지 확인하려는 경우 유용합니다.",
+  "rescheduleNow": "지금 재예약",
+  "rescheduling": "재예약 중...",
+  "notificationsRescheduled": "{count}개의 향후 세션에 대한 알림을 재예약했습니다",
+  "errorReschedulingNotifications": "알림 재예약 중 오류 발생: {error}",
+  "permissionsRequired": "알림 권한 필요",
+  "permissionsRequiredDescription": "세션 알림을 받으려면 알림 권한을 부여하세요. 아래 버튼을 탭하여 권한을 요청하세요.",
+  "requestPermissions": "권한 요청",
+  "permissionsGranted": "알림 권한이 부여되었습니다!",
+  "permissionsDenied": "알림 권한이 거부되었습니다. 설정에서 활성화하세요.",
+  "timing0Min": "0분",
+  "timing1Min": "1분",
+  "timing5Mins": "5분",
+  "timing30Mins": "30분",
+  "timing1Hour": "1시간",
+  "timing6Hours": "6시간",
+  "timingMinutes": "{count}분",
+  "timingHours": "{count}시간",
+  "timingHoursPlural": "{count}시간"
+,
+  "testNotifications": "테스트 알림",
+  "testNotificationsDescription": "2초 후 테스트 알림을 보내 알림이 제대로 작동하는지 확인합니다.",
+  "sendTestNotification": "테스트 알림 보내기",
+  "testNotificationScheduled": "테스트 알림이 예약되었습니다! 2초 후에 확인하세요.",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  }
+,
+  "testNotificationTitle": "테스트 알림",
+  "testNotificationBody": "이 메시지가 보이면 알림이 정상적으로 작동하고 있습니다!",
+  "scheduledTestNotificationTitle": "예약된 테스트 알림",
+  "scheduledTestNotificationBody": "이것은 2초 전에 예약되었습니다",
+  "startsAt": "{time}에 시작",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
-

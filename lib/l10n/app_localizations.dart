@@ -748,6 +748,228 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} days later'**
   String daysLater(int count);
+
+  /// Title for notification settings page
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Settings'**
+  String get notificationSettings;
+
+  /// Title for notification timing section
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Timing'**
+  String get notificationTiming;
+
+  /// Description text for notification timing
+  ///
+  /// In en, this message translates to:
+  /// **'Choose when to receive notifications before each session starts'**
+  String get notificationTimingDescription;
+
+  /// Label for 0 minutes notification timing
+  ///
+  /// In en, this message translates to:
+  /// **'At event start'**
+  String get atEventStart;
+
+  /// Label for notification timing before event
+  ///
+  /// In en, this message translates to:
+  /// **'{timing} before event start'**
+  String beforeEventStart(String timing);
+
+  /// Success message when notification timing is updated
+  ///
+  /// In en, this message translates to:
+  /// **'Notification timing updated'**
+  String get notificationTimingUpdated;
+
+  /// Title for notification info section
+  ///
+  /// In en, this message translates to:
+  /// **'About Notifications'**
+  String get aboutNotifications;
+
+  /// Information text about notifications
+  ///
+  /// In en, this message translates to:
+  /// **'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.'**
+  String get notificationInfo;
+
+  /// Title for reschedule notifications section
+  ///
+  /// In en, this message translates to:
+  /// **'Reschedule Notifications'**
+  String get rescheduleNotifications;
+
+  /// Description for reschedule notifications section
+  ///
+  /// In en, this message translates to:
+  /// **'Manually reschedule notifications for all existing future sessions. This is useful if you\'ve just enabled notifications or want to ensure all events have notifications scheduled.'**
+  String get rescheduleNotificationsDescription;
+
+  /// Button text to reschedule notifications
+  ///
+  /// In en, this message translates to:
+  /// **'Reschedule Now'**
+  String get rescheduleNow;
+
+  /// Loading text when rescheduling notifications
+  ///
+  /// In en, this message translates to:
+  /// **'Rescheduling...'**
+  String get rescheduling;
+
+  /// Success message when notifications are rescheduled
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications rescheduled for {count} future session(s)'**
+  String notificationsRescheduled(int count);
+
+  /// Error message when rescheduling fails
+  ///
+  /// In en, this message translates to:
+  /// **'Error rescheduling notifications: {error}'**
+  String errorReschedulingNotifications(String error);
+
+  /// Title for permissions warning
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Permissions Required'**
+  String get permissionsRequired;
+
+  /// Description for permissions warning
+  ///
+  /// In en, this message translates to:
+  /// **'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.'**
+  String get permissionsRequiredDescription;
+
+  /// Button text to request notification permissions
+  ///
+  /// In en, this message translates to:
+  /// **'Request Permissions'**
+  String get requestPermissions;
+
+  /// Success message when permissions are granted
+  ///
+  /// In en, this message translates to:
+  /// **'Notification permissions granted!'**
+  String get permissionsGranted;
+
+  /// Message when permissions are denied
+  ///
+  /// In en, this message translates to:
+  /// **'Notification permissions were denied. Please enable them in Settings.'**
+  String get permissionsDenied;
+
+  /// Display text for 0 minutes timing
+  ///
+  /// In en, this message translates to:
+  /// **'0 min'**
+  String get timing0Min;
+
+  /// Display text for 1 minute timing
+  ///
+  /// In en, this message translates to:
+  /// **'1 min'**
+  String get timing1Min;
+
+  /// Display text for 5 minutes timing
+  ///
+  /// In en, this message translates to:
+  /// **'5 mins'**
+  String get timing5Mins;
+
+  /// Display text for 30 minutes timing
+  ///
+  /// In en, this message translates to:
+  /// **'30 mins'**
+  String get timing30Mins;
+
+  /// Display text for 1 hour timing
+  ///
+  /// In en, this message translates to:
+  /// **'1 hour'**
+  String get timing1Hour;
+
+  /// Display text for 6 hours timing
+  ///
+  /// In en, this message translates to:
+  /// **'6 hours'**
+  String get timing6Hours;
+
+  /// Display text for minutes timing
+  ///
+  /// In en, this message translates to:
+  /// **'{count} mins'**
+  String timingMinutes(int count);
+
+  /// Display text for hours timing (singular)
+  ///
+  /// In en, this message translates to:
+  /// **'{count} hour'**
+  String timingHours(int count);
+
+  /// Display text for hours timing (plural)
+  ///
+  /// In en, this message translates to:
+  /// **'{count} hours'**
+  String timingHoursPlural(int count);
+
+  /// Title for test notifications section
+  ///
+  /// In en, this message translates to:
+  /// **'Test Notifications'**
+  String get testNotifications;
+
+  /// Description text for test notifications
+  ///
+  /// In en, this message translates to:
+  /// **'Send a test notification in 2 seconds to verify notifications are working.'**
+  String get testNotificationsDescription;
+
+  /// Button label to send test notification
+  ///
+  /// In en, this message translates to:
+  /// **'Send Test Notification'**
+  String get sendTestNotification;
+
+  /// Success message when test notification is scheduled
+  ///
+  /// In en, this message translates to:
+  /// **'Test notification scheduled! Check in 2 seconds.'**
+  String get testNotificationScheduled;
+
+  /// Title for test notification
+  ///
+  /// In en, this message translates to:
+  /// **'Test Notification'**
+  String get testNotificationTitle;
+
+  /// Body text for test notification
+  ///
+  /// In en, this message translates to:
+  /// **'If you see this, notifications are working!'**
+  String get testNotificationBody;
+
+  /// Title for scheduled test notification
+  ///
+  /// In en, this message translates to:
+  /// **'Scheduled Test Notification'**
+  String get scheduledTestNotificationTitle;
+
+  /// Body text for scheduled test notification
+  ///
+  /// In en, this message translates to:
+  /// **'This was scheduled 2 seconds ago'**
+  String get scheduledTestNotificationBody;
+
+  /// Notification body when session has no description
+  ///
+  /// In en, this message translates to:
+  /// **'Starts at {time}'**
+  String startsAt(String time);
 }
 
 class _AppLocalizationsDelegate

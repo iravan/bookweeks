@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/session.dart';
+import 'notification_service.dart';
 
 class SessionService {
   static final SessionService _instance = SessionService._internal();
@@ -10,6 +11,7 @@ class SessionService {
   static const String _storageKey = 'sessions_storage';
   final Map<String, List<Session>> _sessions = {}; // Key: date string (YYYY-MM-DD)
   bool _isInitialized = false;
+  final NotificationService _notificationService = NotificationService();
 
   // Initialize and load sessions from storage
   Future<void> initialize() async {
@@ -69,12 +71,29 @@ class SessionService {
     // Sort by start time
     _sessions[dateKey]!.sort((a, b) => a.startTime.compareTo(b.startTime));
     await _saveToStorage();
+    // Schedule notification for the new session
+    await _notificationService.initialize();
+    await _notificationService.scheduleSessionNotification(session);
   }
 
   Future<void> removeSession(String sessionId, DateTime date) async {
     final dateKey = _getDateKey(date);
+    final session = _sessions[dateKey]?.firstWhere(
+      (s) => s.id == sessionId,
+      orElse: () => Session(
+        id: sessionId,
+        title: '',
+        startTime: date,
+        endTime: date,
+      ),
+    );
     _sessions[dateKey]?.removeWhere((s) => s.id == sessionId);
     await _saveToStorage();
+    // Cancel notification for the deleted session
+    if (session != null) {
+      await _notificationService.initialize();
+      await _notificationService.cancelSessionNotification(session.id);
+    }
   }
 
   Future<void> updateSession(Session updatedSession, DateTime oldDate) async {
@@ -90,6 +109,9 @@ class SessionService {
     _sessions[newDateKey]!.sort((a, b) => a.startTime.compareTo(b.startTime));
     
     await _saveToStorage();
+    // Reschedule notification for the updated session
+    await _notificationService.initialize();
+    await _notificationService.scheduleSessionNotification(updatedSession);
   }
 
   bool hasSessionsForDate(DateTime date) {

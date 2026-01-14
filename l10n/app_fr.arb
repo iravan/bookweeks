@@ -324,6 +324,76 @@
         "type": "int"
       }
     }
+  },
+  "notificationSettings": "Paramètres de notification",
+  "notificationTiming": "Horaire des notifications",
+  "notificationTimingDescription": "Choisissez quand recevoir des notifications avant le début de chaque session",
+  "atEventStart": "Au début de l'événement",
+  "beforeEventStart": "{timing} avant le début de l'événement",
+  "notificationTimingUpdated": "Horaire des notifications mis à jour",
+  "aboutNotifications": "À propos des notifications",
+  "notificationInfo": "Vous recevrez des notifications avant le début de chaque session programmée. Les notifications sont automatiquement programmées lors de la création ou de la mise à jour des sessions, et toutes les sessions existantes sont programmées au lancement de l'application.",
+  "rescheduleNotifications": "Reprogrammer les notifications",
+  "rescheduleNotificationsDescription": "Reprogrammez manuellement les notifications pour toutes les sessions futures existantes. Utile si vous venez d'activer les notifications ou si vous souhaitez vous assurer que tous les événements ont des notifications programmées.",
+  "rescheduleNow": "Reprogrammer maintenant",
+  "rescheduling": "Reprogrammation...",
+  "notificationsRescheduled": "Notifications reprogrammées pour {count} session(s) future(s)",
+  "errorReschedulingNotifications": "Erreur lors de la reprogrammation des notifications : {error}",
+  "permissionsRequired": "Autorisations de notification requises",
+  "permissionsRequiredDescription": "Veuillez accorder les autorisations de notification pour recevoir des rappels pour vos sessions. Appuyez sur le bouton ci-dessous pour demander les autorisations.",
+  "requestPermissions": "Demander les autorisations",
+  "permissionsGranted": "Autorisations de notification accordées !",
+  "permissionsDenied": "Les autorisations de notification ont été refusées. Veuillez les activer dans les paramètres.",
+  "timing0Min": "0 min",
+  "timing1Min": "1 min",
+  "timing5Mins": "5 min",
+  "timing30Mins": "30 min",
+  "timing1Hour": "1 heure",
+  "timing6Hours": "6 heures",
+  "timingMinutes": "{count} min",
+  "timingHours": "{count} heure",
+  "timingHoursPlural": "{count} heures"
+,
+  "testNotifications": "Notifications de test",
+  "testNotificationsDescription": "Envoyer une notification de test dans 2 secondes pour vérifier que les notifications fonctionnent.",
+  "sendTestNotification": "Envoyer une notification de test",
+  "testNotificationScheduled": "Notification de test programmée ! Vérifiez dans 2 secondes.",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  }
+,
+  "testNotificationTitle": "Notification de test",
+  "testNotificationBody": "Si vous voyez ceci, les notifications fonctionnent !",
+  "scheduledTestNotificationTitle": "Notification de test programmée",
+  "scheduledTestNotificationBody": "Ceci a été programmé il y a 2 secondes",
+  "startsAt": "Commence à {time}",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
-

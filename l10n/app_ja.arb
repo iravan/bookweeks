@@ -324,6 +324,76 @@
         "type": "int"
       }
     }
+  },
+  "notificationSettings": "通知設定",
+  "notificationTiming": "通知タイミング",
+  "notificationTimingDescription": "各セッション開始前に通知を受信するタイミングを選択",
+  "atEventStart": "イベント開始時",
+  "beforeEventStart": "イベント開始の {timing} 前",
+  "notificationTimingUpdated": "通知タイミングを更新しました",
+  "aboutNotifications": "通知について",
+  "notificationInfo": "予定された各セッション開始前に通知を受信します。セッションの作成または更新時に通知が自動的にスケジュールされ、アプリ起動時に既存のすべてのセッションがスケジュールされます。",
+  "rescheduleNotifications": "通知の再スケジュール",
+  "rescheduleNotificationsDescription": "既存のすべての将来のセッションの通知を手動で再スケジュールします。通知を有効にしたばかりの場合や、すべてのイベントに通知がスケジュールされていることを確認したい場合に便利です。",
+  "rescheduleNow": "今すぐ再スケジュール",
+  "rescheduling": "再スケジュール中...",
+  "notificationsRescheduled": "{count} 件の将来のセッションの通知を再スケジュールしました",
+  "errorReschedulingNotifications": "通知の再スケジュール中にエラーが発生しました：{error}",
+  "permissionsRequired": "通知権限が必要です",
+  "permissionsRequiredDescription": "セッションのリマインダーを受信するには、通知権限を付与してください。下のボタンをタップして権限をリクエストします。",
+  "requestPermissions": "権限をリクエスト",
+  "permissionsGranted": "通知権限が付与されました！",
+  "permissionsDenied": "通知権限が拒否されました。設定で有効にしてください。",
+  "timing0Min": "0分",
+  "timing1Min": "1分",
+  "timing5Mins": "5分",
+  "timing30Mins": "30分",
+  "timing1Hour": "1時間",
+  "timing6Hours": "6時間",
+  "timingMinutes": "{count}分",
+  "timingHours": "{count}時間",
+  "timingHoursPlural": "{count}時間"
+,
+  "testNotifications": "テスト通知",
+  "testNotificationsDescription": "2秒後にテスト通知を送信して、通知が正常に動作しているか確認します。",
+  "sendTestNotification": "テスト通知を送信",
+  "testNotificationScheduled": "テスト通知がスケジュールされました！2秒後に確認してください。",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  }
+,
+  "testNotificationTitle": "テスト通知",
+  "testNotificationBody": "これが表示されれば、通知は正常に動作しています！",
+  "scheduledTestNotificationTitle": "スケジュールされたテスト通知",
+  "scheduledTestNotificationBody": "これは2秒前にスケジュールされました",
+  "startsAt": "{time}に開始",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
-

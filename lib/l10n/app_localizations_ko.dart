@@ -328,4 +328,133 @@ class AppLocalizationsKo extends AppLocalizations {
   String daysLater(int count) {
     return '$count일 후';
   }
+
+  @override
+  String get notificationSettings => '알림 설정';
+
+  @override
+  String get notificationTiming => '알림 시간';
+
+  @override
+  String get notificationTimingDescription => '각 세션이 시작되기 전 알림을 받을 시점을 선택하세요';
+
+  @override
+  String get atEventStart => '이벤트 시작 시';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '이벤트 시작 $timing 전';
+  }
+
+  @override
+  String get notificationTimingUpdated => '알림 시간이 업데이트되었습니다';
+
+  @override
+  String get aboutNotifications => '알림 정보';
+
+  @override
+  String get notificationInfo =>
+      '예정된 각 세션 시작 전에 알림을 받게 됩니다. 세션을 생성하거나 업데이트할 때 알림이 자동으로 예약되며, 앱 시작 시 모든 기존 세션이 예약됩니다.';
+
+  @override
+  String get rescheduleNotifications => '알림 재예약';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      '모든 기존 향후 세션의 알림을 수동으로 재예약합니다. 알림을 방금 활성화했거나 모든 이벤트에 알림이 예약되어 있는지 확인하려는 경우 유용합니다.';
+
+  @override
+  String get rescheduleNow => '지금 재예약';
+
+  @override
+  String get rescheduling => '재예약 중...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return '$count개의 향후 세션에 대한 알림을 재예약했습니다';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return '알림 재예약 중 오류 발생: $error';
+  }
+
+  @override
+  String get permissionsRequired => '알림 권한 필요';
+
+  @override
+  String get permissionsRequiredDescription =>
+      '세션 알림을 받으려면 알림 권한을 부여하세요. 아래 버튼을 탭하여 권한을 요청하세요.';
+
+  @override
+  String get requestPermissions => '권한 요청';
+
+  @override
+  String get permissionsGranted => '알림 권한이 부여되었습니다!';
+
+  @override
+  String get permissionsDenied => '알림 권한이 거부되었습니다. 설정에서 활성화하세요.';
+
+  @override
+  String get timing0Min => '0분';
+
+  @override
+  String get timing1Min => '1분';
+
+  @override
+  String get timing5Mins => '5분';
+
+  @override
+  String get timing30Mins => '30분';
+
+  @override
+  String get timing1Hour => '1시간';
+
+  @override
+  String get timing6Hours => '6시간';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count분';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count시간';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count시간';
+  }
+
+  @override
+  String get testNotifications => '테스트 알림';
+
+  @override
+  String get testNotificationsDescription =>
+      '2초 후 테스트 알림을 보내 알림이 제대로 작동하는지 확인합니다.';
+
+  @override
+  String get sendTestNotification => '테스트 알림 보내기';
+
+  @override
+  String get testNotificationScheduled => '테스트 알림이 예약되었습니다! 2초 후에 확인하세요.';
+
+  @override
+  String get testNotificationTitle => '테스트 알림';
+
+  @override
+  String get testNotificationBody => '이 메시지가 보이면 알림이 정상적으로 작동하고 있습니다!';
+
+  @override
+  String get scheduledTestNotificationTitle => '예약된 테스트 알림';
+
+  @override
+  String get scheduledTestNotificationBody => '이것은 2초 전에 예약되었습니다';
+
+  @override
+  String startsAt(String time) {
+    return '$time에 시작';
+  }
 }

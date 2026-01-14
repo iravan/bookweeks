@@ -15,6 +15,16 @@ import 'services/session_service.dart';
 import 'services/student_service.dart';
 import 'services/export_import_service.dart';
 import 'services/debug_service.dart';
+import 'services/notification_service.dart';
+import 'widgets/notification_settings_page.dart';
+import 'widgets/foreground_notification_banner.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+// Top-level function for background notification tap handler
+@pragma('vm:entry-point')
+void notificationTapBackground(NotificationResponse response) {
+  print('Background notification tapped: ${response.id}');
+}
 
 void main() {
   runApp(const MyApp());
@@ -161,6 +171,7 @@ class _MainPageState extends State<MainPage>
   final ExportImportService _exportImportService = ExportImportService();
   bool _isInitialized = false;
   DateTime? _lastCheckedDate;
+  OverlayEntry? _notificationOverlay;
 
   @override
   void initState() {
@@ -174,6 +185,7 @@ class _MainPageState extends State<MainPage>
       vsync: this,
     );
     _initializeServices();
+    _setupForegroundNotificationHandler();
 
     // Set initial tab to today if current week is selected
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -181,10 +193,52 @@ class _MainPageState extends State<MainPage>
     });
   }
 
+  void _setupForegroundNotificationHandler() {
+    // Set up foreground notification handler
+    NotificationService().setForegroundNotificationHandler((title, body) {
+      _showForegroundNotification(title, body);
+    });
+  }
+
+  void _showForegroundNotification(String title, String body) {
+    // Remove existing notification if any
+    _hideForegroundNotification();
+
+    // Create overlay entry
+    _notificationOverlay = OverlayEntry(
+      builder: (context) => Positioned(
+        top: MediaQuery.of(context).padding.top,
+        left: 0,
+        right: 0,
+        child: SafeArea(
+          child: ForegroundNotificationBanner(
+            title: title,
+            body: body,
+            onTap: () {
+              // Handle notification tap if needed
+            },
+            onDismiss: () {
+              _hideForegroundNotification();
+            },
+          ),
+        ),
+      ),
+    );
+
+    // Insert overlay
+    Overlay.of(context).insert(_notificationOverlay!);
+  }
+
+  void _hideForegroundNotification() {
+    _notificationOverlay?.remove();
+    _notificationOverlay = null;
+  }
+
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _tabController.dispose();
+    _hideForegroundNotification();
     super.dispose();
   }
 
@@ -285,7 +339,28 @@ class _MainPageState extends State<MainPage>
     await Future.wait([
       _sessionService.initialize(),
       _studentService.initialize(),
+      NotificationService().initialize(),
     ]);
+
+    // Set custom notification sound if needed
+    // IMPORTANT: Set this BEFORE rescheduling notifications
+    // Make sure the sound file exists at:
+    // - iOS: ios/Runner/notification_sound.caf (and added to "Copy Bundle Resources" in Xcode)
+    // - Android: android/app/src/main/res/raw/notification_sound.mp3
+    NotificationService().setCustomSoundFileName('notification_sound.caf');
+
+    // Schedule all notifications for existing sessions on app launch
+    // This ensures all events have notifications scheduled correctly
+    try {
+      final allSessions = _sessionService.getAllSessions();
+      await NotificationService().rescheduleAllNotifications(allSessions);
+      print(
+        'MainPage: Scheduled notifications for ${allSessions.length} sessions on app launch',
+      );
+    } catch (e) {
+      print('MainPage: Error scheduling notifications on launch: $e');
+      // Continue even if notification scheduling fails
+    }
     if (mounted) {
       setState(() {
         _isInitialized = true;
@@ -412,6 +487,17 @@ class _MainPageState extends State<MainPage>
               );
               // Refresh when returning from events list
               setState(() {});
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            tooltip: AppLocalizations.of(context)!.notificationSettings,
+            onPressed: () async {
+              await Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const NotificationSettingsPage(),
+                ),
+              );
             },
           ),
           if (kDebugMode) _buildDebugMenu(context),
@@ -614,6 +700,23 @@ class _MainPageState extends State<MainPage>
           final importResult = await _exportImportService.importFromYaml(
             yamlContent,
           );
+
+          // Schedule notifications for all imported sessions
+          if (importResult.success && importResult.sessionsImported > 0) {
+            try {
+              await NotificationService().initialize();
+              final allSessions = _sessionService.getAllSessions();
+              await NotificationService().rescheduleAllNotifications(
+                allSessions,
+              );
+              print('MainPage: Scheduled notifications for imported sessions');
+            } catch (e) {
+              print(
+                'MainPage: Error scheduling notifications after import: $e',
+              );
+              // Continue even if notification scheduling fails
+            }
+          }
 
           // Close loading dialog
           if (mounted) Navigator.of(context).pop();

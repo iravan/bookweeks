@@ -324,6 +324,78 @@
         "type": "int"
       }
     }
+  },
+
+  "notificationSettings": "Notification Settings",
+  "notificationTiming": "Notification Timing",
+  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
+  "atEventStart": "At event start",
+  "beforeEventStart": "{timing} before event start",
+  "notificationTimingUpdated": "Notification timing updated",
+  "aboutNotifications": "About Notifications",
+  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
+  "rescheduleNotifications": "Reschedule Notifications",
+  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
+  "rescheduleNow": "Reschedule Now",
+  "rescheduling": "Rescheduling...",
+  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
+  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
+  "permissionsRequired": "Notification Permissions Required",
+  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
+  "requestPermissions": "Request Permissions",
+  "permissionsGranted": "Notification permissions granted!",
+  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
+,
+  "timing0Min": "0 min",
+  "timing1Min": "1 min",
+  "timing5Mins": "5 mins",
+  "timing30Mins": "30 mins",
+  "timing1Hour": "1 hour",
+  "timing6Hours": "6 hours",
+  "timingMinutes": "{count} mins",
+  "timingHours": "{count} hour",
+  "timingHoursPlural": "{count} hours"
+,
+  "testNotifications": "ટેસ્ટ સૂચનાઓ",
+  "testNotificationsDescription": "સૂચનાઓ કામ કરી રહી છે કે નહીં તે ચકાસવા માટે 2 સેકંડમાં એક ટેસ્ટ સૂચના મોકલો.",
+  "sendTestNotification": "ટેસ્ટ સૂચના મોકલો",
+  "testNotificationScheduled": "ટેસ્ટ સૂચના શેડ્યૂલ કરવામાં આવી છે! 2 સેકંડમાં તપાસો.",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  }
+,
+  "testNotificationTitle": "ટેસ્ટ સૂચના",
+  "testNotificationBody": "જો તમે આ જોશો, તો સૂચનાઓ કામ કરી રહી છે!",
+  "scheduledTestNotificationTitle": "શેડ્યૂલ કરેલી ટેસ્ટ સૂચના",
+  "scheduledTestNotificationBody": "આ 2 સેકંડ પહેલા શેડ્યૂલ કરવામાં આવ્યું હતું",
+  "startsAt": "{time} પર શરૂ થાય છે",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
-

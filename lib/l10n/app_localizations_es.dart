@@ -334,6 +334,142 @@ class AppLocalizationsEs extends AppLocalizations {
   String daysLater(int count) {
     return 'En $count día';
   }
+
+  @override
+  String get notificationSettings => 'Configuración de notificaciones';
+
+  @override
+  String get notificationTiming => 'Hora de las notificaciones';
+
+  @override
+  String get notificationTimingDescription =>
+      'Elija cuándo recibir notificaciones antes de que comience cada sesión';
+
+  @override
+  String get atEventStart => 'Al inicio del evento';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing antes del inicio del evento';
+  }
+
+  @override
+  String get notificationTimingUpdated =>
+      'Hora de las notificaciones actualizada';
+
+  @override
+  String get aboutNotifications => 'Acerca de las notificaciones';
+
+  @override
+  String get notificationInfo =>
+      'Recibirá notificaciones antes de que comience cada sesión programada. Las notificaciones se programan automáticamente al crear o actualizar sesiones, y todas las sesiones existentes se programan cuando se inicia la aplicación.';
+
+  @override
+  String get rescheduleNotifications => 'Reprogramar notificaciones';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      'Reprograme manualmente las notificaciones para todas las sesiones futuras existentes. Útil si acaba de habilitar las notificaciones o desea asegurarse de que todos los eventos tengan notificaciones programadas.';
+
+  @override
+  String get rescheduleNow => 'Reprogramar ahora';
+
+  @override
+  String get rescheduling => 'Reprogramando...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return 'Notificaciones reprogramadas para $count sesión(es) futura(s)';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return 'Error al reprogramar notificaciones: $error';
+  }
+
+  @override
+  String get permissionsRequired => 'Se requieren permisos de notificación';
+
+  @override
+  String get permissionsRequiredDescription =>
+      'Por favor, otorgue permisos de notificación para recibir recordatorios de sus sesiones. Toque el botón a continuación para solicitar permisos.';
+
+  @override
+  String get requestPermissions => 'Solicitar permisos';
+
+  @override
+  String get permissionsGranted => '¡Permisos de notificación otorgados!';
+
+  @override
+  String get permissionsDenied =>
+      'Los permisos de notificación fueron denegados. Por favor, actívelos en Configuración.';
+
+  @override
+  String get timing0Min => '0 min';
+
+  @override
+  String get timing1Min => '1 min';
+
+  @override
+  String get timing5Mins => '5 min';
+
+  @override
+  String get timing30Mins => '30 min';
+
+  @override
+  String get timing1Hour => '1 hora';
+
+  @override
+  String get timing6Hours => '6 horas';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count min';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count hora';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count horas';
+  }
+
+  @override
+  String get testNotifications => 'Notificaciones de prueba';
+
+  @override
+  String get testNotificationsDescription =>
+      'Enviar una notificación de prueba en 2 segundos para verificar que las notificaciones funcionan.';
+
+  @override
+  String get sendTestNotification => 'Enviar notificación de prueba';
+
+  @override
+  String get testNotificationScheduled =>
+      '¡Notificación de prueba programada! Verifica en 2 segundos.';
+
+  @override
+  String get testNotificationTitle => 'Notificación de prueba';
+
+  @override
+  String get testNotificationBody =>
+      'Si ves esto, ¡las notificaciones están funcionando!';
+
+  @override
+  String get scheduledTestNotificationTitle =>
+      'Notificación de prueba programada';
+
+  @override
+  String get scheduledTestNotificationBody =>
+      'Esto se programó hace 2 segundos';
+
+  @override
+  String startsAt(String time) {
+    return 'Comienza a las $time';
+  }
 }
 
 /// The translations for Spanish Castilian, as used in Mexico (`es_MX`).
@@ -665,5 +801,140 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   @override
   String daysLater(int count) {
     return 'En $count días';
+  }
+
+  @override
+  String get notificationSettings => 'Notification Settings';
+
+  @override
+  String get notificationTiming => 'Notification Timing';
+
+  @override
+  String get notificationTimingDescription =>
+      'Choose when to receive notifications before each session starts';
+
+  @override
+  String get atEventStart => 'At event start';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing before event start';
+  }
+
+  @override
+  String get notificationTimingUpdated => 'Notification timing updated';
+
+  @override
+  String get aboutNotifications => 'About Notifications';
+
+  @override
+  String get notificationInfo =>
+      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+
+  @override
+  String get rescheduleNotifications => 'Reschedule Notifications';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+
+  @override
+  String get rescheduleNow => 'Reschedule Now';
+
+  @override
+  String get rescheduling => 'Rescheduling...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return 'Notifications rescheduled for $count future session(s)';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return 'Error rescheduling notifications: $error';
+  }
+
+  @override
+  String get permissionsRequired => 'Notification Permissions Required';
+
+  @override
+  String get permissionsRequiredDescription =>
+      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+
+  @override
+  String get requestPermissions => 'Request Permissions';
+
+  @override
+  String get permissionsGranted => 'Notification permissions granted!';
+
+  @override
+  String get permissionsDenied =>
+      'Notification permissions were denied. Please enable them in Settings.';
+
+  @override
+  String get timing0Min => '0 min';
+
+  @override
+  String get timing1Min => '1 min';
+
+  @override
+  String get timing5Mins => '5 mins';
+
+  @override
+  String get timing30Mins => '30 mins';
+
+  @override
+  String get timing1Hour => '1 hour';
+
+  @override
+  String get timing6Hours => '6 hours';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count mins';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count hour';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count hours';
+  }
+
+  @override
+  String get testNotifications => 'Notificaciones de prueba';
+
+  @override
+  String get testNotificationsDescription =>
+      'Enviar una notificación de prueba en 2 segundos para verificar que las notificaciones funcionan.';
+
+  @override
+  String get sendTestNotification => 'Enviar notificación de prueba';
+
+  @override
+  String get testNotificationScheduled =>
+      '¡Notificación de prueba programada! Verifica en 2 segundos.';
+
+  @override
+  String get testNotificationTitle => 'Notificación de prueba';
+
+  @override
+  String get testNotificationBody =>
+      'Si ves esto, ¡las notificaciones están funcionando!';
+
+  @override
+  String get scheduledTestNotificationTitle =>
+      'Notificación de prueba programada';
+
+  @override
+  String get scheduledTestNotificationBody =>
+      'Esto se programó hace 2 segundos';
+
+  @override
+  String startsAt(String time) {
+    return 'Comienza a las $time';
   }
 }

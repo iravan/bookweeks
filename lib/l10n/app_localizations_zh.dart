@@ -328,6 +328,133 @@ class AppLocalizationsZh extends AppLocalizations {
   String daysLater(int count) {
     return '$count 天後';
   }
+
+  @override
+  String get notificationSettings => '通知设置';
+
+  @override
+  String get notificationTiming => '通知时间';
+
+  @override
+  String get notificationTimingDescription => '选择在每次课程开始前何时接收通知';
+
+  @override
+  String get atEventStart => '课程开始时';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing 前';
+  }
+
+  @override
+  String get notificationTimingUpdated => '通知时间已更新';
+
+  @override
+  String get aboutNotifications => '关于通知';
+
+  @override
+  String get notificationInfo =>
+      '您将在每次预定的课程开始前收到通知。创建或更新课程时会自动安排通知，应用启动时会为所有现有课程安排通知。';
+
+  @override
+  String get rescheduleNotifications => '重新安排通知';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      '手动为所有现有未来课程重新安排通知。如果您刚刚启用通知或想确保所有活动都已安排通知，这很有用。';
+
+  @override
+  String get rescheduleNow => '立即重新安排';
+
+  @override
+  String get rescheduling => '重新安排中...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return '已为 $count 个未来课程重新安排通知';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return '重新安排通知时出错：$error';
+  }
+
+  @override
+  String get permissionsRequired => '需要通知权限';
+
+  @override
+  String get permissionsRequiredDescription => '请授予通知权限以接收课程提醒。点击下面的按钮请求权限。';
+
+  @override
+  String get requestPermissions => '请求权限';
+
+  @override
+  String get permissionsGranted => '通知权限已授予！';
+
+  @override
+  String get permissionsDenied => '通知权限被拒绝。请在设置中启用。';
+
+  @override
+  String get timing0Min => '0 分钟';
+
+  @override
+  String get timing1Min => '1 分钟';
+
+  @override
+  String get timing5Mins => '5 分钟';
+
+  @override
+  String get timing30Mins => '30 分钟';
+
+  @override
+  String get timing1Hour => '1 小时';
+
+  @override
+  String get timing6Hours => '6 小时';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count 分钟';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count 小时';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count 小时';
+  }
+
+  @override
+  String get testNotifications => '测试通知';
+
+  @override
+  String get testNotificationsDescription => '在2秒后发送测试通知以验证通知功能是否正常工作。';
+
+  @override
+  String get sendTestNotification => '发送测试通知';
+
+  @override
+  String get testNotificationScheduled => '测试通知已安排！2秒后查看。';
+
+  @override
+  String get testNotificationTitle => '测试通知';
+
+  @override
+  String get testNotificationBody => '如果您看到这条消息，通知功能正常工作！';
+
+  @override
+  String get scheduledTestNotificationTitle => '已安排的测试通知';
+
+  @override
+  String get scheduledTestNotificationBody => '这是在2秒前安排的';
+
+  @override
+  String startsAt(String time) {
+    return '开始时间：$time';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -654,6 +781,133 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String daysLater(int count) {
     return '$count 天后';
   }
+
+  @override
+  String get notificationSettings => '通知设置';
+
+  @override
+  String get notificationTiming => '通知时间';
+
+  @override
+  String get notificationTimingDescription => '选择在每次课程开始前何时接收通知';
+
+  @override
+  String get atEventStart => '课程开始时';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing 前';
+  }
+
+  @override
+  String get notificationTimingUpdated => '通知时间已更新';
+
+  @override
+  String get aboutNotifications => '关于通知';
+
+  @override
+  String get notificationInfo =>
+      '您将在每次预定的课程开始前收到通知。创建或更新课程时会自动安排通知，应用启动时会为所有现有课程安排通知。';
+
+  @override
+  String get rescheduleNotifications => '重新安排通知';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      '手动为所有现有未来课程重新安排通知。如果您刚刚启用通知或想确保所有活动都已安排通知，这很有用。';
+
+  @override
+  String get rescheduleNow => '立即重新安排';
+
+  @override
+  String get rescheduling => '重新安排中...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return '已为 $count 个未来课程重新安排通知';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return '重新安排通知时出错：$error';
+  }
+
+  @override
+  String get permissionsRequired => '需要通知权限';
+
+  @override
+  String get permissionsRequiredDescription => '请授予通知权限以接收课程提醒。点击下面的按钮请求权限。';
+
+  @override
+  String get requestPermissions => '请求权限';
+
+  @override
+  String get permissionsGranted => '通知权限已授予！';
+
+  @override
+  String get permissionsDenied => '通知权限被拒绝。请在设置中启用。';
+
+  @override
+  String get timing0Min => '0 分钟';
+
+  @override
+  String get timing1Min => '1 分钟';
+
+  @override
+  String get timing5Mins => '5 分钟';
+
+  @override
+  String get timing30Mins => '30 分钟';
+
+  @override
+  String get timing1Hour => '1 小时';
+
+  @override
+  String get timing6Hours => '6 小时';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count 分钟';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count 小时';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count 小时';
+  }
+
+  @override
+  String get testNotifications => '测试通知';
+
+  @override
+  String get testNotificationsDescription => '在2秒后发送测试通知以验证通知功能是否正常工作。';
+
+  @override
+  String get sendTestNotification => '发送测试通知';
+
+  @override
+  String get testNotificationScheduled => '测试通知已安排！2秒后查看。';
+
+  @override
+  String get testNotificationTitle => '测试通知';
+
+  @override
+  String get testNotificationBody => '如果您看到这条消息，通知功能正常工作！';
+
+  @override
+  String get scheduledTestNotificationTitle => '已安排的测试通知';
+
+  @override
+  String get scheduledTestNotificationBody => '这是在2秒前安排的';
+
+  @override
+  String startsAt(String time) {
+    return '开始时间：$time';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -979,5 +1233,132 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String daysLater(int count) {
     return '$count 天後';
+  }
+
+  @override
+  String get notificationSettings => '通知設定';
+
+  @override
+  String get notificationTiming => '通知時間';
+
+  @override
+  String get notificationTimingDescription => '選擇在每次課程開始前何時接收通知';
+
+  @override
+  String get atEventStart => '課程開始時';
+
+  @override
+  String beforeEventStart(String timing) {
+    return '$timing 前';
+  }
+
+  @override
+  String get notificationTimingUpdated => '通知時間已更新';
+
+  @override
+  String get aboutNotifications => '關於通知';
+
+  @override
+  String get notificationInfo =>
+      '您將在每次預定的課程開始前收到通知。建立或更新課程時會自動安排通知，應用程式啟動時會為所有現有課程安排通知。';
+
+  @override
+  String get rescheduleNotifications => '重新安排通知';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      '手動為所有現有未來課程重新安排通知。如果您剛剛啟用通知或想確保所有活動都已安排通知，這很有用。';
+
+  @override
+  String get rescheduleNow => '立即重新安排';
+
+  @override
+  String get rescheduling => '重新安排中...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return '已為 $count 個未來課程重新安排通知';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return '重新安排通知時發生錯誤：$error';
+  }
+
+  @override
+  String get permissionsRequired => '需要通知權限';
+
+  @override
+  String get permissionsRequiredDescription => '請授予通知權限以接收課程提醒。點擊下面的按鈕請求權限。';
+
+  @override
+  String get requestPermissions => '請求權限';
+
+  @override
+  String get permissionsGranted => '通知權限已授予！';
+
+  @override
+  String get permissionsDenied => '通知權限被拒絕。請在設定中啟用。';
+
+  @override
+  String get timing0Min => '0 分鐘';
+
+  @override
+  String get timing1Min => '1 分鐘';
+
+  @override
+  String get timing5Mins => '5 分鐘';
+
+  @override
+  String get timing30Mins => '30 分鐘';
+
+  @override
+  String get timing1Hour => '1 小時';
+
+  @override
+  String get timing6Hours => '6 小時';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count 分鐘';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count 小時';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count 小時';
+  }
+
+  @override
+  String get testNotifications => '測試通知';
+
+  @override
+  String get testNotificationsDescription => '在2秒後發送測試通知以驗證通知功能是否正常運作。';
+
+  @override
+  String get sendTestNotification => '發送測試通知';
+
+  @override
+  String get testNotificationScheduled => '測試通知已安排！2秒後查看。';
+
+  @override
+  String get testNotificationTitle => '測試通知';
+
+  @override
+  String get testNotificationBody => '如果您看到這條訊息，通知功能正常運作！';
+
+  @override
+  String get scheduledTestNotificationTitle => '已安排的測試通知';
+
+  @override
+  String get scheduledTestNotificationBody => '這是在2秒前安排的';
+
+  @override
+  String startsAt(String time) {
+    return '開始時間：$time';
   }
 }

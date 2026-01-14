@@ -329,4 +329,133 @@ class AppLocalizationsJa extends AppLocalizations {
   String daysLater(int count) {
     return '$count 日後';
   }
+
+  @override
+  String get notificationSettings => '通知設定';
+
+  @override
+  String get notificationTiming => '通知タイミング';
+
+  @override
+  String get notificationTimingDescription => '各セッション開始前に通知を受信するタイミングを選択';
+
+  @override
+  String get atEventStart => 'イベント開始時';
+
+  @override
+  String beforeEventStart(String timing) {
+    return 'イベント開始の $timing 前';
+  }
+
+  @override
+  String get notificationTimingUpdated => '通知タイミングを更新しました';
+
+  @override
+  String get aboutNotifications => '通知について';
+
+  @override
+  String get notificationInfo =>
+      '予定された各セッション開始前に通知を受信します。セッションの作成または更新時に通知が自動的にスケジュールされ、アプリ起動時に既存のすべてのセッションがスケジュールされます。';
+
+  @override
+  String get rescheduleNotifications => '通知の再スケジュール';
+
+  @override
+  String get rescheduleNotificationsDescription =>
+      '既存のすべての将来のセッションの通知を手動で再スケジュールします。通知を有効にしたばかりの場合や、すべてのイベントに通知がスケジュールされていることを確認したい場合に便利です。';
+
+  @override
+  String get rescheduleNow => '今すぐ再スケジュール';
+
+  @override
+  String get rescheduling => '再スケジュール中...';
+
+  @override
+  String notificationsRescheduled(int count) {
+    return '$count 件の将来のセッションの通知を再スケジュールしました';
+  }
+
+  @override
+  String errorReschedulingNotifications(String error) {
+    return '通知の再スケジュール中にエラーが発生しました：$error';
+  }
+
+  @override
+  String get permissionsRequired => '通知権限が必要です';
+
+  @override
+  String get permissionsRequiredDescription =>
+      'セッションのリマインダーを受信するには、通知権限を付与してください。下のボタンをタップして権限をリクエストします。';
+
+  @override
+  String get requestPermissions => '権限をリクエスト';
+
+  @override
+  String get permissionsGranted => '通知権限が付与されました！';
+
+  @override
+  String get permissionsDenied => '通知権限が拒否されました。設定で有効にしてください。';
+
+  @override
+  String get timing0Min => '0分';
+
+  @override
+  String get timing1Min => '1分';
+
+  @override
+  String get timing5Mins => '5分';
+
+  @override
+  String get timing30Mins => '30分';
+
+  @override
+  String get timing1Hour => '1時間';
+
+  @override
+  String get timing6Hours => '6時間';
+
+  @override
+  String timingMinutes(int count) {
+    return '$count分';
+  }
+
+  @override
+  String timingHours(int count) {
+    return '$count時間';
+  }
+
+  @override
+  String timingHoursPlural(int count) {
+    return '$count時間';
+  }
+
+  @override
+  String get testNotifications => 'テスト通知';
+
+  @override
+  String get testNotificationsDescription =>
+      '2秒後にテスト通知を送信して、通知が正常に動作しているか確認します。';
+
+  @override
+  String get sendTestNotification => 'テスト通知を送信';
+
+  @override
+  String get testNotificationScheduled => 'テスト通知がスケジュールされました！2秒後に確認してください。';
+
+  @override
+  String get testNotificationTitle => 'テスト通知';
+
+  @override
+  String get testNotificationBody => 'これが表示されれば、通知は正常に動作しています！';
+
+  @override
+  String get scheduledTestNotificationTitle => 'スケジュールされたテスト通知';
+
+  @override
+  String get scheduledTestNotificationBody => 'これは2秒前にスケジュールされました';
+
+  @override
+  String startsAt(String time) {
+    return '$timeに開始';
+  }
 }

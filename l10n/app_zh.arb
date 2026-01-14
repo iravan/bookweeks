@@ -324,6 +324,75 @@
         "type": "int"
       }
     }
+  },
+  "notificationSettings": "通知设置",
+  "notificationTiming": "通知时间",
+  "notificationTimingDescription": "选择在每次课程开始前何时接收通知",
+  "atEventStart": "课程开始时",
+  "beforeEventStart": "{timing} 前",
+  "notificationTimingUpdated": "通知时间已更新",
+  "aboutNotifications": "关于通知",
+  "notificationInfo": "您将在每次预定的课程开始前收到通知。创建或更新课程时会自动安排通知，应用启动时会为所有现有课程安排通知。",
+  "rescheduleNotifications": "重新安排通知",
+  "rescheduleNotificationsDescription": "手动为所有现有未来课程重新安排通知。如果您刚刚启用通知或想确保所有活动都已安排通知，这很有用。",
+  "rescheduleNow": "立即重新安排",
+  "rescheduling": "重新安排中...",
+  "notificationsRescheduled": "已为 {count} 个未来课程重新安排通知",
+  "errorReschedulingNotifications": "重新安排通知时出错：{error}",
+  "permissionsRequired": "需要通知权限",
+  "permissionsRequiredDescription": "请授予通知权限以接收课程提醒。点击下面的按钮请求权限。",
+  "requestPermissions": "请求权限",
+  "permissionsGranted": "通知权限已授予！",
+  "permissionsDenied": "通知权限被拒绝。请在设置中启用。",
+  "timing0Min": "0 分钟",
+  "timing1Min": "1 分钟",
+  "timing5Mins": "5 分钟",
+  "timing30Mins": "30 分钟",
+  "timing1Hour": "1 小时",
+  "timing6Hours": "6 小时",
+  "timingMinutes": "{count} 分钟",
+  "timingHours": "{count} 小时",
+  "timingHoursPlural": "{count} 小时",
+  "testNotifications": "测试通知",
+  "testNotificationsDescription": "在2秒后发送测试通知以验证通知功能是否正常工作。",
+  "sendTestNotification": "发送测试通知",
+  "testNotificationScheduled": "测试通知已安排！2秒后查看。",
+  "@testNotifications": {
+    "description": "Title for test notifications section"
+  },
+  "@testNotificationsDescription": {
+    "description": "Description text for test notifications"
+  },
+  "@sendTestNotification": {
+    "description": "Button label to send test notification"
+  },
+  "@testNotificationScheduled": {
+    "description": "Success message when test notification is scheduled"
+  }
+,
+  "testNotificationTitle": "测试通知",
+  "testNotificationBody": "如果您看到这条消息，通知功能正常工作！",
+  "scheduledTestNotificationTitle": "已安排的测试通知",
+  "scheduledTestNotificationBody": "这是在2秒前安排的",
+  "startsAt": "开始时间：{time}",
+  "@testNotificationTitle": {
+    "description": "Title for test notification"
+  },
+  "@testNotificationBody": {
+    "description": "Body text for test notification"
+  },
+  "@scheduledTestNotificationTitle": {
+    "description": "Title for scheduled test notification"
+  },
+  "@scheduledTestNotificationBody": {
+    "description": "Body text for scheduled test notification"
+  },
+  "@startsAt": {
+    "description": "Notification body when session has no description",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }
-
