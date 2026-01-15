@@ -493,4 +493,56 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get notificationsDisabled => 'התראות הושבתו';
+
+  @override
+  String get help => 'Help';
+
+  @override
+  String get gettingStarted => 'Getting Started';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks helps you manage your weekly schedule and sessions. Use the calendar at the top to navigate between weeks, and tap on any day to view or add sessions for that day.';
+
+  @override
+  String get creatingSessions => 'Creating Sessions';
+
+  @override
+  String get creatingSessionsDescription =>
+      'To create a session, tap the + button on any day. You can set the session title, time, duration, and add students. Sessions are automatically saved and will appear on your calendar.';
+
+  @override
+  String get managingStudents => 'Managing Students';
+
+  @override
+  String get managingStudentsDescription =>
+      'When creating or editing a session, you can add students by tapping the + button in the students section. You can add student names, nicknames, ages, and phone numbers. Students can be reused across multiple sessions.';
+
+  @override
+  String get usingTemplates => 'Using Templates';
+
+  @override
+  String get usingTemplatesDescription =>
+      'Templates allow you to quickly create sessions with pre-configured students. Create templates from the menu (three dots) → Manage Templates. When creating a session, you can select a template to automatically add its students.';
+
+  @override
+  String get notificationsHelp => 'Notifications';
+
+  @override
+  String get notificationsHelpDescription =>
+      'You can receive notifications before your sessions start. Go to Notification Settings (bell icon) to enable notifications, set the timing (how many minutes before), and test your notification settings. Make sure to grant notification permissions when prompted.';
+
+  @override
+  String get exportImport => 'Export & Import';
+
+  @override
+  String get exportImportDescription =>
+      'You can export your data (sessions, students, templates) to a YAML file for backup or transfer. Use the menu (three dots) → Export Data. To import, use Import Data from the same menu. This is useful for backing up your data or moving it to another device.';
+
+  @override
+  String get navigationTips => 'Navigation Tips';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Use the week calendar to navigate between weeks\n• Tap on day tabs to view sessions for that day\n• Use the All Events button (calendar icon) to see all sessions in a list\n• Access settings via the icons in the top bar: Theme (palette), Events (calendar), Notifications (bell), and Help (question mark)';
 }

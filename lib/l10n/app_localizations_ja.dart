@@ -490,4 +490,56 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get notificationsDisabled => '通知が無効になりました';
+
+  @override
+  String get help => 'ヘルプ';
+
+  @override
+  String get gettingStarted => 'はじめに';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeksは、週間スケジュールとセッションを管理するのに役立ちます。上部のカレンダーを使用して週間を移動し、任意の日をタップしてその日のセッションを表示または追加します。';
+
+  @override
+  String get creatingSessions => 'セッションの作成';
+
+  @override
+  String get creatingSessionsDescription =>
+      'セッションを作成するには、任意の日の+ボタンをタップします。セッションのタイトル、時間、期間を設定し、生徒を追加できます。セッションは自動的に保存され、カレンダーに表示されます。';
+
+  @override
+  String get managingStudents => '生徒の管理';
+
+  @override
+  String get managingStudentsDescription =>
+      'セッションの作成または編集時に、生徒セクションの+ボタンをタップして生徒を追加できます。名前、ニックネーム、年齢、電話番号を追加できます。生徒は複数のセッションで再利用できます。';
+
+  @override
+  String get usingTemplates => 'テンプレートの使用';
+
+  @override
+  String get usingTemplatesDescription =>
+      'テンプレートを使用すると、事前設定された生徒でセッションをすばやく作成できます。メニュー（三点）→ テンプレートの管理からテンプレートを作成します。セッションを作成する際に、テンプレートを選択してその生徒を自動的に追加できます。';
+
+  @override
+  String get notificationsHelp => '通知';
+
+  @override
+  String get notificationsHelpDescription =>
+      'セッション開始前に通知を受信できます。通知設定（ベルアイコン）に移動して、通知を有効にし、タイミング（何分前）を設定し、通知設定をテストします。プロンプトが表示されたら、通知権限を付与してください。';
+
+  @override
+  String get exportImport => 'エクスポートとインポート';
+
+  @override
+  String get exportImportDescription =>
+      'データ（セッション、生徒、テンプレート）をYAMLファイルにエクスポートして、バックアップまたは転送できます。メニュー（三点）→ データのエクスポートを使用します。インポートするには、同じメニューからデータのインポートを使用します。これは、データをバックアップしたり、別のデバイスに移動したりするのに役立ちます。';
+
+  @override
+  String get navigationTips => 'ナビゲーションのヒント';
+
+  @override
+  String get navigationTipsDescription =>
+      '• 週間カレンダーを使用して週間を移動します\n• 日のタブをタップして、その日のセッションを表示します\n• すべてのイベントボタン（カレンダーアイコン）を使用して、すべてのセッションをリストで表示します\n• 上部バーのアイコンから設定にアクセスします：テーマ（パレット）、イベント（カレンダー）、通知（ベル）、ヘルプ（疑問符）';
 }

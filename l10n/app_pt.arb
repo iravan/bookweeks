@@ -433,5 +433,65 @@
   "notificationsDisabled": "Notificações desativadas",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "Ajuda",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "Começando",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks ajuda você a gerenciar sua programação semanal e sessões. Use o calendário na parte superior para navegar entre semanas e toque em qualquer dia para ver ou adicionar sessões para esse dia.",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "Criar sessões",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "Para criar uma sessão, toque no botão + em qualquer dia. Você pode definir o título da sessão, hora, duração e adicionar alunos. As sessões são salvas automaticamente e aparecerão no seu calendário.",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "Gerenciar alunos",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "Ao criar ou editar uma sessão, você pode adicionar alunos tocando no botão + na seção de alunos. Você pode adicionar nomes, apelidos, idades e números de telefone. Os alunos podem ser reutilizados em várias sessões.",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "Usar modelos",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "Os modelos permitem criar rapidamente sessões com alunos pré-configurados. Crie modelos no menu (três pontos) → Gerenciar modelos. Ao criar uma sessão, você pode selecionar um modelo para adicionar automaticamente seus alunos.",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "Notificações",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "Você pode receber notificações antes de suas sessões começarem. Vá para Configurações de notificação (ícone de sino) para ativar notificações, definir o momento (quantos minutos antes) e testar suas configurações de notificação. Certifique-se de conceder permissões de notificação quando solicitado.",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "Exportar e importar",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "Você pode exportar seus dados (sessões, alunos, modelos) para um arquivo YAML para backup ou transferência. Use o menu (três pontos) → Exportar dados. Para importar, use Importar dados do mesmo menu. Isso é útil para fazer backup dos seus dados ou movê-los para outro dispositivo.",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "Dicas de navegação",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• Use o calendário semanal para navegar entre semanas\n• Toque nas abas do dia para ver sessões daquele dia\n• Use o botão Todos os eventos (ícone de calendário) para ver todas as sessões em uma lista\n• Acesse as configurações através dos ícones na barra superior: Tema (paleta), Eventos (calendário), Notificações (sino) e Ajuda (ponto de interrogação)",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

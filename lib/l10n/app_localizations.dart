@@ -1030,6 +1030,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Notifications disabled'**
   String get notificationsDisabled;
+
+  /// Title for help page
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get help;
+
+  /// Section title for getting started help
+  ///
+  /// In en, this message translates to:
+  /// **'Getting Started'**
+  String get gettingStarted;
+
+  /// Description for getting started section
+  ///
+  /// In en, this message translates to:
+  /// **'Book Weeks helps you manage your weekly schedule and sessions. Use the calendar at the top to navigate between weeks, and tap on any day to view or add sessions for that day.'**
+  String get gettingStartedDescription;
+
+  /// Section title for creating sessions help
+  ///
+  /// In en, this message translates to:
+  /// **'Creating Sessions'**
+  String get creatingSessions;
+
+  /// Description for creating sessions section
+  ///
+  /// In en, this message translates to:
+  /// **'To create a session, tap the + button on any day. You can set the session title, time, duration, and add students. Sessions are automatically saved and will appear on your calendar.'**
+  String get creatingSessionsDescription;
+
+  /// Section title for managing students help
+  ///
+  /// In en, this message translates to:
+  /// **'Managing Students'**
+  String get managingStudents;
+
+  /// Description for managing students section
+  ///
+  /// In en, this message translates to:
+  /// **'When creating or editing a session, you can add students by tapping the + button in the students section. You can add student names, nicknames, ages, and phone numbers. Students can be reused across multiple sessions.'**
+  String get managingStudentsDescription;
+
+  /// Section title for using templates help
+  ///
+  /// In en, this message translates to:
+  /// **'Using Templates'**
+  String get usingTemplates;
+
+  /// Description for using templates section
+  ///
+  /// In en, this message translates to:
+  /// **'Templates allow you to quickly create sessions with pre-configured students. Create templates from the menu (three dots) → Manage Templates. When creating a session, you can select a template to automatically add its students.'**
+  String get usingTemplatesDescription;
+
+  /// Section title for notifications help
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notificationsHelp;
+
+  /// Description for notifications help section
+  ///
+  /// In en, this message translates to:
+  /// **'You can receive notifications before your sessions start. Go to Notification Settings (bell icon) to enable notifications, set the timing (how many minutes before), and test your notification settings. Make sure to grant notification permissions when prompted.'**
+  String get notificationsHelpDescription;
+
+  /// Section title for export/import help
+  ///
+  /// In en, this message translates to:
+  /// **'Export & Import'**
+  String get exportImport;
+
+  /// Description for export/import section
+  ///
+  /// In en, this message translates to:
+  /// **'You can export your data (sessions, students, templates) to a YAML file for backup or transfer. Use the menu (three dots) → Export Data. To import, use Import Data from the same menu. This is useful for backing up your data or moving it to another device.'**
+  String get exportImportDescription;
+
+  /// Section title for navigation tips
+  ///
+  /// In en, this message translates to:
+  /// **'Navigation Tips'**
+  String get navigationTips;
+
+  /// Description for navigation tips section
+  ///
+  /// In en, this message translates to:
+  /// **'• Use the week calendar to navigate between weeks\n• Tap on day tabs to view sessions for that day\n• Use the All Events button (calendar icon) to see all sessions in a list\n• Access settings via the icons in the top bar: Theme (palette), Events (calendar), Notifications (bell), and Help (question mark)'**
+  String get navigationTipsDescription;
 }
 
 class _AppLocalizationsDelegate

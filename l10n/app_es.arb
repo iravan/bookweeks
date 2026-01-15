@@ -433,5 +433,65 @@
   "notificationsDisabled": "Notificaciones desactivadas",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "Ayuda",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "Primeros pasos",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks te ayuda a gestionar tu horario semanal y sesiones. Usa el calendario en la parte superior para navegar entre semanas y toca cualquier día para ver o agregar sesiones para ese día.",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "Crear sesiones",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "Para crear una sesión, toca el botón + en cualquier día. Puedes establecer el título de la sesión, la hora, la duración y agregar estudiantes. Las sesiones se guardan automáticamente y aparecerán en tu calendario.",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "Gestionar estudiantes",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "Al crear o editar una sesión, puedes agregar estudiantes tocando el botón + en la sección de estudiantes. Puedes agregar nombres, apodos, edades y números de teléfono. Los estudiantes se pueden reutilizar en múltiples sesiones.",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "Usar plantillas",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "Las plantillas te permiten crear rápidamente sesiones con estudiantes preconfigurados. Crea plantillas desde el menú (tres puntos) → Gestionar plantillas. Al crear una sesión, puedes seleccionar una plantilla para agregar automáticamente sus estudiantes.",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "Notificaciones",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "Puedes recibir notificaciones antes de que comiencen tus sesiones. Ve a Configuración de notificaciones (icono de campana) para activar notificaciones, establecer el momento (cuántos minutos antes) y probar tu configuración de notificaciones. Asegúrate de otorgar permisos de notificación cuando se te solicite.",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "Exportar e importar",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "Puedes exportar tus datos (sesiones, estudiantes, plantillas) a un archivo YAML para respaldo o transferencia. Usa el menú (tres puntos) → Exportar datos. Para importar, usa Importar datos del mismo menú. Esto es útil para respaldar tus datos o moverlos a otro dispositivo.",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "Consejos de navegación",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• Usa el calendario semanal para navegar entre semanas\n• Toca las pestañas de día para ver sesiones de ese día\n• Usa el botón Todos los eventos (icono de calendario) para ver todas las sesiones en una lista\n• Accede a la configuración a través de los iconos en la barra superior: Tema (paleta), Eventos (calendario), Notificaciones (campana) y Ayuda (signo de interrogación)",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

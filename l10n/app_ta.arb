@@ -433,5 +433,65 @@
   "notificationsDisabled": "அறிவிப்புகள் முடக்கப்பட்டன",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "Help",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "Getting Started",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks helps you manage your weekly schedule and sessions. Use the calendar at the top to navigate between weeks, and tap on any day to view or add sessions for that day.",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "Creating Sessions",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "To create a session, tap the + button on any day. You can set the session title, time, duration, and add students. Sessions are automatically saved and will appear on your calendar.",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "Managing Students",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "When creating or editing a session, you can add students by tapping the + button in the students section. You can add student names, nicknames, ages, and phone numbers. Students can be reused across multiple sessions.",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "Using Templates",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "Templates allow you to quickly create sessions with pre-configured students. Create templates from the menu (three dots) → Manage Templates. When creating a session, you can select a template to automatically add its students.",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "Notifications",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "You can receive notifications before your sessions start. Go to Notification Settings (bell icon) to enable notifications, set the timing (how many minutes before), and test your notification settings. Make sure to grant notification permissions when prompted.",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "Export & Import",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "You can export your data (sessions, students, templates) to a YAML file for backup or transfer. Use the menu (three dots) → Export Data. To import, use Import Data from the same menu. This is useful for backing up your data or moving it to another device.",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "Navigation Tips",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• Use the week calendar to navigate between weeks\n• Tap on day tabs to view sessions for that day\n• Use the All Events button (calendar icon) to see all sessions in a list\n• Access settings via the icons in the top bar: Theme (palette), Events (calendar), Notifications (bell), and Help (question mark)",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

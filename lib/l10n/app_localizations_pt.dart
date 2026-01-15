@@ -500,4 +500,56 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get notificationsDisabled => 'Notificações desativadas';
+
+  @override
+  String get help => 'Ajuda';
+
+  @override
+  String get gettingStarted => 'Começando';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks ajuda você a gerenciar sua programação semanal e sessões. Use o calendário na parte superior para navegar entre semanas e toque em qualquer dia para ver ou adicionar sessões para esse dia.';
+
+  @override
+  String get creatingSessions => 'Criar sessões';
+
+  @override
+  String get creatingSessionsDescription =>
+      'Para criar uma sessão, toque no botão + em qualquer dia. Você pode definir o título da sessão, hora, duração e adicionar alunos. As sessões são salvas automaticamente e aparecerão no seu calendário.';
+
+  @override
+  String get managingStudents => 'Gerenciar alunos';
+
+  @override
+  String get managingStudentsDescription =>
+      'Ao criar ou editar uma sessão, você pode adicionar alunos tocando no botão + na seção de alunos. Você pode adicionar nomes, apelidos, idades e números de telefone. Os alunos podem ser reutilizados em várias sessões.';
+
+  @override
+  String get usingTemplates => 'Usar modelos';
+
+  @override
+  String get usingTemplatesDescription =>
+      'Os modelos permitem criar rapidamente sessões com alunos pré-configurados. Crie modelos no menu (três pontos) → Gerenciar modelos. Ao criar uma sessão, você pode selecionar um modelo para adicionar automaticamente seus alunos.';
+
+  @override
+  String get notificationsHelp => 'Notificações';
+
+  @override
+  String get notificationsHelpDescription =>
+      'Você pode receber notificações antes de suas sessões começarem. Vá para Configurações de notificação (ícone de sino) para ativar notificações, definir o momento (quantos minutos antes) e testar suas configurações de notificação. Certifique-se de conceder permissões de notificação quando solicitado.';
+
+  @override
+  String get exportImport => 'Exportar e importar';
+
+  @override
+  String get exportImportDescription =>
+      'Você pode exportar seus dados (sessões, alunos, modelos) para um arquivo YAML para backup ou transferência. Use o menu (três pontos) → Exportar dados. Para importar, use Importar dados do mesmo menu. Isso é útil para fazer backup dos seus dados ou movê-los para outro dispositivo.';
+
+  @override
+  String get navigationTips => 'Dicas de navegação';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Use o calendário semanal para navegar entre semanas\n• Toque nas abas do dia para ver sessões daquele dia\n• Use o botão Todos os eventos (ícone de calendário) para ver todas as sessões em uma lista\n• Acesse as configurações através dos ícones na barra superior: Tema (paleta), Eventos (calendário), Notificações (sino) e Ajuda (ponto de interrogação)';
 }

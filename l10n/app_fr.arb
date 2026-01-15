@@ -433,5 +433,65 @@
   "notificationsDisabled": "Notifications désactivées",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "Aide",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "Pour commencer",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks vous aide à gérer votre planning hebdomadaire et vos sessions. Utilisez le calendrier en haut pour naviguer entre les semaines et appuyez sur n'importe quel jour pour voir ou ajouter des sessions pour ce jour.",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "Créer des sessions",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "Pour créer une session, appuyez sur le bouton + sur n'importe quel jour. Vous pouvez définir le titre de la session, l'heure, la durée et ajouter des étudiants. Les sessions sont automatiquement enregistrées et apparaîtront sur votre calendrier.",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "Gérer les étudiants",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "Lors de la création ou de la modification d'une session, vous pouvez ajouter des étudiants en appuyant sur le bouton + dans la section étudiants. Vous pouvez ajouter des noms, des surnoms, des âges et des numéros de téléphone. Les étudiants peuvent être réutilisés dans plusieurs sessions.",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "Utiliser des modèles",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "Les modèles vous permettent de créer rapidement des sessions avec des étudiants préconfigurés. Créez des modèles depuis le menu (trois points) → Gérer les modèles. Lors de la création d'une session, vous pouvez sélectionner un modèle pour ajouter automatiquement ses étudiants.",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "Notifications",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "Vous pouvez recevoir des notifications avant le début de vos sessions. Allez dans Paramètres de notification (icône de cloche) pour activer les notifications, définir le moment (combien de minutes avant) et tester vos paramètres de notification. Assurez-vous d'accorder les autorisations de notification lorsque vous y êtes invité.",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "Exporter et importer",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "Vous pouvez exporter vos données (sessions, étudiants, modèles) vers un fichier YAML pour sauvegarde ou transfert. Utilisez le menu (trois points) → Exporter les données. Pour importer, utilisez Importer les données du même menu. C'est utile pour sauvegarder vos données ou les déplacer vers un autre appareil.",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "Conseils de navigation",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• Utilisez le calendrier hebdomadaire pour naviguer entre les semaines\n• Appuyez sur les onglets de jour pour voir les sessions de ce jour\n• Utilisez le bouton Tous les événements (icône calendrier) pour voir toutes les sessions dans une liste\n• Accédez aux paramètres via les icônes de la barre supérieure : Thème (palette), Événements (calendrier), Notifications (cloche) et Aide (point d'interrogation)",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

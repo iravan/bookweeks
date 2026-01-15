@@ -501,4 +501,56 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get notificationsDisabled => 'Notifiche disabilitate';
+
+  @override
+  String get help => 'Aiuto';
+
+  @override
+  String get gettingStarted => 'Per iniziare';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks ti aiuta a gestire il tuo programma settimanale e le sessioni. Usa il calendario in alto per navigare tra le settimane e tocca un giorno per visualizzare o aggiungere sessioni per quel giorno.';
+
+  @override
+  String get creatingSessions => 'Creare sessioni';
+
+  @override
+  String get creatingSessionsDescription =>
+      'Per creare una sessione, tocca il pulsante + su qualsiasi giorno. Puoi impostare il titolo della sessione, l\'ora, la durata e aggiungere studenti. Le sessioni vengono salvate automaticamente e appariranno sul tuo calendario.';
+
+  @override
+  String get managingStudents => 'Gestire gli studenti';
+
+  @override
+  String get managingStudentsDescription =>
+      'Quando crei o modifichi una sessione, puoi aggiungere studenti toccando il pulsante + nella sezione studenti. Puoi aggiungere nomi, soprannomi, età e numeri di telefono. Gli studenti possono essere riutilizzati in più sessioni.';
+
+  @override
+  String get usingTemplates => 'Usare i modelli';
+
+  @override
+  String get usingTemplatesDescription =>
+      'I modelli ti permettono di creare rapidamente sessioni con studenti preconfigurati. Crea modelli dal menu (tre punti) → Gestisci modelli. Quando crei una sessione, puoi selezionare un modello per aggiungere automaticamente i suoi studenti.';
+
+  @override
+  String get notificationsHelp => 'Notifiche';
+
+  @override
+  String get notificationsHelpDescription =>
+      'Puoi ricevere notifiche prima che inizino le tue sessioni. Vai alle Impostazioni notifiche (icona campanella) per abilitare le notifiche, impostare il momento (quanti minuti prima) e testare le tue impostazioni di notifica. Assicurati di concedere i permessi di notifica quando richiesto.';
+
+  @override
+  String get exportImport => 'Esporta e importa';
+
+  @override
+  String get exportImportDescription =>
+      'Puoi esportare i tuoi dati (sessioni, studenti, modelli) in un file YAML per backup o trasferimento. Usa il menu (tre punti) → Esporta dati. Per importare, usa Importa dati dallo stesso menu. Questo è utile per eseguire il backup dei tuoi dati o spostarli su un altro dispositivo.';
+
+  @override
+  String get navigationTips => 'Suggerimenti di navigazione';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Usa il calendario settimanale per navigare tra le settimane\n• Tocca le schede del giorno per visualizzare le sessioni di quel giorno\n• Usa il pulsante Tutti gli eventi (icona calendario) per vedere tutte le sessioni in un elenco\n• Accedi alle impostazioni tramite le icone nella barra superiore: Tema (tavolozza), Eventi (calendario), Notifiche (campanella) e Aiuto (punto interrogativo)';
 }

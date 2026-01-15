@@ -504,4 +504,56 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get notificationsDisabled => 'Benachrichtigungen deaktiviert';
+
+  @override
+  String get help => 'Hilfe';
+
+  @override
+  String get gettingStarted => 'Erste Schritte';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks hilft Ihnen, Ihren wöchentlichen Zeitplan und Ihre Sitzungen zu verwalten. Verwenden Sie den Kalender oben, um zwischen Wochen zu navigieren, und tippen Sie auf einen Tag, um Sitzungen für diesen Tag anzuzeigen oder hinzuzufügen.';
+
+  @override
+  String get creatingSessions => 'Sitzungen erstellen';
+
+  @override
+  String get creatingSessionsDescription =>
+      'Um eine Sitzung zu erstellen, tippen Sie auf die + Schaltfläche an einem Tag. Sie können den Sitzungstitel, die Zeit, die Dauer festlegen und Schüler hinzufügen. Sitzungen werden automatisch gespeichert und erscheinen in Ihrem Kalender.';
+
+  @override
+  String get managingStudents => 'Schüler verwalten';
+
+  @override
+  String get managingStudentsDescription =>
+      'Beim Erstellen oder Bearbeiten einer Sitzung können Sie Schüler hinzufügen, indem Sie auf die + Schaltfläche im Schülerbereich tippen. Sie können Namen, Spitznamen, Alter und Telefonnummern hinzufügen. Schüler können in mehreren Sitzungen wiederverwendet werden.';
+
+  @override
+  String get usingTemplates => 'Vorlagen verwenden';
+
+  @override
+  String get usingTemplatesDescription =>
+      'Vorlagen ermöglichen es Ihnen, schnell Sitzungen mit vorkonfigurierten Schülern zu erstellen. Erstellen Sie Vorlagen über das Menü (drei Punkte) → Vorlagen verwalten. Beim Erstellen einer Sitzung können Sie eine Vorlage auswählen, um deren Schüler automatisch hinzuzufügen.';
+
+  @override
+  String get notificationsHelp => 'Benachrichtigungen';
+
+  @override
+  String get notificationsHelpDescription =>
+      'Sie können Benachrichtigungen erhalten, bevor Ihre Sitzungen beginnen. Gehen Sie zu Benachrichtigungseinstellungen (Glocken-Symbol), um Benachrichtigungen zu aktivieren, das Timing festzulegen (wie viele Minuten vorher) und Ihre Benachrichtigungseinstellungen zu testen. Stellen Sie sicher, dass Sie Benachrichtigungsberechtigungen erteilen, wenn Sie dazu aufgefordert werden.';
+
+  @override
+  String get exportImport => 'Exportieren & Importieren';
+
+  @override
+  String get exportImportDescription =>
+      'Sie können Ihre Daten (Sitzungen, Schüler, Vorlagen) in eine YAML-Datei exportieren, um sie zu sichern oder zu übertragen. Verwenden Sie das Menü (drei Punkte) → Daten exportieren. Zum Importieren verwenden Sie Daten importieren aus demselben Menü. Dies ist nützlich, um Ihre Daten zu sichern oder auf ein anderes Gerät zu übertragen.';
+
+  @override
+  String get navigationTips => 'Navigations-Tipps';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Verwenden Sie den Wochenkalender, um zwischen Wochen zu navigieren\n• Tippen Sie auf Tages-Tabs, um Sitzungen für diesen Tag anzuzeigen\n• Verwenden Sie die Schaltfläche Alle Ereignisse (Kalender-Symbol), um alle Sitzungen in einer Liste anzuzeigen\n• Greifen Sie auf Einstellungen über die Symbole in der oberen Leiste zu: Thema (Palette), Ereignisse (Kalender), Benachrichtigungen (Glocke) und Hilfe (Fragezeichen)';
 }

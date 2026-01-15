@@ -20,6 +20,7 @@ import 'services/theme_service.dart';
 import 'widgets/notification_settings_page.dart';
 import 'widgets/theme_settings_page.dart';
 import 'widgets/foreground_notification_banner.dart';
+import 'widgets/help_page.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 // Top-level function for background notification tap handler
@@ -449,17 +450,6 @@ class _MainPageState extends State<MainPage>
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.palette),
-            tooltip: 'Theme Settings',
-            onPressed: () async {
-              await Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const ThemeSettingsPage(),
-                ),
-              );
-            },
-          ),
-          IconButton(
             icon: const Icon(Icons.event_note),
             tooltip: AppLocalizations.of(context)!.allEvents,
             onPressed: () async {
@@ -494,9 +484,48 @@ class _MainPageState extends State<MainPage>
                     builder: (context) => const TemplateManagementPage(),
                   ),
                 );
+              } else if (value == 'help') {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const HelpPage(),
+                  ),
+                );
+              } else if (value == 'theme') {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const ThemeSettingsPage(),
+                  ),
+                );
               }
             },
             itemBuilder: (BuildContext context) => [
+              PopupMenuItem<String>(
+                value: 'help',
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.help_outline,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    const SizedBox(width: 8),
+                    Text(AppLocalizations.of(context)!.help),
+                  ],
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'theme',
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.palette,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                    const SizedBox(width: 8),
+                    Text(AppLocalizations.of(context)!.themeSettings),
+                  ],
+                ),
+              ),
+              const PopupMenuDivider(),
               PopupMenuItem<String>(
                 value: 'templates',
                 child: Row(

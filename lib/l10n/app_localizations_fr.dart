@@ -505,4 +505,56 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get notificationsDisabled => 'Notifications désactivées';
+
+  @override
+  String get help => 'Aide';
+
+  @override
+  String get gettingStarted => 'Pour commencer';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks vous aide à gérer votre planning hebdomadaire et vos sessions. Utilisez le calendrier en haut pour naviguer entre les semaines et appuyez sur n\'importe quel jour pour voir ou ajouter des sessions pour ce jour.';
+
+  @override
+  String get creatingSessions => 'Créer des sessions';
+
+  @override
+  String get creatingSessionsDescription =>
+      'Pour créer une session, appuyez sur le bouton + sur n\'importe quel jour. Vous pouvez définir le titre de la session, l\'heure, la durée et ajouter des étudiants. Les sessions sont automatiquement enregistrées et apparaîtront sur votre calendrier.';
+
+  @override
+  String get managingStudents => 'Gérer les étudiants';
+
+  @override
+  String get managingStudentsDescription =>
+      'Lors de la création ou de la modification d\'une session, vous pouvez ajouter des étudiants en appuyant sur le bouton + dans la section étudiants. Vous pouvez ajouter des noms, des surnoms, des âges et des numéros de téléphone. Les étudiants peuvent être réutilisés dans plusieurs sessions.';
+
+  @override
+  String get usingTemplates => 'Utiliser des modèles';
+
+  @override
+  String get usingTemplatesDescription =>
+      'Les modèles vous permettent de créer rapidement des sessions avec des étudiants préconfigurés. Créez des modèles depuis le menu (trois points) → Gérer les modèles. Lors de la création d\'une session, vous pouvez sélectionner un modèle pour ajouter automatiquement ses étudiants.';
+
+  @override
+  String get notificationsHelp => 'Notifications';
+
+  @override
+  String get notificationsHelpDescription =>
+      'Vous pouvez recevoir des notifications avant le début de vos sessions. Allez dans Paramètres de notification (icône de cloche) pour activer les notifications, définir le moment (combien de minutes avant) et tester vos paramètres de notification. Assurez-vous d\'accorder les autorisations de notification lorsque vous y êtes invité.';
+
+  @override
+  String get exportImport => 'Exporter et importer';
+
+  @override
+  String get exportImportDescription =>
+      'Vous pouvez exporter vos données (sessions, étudiants, modèles) vers un fichier YAML pour sauvegarde ou transfert. Utilisez le menu (trois points) → Exporter les données. Pour importer, utilisez Importer les données du même menu. C\'est utile pour sauvegarder vos données ou les déplacer vers un autre appareil.';
+
+  @override
+  String get navigationTips => 'Conseils de navigation';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Utilisez le calendrier hebdomadaire pour naviguer entre les semaines\n• Appuyez sur les onglets de jour pour voir les sessions de ce jour\n• Utilisez le bouton Tous les événements (icône calendrier) pour voir toutes les sessions dans une liste\n• Accédez aux paramètres via les icônes de la barre supérieure : Thème (palette), Événements (calendrier), Notifications (cloche) et Aide (point d\'interrogation)';
 }

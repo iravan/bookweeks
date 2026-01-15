@@ -352,8 +352,7 @@
   "timing6Hours": "6 小时",
   "timingMinutes": "{count} 分钟",
   "timingHours": "{count} 小时",
-  "timingHoursPlural": "{count} 小时"
-,
+  "timingHoursPlural": "{count} 小时",
   "testNotifications": "测试通知",
   "testNotificationsDescription": "在2秒后发送测试通知以验证通知功能是否正常工作。",
   "sendTestNotification": "发送测试通知",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "测试通知",
   "testNotificationBody": "如果您看到这条消息，通知功能正常工作！",
   "scheduledTestNotificationTitle": "已安排的测试通知",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "主题设置",
   "selectTheme": "选择主题",
   "selectThemeDescription": "为应用选择颜色主题。主题将应用于整个应用程序。",
@@ -436,5 +433,65 @@
   "notificationsDisabled": "通知已禁用",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "帮助",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "开始使用",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks帮助您管理每周日程和课程。使用顶部的日历在周之间导航，点击任意日期可查看或添加该日期的课程。",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "创建课程",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "要创建课程，请点击任意日期的+按钮。您可以设置课程标题、时间、持续时间并添加学生。课程会自动保存并显示在您的日历上。",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "管理学生",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "创建或编辑课程时，可以通过点击学生部分的+按钮来添加学生。您可以添加姓名、昵称、年龄和电话号码。学生可以在多个课程中重复使用。",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "使用模板",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "模板允许您快速创建带有预配置学生的课程。从菜单（三个点）→ 管理模板创建模板。创建课程时，您可以选择模板以自动添加其学生。",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "通知",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "您可以在课程开始前接收通知。转到通知设置（铃铛图标）以启用通知、设置时间（提前多少分钟）并测试您的通知设置。当提示时，请确保授予通知权限。",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "导出和导入",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "您可以将数据（课程、学生、模板）导出到YAML文件以进行备份或传输。使用菜单（三个点）→ 导出数据。要导入，请使用同一菜单中的导入数据。这对于备份数据或将其移动到另一台设备很有用。",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "导航提示",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• 使用周历来在周之间导航\n• 点击日期标签以查看该日期的课程\n• 使用所有事件按钮（日历图标）在列表中查看所有课程\n• 通过顶部栏的图标访问设置：主题（调色板）、事件（日历）、通知（铃铛）和帮助（问号）",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

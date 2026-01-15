@@ -352,8 +352,7 @@
   "timing6Hours": "6 小時",
   "timingMinutes": "{count} 分鐘",
   "timingHours": "{count} 小時",
-  "timingHoursPlural": "{count} 小時"
-,
+  "timingHoursPlural": "{count} 小時",
   "testNotifications": "測試通知",
   "testNotificationsDescription": "在2秒後發送測試通知以驗證通知功能是否正常運作。",
   "sendTestNotification": "發送測試通知",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "測試通知",
   "testNotificationBody": "如果您看到這條訊息，通知功能正常運作！",
   "scheduledTestNotificationTitle": "已安排的測試通知",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "主題設定",
   "selectTheme": "選擇主題",
   "selectThemeDescription": "為應用程式選擇顏色主題。主題將應用於整個應用程式。",
@@ -436,5 +433,65 @@
   "notificationsDisabled": "通知已停用",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "說明",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "開始使用",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks幫助您管理每週行程和課程。使用頂部的日曆在週之間導航，點擊任意日期可查看或新增該日期的課程。",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "建立課程",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "要建立課程，請點擊任意日期的+按鈕。您可以設定課程標題、時間、持續時間並新增學生。課程會自動儲存並顯示在您的日曆上。",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "管理學生",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "建立或編輯課程時，可以透過點擊學生區塊的+按鈕來新增學生。您可以新增姓名、暱稱、年齡和電話號碼。學生可以在多個課程中重複使用。",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "使用範本",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "範本允許您快速建立帶有預設學生的課程。從選單（三個點）→ 管理範本來建立範本。建立課程時，您可以選擇範本以自動新增其學生。",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "通知",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "您可以在課程開始前接收通知。前往通知設定（鈴鐺圖示）以啟用通知、設定時間（提前多少分鐘）並測試您的通知設定。當提示時，請確保授予通知權限。",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "匯出和匯入",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "您可以將資料（課程、學生、範本）匯出到YAML檔案以進行備份或傳輸。使用選單（三個點）→ 匯出資料。要匯入，請使用同一選單中的匯入資料。這對於備份資料或將其移動到另一台裝置很有用。",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "導航提示",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• 使用週曆來在週之間導航\n• 點擊日期標籤以查看該日期的課程\n• 使用所有事件按鈕（日曆圖示）在清單中查看所有課程\n• 透過頂部列的圖示存取設定：主題（調色盤）、事件（日曆）、通知（鈴鐺）和說明（問號）",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

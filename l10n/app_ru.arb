@@ -325,7 +325,6 @@
       }
     }
   },
-
   "notificationSettings": "Настройки уведомлений",
   "notificationTiming": "Время уведомлений",
   "notificationTimingDescription": "Выберите, когда получать уведомления перед началом каждой сессии",
@@ -344,8 +343,7 @@
   "permissionsRequiredDescription": "Пожалуйста, предоставьте разрешения на уведомления, чтобы получать напоминания о ваших сессиях. Нажмите кнопку ниже, чтобы запросить разрешения.",
   "requestPermissions": "Запросить разрешения",
   "permissionsGranted": "Разрешения на уведомления предоставлены!",
-  "permissionsDenied": "Разрешения на уведомления были отклонены. Пожалуйста, включите их в настройках."
-,
+  "permissionsDenied": "Разрешения на уведомления были отклонены. Пожалуйста, включите их в настройках.",
   "timing0Min": "0 мин",
   "timing1Min": "1 мин",
   "timing5Mins": "5 мин",
@@ -354,8 +352,7 @@
   "timing6Hours": "6 часов",
   "timingMinutes": "{count} мин",
   "timingHours": "{count} час",
-  "timingHoursPlural": "{count} часов"
-,
+  "timingHoursPlural": "{count} часов",
   "testNotifications": "Тестовые уведомления",
   "testNotificationsDescription": "Отправить тестовое уведомление через 2 секунды, чтобы проверить, работают ли уведомления.",
   "sendTestNotification": "Отправить тестовое уведомление",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "Тестовое уведомление",
   "testNotificationBody": "Если вы видите это, уведомления работают!",
   "scheduledTestNotificationTitle": "Запланированное тестовое уведомление",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "Настройки темы",
   "selectTheme": "Выбрать тему",
   "selectThemeDescription": "Выберите цветовую тему для приложения. Тема будет применена во всем приложении.",
@@ -438,5 +433,65 @@
   "notificationsDisabled": "Уведомления отключены",
   "@notificationsDisabled": {
     "description": "Success message when notifications are disabled"
+  },
+  "help": "Помощь",
+  "@help": {
+    "description": "Title for help page"
+  },
+  "gettingStarted": "Начало работы",
+  "@gettingStarted": {
+    "description": "Section title for getting started help"
+  },
+  "gettingStartedDescription": "Book Weeks помогает вам управлять еженедельным расписанием и сессиями. Используйте календарь вверху для навигации между неделями и нажмите на любой день, чтобы просмотреть или добавить сессии на этот день.",
+  "@gettingStartedDescription": {
+    "description": "Description for getting started section"
+  },
+  "creatingSessions": "Создание сессий",
+  "@creatingSessions": {
+    "description": "Section title for creating sessions help"
+  },
+  "creatingSessionsDescription": "Чтобы создать сессию, нажмите кнопку + на любом дне. Вы можете установить название сессии, время, продолжительность и добавить студентов. Сессии автоматически сохраняются и появятся в вашем календаре.",
+  "@creatingSessionsDescription": {
+    "description": "Description for creating sessions section"
+  },
+  "managingStudents": "Управление студентами",
+  "@managingStudents": {
+    "description": "Section title for managing students help"
+  },
+  "managingStudentsDescription": "При создании или редактировании сессии вы можете добавлять студентов, нажав кнопку + в разделе студентов. Вы можете добавлять имена, псевдонимы, возраст и номера телефонов. Студенты могут быть повторно использованы в нескольких сессиях.",
+  "@managingStudentsDescription": {
+    "description": "Description for managing students section"
+  },
+  "usingTemplates": "Использование шаблонов",
+  "@usingTemplates": {
+    "description": "Section title for using templates help"
+  },
+  "usingTemplatesDescription": "Шаблоны позволяют быстро создавать сессии с предварительно настроенными студентами. Создавайте шаблоны из меню (три точки) → Управление шаблонами. При создании сессии вы можете выбрать шаблон, чтобы автоматически добавить его студентов.",
+  "@usingTemplatesDescription": {
+    "description": "Description for using templates section"
+  },
+  "notificationsHelp": "Уведомления",
+  "@notificationsHelp": {
+    "description": "Section title for notifications help"
+  },
+  "notificationsHelpDescription": "Вы можете получать уведомления перед началом ваших сессий. Перейдите в Настройки уведомлений (значок колокольчика), чтобы включить уведомления, установить время (за сколько минут до начала) и протестировать настройки уведомлений. Убедитесь, что вы предоставили разрешения на уведомления, когда будет предложено.",
+  "@notificationsHelpDescription": {
+    "description": "Description for notifications help section"
+  },
+  "exportImport": "Экспорт и импорт",
+  "@exportImport": {
+    "description": "Section title for export/import help"
+  },
+  "exportImportDescription": "Вы можете экспортировать свои данные (сессии, студенты, шаблоны) в файл YAML для резервного копирования или передачи. Используйте меню (три точки) → Экспорт данных. Для импорта используйте Импорт данных из того же меню. Это полезно для резервного копирования ваших данных или их переноса на другое устройство.",
+  "@exportImportDescription": {
+    "description": "Description for export/import section"
+  },
+  "navigationTips": "Советы по навигации",
+  "@navigationTips": {
+    "description": "Section title for navigation tips"
+  },
+  "navigationTipsDescription": "• Используйте недельный календарь для навигации между неделями\n• Нажмите на вкладки дня, чтобы просмотреть сессии этого дня\n• Используйте кнопку Все события (значок календаря), чтобы увидеть все сессии в списке\n• Доступ к настройкам через значки в верхней панели: Тема (палитра), События (календарь), Уведомления (колокольчик) и Помощь (вопросительный знак)",
+  "@navigationTipsDescription": {
+    "description": "Description for navigation tips section"
   }
 }

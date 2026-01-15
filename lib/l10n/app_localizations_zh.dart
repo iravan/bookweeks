@@ -486,6 +486,58 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get notificationsDisabled => '通知已禁用';
+
+  @override
+  String get help => 'Help';
+
+  @override
+  String get gettingStarted => 'Getting Started';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks helps you manage your weekly schedule and sessions. Use the calendar at the top to navigate between weeks, and tap on any day to view or add sessions for that day.';
+
+  @override
+  String get creatingSessions => 'Creating Sessions';
+
+  @override
+  String get creatingSessionsDescription =>
+      'To create a session, tap the + button on any day. You can set the session title, time, duration, and add students. Sessions are automatically saved and will appear on your calendar.';
+
+  @override
+  String get managingStudents => 'Managing Students';
+
+  @override
+  String get managingStudentsDescription =>
+      'When creating or editing a session, you can add students by tapping the + button in the students section. You can add student names, nicknames, ages, and phone numbers. Students can be reused across multiple sessions.';
+
+  @override
+  String get usingTemplates => 'Using Templates';
+
+  @override
+  String get usingTemplatesDescription =>
+      'Templates allow you to quickly create sessions with pre-configured students. Create templates from the menu (three dots) → Manage Templates. When creating a session, you can select a template to automatically add its students.';
+
+  @override
+  String get notificationsHelp => 'Notifications';
+
+  @override
+  String get notificationsHelpDescription =>
+      'You can receive notifications before your sessions start. Go to Notification Settings (bell icon) to enable notifications, set the timing (how many minutes before), and test your notification settings. Make sure to grant notification permissions when prompted.';
+
+  @override
+  String get exportImport => 'Export & Import';
+
+  @override
+  String get exportImportDescription =>
+      'You can export your data (sessions, students, templates) to a YAML file for backup or transfer. Use the menu (three dots) → Export Data. To import, use Import Data from the same menu. This is useful for backing up your data or moving it to another device.';
+
+  @override
+  String get navigationTips => 'Navigation Tips';
+
+  @override
+  String get navigationTipsDescription =>
+      '• Use the week calendar to navigate between weeks\n• Tap on day tabs to view sessions for that day\n• Use the All Events button (calendar icon) to see all sessions in a list\n• Access settings via the icons in the top bar: Theme (palette), Events (calendar), Notifications (bell), and Help (question mark)';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -970,6 +1022,58 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get notificationsDisabled => '通知已禁用';
+
+  @override
+  String get help => '帮助';
+
+  @override
+  String get gettingStarted => '开始使用';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks帮助您管理每周日程和课程。使用顶部的日历在周之间导航，点击任意日期可查看或添加该日期的课程。';
+
+  @override
+  String get creatingSessions => '创建课程';
+
+  @override
+  String get creatingSessionsDescription =>
+      '要创建课程，请点击任意日期的+按钮。您可以设置课程标题、时间、持续时间并添加学生。课程会自动保存并显示在您的日历上。';
+
+  @override
+  String get managingStudents => '管理学生';
+
+  @override
+  String get managingStudentsDescription =>
+      '创建或编辑课程时，可以通过点击学生部分的+按钮来添加学生。您可以添加姓名、昵称、年龄和电话号码。学生可以在多个课程中重复使用。';
+
+  @override
+  String get usingTemplates => '使用模板';
+
+  @override
+  String get usingTemplatesDescription =>
+      '模板允许您快速创建带有预配置学生的课程。从菜单（三个点）→ 管理模板创建模板。创建课程时，您可以选择模板以自动添加其学生。';
+
+  @override
+  String get notificationsHelp => '通知';
+
+  @override
+  String get notificationsHelpDescription =>
+      '您可以在课程开始前接收通知。转到通知设置（铃铛图标）以启用通知、设置时间（提前多少分钟）并测试您的通知设置。当提示时，请确保授予通知权限。';
+
+  @override
+  String get exportImport => '导出和导入';
+
+  @override
+  String get exportImportDescription =>
+      '您可以将数据（课程、学生、模板）导出到YAML文件以进行备份或传输。使用菜单（三个点）→ 导出数据。要导入，请使用同一菜单中的导入数据。这对于备份数据或将其移动到另一台设备很有用。';
+
+  @override
+  String get navigationTips => '导航提示';
+
+  @override
+  String get navigationTipsDescription =>
+      '• 使用周历来在周之间导航\n• 点击日期标签以查看该日期的课程\n• 使用所有事件按钮（日历图标）在列表中查看所有课程\n• 通过顶部栏的图标访问设置：主题（调色板）、事件（日历）、通知（铃铛）和帮助（问号）';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1454,4 +1558,56 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get notificationsDisabled => '通知已停用';
+
+  @override
+  String get help => '說明';
+
+  @override
+  String get gettingStarted => '開始使用';
+
+  @override
+  String get gettingStartedDescription =>
+      'Book Weeks幫助您管理每週行程和課程。使用頂部的日曆在週之間導航，點擊任意日期可查看或新增該日期的課程。';
+
+  @override
+  String get creatingSessions => '建立課程';
+
+  @override
+  String get creatingSessionsDescription =>
+      '要建立課程，請點擊任意日期的+按鈕。您可以設定課程標題、時間、持續時間並新增學生。課程會自動儲存並顯示在您的日曆上。';
+
+  @override
+  String get managingStudents => '管理學生';
+
+  @override
+  String get managingStudentsDescription =>
+      '建立或編輯課程時，可以透過點擊學生區塊的+按鈕來新增學生。您可以新增姓名、暱稱、年齡和電話號碼。學生可以在多個課程中重複使用。';
+
+  @override
+  String get usingTemplates => '使用範本';
+
+  @override
+  String get usingTemplatesDescription =>
+      '範本允許您快速建立帶有預設學生的課程。從選單（三個點）→ 管理範本來建立範本。建立課程時，您可以選擇範本以自動新增其學生。';
+
+  @override
+  String get notificationsHelp => '通知';
+
+  @override
+  String get notificationsHelpDescription =>
+      '您可以在課程開始前接收通知。前往通知設定（鈴鐺圖示）以啟用通知、設定時間（提前多少分鐘）並測試您的通知設定。當提示時，請確保授予通知權限。';
+
+  @override
+  String get exportImport => '匯出和匯入';
+
+  @override
+  String get exportImportDescription =>
+      '您可以將資料（課程、學生、範本）匯出到YAML檔案以進行備份或傳輸。使用選單（三個點）→ 匯出資料。要匯入，請使用同一選單中的匯入資料。這對於備份資料或將其移動到另一台裝置很有用。';
+
+  @override
+  String get navigationTips => '導航提示';
+
+  @override
+  String get navigationTipsDescription =>
+      '• 使用週曆來在週之間導航\n• 點擊日期標籤以查看該日期的課程\n• 使用所有事件按鈕（日曆圖示）在清單中查看所有課程\n• 透過頂部列的圖示存取設定：主題（調色盤）、事件（日曆）、通知（鈴鐺）和說明（問號）';
 }
