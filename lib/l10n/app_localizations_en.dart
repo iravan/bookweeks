@@ -486,4 +486,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get themeInfo =>
       'Changing the theme will update the colors throughout the app, including buttons, app bars, and other UI elements. Your theme preference will be saved and applied automatically when you restart the app.';
+
+  @override
+  String get enableNotifications => 'Enable Notifications';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Turn notifications on or off. When disabled, no notifications will be sent for your sessions.';
+
+  @override
+  String get notificationsEnabled => 'Notifications enabled';
+
+  @override
+  String get notificationsDisabled => 'Notifications disabled';
 }

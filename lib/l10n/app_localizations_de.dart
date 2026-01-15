@@ -337,104 +337,106 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Benachrichtigungseinstellungen';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Benachrichtigungszeitpunkt';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Wählen Sie, wann Sie Benachrichtigungen vor Beginn jeder Sitzung erhalten möchten';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Bei Sitzungsbeginn';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing vor Sitzungsbeginn';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated =>
+      'Benachrichtigungszeitpunkt aktualisiert';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Über Benachrichtigungen';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Sie erhalten Benachrichtigungen vor Beginn jeder geplanten Sitzung. Benachrichtigungen werden automatisch geplant, wenn Sie Sitzungen erstellen oder aktualisieren, und alle vorhandenen Sitzungen werden beim Start der App geplant.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Benachrichtigungen neu planen';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Planen Sie Benachrichtigungen für alle vorhandenen zukünftigen Sitzungen manuell neu. Dies ist nützlich, wenn Sie Benachrichtigungen gerade aktiviert haben oder sicherstellen möchten, dass alle Ereignisse geplante Benachrichtigungen haben.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Jetzt neu planen';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Wird neu geplant...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Benachrichtigungen für $count zukünftige Sitzung(en) neu geplant';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Fehler beim Neuanordnen der Benachrichtigungen: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired =>
+      'Benachrichtigungsberechtigungen erforderlich';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Bitte gewähren Sie Benachrichtigungsberechtigungen, um Erinnerungen für Ihre Sitzungen zu erhalten. Tippen Sie auf die Schaltfläche unten, um Berechtigungen anzufordern.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Berechtigungen anfordern';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Benachrichtigungsberechtigungen gewährt!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Benachrichtigungsberechtigungen wurden verweigert. Bitte aktivieren Sie sie in den Einstellungen.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 Min';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 Min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 Min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 Min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 Stunde';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 Stunden';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count Min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count Stunde';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count Stunden';
   }
 
   @override
@@ -489,4 +491,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get themeInfo =>
       'Das Ändern des Themas aktualisiert die Farben in der gesamten App, einschließlich Schaltflächen, App-Leisten und anderen UI-Elementen. Ihre Theme-Präferenz wird gespeichert und beim Neustart der App automatisch angewendet.';
+
+  @override
+  String get enableNotifications => 'Benachrichtigungen aktivieren';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Benachrichtigungen ein- oder ausschalten. Wenn deaktiviert, werden keine Benachrichtigungen für Ihre Sitzungen gesendet.';
+
+  @override
+  String get notificationsEnabled => 'Benachrichtigungen aktiviert';
+
+  @override
+  String get notificationsDisabled => 'Benachrichtigungen deaktiviert';
 }

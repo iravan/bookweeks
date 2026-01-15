@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "ការកំណត់ការជូនដំណឹង",
+  "notificationTiming": "ពេលវេលាការជូនដំណឹង",
+  "notificationTimingDescription": "ជ្រើសរើសពេលវេលាទទួលការជូនដំណឹងមុនពេលដែលសម័យនីមួយៗចាប់ផ្តើម",
+  "atEventStart": "នៅពេលចាប់ផ្តើមព្រឹត្តិការណ៍",
+  "beforeEventStart": "{timing} មុនពេលចាប់ផ្តើមព្រឹត្តិការណ៍",
+  "notificationTimingUpdated": "ពេលវេលាការជូនដំណឹងត្រូវបានធ្វើបច្ចុប្បន្នភាព",
+  "aboutNotifications": "អំពីការជូនដំណឹង",
+  "notificationInfo": "អ្នកនឹងទទួលការជូនដំណឹងមុនពេលដែលសម័យដែលបានកំណត់ពេលវេលានីមួយៗចាប់ផ្តើម។ ការជូនដំណឹងត្រូវបានកំណត់ពេលវេលាដោយស្វ័យប្រវត្តិនៅពេលដែលអ្នកបង្កើត ឬធ្វើបច្ចុប្បន្នភាពសម័យ ហើយសម័យទាំងអស់ដែលមានស្រាប់ត្រូវបានកំណត់ពេលវេលានៅពេលដែលកម្មវិធីចាប់ផ្តើម។",
+  "rescheduleNotifications": "កំណត់ពេលវេលាការជូនដំណឹងឡើងវិញ",
+  "rescheduleNotificationsDescription": "កំណត់ពេលវេលាការជូនដំណឹងឡើងវិញដោយដៃសម្រាប់សម័យអនាគតទាំងអស់ដែលមានស្រាប់។ នេះមានប្រយោជន៍ប្រសិនបើអ្នកទើបតែបើកការជូនដំណឹង ឬចង់ធានាថាព្រឹត្តិការណ៍ទាំងអស់មានការជូនដំណឹងដែលបានកំណត់ពេលវេលា។",
+  "rescheduleNow": "កំណត់ពេលវេលាឡើងវិញឥឡូវនេះ",
+  "rescheduling": "កំពុងកំណត់ពេលវេលាឡើងវិញ...",
+  "notificationsRescheduled": "ការជូនដំណឹងត្រូវបានកំណត់ពេលវេលាឡើងវិញសម្រាប់ {count} សម័យអនាគត",
+  "errorReschedulingNotifications": "កំហុសក្នុងការកំណត់ពេលវេលាការជូនដំណឹងឡើងវិញ: {error}",
+  "permissionsRequired": "ត្រូវការការអនុញ្ញាតការជូនដំណឹង",
+  "permissionsRequiredDescription": "សូមផ្តល់ការអនុញ្ញាតការជូនដំណឹងដើម្បីទទួលការរំលឹកសម្រាប់សម័យរបស់អ្នក។ ចុចប៊ូតុងខាងក្រោមដើម្បីស្នើសុំការអនុញ្ញាត។",
+  "requestPermissions": "ស្នើសុំការអនុញ្ញាត",
+  "permissionsGranted": "ការអនុញ្ញាតការជូនដំណឹងត្រូវបានផ្តល់ឱ្យ!",
+  "permissionsDenied": "ការអនុញ្ញាតការជូនដំណឹងត្រូវបានបដិសេធ។ សូមបើកវានៅក្នុងការកំណត់។",
+  "timing0Min": "0 នាទី",
+  "timing1Min": "1 នាទី",
+  "timing5Mins": "5 នាទី",
+  "timing30Mins": "30 នាទី",
+  "timing1Hour": "1 ម៉ោង",
+  "timing6Hours": "6 ម៉ោង",
+  "timingMinutes": "{count} នាទី",
+  "timingHours": "{count} ម៉ោង",
+  "timingHoursPlural": "{count} ម៉ោង",
   "testNotifications": "ការជូនដំណឹងសាកល្បង",
   "testNotificationsDescription": "ផ្ញើការជូនដំណឹងសាកល្បងក្នុងរយៈពេល 2 វិនាទីដើម្បីផ្ទៀងផ្ទាត់ថាការជូនដំណឹងកំពុងដំណើរការ។",
   "sendTestNotification": "ផ្ញើការជូនដំណឹងសាកល្បង",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "ការជូនដំណឹងសាកល្បង",
   "testNotificationBody": "ប្រសិនបើអ្នកឃើញនេះ ការជូនដំណឹងកំពុងដំណើរការ!",
   "scheduledTestNotificationTitle": "ការជូនដំណឹងសាកល្បងដែលបានកំណត់ពេលវេលា",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "ការកំណត់រចនាប័ទ្ម",
   "selectTheme": "ជ្រើសរចនាប័ទ្ម",
   "selectThemeDescription": "ជ្រើសរចនាប័ទ្មពណ៌សម្រាប់កម្មវិធី។ រចនាប័ទ្មនឹងត្រូវបានអនុវត្តនៅទូទាំងកម្មវិធីទាំងមូល។",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "បើកការជូនដំណឹង",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "បើក ឬបិទការជូនដំណឹង។ នៅពេលបិទ ការជូនដំណឹងនឹងមិនត្រូវបានផ្ញើសម្រាប់សម័យរបស់អ្នកទេ។",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "ការជូនដំណឹងត្រូវបានបើក",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "ការជូនដំណឹងត្រូវបានបិទ",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

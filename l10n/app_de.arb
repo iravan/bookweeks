@@ -325,35 +325,34 @@
       }
     }
   },
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings.",
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "Benachrichtigungseinstellungen",
+  "notificationTiming": "Benachrichtigungszeitpunkt",
+  "notificationTimingDescription": "Wählen Sie, wann Sie Benachrichtigungen vor Beginn jeder Sitzung erhalten möchten",
+  "atEventStart": "Bei Sitzungsbeginn",
+  "beforeEventStart": "{timing} vor Sitzungsbeginn",
+  "notificationTimingUpdated": "Benachrichtigungszeitpunkt aktualisiert",
+  "aboutNotifications": "Über Benachrichtigungen",
+  "notificationInfo": "Sie erhalten Benachrichtigungen vor Beginn jeder geplanten Sitzung. Benachrichtigungen werden automatisch geplant, wenn Sie Sitzungen erstellen oder aktualisieren, und alle vorhandenen Sitzungen werden beim Start der App geplant.",
+  "rescheduleNotifications": "Benachrichtigungen neu planen",
+  "rescheduleNotificationsDescription": "Planen Sie Benachrichtigungen für alle vorhandenen zukünftigen Sitzungen manuell neu. Dies ist nützlich, wenn Sie Benachrichtigungen gerade aktiviert haben oder sicherstellen möchten, dass alle Ereignisse geplante Benachrichtigungen haben.",
+  "rescheduleNow": "Jetzt neu planen",
+  "rescheduling": "Wird neu geplant...",
+  "notificationsRescheduled": "Benachrichtigungen für {count} zukünftige Sitzung(en) neu geplant",
+  "errorReschedulingNotifications": "Fehler beim Neuanordnen der Benachrichtigungen: {error}",
+  "permissionsRequired": "Benachrichtigungsberechtigungen erforderlich",
+  "permissionsRequiredDescription": "Bitte gewähren Sie Benachrichtigungsberechtigungen, um Erinnerungen für Ihre Sitzungen zu erhalten. Tippen Sie auf die Schaltfläche unten, um Berechtigungen anzufordern.",
+  "requestPermissions": "Berechtigungen anfordern",
+  "permissionsGranted": "Benachrichtigungsberechtigungen gewährt!",
+  "permissionsDenied": "Benachrichtigungsberechtigungen wurden verweigert. Bitte aktivieren Sie sie in den Einstellungen.",
+  "timing0Min": "0 Min",
+  "timing1Min": "1 Min",
+  "timing5Mins": "5 Min",
+  "timing30Mins": "30 Min",
+  "timing1Hour": "1 Stunde",
+  "timing6Hours": "6 Stunden",
+  "timingMinutes": "{count} Min",
+  "timingHours": "{count} Stunde",
+  "timingHoursPlural": "{count} Stunden",
   "testNotifications": "Test-Benachrichtigungen",
   "testNotificationsDescription": "Eine Testbenachrichtigung in 2 Sekunden senden, um zu überprüfen, ob Benachrichtigungen funktionieren.",
   "sendTestNotification": "Testbenachrichtigung senden",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "Test-Benachrichtigung",
   "testNotificationBody": "Wenn Sie dies sehen, funktionieren Benachrichtigungen!",
   "scheduledTestNotificationTitle": "Geplante Testbenachrichtigung",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "Theme-Einstellungen",
   "selectTheme": "Thema auswählen",
   "selectThemeDescription": "Wählen Sie ein Farbschema für die App. Das Thema wird in der gesamten Anwendung angewendet.",
@@ -420,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Benachrichtigungen aktivieren",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "Benachrichtigungen ein- oder ausschalten. Wenn deaktiviert, werden keine Benachrichtigungen für Ihre Sitzungen gesendet.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Benachrichtigungen aktiviert",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Benachrichtigungen deaktiviert",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

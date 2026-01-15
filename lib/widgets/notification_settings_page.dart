@@ -20,6 +20,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
   int _selectedTimingMinutes = 5;
   bool _isLoading = true;
   bool _permissionsGranted = false;
+  bool _notificationsEnabled = true;
 
   @override
   void initState() {
@@ -32,9 +33,11 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
     await _notificationService.initialize();
     final timing = await _prefsService.getNotificationTimingMinutes();
     final permissionsGranted = await _notificationService.checkPermissions();
+    final notificationsEnabled = await _prefsService.areNotificationsEnabled();
     setState(() {
       _selectedTimingMinutes = timing;
       _permissionsGranted = permissionsGranted;
+      _notificationsEnabled = notificationsEnabled;
       _isLoading = false;
     });
   }
@@ -77,6 +80,48 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
           SnackBar(
             content: Text(
               AppLocalizations.of(context)!.notificationTimingUpdated,
+            ),
+            backgroundColor: Colors.green,
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              AppLocalizations.of(context)!.errorReschedulingNotifications(e.toString()),
+            ),
+            backgroundColor: Colors.red,
+            duration: const Duration(seconds: 3),
+          ),
+        );
+      }
+    }
+  }
+
+  Future<void> _toggleNotifications(bool enabled) async {
+    setState(() {
+      _notificationsEnabled = enabled;
+    });
+    await _prefsService.setNotificationsEnabled(enabled);
+
+    // If disabling, cancel all notifications
+    // If enabling, reschedule all notifications
+    try {
+      await _notificationService.initialize();
+      final allSessions = _sessionService.getAllSessions();
+      
+      await _notificationService.rescheduleAllNotifications(allSessions);
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              enabled
+                  ? AppLocalizations.of(context)!.notificationsEnabled
+                  : AppLocalizations.of(context)!.notificationsDisabled,
             ),
             backgroundColor: Colors.green,
             duration: const Duration(seconds: 2),
@@ -160,8 +205,47 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                     ),
                   ],
                 ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.only(bottom: 16),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.notifications,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          AppLocalizations.of(context)!.enableNotifications,
+                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
+                        ),
+                      ),
+                      Switch(
+                        value: _notificationsEnabled,
+                        onChanged: _toggleNotifications,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    AppLocalizations.of(context)!.enableNotificationsDescription,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: Colors.grey[600],
+                        ),
+                  ),
+                ],
               ),
             ),
+          ),
           Card(
             margin: const EdgeInsets.only(bottom: 16),
             child: Padding(
@@ -207,11 +291,13 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                           ),
                           value: minutes,
                           groupValue: _selectedTimingMinutes,
-                          onChanged: (value) {
-                            if (value != null) {
-                              _updateTiming(value);
-                            }
-                          },
+                          onChanged: _notificationsEnabled
+                              ? (value) {
+                                  if (value != null) {
+                                    _updateTiming(value);
+                                  }
+                                }
+                              : null,
                           contentPadding: const EdgeInsets.symmetric(
                             horizontal: 0,
                             vertical: 8,
@@ -289,7 +375,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(
-                      onPressed: _testNotification,
+                      onPressed: _notificationsEnabled ? _testNotification : null,
                       icon: const Icon(Icons.notifications_active),
                       label: Text(AppLocalizations.of(context)!.sendTestNotification),
                     ),

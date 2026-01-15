@@ -466,6 +466,15 @@ class NotificationService {
       await initialize();
     }
 
+    // Check if notifications are enabled
+    final notificationsEnabled = await _prefsService.areNotificationsEnabled();
+    if (!notificationsEnabled) {
+      print(
+        'NotificationService: Notifications are disabled, skipping scheduling',
+      );
+      return;
+    }
+
     // Ensure permissions are granted
     final hasPermissions = await checkPermissions();
     if (!hasPermissions) {
@@ -671,6 +680,16 @@ class NotificationService {
   Future<void> rescheduleAllNotifications(List<Session> sessions) async {
     if (!_isInitialized) {
       await initialize();
+    }
+
+    // Check if notifications are enabled
+    final notificationsEnabled = await _prefsService.areNotificationsEnabled();
+    if (!notificationsEnabled) {
+      print(
+        'NotificationService: Notifications are disabled, canceling all notifications',
+      );
+      await cancelAllNotifications();
+      return;
     }
 
     // Cancel all existing notifications

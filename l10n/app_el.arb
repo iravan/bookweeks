@@ -326,35 +326,35 @@
     }
   },
 
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
+  "notificationSettings": "Ρυθμίσεις ειδοποιήσεων",
+  "notificationTiming": "Χρονισμός ειδοποιήσεων",
+  "notificationTimingDescription": "Επιλέξτε πότε να λαμβάνετε ειδοποιήσεις πριν ξεκινήσει κάθε συνεδρία",
+  "atEventStart": "Στην έναρξη της συνεδρίας",
+  "beforeEventStart": "{timing} πριν την έναρξη της συνεδρίας",
+  "notificationTimingUpdated": "Ενημερώθηκε ο χρονισμός ειδοποιήσεων",
+  "aboutNotifications": "Σχετικά με τις ειδοποιήσεις",
+  "notificationInfo": "Θα λαμβάνετε ειδοποιήσεις πριν ξεκινήσει κάθε προγραμματισμένη συνεδρία. Οι ειδοποιήσεις προγραμματίζονται αυτόματα όταν δημιουργείτε ή ενημερώνετε συνεδρίες, και όλες οι υπάρχουσες συνεδρίες προγραμματίζονται όταν ξεκινάει η εφαρμογή.",
+  "rescheduleNotifications": "Επαναπρογραμματισμός ειδοποιήσεων",
+  "rescheduleNotificationsDescription": "Επαναπρογραμματίστε χειροκίνητα τις ειδοποιήσεις για όλες τις υπάρχουσες μελλοντικές συνεδρίες. Αυτό είναι χρήσιμο αν μόλις ενεργοποιήσατε τις ειδοποιήσεις ή θέλετε να βεβαιωθείτε ότι όλα τα συμβάντα έχουν προγραμματισμένες ειδοποιήσεις.",
+  "rescheduleNow": "Επαναπρογραμματισμός τώρα",
+  "rescheduling": "Επαναπρογραμματισμός...",
+  "notificationsRescheduled": "Οι ειδοποιήσεις επαναπρογραμματίστηκαν για {count} μελλοντική συνεδρία(ες)",
+  "errorReschedulingNotifications": "Σφάλμα κατά τον επαναπρογραμματισμό ειδοποιήσεων: {error}",
+  "permissionsRequired": "Απαιτούνται δικαιώματα ειδοποιήσεων",
+  "permissionsRequiredDescription": "Παρακαλώ δώστε δικαιώματα ειδοποιήσεων για να λαμβάνετε υπενθυμίσεις για τις συνεδρίες σας. Πατήστε το κουμπί παρακάτω για να ζητήσετε δικαιώματα.",
+  "requestPermissions": "Αίτηση δικαιωμάτων",
+  "permissionsGranted": "Τα δικαιώματα ειδοποιήσεων χορηγήθηκαν!",
+  "permissionsDenied": "Τα δικαιώματα ειδοποιήσεων απορρίφθηκαν. Παρακαλώ ενεργοποιήστε τα στις Ρυθμίσεις."
 ,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
+  "timing0Min": "0 λεπτά",
+  "timing1Min": "1 λεπτό",
+  "timing5Mins": "5 λεπτά",
+  "timing30Mins": "30 λεπτά",
+  "timing1Hour": "1 ώρα",
+  "timing6Hours": "6 ώρες",
+  "timingMinutes": "{count} λεπτά",
+  "timingHours": "{count} ώρα",
+  "timingHoursPlural": "{count} ώρες"
 ,
   "testNotifications": "Ειδοποιήσεις δοκιμής",
   "testNotificationsDescription": "Στείλτε μια ειδοποίηση δοκιμής σε 2 δευτερόλεπτα για να επαληθεύσετε ότι οι ειδοποιήσεις λειτουργούν.",
@@ -422,5 +422,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Ενεργοποίηση ειδοποιήσεων",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "Ενεργοποιήστε ή απενεργοποιήστε τις ειδοποιήσεις. Όταν είναι απενεργοποιημένες, δεν θα αποστέλλονται ειδοποιήσεις για τις συνεδρίες σας.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Οι ειδοποιήσεις ενεργοποιήθηκαν",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Οι ειδοποιήσεις απενεργοποιήθηκαν",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

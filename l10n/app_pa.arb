@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "ਸੂਚਨਾ ਸੈਟਿੰਗਾਂ",
+  "notificationTiming": "ਸੂਚਨਾ ਸਮਾਂ",
+  "notificationTimingDescription": "ਹਰੇਕ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾਵਾਂ ਕਦੋਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹਨ ਚੁਣੋ",
+  "atEventStart": "ਇਵੈਂਟ ਸ਼ੁਰੂ ਹੋਣ 'ਤੇ",
+  "beforeEventStart": "ਇਵੈਂਟ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ {timing} ਪਹਿਲਾਂ",
+  "notificationTimingUpdated": "ਸੂਚਨਾ ਸਮਾਂ ਅਪਡੇਟ ਕੀਤਾ",
+  "aboutNotifications": "ਸੂਚਨਾਵਾਂ ਬਾਰੇ",
+  "notificationInfo": "ਤੁਸੀਂ ਹਰੇਕ ਸ਼ੈਡਿਊਲ ਕੀਤੇ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋਗੇ। ਜਦੋਂ ਤੁਸੀਂ ਸੈਸ਼ਨ ਬਣਾਉਂਦੇ ਜਾਂ ਅਪਡੇਟ ਕਰਦੇ ਹੋ ਤਾਂ ਸੂਚਨਾਵਾਂ ਆਪਣੇ ਆਪ ਸ਼ੈਡਿਊਲ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਅਤੇ ਐਪ ਲਾਂਚ ਹੋਣ 'ਤੇ ਸਾਰੇ ਮੌਜੂਦਾ ਸੈਸ਼ਨ ਸ਼ੈਡਿਊਲ ਹੋ ਜਾਂਦੇ ਹਨ।",
+  "rescheduleNotifications": "ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ",
+  "rescheduleNotificationsDescription": "ਸਾਰੇ ਮੌਜੂਦਾ ਭਵਿੱਖ ਦੇ ਸੈਸ਼ਨਾਂ ਲਈ ਸੂਚਨਾਵਾਂ ਮੈਨੂਅਲੀ ਤੌਰ 'ਤੇ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ। ਇਹ ਲਾਭਦਾਇਕ ਹੈ ਜੇ ਤੁਸੀਂ ਹੁਣੇ ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕੀਤੀਆਂ ਹਨ ਜਾਂ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਸਾਰੇ ਇਵੈਂਟਾਂ ਵਿੱਚ ਸੂਚਨਾਵਾਂ ਸ਼ੈਡਿਊਲ ਹਨ।",
+  "rescheduleNow": "ਹੁਣ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ",
+  "rescheduling": "ਮੁੜ ਸ਼ੈਡਿਊਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+  "notificationsRescheduled": "{count} ਭਵਿੱਖ ਦੇ ਸੈਸ਼ਨ(ਾਂ) ਲਈ ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕੀਤੀਆਂ ਗਈਆਂ",
+  "errorReschedulingNotifications": "ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰਨ ਵਿੱਚ ਤਰੁਟੀ: {error}",
+  "permissionsRequired": "ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਲੋੜੀਂਦੀਆਂ ਹਨ",
+  "permissionsRequiredDescription": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਸੈਸ਼ਨਾਂ ਲਈ ਯਾਦ ਦਿਵਾਉਣ ਲਈ ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਦਿਓ। ਇਜਾਜ਼ਤਾਂ ਦੀ ਬੇਨਤੀ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਨੂੰ ਟੈਪ ਕਰੋ।",
+  "requestPermissions": "ਇਜਾਜ਼ਤਾਂ ਦੀ ਬੇਨਤੀ ਕਰੋ",
+  "permissionsGranted": "ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਦਿੱਤੀਆਂ ਗਈਆਂ!",
+  "permissionsDenied": "ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਇਨਕਾਰ ਕੀਤੀਆਂ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਉਨ੍ਹਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰੋ।",
+  "timing0Min": "0 ਮਿੰਟ",
+  "timing1Min": "1 ਮਿੰਟ",
+  "timing5Mins": "5 ਮਿੰਟ",
+  "timing30Mins": "30 ਮਿੰਟ",
+  "timing1Hour": "1 ਘੰਟਾ",
+  "timing6Hours": "6 ਘੰਟੇ",
+  "timingMinutes": "{count} ਮਿੰਟ",
+  "timingHours": "{count} ਘੰਟਾ",
+  "timingHoursPlural": "{count} ਘੰਟੇ",
   "testNotifications": "ਟੈਸਟ ਸੂਚਨਾਵਾਂ",
   "testNotificationsDescription": "ਸੂਚਨਾਵਾਂ ਕੰਮ ਕਰ ਰਹੀਆਂ ਹਨ ਜਾਂ ਨਹੀਂ ਇਸਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ 2 ਸਕਿੰਟਾਂ ਵਿੱਚ ਇੱਕ ਟੈਸਟ ਸੂਚਨਾ ਭੇਜੋ।",
   "sendTestNotification": "ਟੈਸਟ ਸੂਚਨਾ ਭੇਜੋ",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "ਟੈਸਟ ਸੂਚਨਾ",
   "testNotificationBody": "ਜੇ ਤੁਸੀਂ ਇਹ ਦੇਖਦੇ ਹੋ, ਤਾਂ ਸੂਚਨਾਵਾਂ ਕੰਮ ਕਰ ਰਹੀਆਂ ਹਨ!",
   "scheduledTestNotificationTitle": "ਸ਼ੈਡਿਊਲ ਕੀਤੀ ਟੈਸਟ ਸੂਚਨਾ",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "ਥੀਮ ਸੈਟਿੰਗਾਂ",
   "selectTheme": "ਥੀਮ ਚੁਣੋ",
   "selectThemeDescription": "ਐਪ ਲਈ ਇੱਕ ਰੰਗ ਥੀਮ ਚੁਣੋ। ਥੀਮ ਪੂਰੀ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚ ਲਾਗੂ ਕੀਤੀ ਜਾਵੇਗੀ।",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕਰੋ",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "ਸੂਚਨਾਵਾਂ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ। ਜਦੋਂ ਅਸਮਰੱਥ ਹੋਵੇ, ਤਾਂ ਤੁਹਾਡੇ ਸੈਸ਼ਨਾਂ ਲਈ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ ਭੇਜੀ ਜਾਵੇਗੀ।",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕੀਤੀਆਂ ਗਈਆਂ",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "ਸੂਚਨਾਵਾਂ ਅਸਮਰੱਥ ਕੀਤੀਆਂ ਗਈਆਂ",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

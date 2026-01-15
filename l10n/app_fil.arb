@@ -67,7 +67,7 @@
   "save": "I-save",
   "add": "Magdagdag",
   "edit": "I-edit",
-  "allEvents": "Lahat ng Mga Kaganapan",
+  "allEvents": "Lahat ng Events",
   "@allEvents": {
     "description": "Title for the events list page"
   },
@@ -108,7 +108,7 @@
   "importSuccessful": "Matagumpay ang Import",
   "importFailed": "Nabigo ang Import",
   "errorReadingFile": "Error sa pagbabasa ng file",
-  "error": "Error: {error}",
+  "error": "Error",
   "@error": {
     "description": "Generic error message",
     "placeholders": {
@@ -135,7 +135,7 @@
   },
   "noStudentsAddedYet": "Wala pang naidagdag na estudyante",
   "tapToAddMember": "I-tap ang + upang magdagdag ng miyembro",
-  "allMembers": "Lahat ng Mga Miyembro",
+  "allMembers": "Lahat ng Miyembro",
   "@allMembers": {
     "description": "Section title for all available members"
   },
@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
+  "notificationSettings": "Mga Setting ng Notification",
+  "notificationTiming": "Oras ng Notification",
+  "notificationTimingDescription": "Pumili kung kailan tatanggap ng notification bago magsimula ang bawat session",
+  "atEventStart": "Sa simula ng event",
+  "beforeEventStart": "{timing} bago magsimula ang event",
+  "notificationTimingUpdated": "Na-update ang oras ng notification",
+  "aboutNotifications": "Tungkol sa Notifications",
+  "notificationInfo": "Makakatanggap ka ng notifications bago magsimula ang bawat naka-schedule na session. Ang notifications ay awtomatikong naka-schedule kapag gumawa o nag-update ka ng sessions, at lahat ng existing sessions ay naka-schedule kapag nag-launch ang app.",
+  "rescheduleNotifications": "I-reschedule ang Notifications",
+  "rescheduleNotificationsDescription": "Manwal na i-reschedule ang notifications para sa lahat ng existing future sessions. Kapaki-pakinabang kung kakagaling mo lang mag-enable ng notifications o gusto mong tiyakin na lahat ng events ay may scheduled notifications.",
+  "rescheduleNow": "I-reschedule Ngayon",
+  "rescheduling": "Nagre-reschedule...",
+  "notificationsRescheduled": "Na-reschedule ang notifications para sa {count} future session(s)",
+  "errorReschedulingNotifications": "Error sa pagre-reschedule ng notifications: {error}",
+  "permissionsRequired": "Kailangan ang Notification Permissions",
+  "permissionsRequiredDescription": "Mangyaring bigyan ng notification permissions para makatanggap ng reminders para sa iyong sessions. I-tap ang button sa ibaba para humingi ng permissions.",
+  "requestPermissions": "Humiling ng Permissions",
+  "permissionsGranted": "Binigyan ng notification permissions!",
+  "permissionsDenied": "Tinanggihan ang notification permissions. Mangyaring i-enable ang mga ito sa Settings.",
   "timing0Min": "0 min",
   "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "timing5Mins": "5 min",
+  "timing30Mins": "30 min",
+  "timing1Hour": "1 oras",
+  "timing6Hours": "6 na oras",
+  "timingMinutes": "{count} min",
+  "timingHours": "{count} oras",
+  "timingHoursPlural": "{count} na oras",
   "testNotifications": "Mga Test Notification",
   "testNotificationsDescription": "Magpadala ng test notification sa loob ng 2 segundo upang i-verify na gumagana ang mga notification.",
   "sendTestNotification": "Magpadala ng Test Notification",
@@ -371,9 +368,8 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
-  "testNotificationTitle": "Test Notification",
+  },
+  "testNotificationTitle": "Test na Notification",
   "testNotificationBody": "Kung nakikita mo ito, gumagana ang mga notification!",
   "scheduledTestNotificationTitle": "Naka-schedule na Test Notification",
   "scheduledTestNotificationBody": "Ito ay naka-schedule 2 segundo ang nakalipas",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "Mga Setting ng Theme",
   "selectTheme": "Pumili ng Theme",
   "selectThemeDescription": "Pumili ng color theme para sa app. Ang theme ay ilalapat sa buong application.",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Paganahin ang mga notification",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "I-on o i-off ang mga notification. Kapag naka-disable, walang notification na ipapadala para sa iyong mga session.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Naka-enable ang mga notification",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Naka-disable ang mga notification",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

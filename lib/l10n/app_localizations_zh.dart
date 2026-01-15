@@ -474,6 +474,18 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get themeInfo =>
       '更改主题将更新整个应用中的颜色，包括按钮、应用栏和其他UI元素。您的主题偏好将被保存，并在您重新启动应用时自动应用。';
+
+  @override
+  String get enableNotifications => '启用通知';
+
+  @override
+  String get enableNotificationsDescription => '开启或关闭通知。关闭后，不会为您的会话发送通知。';
+
+  @override
+  String get notificationsEnabled => '通知已启用';
+
+  @override
+  String get notificationsDisabled => '通知已禁用';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -946,6 +958,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   @override
   String get themeInfo =>
       '更改主题将更新整个应用中的颜色，包括按钮、应用栏和其他UI元素。您的主题偏好将被保存，并在您重新启动应用时自动应用。';
+
+  @override
+  String get enableNotifications => '启用通知';
+
+  @override
+  String get enableNotificationsDescription => '开启或关闭通知。关闭后，不会为您的会话发送通知。';
+
+  @override
+  String get notificationsEnabled => '通知已启用';
+
+  @override
+  String get notificationsDisabled => '通知已禁用';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -1418,4 +1442,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String get themeInfo =>
       '更改主題將更新整個應用程式中的顏色，包括按鈕、應用程式列和其他UI元素。您的主題偏好將被儲存，並在您重新啟動應用程式時自動套用。';
+
+  @override
+  String get enableNotifications => '啟用通知';
+
+  @override
+  String get enableNotificationsDescription => '開啟或關閉通知。關閉後，不會為您的會話發送通知。';
+
+  @override
+  String get notificationsEnabled => '通知已啟用';
+
+  @override
+  String get notificationsDisabled => '通知已停用';
 }

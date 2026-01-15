@@ -1006,6 +1006,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Changing the theme will update the colors throughout the app, including buttons, app bars, and other UI elements. Your theme preference will be saved and applied automatically when you restart the app.'**
   String get themeInfo;
+
+  /// Title for enable notifications toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Notifications'**
+  String get enableNotifications;
+
+  /// Description text for enable notifications toggle
+  ///
+  /// In en, this message translates to:
+  /// **'Turn notifications on or off. When disabled, no notifications will be sent for your sessions.'**
+  String get enableNotificationsDescription;
+
+  /// Success message when notifications are enabled
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications enabled'**
+  String get notificationsEnabled;
+
+  /// Success message when notifications are disabled
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications disabled'**
+  String get notificationsDisabled;
 }
 
 class _AppLocalizationsDelegate

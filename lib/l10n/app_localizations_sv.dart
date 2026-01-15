@@ -299,7 +299,7 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get debug => 'FELSÖKNING';
+  String get debug => 'DEBUG';
 
   @override
   String get debugDateSimulation => 'Felsöknings Datumsimulering';
@@ -335,72 +335,72 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Aviseringsinställningar';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Aviseringsläge';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Välj när du vill ta emot aviseringar innan varje session börjar';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Vid sessionsstart';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing före sessionsstart';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Aviseringsläge uppdaterat';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Om aviseringar';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Du kommer att få aviseringar innan varje schemalagd session börjar. Aviseringar schemaläggs automatiskt när du skapar eller uppdaterar sessioner, och alla befintliga sessioner schemaläggs när appen startas.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Schemalägg om aviseringar';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Schemalägg manuellt om aviseringar för alla befintliga framtida sessioner. Detta är användbart om du precis har aktiverat aviseringar eller vill säkerställa att alla händelser har schemalagda aviseringar.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Schemalägg om nu';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Schemalägger om...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Aviseringar schemalagda om för $count framtida session(er)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Fel vid omschemaläggning av aviseringar: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Aviseringsbehörigheter krävs';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Vänligen bevilja aviseringsbehörigheter för att ta emot påminnelser för dina sessioner. Tryck på knappen nedan för att begära behörigheter.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Begär behörigheter';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Aviseringsbehörigheter beviljade!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Aviseringsbehörigheter nekades. Vänligen aktivera dem i Inställningar.';
 
   @override
   String get timing0Min => '0 min';
@@ -409,30 +409,30 @@ class AppLocalizationsSv extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 timme';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 timmar';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count timme';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count timmar';
   }
 
   @override
@@ -486,4 +486,17 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get themeInfo =>
       'Att ändra temat kommer att uppdatera färgerna i hela appen, inklusive knappar, appfält och andra UI-element. Din temapreferens kommer att sparas och tillämpas automatiskt när du startar om appen.';
+
+  @override
+  String get enableNotifications => 'Aktivera aviseringar';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Aktivera eller inaktivera aviseringar. När de är inaktiverade kommer inga aviseringar att skickas för dina sessioner.';
+
+  @override
+  String get notificationsEnabled => 'Aviseringar aktiverade';
+
+  @override
+  String get notificationsDisabled => 'Aviseringar inaktiverade';
 }

@@ -139,7 +139,7 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get ok => 'Í lagi';
+  String get ok => 'OK';
 
   @override
   String get searchEvents => 'Leita að viðburðum...';
@@ -336,104 +336,104 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Tilkynningastillingar';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Tímasetning tilkynninga';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Veldu hvenær á að fá tilkynningar áður en hver fundur hefst';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Við upphaf atburðar';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing áður en atburður hefst';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Tímasetning tilkynninga uppfærð';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Um tilkynningar';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Þú munt fá tilkynningar áður en hver áætlaður fundur hefst. Tilkynningar eru sjálfkrafa áætlaðar þegar þú býrð til eða uppfærir fundi, og allir núverandi fundir eru áætlaðir þegar forritið er ræst.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Enduráætla tilkynningar';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Enduráætla handvirkt tilkynningar fyrir alla núverandi framtíðarfundi. Gagnlegt ef þú hefur rétt virkjað tilkynningar eða vilt tryggja að allir atburðir hafi áætlaðar tilkynningar.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Enduráætla núna';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Enduráætla...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Tilkynningar enduráætlaðar fyrir $count framtíðarfund(i)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Villa við enduráætlun tilkynninga: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Heimildir tilkynninga krafist';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Vinsamlegast veittu heimildir tilkynninga til að fá áminningar fyrir fundina þína. Smelltu á hnappinn hér fyrir neðan til að biðja um heimildir.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Biðja um heimildir';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Heimildir tilkynninga veittar!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Heimildir tilkynninga voru hafnaðar. Vinsamlegast virkjaðu þær í Stillingum.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 mín';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 mín';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 mín';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 mín';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 klst';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 klst';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count mín';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count klst';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count klst';
   }
 
   @override
@@ -487,4 +487,17 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String get themeInfo =>
       'Að breyta þemanu mun uppfæra litina um allan forritið, þar á meðal hnappa, forritsstiku og aðra UI þætti. Þemaforgangurinn þinn verður vistaður og beittur sjálfkrafa þegar þú endurræsir forritið.';
+
+  @override
+  String get enableNotifications => 'Virkja tilkynningar';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Kveikja eða slökkva á tilkynningum. Þegar þær eru slökktar verða engar tilkynningar sendar fyrir fundina þína.';
+
+  @override
+  String get notificationsEnabled => 'Tilkynningar virkjaðar';
+
+  @override
+  String get notificationsDisabled => 'Tilkynningar slökktar';
 }

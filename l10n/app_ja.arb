@@ -352,8 +352,7 @@
   "timing6Hours": "6時間",
   "timingMinutes": "{count}分",
   "timingHours": "{count}時間",
-  "timingHoursPlural": "{count}時間"
-,
+  "timingHoursPlural": "{count}時間",
   "testNotifications": "テスト通知",
   "testNotificationsDescription": "2秒後にテスト通知を送信して、通知が正常に動作しているか確認します。",
   "sendTestNotification": "テスト通知を送信",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "テスト通知",
   "testNotificationBody": "これが表示されれば、通知は正常に動作しています！",
   "scheduledTestNotificationTitle": "スケジュールされたテスト通知",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "テーマ設定",
   "selectTheme": "テーマを選択",
   "selectThemeDescription": "アプリのカラーテーマを選択してください。テーマはアプリ全体に適用されます。",
@@ -420,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "通知を有効にする",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "通知をオンまたはオフにします。無効にすると、セッションの通知は送信されません。",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "通知が有効になりました",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "通知が無効になりました",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

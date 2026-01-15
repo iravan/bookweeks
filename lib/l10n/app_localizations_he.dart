@@ -331,104 +331,103 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'הגדרות התראות';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'זמן התראות';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'בחר מתי לקבל התראות לפני תחילת כל מפגש';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'בתחילת האירוע';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing לפני תחילת האירוע';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'זמן ההתראות עודכן';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'על התראות';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'תקבל התראות לפני תחילת כל מפגש מתוזמן. התראות מתוזמנות אוטומטית בעת יצירה או עדכון מפגשים, וכל המפגשים הקיימים מתוזמנים בעת הפעלת האפליקציה.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'תזמן מחדש התראות';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'תזמן מחדש ידנית התראות עבור כל המפגשים העתידיים הקיימים. שימושי אם הרגע הפעלת התראות או רוצה להבטיח שלכל האירועים יש התראות מתוזמנות.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'תזמן מחדש עכשיו';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'מתזמן מחדש...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'התראות מתוזמנות מחדש עבור $count מפגש(ים) עתידי(ים)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'שגיאה בתזמון מחדש של התראות: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'נדרשות הרשאות התראות';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'אנא הענק הרשאות התראות כדי לקבל תזכורות עבור המפגשים שלך. לחץ על הכפתור למטה כדי לבקש הרשאות.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'בקש הרשאות';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'הרשאות התראות הוענקו!';
 
   @override
-  String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+  String get permissionsDenied => 'הרשאות התראות נדחו. אנא הפעל אותן בהגדרות.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 דקות';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 דקה';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 דקות';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 דקות';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 שעה';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 שעות';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count דקות';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count שעה';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count שעות';
   }
 
   @override
@@ -481,4 +480,17 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get themeInfo =>
       'שינוי ערכת הנושא יעדכן את הצבעים בכל האפליקציה, כולל כפתורים, פסי אפליקציה ואלמנטי ממשק משתמש אחרים. העדפת הערכת הנושא שלך תישמר ותוחל אוטומטית בעת הפעלה מחדש של האפליקציה.';
+
+  @override
+  String get enableNotifications => 'הפעל התראות';
+
+  @override
+  String get enableNotificationsDescription =>
+      'הפעל או בטל התראות. כאשר הן מושבתות, לא יישלחו התראות עבור המפגשים שלך.';
+
+  @override
+  String get notificationsEnabled => 'התראות הופעלו';
+
+  @override
+  String get notificationsDisabled => 'התראות הושבתו';
 }

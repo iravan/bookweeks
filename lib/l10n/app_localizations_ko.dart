@@ -476,4 +476,17 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get themeInfo =>
       '테마를 변경하면 버튼, 앱 바 및 기타 UI 요소를 포함하여 앱 전체의 색상이 업데이트됩니다. 테마 설정은 저장되며 앱을 다시 시작하면 자동으로 적용됩니다.';
+
+  @override
+  String get enableNotifications => '알림 사용';
+
+  @override
+  String get enableNotificationsDescription =>
+      '알림을 켜거나 끕니다. 비활성화되면 세션에 대한 알림이 전송되지 않습니다.';
+
+  @override
+  String get notificationsEnabled => '알림이 활성화되었습니다';
+
+  @override
+  String get notificationsDisabled => '알림이 비활성화되었습니다';
 }

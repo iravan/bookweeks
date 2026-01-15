@@ -44,12 +44,12 @@ class AppLocalizationsRm extends AppLocalizations {
 
   @override
   String student(int count) {
-    return 'student';
+    return 'scolar';
   }
 
   @override
   String students(int count) {
-    return 'students';
+    return 'scolars';
   }
 
   @override
@@ -101,7 +101,7 @@ class AppLocalizationsRm extends AppLocalizations {
   String get edit => 'Modifitgar';
 
   @override
-  String get allEvents => 'Tut las Eveniments';
+  String get allEvents => 'Tut ils eveniments';
 
   @override
   String get manageTemplates => 'Administrar Models';
@@ -136,7 +136,7 @@ class AppLocalizationsRm extends AppLocalizations {
 
   @override
   String error(String error) {
-    return 'Errur: $error';
+    return 'Errur';
   }
 
   @override
@@ -168,7 +168,7 @@ class AppLocalizationsRm extends AppLocalizations {
   String get tapToAddMember => 'Tippar sin + per agiuntar ina membra';
 
   @override
-  String get allMembers => 'Tut las Membras';
+  String get allMembers => 'Tut ils commembers';
 
   @override
   String get addToSession => 'Agiuntar a la sessiun';
@@ -338,72 +338,72 @@ class AppLocalizationsRm extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Configuraziuns da notificaziuns';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Temp da notificaziuns';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Tscherner cura retschaiver notificaziuns avant che mintga sessiun cumenza';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Al cumenzament da l\'eveniment';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing avant il cumenzament da l\'eveniment';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Temp da notificaziuns actualisà';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Davart notificaziuns';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Ti vegns a retschaiver notificaziuns avant che mintga sessiun programmada cumenza. Las notificaziuns vegnan programmadas automaticamain cura che ti crees u actualiseschas sessiuns, e tut las sessiuns existentas vegnan programmadas cura che l\'app vegn aviada.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Reprogrammar notificaziuns';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Reprogrammar manualmain las notificaziuns per tut las sessiuns futuras existentas. Utile sch\'ti has gist activà las notificaziuns u vuls t\'assicurar che tut ils eveniments han notificaziuns programmadas.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Reprogrammar ussa';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Reprogrammaziun...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Notificaziuns reprogrammadas per $count sessiun(s) futura(s)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Errur cun reprogrammar las notificaziuns: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Permissiuns da notificaziuns necessarias';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Per plaschair dà las permissiuns da notificaziuns per retschaiver regurdients per tias sessiuns. Tippa sin il buttun sutvart per dumandar permissiuns.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Dumandar permissiuns';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Permissiuns da notificaziuns accordadas!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Las permissiuns da notificaziuns èn vegnidas refusadas. Per plaschair activa las en las Configuraziuns.';
 
   @override
   String get timing0Min => '0 min';
@@ -412,30 +412,30 @@ class AppLocalizationsRm extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ura';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 uras';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ura';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count uras';
   }
 
   @override
@@ -491,4 +491,17 @@ class AppLocalizationsRm extends AppLocalizations {
   @override
   String get themeInfo =>
       'Il midar dal tema actualisescha las colurs en tut l\'applicaziun, inclusiv buttuns, barras da l\'app ed auters elements da l\'UI. Tia preferenza dal tema vegn memorisada ed applitgada automaticamain cura che ti reavras l\'app.';
+
+  @override
+  String get enableNotifications => 'Activar notificaziuns';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Activar u deactivar notificaziuns. Sch\'ellas èn deactivadas, vegnan naginas notificaziuns tramessas per tias sessiuns.';
+
+  @override
+  String get notificationsEnabled => 'Notificaziuns activadas';
+
+  @override
+  String get notificationsDisabled => 'Notificaziuns deactivadas';
 }

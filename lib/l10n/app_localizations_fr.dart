@@ -492,4 +492,17 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get themeInfo =>
       'Changer le thème mettra à jour les couleurs dans toute l\'application, y compris les boutons, les barres d\'application et autres éléments de l\'interface. Votre préférence de thème sera enregistrée et appliquée automatiquement lorsque vous redémarrerez l\'application.';
+
+  @override
+  String get enableNotifications => 'Activer les notifications';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Activez ou désactivez les notifications. Lorsqu\'elles sont désactivées, aucune notification ne sera envoyée pour vos sessions.';
+
+  @override
+  String get notificationsEnabled => 'Notifications activées';
+
+  @override
+  String get notificationsDisabled => 'Notifications désactivées';
 }

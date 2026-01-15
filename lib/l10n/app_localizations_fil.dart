@@ -100,7 +100,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get edit => 'I-edit';
 
   @override
-  String get allEvents => 'Lahat ng Mga Kaganapan';
+  String get allEvents => 'Lahat ng Events';
 
   @override
   String get manageTemplates => 'Pamahalaan ang Mga Template';
@@ -135,7 +135,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String error(String error) {
-    return 'Error: $error';
+    return 'Error';
   }
 
   @override
@@ -168,7 +168,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tapToAddMember => 'I-tap ang + upang magdagdag ng miyembro';
 
   @override
-  String get allMembers => 'Lahat ng Mga Miyembro';
+  String get allMembers => 'Lahat ng Miyembro';
 
   @override
   String get addToSession => 'Idagdag sa sesyon';
@@ -338,72 +338,72 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Mga Setting ng Notification';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Oras ng Notification';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Pumili kung kailan tatanggap ng notification bago magsimula ang bawat session';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Sa simula ng event';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing bago magsimula ang event';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Na-update ang oras ng notification';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Tungkol sa Notifications';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Makakatanggap ka ng notifications bago magsimula ang bawat naka-schedule na session. Ang notifications ay awtomatikong naka-schedule kapag gumawa o nag-update ka ng sessions, at lahat ng existing sessions ay naka-schedule kapag nag-launch ang app.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'I-reschedule ang Notifications';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Manwal na i-reschedule ang notifications para sa lahat ng existing future sessions. Kapaki-pakinabang kung kakagaling mo lang mag-enable ng notifications o gusto mong tiyakin na lahat ng events ay may scheduled notifications.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'I-reschedule Ngayon';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Nagre-reschedule...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Na-reschedule ang notifications para sa $count future session(s)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Error sa pagre-reschedule ng notifications: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Kailangan ang Notification Permissions';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Mangyaring bigyan ng notification permissions para makatanggap ng reminders para sa iyong sessions. I-tap ang button sa ibaba para humingi ng permissions.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Humiling ng Permissions';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Binigyan ng notification permissions!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Tinanggihan ang notification permissions. Mangyaring i-enable ang mga ito sa Settings.';
 
   @override
   String get timing0Min => '0 min';
@@ -412,30 +412,30 @@ class AppLocalizationsFil extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 oras';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 na oras';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count oras';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count na oras';
   }
 
   @override
@@ -453,7 +453,7 @@ class AppLocalizationsFil extends AppLocalizations {
       'Naka-schedule ang test notification! Suriin sa loob ng 2 segundo.';
 
   @override
-  String get testNotificationTitle => 'Test Notification';
+  String get testNotificationTitle => 'Test na Notification';
 
   @override
   String get testNotificationBody =>
@@ -491,4 +491,17 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get themeInfo =>
       'Ang pagbabago ng theme ay mag-u-update ng mga kulay sa buong app, kasama ang mga button, app bar, at iba pang UI elements. Ang iyong theme preference ay mai-save at awtomatikong ilalapat kapag muling sinimulan mo ang app.';
+
+  @override
+  String get enableNotifications => 'Paganahin ang mga notification';
+
+  @override
+  String get enableNotificationsDescription =>
+      'I-on o i-off ang mga notification. Kapag naka-disable, walang notification na ipapadala para sa iyong mga session.';
+
+  @override
+  String get notificationsEnabled => 'Naka-enable ang mga notification';
+
+  @override
+  String get notificationsDisabled => 'Naka-disable ang mga notification';
 }

@@ -477,4 +477,17 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get themeInfo =>
       'テーマを変更すると、ボタン、アプリバー、その他のUI要素を含む、アプリ全体の色が更新されます。テーマの設定は保存され、アプリを再起動すると自動的に適用されます。';
+
+  @override
+  String get enableNotifications => '通知を有効にする';
+
+  @override
+  String get enableNotificationsDescription =>
+      '通知をオンまたはオフにします。無効にすると、セッションの通知は送信されません。';
+
+  @override
+  String get notificationsEnabled => '通知が有効になりました';
+
+  @override
+  String get notificationsDisabled => '通知が無効になりました';
 }

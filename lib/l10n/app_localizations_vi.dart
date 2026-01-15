@@ -334,104 +334,104 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Cài đặt thông báo';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Thời gian thông báo';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Chọn khi nào nhận thông báo trước khi mỗi phiên bắt đầu';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Khi sự kiện bắt đầu';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing trước khi sự kiện bắt đầu';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Thời gian thông báo đã cập nhật';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Về thông báo';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Bạn sẽ nhận thông báo trước khi mỗi phiên đã lên lịch bắt đầu. Thông báo được lên lịch tự động khi bạn tạo hoặc cập nhật phiên, và tất cả các phiên hiện có được lên lịch khi ứng dụng khởi động.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Lên lịch lại thông báo';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Lên lịch lại thủ công các thông báo cho tất cả các phiên tương lai hiện có. Hữu ích nếu bạn vừa bật thông báo hoặc muốn đảm bảo tất cả các sự kiện đều có thông báo đã lên lịch.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Lên lịch lại ngay';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Đang lên lịch lại...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Thông báo đã được lên lịch lại cho $count phiên tương lai';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Lỗi khi lên lịch lại thông báo: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Cần quyền thông báo';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Vui lòng cấp quyền thông báo để nhận nhắc nhở cho các phiên của bạn. Nhấn nút bên dưới để yêu cầu quyền.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Yêu cầu quyền';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Đã cấp quyền thông báo!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Quyền thông báo đã bị từ chối. Vui lòng bật chúng trong Cài đặt.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 phút';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 phút';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 phút';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 phút';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 giờ';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 giờ';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count phút';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count giờ';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count giờ';
   }
 
   @override
@@ -487,4 +487,17 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get themeInfo =>
       'Thay đổi giao diện sẽ cập nhật màu sắc trong toàn bộ ứng dụng, bao gồm nút, thanh ứng dụng và các phần tử giao diện khác. Tùy chọn giao diện của bạn sẽ được lưu và tự động áp dụng khi bạn khởi động lại ứng dụng.';
+
+  @override
+  String get enableNotifications => 'Bật thông báo';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Bật hoặc tắt thông báo. Khi tắt, sẽ không gửi thông báo cho các phiên của bạn.';
+
+  @override
+  String get notificationsEnabled => 'Đã bật thông báo';
+
+  @override
+  String get notificationsDisabled => 'Đã tắt thông báo';
 }

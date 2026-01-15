@@ -336,104 +336,104 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'ਸੂਚਨਾ ਸੈਟਿੰਗਾਂ';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'ਸੂਚਨਾ ਸਮਾਂ';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'ਹਰੇਕ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾਵਾਂ ਕਦੋਂ ਪ੍ਰਾਪਤ ਕਰਨੀਆਂ ਹਨ ਚੁਣੋ';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'ਇਵੈਂਟ ਸ਼ੁਰੂ ਹੋਣ \'ਤੇ';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return 'ਇਵੈਂਟ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ $timing ਪਹਿਲਾਂ';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'ਸੂਚਨਾ ਸਮਾਂ ਅਪਡੇਟ ਕੀਤਾ';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'ਸੂਚਨਾਵਾਂ ਬਾਰੇ';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'ਤੁਸੀਂ ਹਰੇਕ ਸ਼ੈਡਿਊਲ ਕੀਤੇ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋਗੇ। ਜਦੋਂ ਤੁਸੀਂ ਸੈਸ਼ਨ ਬਣਾਉਂਦੇ ਜਾਂ ਅਪਡੇਟ ਕਰਦੇ ਹੋ ਤਾਂ ਸੂਚਨਾਵਾਂ ਆਪਣੇ ਆਪ ਸ਼ੈਡਿਊਲ ਹੋ ਜਾਂਦੀਆਂ ਹਨ, ਅਤੇ ਐਪ ਲਾਂਚ ਹੋਣ \'ਤੇ ਸਾਰੇ ਮੌਜੂਦਾ ਸੈਸ਼ਨ ਸ਼ੈਡਿਊਲ ਹੋ ਜਾਂਦੇ ਹਨ।';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'ਸਾਰੇ ਮੌਜੂਦਾ ਭਵਿੱਖ ਦੇ ਸੈਸ਼ਨਾਂ ਲਈ ਸੂਚਨਾਵਾਂ ਮੈਨੂਅਲੀ ਤੌਰ \'ਤੇ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ। ਇਹ ਲਾਭਦਾਇਕ ਹੈ ਜੇ ਤੁਸੀਂ ਹੁਣੇ ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕੀਤੀਆਂ ਹਨ ਜਾਂ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਸਾਰੇ ਇਵੈਂਟਾਂ ਵਿੱਚ ਸੂਚਨਾਵਾਂ ਸ਼ੈਡਿਊਲ ਹਨ।';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'ਹੁਣ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰੋ';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'ਮੁੜ ਸ਼ੈਡਿਊਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return '$count ਭਵਿੱਖ ਦੇ ਸੈਸ਼ਨ(ਾਂ) ਲਈ ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕੀਤੀਆਂ ਗਈਆਂ';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'ਸੂਚਨਾਵਾਂ ਮੁੜ ਸ਼ੈਡਿਊਲ ਕਰਨ ਵਿੱਚ ਤਰੁਟੀ: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਲੋੜੀਂਦੀਆਂ ਹਨ';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਸੈਸ਼ਨਾਂ ਲਈ ਯਾਦ ਦਿਵਾਉਣ ਲਈ ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਦਿਓ। ਇਜਾਜ਼ਤਾਂ ਦੀ ਬੇਨਤੀ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਨੂੰ ਟੈਪ ਕਰੋ।';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'ਇਜਾਜ਼ਤਾਂ ਦੀ ਬੇਨਤੀ ਕਰੋ';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਦਿੱਤੀਆਂ ਗਈਆਂ!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'ਸੂਚਨਾ ਇਜਾਜ਼ਤਾਂ ਇਨਕਾਰ ਕੀਤੀਆਂ ਗਈਆਂ। ਕਿਰਪਾ ਕਰਕੇ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਉਨ੍ਹਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰੋ।';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 ਮਿੰਟ';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 ਮਿੰਟ';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 ਮਿੰਟ';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 ਮਿੰਟ';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ਘੰਟਾ';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 ਘੰਟੇ';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count ਮਿੰਟ';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ਘੰਟਾ';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count ਘੰਟੇ';
   }
 
   @override
@@ -488,4 +488,17 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get themeInfo =>
       'ਥੀਮ ਬਦਲਣਾ ਐਪ ਦੇ ਸਾਰੇ ਰੰਗਾਂ ਨੂੰ ਅਪਡੇਟ ਕਰੇਗਾ, ਜਿਸ ਵਿੱਚ ਬਟਨ, ਐਪ ਬਾਰ ਅਤੇ ਹੋਰ UI ਤੱਤ ਸ਼ਾਮਲ ਹਨ। ਤੁਹਾਡੀ ਥੀਮ ਪਸੰਦ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਜਦੋਂ ਤੁਸੀਂ ਐਪ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋਗੇ ਤਾਂ ਆਪਣੇ ਆਪ ਲਾਗੂ ਹੋਵੇਗੀ।';
+
+  @override
+  String get enableNotifications => 'ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕਰੋ';
+
+  @override
+  String get enableNotificationsDescription =>
+      'ਸੂਚਨਾਵਾਂ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ। ਜਦੋਂ ਅਸਮਰੱਥ ਹੋਵੇ, ਤਾਂ ਤੁਹਾਡੇ ਸੈਸ਼ਨਾਂ ਲਈ ਕੋਈ ਸੂਚਨਾ ਨਹੀਂ ਭੇਜੀ ਜਾਵੇਗੀ।';
+
+  @override
+  String get notificationsEnabled => 'ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਕੀਤੀਆਂ ਗਈਆਂ';
+
+  @override
+  String get notificationsDisabled => 'ਸੂਚਨਾਵਾਂ ਅਸਮਰੱਥ ਕੀਤੀਆਂ ਗਈਆਂ';
 }

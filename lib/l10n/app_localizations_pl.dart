@@ -176,7 +176,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get removeFromSession => 'Usuń z sesji';
 
   @override
-  String get name => 'Imię';
+  String get name => 'Nazwa';
 
   @override
   String get nameRequired => 'Proszę wprowadzić imię';
@@ -207,7 +207,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String nameLabel(String name) {
-    return 'Imię: $name';
+    return 'Nazwa: $name';
   }
 
   @override
@@ -336,72 +336,72 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Ustawienia powiadomień';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Czas powiadomień';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Wybierz, kiedy otrzymywać powiadomienia przed rozpoczęciem każdej sesji';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Na początku wydarzenia';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing przed rozpoczęciem wydarzenia';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Czas powiadomień zaktualizowany';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'O powiadomieniach';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Będziesz otrzymywać powiadomienia przed rozpoczęciem każdej zaplanowanej sesji. Powiadomienia są automatycznie planowane podczas tworzenia lub aktualizowania sesji, a wszystkie istniejące sesje są planowane przy uruchomieniu aplikacji.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Przeplanuj powiadomienia';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Ręcznie przeplanuj powiadomienia dla wszystkich istniejących przyszłych sesji. Przydatne, jeśli właśnie włączyłeś powiadomienia lub chcesz upewnić się, że wszystkie wydarzenia mają zaplanowane powiadomienia.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Przeplanuj teraz';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Przeplanowywanie...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Powiadomienia przeplanowane dla $count przyszłej sesji(es)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Błąd podczas przeplanowywania powiadomień: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Wymagane uprawnienia powiadomień';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Proszę udzielić uprawnień powiadomień, aby otrzymywać przypomnienia o swoich sesjach. Naciśnij przycisk poniżej, aby poprosić o uprawnienia.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Poproś o uprawnienia';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Uprawnienia powiadomień przyznane!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Uprawnienia powiadomień zostały odrzucone. Proszę włączyć je w Ustawieniach.';
 
   @override
   String get timing0Min => '0 min';
@@ -410,30 +410,30 @@ class AppLocalizationsPl extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 godzina';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 godzin';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count godzina';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count godzin';
   }
 
   @override
@@ -489,4 +489,17 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get themeInfo =>
       'Zmiana motywu zaktualizuje kolory w całej aplikacji, w tym przyciski, paski aplikacji i inne elementy interfejsu. Twoja preferencja motywu zostanie zapisana i zastosowana automatycznie po ponownym uruchomieniu aplikacji.';
+
+  @override
+  String get enableNotifications => 'Włącz powiadomienia';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Włącz lub wyłącz powiadomienia. Gdy wyłączone, żadne powiadomienia nie będą wysyłane dla Twoich sesji.';
+
+  @override
+  String get notificationsEnabled => 'Powiadomienia włączone';
+
+  @override
+  String get notificationsDisabled => 'Powiadomienia wyłączone';
 }

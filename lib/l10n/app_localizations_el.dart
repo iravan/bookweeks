@@ -340,104 +340,105 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Ρυθμίσεις ειδοποιήσεων';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Χρονισμός ειδοποιήσεων';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Επιλέξτε πότε να λαμβάνετε ειδοποιήσεις πριν ξεκινήσει κάθε συνεδρία';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Στην έναρξη της συνεδρίας';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing πριν την έναρξη της συνεδρίας';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated =>
+      'Ενημερώθηκε ο χρονισμός ειδοποιήσεων';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Σχετικά με τις ειδοποιήσεις';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Θα λαμβάνετε ειδοποιήσεις πριν ξεκινήσει κάθε προγραμματισμένη συνεδρία. Οι ειδοποιήσεις προγραμματίζονται αυτόματα όταν δημιουργείτε ή ενημερώνετε συνεδρίες, και όλες οι υπάρχουσες συνεδρίες προγραμματίζονται όταν ξεκινάει η εφαρμογή.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Επαναπρογραμματισμός ειδοποιήσεων';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Επαναπρογραμματίστε χειροκίνητα τις ειδοποιήσεις για όλες τις υπάρχουσες μελλοντικές συνεδρίες. Αυτό είναι χρήσιμο αν μόλις ενεργοποιήσατε τις ειδοποιήσεις ή θέλετε να βεβαιωθείτε ότι όλα τα συμβάντα έχουν προγραμματισμένες ειδοποιήσεις.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Επαναπρογραμματισμός τώρα';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Επαναπρογραμματισμός...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Οι ειδοποιήσεις επαναπρογραμματίστηκαν για $count μελλοντική συνεδρία(ες)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Σφάλμα κατά τον επαναπρογραμματισμό ειδοποιήσεων: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Απαιτούνται δικαιώματα ειδοποιήσεων';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Παρακαλώ δώστε δικαιώματα ειδοποιήσεων για να λαμβάνετε υπενθυμίσεις για τις συνεδρίες σας. Πατήστε το κουμπί παρακάτω για να ζητήσετε δικαιώματα.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Αίτηση δικαιωμάτων';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Τα δικαιώματα ειδοποιήσεων χορηγήθηκαν!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Τα δικαιώματα ειδοποιήσεων απορρίφθηκαν. Παρακαλώ ενεργοποιήστε τα στις Ρυθμίσεις.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 λεπτά';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 λεπτό';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 λεπτά';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 λεπτά';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ώρα';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 ώρες';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count λεπτά';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ώρα';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count ώρες';
   }
 
   @override
@@ -493,4 +494,17 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get themeInfo =>
       'Η αλλαγή του θέματος θα ενημερώσει τα χρώματα σε όλη την εφαρμογή, συμπεριλαμβανομένων των κουμπιών, των γραμμών εφαρμογής και άλλων στοιχείων διεπαφής. Η προτίμησή σας για το θέμα θα αποθηκευτεί και θα εφαρμοστεί αυτόματα όταν κάνετε επανεκκίνηση της εφαρμογής.';
+
+  @override
+  String get enableNotifications => 'Ενεργοποίηση ειδοποιήσεων';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Ενεργοποιήστε ή απενεργοποιήστε τις ειδοποιήσεις. Όταν είναι απενεργοποιημένες, δεν θα αποστέλλονται ειδοποιήσεις για τις συνεδρίες σας.';
+
+  @override
+  String get notificationsEnabled => 'Οι ειδοποιήσεις ενεργοποιήθηκαν';
+
+  @override
+  String get notificationsDisabled => 'Οι ειδοποιήσεις απενεργοποιήθηκαν';
 }

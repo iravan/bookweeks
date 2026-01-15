@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "सूचना सेटिंग्ज",
+  "notificationTiming": "सूचना वेळ",
+  "notificationTimingDescription": "प्रत्येक सत्र सुरू होण्यापूर्वी सूचना कधी मिळवायच्या ते निवडा",
+  "atEventStart": "इव्हेंट सुरू होताना",
+  "beforeEventStart": "इव्हेंट सुरू होण्यापूर्वी {timing}",
+  "notificationTimingUpdated": "सूचना वेळ अपडेट केली",
+  "aboutNotifications": "सूचनांबद्दल",
+  "notificationInfo": "तुम्ही प्रत्येक शेड्यूल केलेल्या सत्र सुरू होण्यापूर्वी सूचना प्राप्त कराल. तुम्ही सत्रे तयार किंवा अपडेट करता तेव्हा सूचना स्वयंचलितपणे शेड्यूल केल्या जातात, आणि अ‍ॅप लॉन्च होते तेव्हा सर्व विद्यमान सत्रे शेड्यूल केली जातात.",
+  "rescheduleNotifications": "सूचना पुन्हा शेड्यूल करा",
+  "rescheduleNotificationsDescription": "सर्व विद्यमान भविष्यातील सत्रांसाठी सूचना मॅन्युअली पुन्हा शेड्यूल करा. जर तुम्ही नुकतीच सूचना सक्षम केल्या असतील किंवा सर्व इव्हेंट्समध्ये सूचना शेड्यूल केल्या आहेत याची खात्री करू इच्छित असाल तर हे उपयुक्त आहे.",
+  "rescheduleNow": "आता पुन्हा शेड्यूल करा",
+  "rescheduling": "पुन्हा शेड्यूल करत आहे...",
+  "notificationsRescheduled": "{count} भविष्यातील सत्र(े) साठी सूचना पुन्हा शेड्यूल केल्या",
+  "errorReschedulingNotifications": "सूचना पुन्हा शेड्यूल करताना त्रुटी: {error}",
+  "permissionsRequired": "सूचना परवानग्या आवश्यक",
+  "permissionsRequiredDescription": "कृपया तुमच्या सत्रांसाठी रिमाइंडर मिळवण्यासाठी सूचना परवानग्या द्या. परवानग्या विनंती करण्यासाठी खालील बटण टॅप करा.",
+  "requestPermissions": "परवानग्या विनंती करा",
+  "permissionsGranted": "सूचना परवानग्या दिल्या!",
+  "permissionsDenied": "सूचना परवानग्या नाकारल्या गेल्या. कृपया सेटिंग्जमध्ये त्या सक्षम करा.",
+  "timing0Min": "0 मिनिट",
+  "timing1Min": "1 मिनिट",
+  "timing5Mins": "5 मिनिट",
+  "timing30Mins": "30 मिनिट",
+  "timing1Hour": "1 तास",
+  "timing6Hours": "6 तास",
+  "timingMinutes": "{count} मिनिट",
+  "timingHours": "{count} तास",
+  "timingHoursPlural": "{count} तास",
   "testNotifications": "चाचणी सूचना",
   "testNotificationsDescription": "सूचना कार्य करत आहेत की नाही हे सत्यापित करण्यासाठी 2 सेकंदात एक चाचणी सूचना पाठवा.",
   "sendTestNotification": "चाचणी सूचना पाठवा",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "चाचणी सूचना",
   "testNotificationBody": "जर तुम्ही हे पाहत असाल, तर सूचना कार्य करत आहेत!",
   "scheduledTestNotificationTitle": "वेळापत्रक केलेली चाचणी सूचना",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "थीम सेटिंग्ज",
   "selectTheme": "थीम निवडा",
   "selectThemeDescription": "अ‍ॅपसाठी रंग थीम निवडा। थीम संपूर्ण अ‍ॅप्लिकेशनमध्ये लागू केली जाईल।",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "सूचना सक्षम करा",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "सूचना चालू किंवा बंद करा. अक्षम केल्यावर, तुमच्या सत्रांसाठी कोणतीही सूचना पाठवली जाणार नाही.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "सूचना सक्षम केल्या",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "सूचना अक्षम केल्या",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

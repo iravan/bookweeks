@@ -420,5 +420,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "알림 사용",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "알림을 켜거나 끕니다. 비활성화되면 세션에 대한 알림이 전송되지 않습니다.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "알림이 활성화되었습니다",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "알림이 비활성화되었습니다",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

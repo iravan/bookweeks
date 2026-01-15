@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "ການຕັ້ງຄ່າການແຈ້ງເຕືອນ",
+  "notificationTiming": "ເວລາການແຈ້ງເຕືອນ",
+  "notificationTimingDescription": "ເລືອກເວລາທີ່ຈະຮັບການແຈ້ງເຕືອນກ່ອນທີ່ແຕ່ລະເຊດຊັນຈະເລີ່ມຕົ້ນ",
+  "atEventStart": "ເມື່ອເລີ່ມຕົ້ນເຫດການ",
+  "beforeEventStart": "{timing} ກ່ອນເລີ່ມຕົ້ນເຫດການ",
+  "notificationTimingUpdated": "ເວລາການແຈ້ງເຕືອນຖືກອັບເດດ",
+  "aboutNotifications": "ກ່ຽວກັບການແຈ້ງເຕືອນ",
+  "notificationInfo": "ທ່ານຈະໄດ້ຮັບການແຈ້ງເຕືອນກ່ອນທີ່ແຕ່ລະເຊດຊັນທີ່ກຳນົດເວລາເລີ່ມຕົ້ນ. ການແຈ້ງເຕືອນຈະຖືກກຳນົດເວລາໂດຍອັດຕະໂນມັດເມື່ອທ່ານສ້າງຫຼືອັບເດດເຊດຊັນ, ແລະເຊດຊັນທັງໝົດທີ່ມີຢູ່ຈະຖືກກຳນົດເວລາເມື່ອແອັບເປີດໃຊ້ງານ.",
+  "rescheduleNotifications": "ກຳນົດເວລາການແຈ້ງເຕືອນໃໝ່",
+  "rescheduleNotificationsDescription": "ກຳນົດເວລາການແຈ້ງເຕືອນໃໝ່ດ້ວຍຕົນເອງສຳລັບເຊດຊັນໃນອະນາຄົດທັງໝົດທີ່ມີຢູ່. ມີປະໂຫຍດຖ້າທ່ານຫາກເປີດໃຊ້ການແຈ້ງເຕືອນຫຼືຕ້ອງການຮັບປະກັນວ່າເຫດການທັງໝົດມີການແຈ້ງເຕືອນທີ່ກຳນົດເວລາແລ້ວ.",
+  "rescheduleNow": "ກຳນົດເວລາໃໝ່ດຽວນີ້",
+  "rescheduling": "ກຳລັງກຳນົດເວລາໃໝ່...",
+  "notificationsRescheduled": "ການແຈ້ງເຕືອນຖືກກຳນົດເວລາໃໝ່ສຳລັບ {count} ເຊດຊັນໃນອະນາຄົດ",
+  "errorReschedulingNotifications": "ຂໍ້ຜິດພາດໃນການກຳນົດເວລາການແຈ້ງເຕືອນໃໝ່: {error}",
+  "permissionsRequired": "ຕ້ອງການສິດອະນຸຍາດການແຈ້ງເຕືອນ",
+  "permissionsRequiredDescription": "ກະລຸນາໃຫ້ສິດອະນຸຍາດການແຈ້ງເຕືອນເພື່ອຮັບການແຈ້ງເຕືອນສຳລັບເຊດຊັນຂອງທ່ານ. ແຕະປຸ່ມດ້ານລຸ່ມເພື່ອຮ້ອງຂໍສິດອະນຸຍາດ.",
+  "requestPermissions": "ຮ້ອງຂໍສິດອະນຸຍາດ",
+  "permissionsGranted": "ສິດອະນຸຍາດການແຈ້ງເຕືອນໄດ້ຮັບການອະນຸຍາດ!",
+  "permissionsDenied": "ສິດອະນຸຍາດການແຈ້ງເຕືອນຖືກປະຕິເສດ. ກະລຸນາເປີດໃຊ້ມັນໃນການຕັ້ງຄ່າ.",
+  "timing0Min": "0 ນາທີ",
+  "timing1Min": "1 ນາທີ",
+  "timing5Mins": "5 ນາທີ",
+  "timing30Mins": "30 ນາທີ",
+  "timing1Hour": "1 ຊົ່ວໂມງ",
+  "timing6Hours": "6 ຊົ່ວໂມງ",
+  "timingMinutes": "{count} ນາທີ",
+  "timingHours": "{count} ຊົ່ວໂມງ",
+  "timingHoursPlural": "{count} ຊົ່ວໂມງ",
   "testNotifications": "ການແຈ້ງເຕືອນທົດສອບ",
   "testNotificationsDescription": "ສົ່ງການແຈ້ງເຕືອນທົດສອບໃນ 2 ວິນາທີເພື່ອກວດສອບວ່າການແຈ້ງເຕືອນກຳລັງເຮັດວຽກຢູ່ຫຼືບໍ່.",
   "sendTestNotification": "ສົ່ງການແຈ້ງເຕືອນທົດສອບ",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "ການແຈ້ງເຕືອນທົດສອບ",
   "testNotificationBody": "ຖ້າທ່ານເຫັນສິ່ງນີ້, ການແຈ້ງເຕືອນກຳລັງເຮັດວຽກ!",
   "scheduledTestNotificationTitle": "ການແຈ້ງເຕືອນທົດສອບທີ່ຖືກກຳນົດເວລາ",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "ການຕັ້ງຄ່າຮູບແບບ",
   "selectTheme": "ເລືອກຮູບແບບ",
   "selectThemeDescription": "ເລືອກຮູບແບບສີສໍາລັບແອັບ. ຮູບແບບຈະຖືກນໍາໃຊ້ທົ່ວທັງແອັບພລິເຄຊັນ.",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "ເປີດໃຊ້ການແຈ້ງເຕືອນ",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "ເປີດ ຫຼື ປິດການແຈ້ງເຕືອນ. ເມື່ອປິດ, ການແຈ້ງເຕືອນຈະບໍ່ຖືກສົ່ງສໍາລັບເຊດຊັນຂອງທ່ານ.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "ເປີດໃຊ້ການແຈ້ງເຕືອນແລ້ວ",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "ປິດການແຈ້ງເຕືອນແລ້ວ",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

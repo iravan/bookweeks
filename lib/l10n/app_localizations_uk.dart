@@ -336,104 +336,104 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Налаштування сповіщень';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Час сповіщень';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Виберіть, коли отримувати сповіщення перед початком кожної сесії';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'На початку події';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing до початку події';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Час сповіщень оновлено';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Про сповіщення';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Ви отримуватимете сповіщення перед початком кожної запланованої сесії. Сповіщення автоматично плануються, коли ви створюєте або оновлюєте сесії, і всі існуючі сесії плануються при запуску додатка.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Переназначити сповіщення';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Вручну переназначте сповіщення для всіх існуючих майбутніх сесій. Це корисно, якщо ви щойно увімкнули сповіщення або хочете переконатися, що всі події мають заплановані сповіщення.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Переназначити зараз';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Переназначення...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Сповіщення переназначено для $count майбутньої сесії(й)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Помилка при переназначенні сповіщень: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Потрібні дозволи на сповіщення';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Будь ласка, надайте дозволи на сповіщення, щоб отримувати нагадування про ваші сесії. Натисніть кнопку нижче, щоб запросити дозволи.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Запросити дозволи';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Дозволи на сповіщення надано!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Дозволи на сповіщення були відхилені. Будь ласка, увімкніть їх у Налаштуваннях.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 хв';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 хв';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 хв';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 хв';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 година';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 годин';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count хв';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count година';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count годин';
   }
 
   @override
@@ -487,4 +487,17 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get themeInfo =>
       'Зміна теми оновить кольори в усьому додатку, включаючи кнопки, панелі додатку та інші елементи інтерфейсу. Ваші налаштування теми будуть збережені та застосовані автоматично при перезапуску додатку.';
+
+  @override
+  String get enableNotifications => 'Увімкнути сповіщення';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Увімкніть або вимкніть сповіщення. Коли вимкнено, сповіщення для ваших сесій не надсилатимуться.';
+
+  @override
+  String get notificationsEnabled => 'Сповіщення увімкнено';
+
+  @override
+  String get notificationsDisabled => 'Сповіщення вимкнено';
 }

@@ -334,104 +334,104 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'ಅಧಿಸೂಚನೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'ಅಧಿಸೂಚನೆ ಸಮಯ';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'ಪ್ರತಿ ಸೆಷನ್ ಪ್ರಾರಂಭವಾಗುವ ಮೊದಲು ಅಧಿಸೂಚನೆಗಳನ್ನು ಯಾವಾಗ ಸ್ವೀಕರಿಸಬೇಕು ಎಂದು ಆಯ್ಕೆಮಾಡಿ';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'ಈವೆಂಟ್ ಪ್ರಾರಂಭದಲ್ಲಿ';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return 'ಈವೆಂಟ್ ಪ್ರಾರಂಭಕ್ಕೆ $timing ಮೊದಲು';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'ಅಧಿಸೂಚನೆ ಸಮಯ ನವೀಕರಿಸಲಾಗಿದೆ';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'ಅಧಿಸೂಚನೆಗಳ ಬಗ್ಗೆ';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'ಪ್ರತಿ ನಿಗದಿತ ಸೆಷನ್ ಪ್ರಾರಂಭವಾಗುವ ಮೊದಲು ನೀವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸುತ್ತೀರಿ. ನೀವು ಸೆಷನ್‌ಗಳನ್ನು ರಚಿಸಿದಾಗ ಅಥವಾ ನವೀಕರಿಸಿದಾಗ ಅಧಿಸೂಚನೆಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿಗದಿಪಡಿಸಲ್ಪಡುತ್ತವೆ, ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಲಾಂಚ್ ಆದಾಗ ಎಲ್ಲಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಸೆಷನ್‌ಗಳು ನಿಗದಿಪಡಿಸಲ್ಪಡುತ್ತವೆ.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'ಅಧಿಸೂಚನೆಗಳನ್ನು ಮರುನಿಗದಿಪಡಿಸಿ';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'ಎಲ್ಲಾ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಭವಿಷ್ಯದ ಸೆಷನ್‌ಗಳಿಗಾಗಿ ಅಧಿಸೂಚನೆಗಳನ್ನು ಮ್ಯಾನ್ಯುವಲ್‌ಆಗಿ ಮರುನಿಗದಿಪಡಿಸಿ. ನೀವು ಇತ್ತೀಚೆಗೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದ್ದರೆ ಅಥವಾ ಎಲ್ಲಾ ಈವೆಂಟ್‌ಗಳಿಗೆ ಅಧಿಸೂಚನೆಗಳು ನಿಗದಿಪಡಿಸಲ್ಪಟ್ಟಿವೆ ಎಂದು ಖಚಿತಪಡಿಸಲು ಬಯಸಿದರೆ ಇದು ಉಪಯುಕ್ತವಾಗಿದೆ.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'ಈಗ ಮರುನಿಗದಿಪಡಿಸಿ';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'ಮರುನಿಗದಿಪಡಿಸಲಾಗುತ್ತಿದೆ...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return '$count ಭವಿಷ್ಯದ ಸೆಷನ್(ಗಳ)‌ಗಾಗಿ ಅಧಿಸೂಚನೆಗಳನ್ನು ಮರುನಿಗದಿಪಡಿಸಲಾಗಿದೆ';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'ಅಧಿಸೂಚನೆಗಳನ್ನು ಮರುನಿಗದಿಪಡಿಸುವಲ್ಲಿ ದೋಷ: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'ಅಧಿಸೂಚನೆ ಅನುಮತಿಗಳು ಅಗತ್ಯವಿದೆ';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'ನಿಮ್ಮ ಸೆಷನ್‌ಗಳಿಗಾಗಿ ಜ್ಞಾಪನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ದಯವಿಟ್ಟು ಅಧಿಸೂಚನೆ ಅನುಮತಿಗಳನ್ನು ನೀಡಿ. ಅನುಮತಿಗಳನ್ನು ವಿನಂತಿಸಲು ಕೆಳಗಿನ ಬಟನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'ಅನುಮತಿಗಳನ್ನು ವಿನಂತಿಸಿ';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'ಅಧಿಸೂಚನೆ ಅನುಮತಿಗಳನ್ನು ನೀಡಲಾಗಿದೆ!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'ಅಧಿಸೂಚನೆ ಅನುಮತಿಗಳನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಅವುಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 ನಿಮಿಷ';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 ನಿಮಿಷ';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 ನಿಮಿಷ';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 ನಿಮಿಷ';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ಗಂಟೆ';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 ಗಂಟೆಗಳು';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count ನಿಮಿಷ';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ಗಂಟೆ';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count ಗಂಟೆಗಳು';
   }
 
   @override
@@ -487,4 +487,17 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get themeInfo =>
       'ಥೀಮ್ ಅನ್ನು ಬದಲಾಯಿಸುವುದು ಆಪ್‌ನಾದ್ಯಂತ ಬಣ್ಣಗಳನ್ನು ನವೀಕರಿಸುತ್ತದೆ, ಇದರಲ್ಲಿ ಬಟನ್‌ಗಳು, ಆಪ್ ಬಾರ್‌ಗಳು ಮತ್ತು ಇತರ UI ಅಂಶಗಳು ಸೇರಿವೆ। ನಿಮ್ಮ ಥೀಮ್ ಆದ್ಯತೆಯನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಆಪ್‌ನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿದಾಗ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ।';
+
+  @override
+  String get enableNotifications => 'ಅಧಿಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ';
+
+  @override
+  String get enableNotificationsDescription =>
+      'ಅಧಿಸೂಚನೆಗಳನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಿ. ನಿಷ್ಕ್ರಿಯಗೊಂಡಾಗ, ನಿಮ್ಮ ಸೆಷನ್‌ಗಳಿಗೆ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ.';
+
+  @override
+  String get notificationsEnabled => 'ಅಧಿಸೂಚನೆಗಳು ಸಕ್ರಿಯಗೊಂಡಿವೆ';
+
+  @override
+  String get notificationsDisabled => 'ಅಧಿಸೂಚನೆಗಳು ನಿಷ್ಕ್ರಿಯಗೊಂಡಿವೆ';
 }

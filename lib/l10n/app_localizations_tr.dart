@@ -335,104 +335,104 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Bildirim ayarları';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Bildirim zamanlaması';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Her oturum başlamadan önce bildirimleri ne zaman almak istediğinizi seçin';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Etkinlik başlangıcında';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return 'Etkinlik başlangıcından $timing önce';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Bildirim zamanlaması güncellendi';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Bildirimler hakkında';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Her planlanmış oturum başlamadan önce bildirimler alacaksınız. Oturumlar oluşturduğunuzda veya güncellediğinizde bildirimler otomatik olarak planlanır ve uygulama başlatıldığında tüm mevcut oturumlar planlanır.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Bildirimleri yeniden planla';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Tüm mevcut gelecek oturumlar için bildirimleri manuel olarak yeniden planlayın. Bildirimleri yeni etkinleştirdiyseniz veya tüm etkinliklerin planlanmış bildirimlere sahip olduğundan emin olmak istiyorsanız yararlıdır.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Şimdi yeniden planla';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Yeniden planlanıyor...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return '$count gelecek oturum için bildirimler yeniden planlandı';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Bildirimleri yeniden planlarken hata: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Bildirim izinleri gerekli';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Oturumlarınız için hatırlatıcılar almak için lütfen bildirim izinleri verin. İzin istemek için aşağıdaki düğmeye dokunun.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'İzin iste';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Bildirim izinleri verildi!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Bildirim izinleri reddedildi. Lütfen Ayarlar\'da etkinleştirin.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 dk';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 dk';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 dk';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 dk';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 saat';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 saat';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count dk';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count saat';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count saat';
   }
 
   @override
@@ -486,4 +486,17 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get themeInfo =>
       'Temayı değiştirmek, uygulama çubukları, düğmeler ve diğer kullanıcı arayüzü öğeleri dahil olmak üzere uygulama genelindeki renkleri güncelleyecektir. Tema tercihiniz kaydedilecek ve uygulamayı yeniden başlattığınızda otomatik olarak uygulanacaktır.';
+
+  @override
+  String get enableNotifications => 'Bildirimleri etkinleştir';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Bildirimleri açın veya kapatın. Devre dışı bırakıldığında, oturumlarınız için bildirim gönderilmeyecektir.';
+
+  @override
+  String get notificationsEnabled => 'Bildirimler etkinleştirildi';
+
+  @override
+  String get notificationsDisabled => 'Bildirimler devre dışı bırakıldı';
 }

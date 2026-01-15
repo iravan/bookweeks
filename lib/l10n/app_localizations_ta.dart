@@ -336,104 +336,104 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'அறிவிப்பு அமைப்புகள்';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'அறிவிப்பு நேரம்';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'ஒவ்வொரு அமர்வும் தொடங்குவதற்கு முன் அறிவிப்புகளை எப்போது பெற வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும்';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'நிகழ்வு தொடங்கும்போது';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return 'நிகழ்வு தொடங்குவதற்கு $timing முன்';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'அறிவிப்பு நேரம் புதுப்பிக்கப்பட்டது';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'அறிவிப்புகள் பற்றி';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'ஒவ்வொரு திட்டமிடப்பட்ட அமர்வும் தொடங்குவதற்கு முன் நீங்கள் அறிவிப்புகளைப் பெறுவீர்கள். நீங்கள் அமர்வுகளை உருவாக்கும்போது அல்லது புதுப்பிக்கும்போது அறிவிப்புகள் தானாகவே திட்டமிடப்படுகின்றன, மற்றும் பயன்பாட்டைத் தொடங்கும்போது அனைத்து இருக்கும் அமர்வுகளும் திட்டமிடப்படுகின்றன.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'அறிவிப்புகளை மீண்டும் திட்டமிடுங்கள்';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'அனைத்து இருக்கும் எதிர்கால அமர்வுகளுக்கும் அறிவிப்புகளை கைமுறையாக மீண்டும் திட்டமிடுங்கள். நீங்கள் இப்போது அறிவிப்புகளை இயக்கியிருந்தால் அல்லது அனைத்து நிகழ்வுகளுக்கும் அறிவிப்புகள் திட்டமிடப்பட்டுள்ளன என்பதை உறுதிப்படுத்த விரும்பினால் இது பயனுள்ளதாக இருக்கும்.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'இப்போது மீண்டும் திட்டமிடுங்கள்';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'மீண்டும் திட்டமிடப்படுகிறது...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return '$count எதிர்கால அமர்வு(கள்)க்கு அறிவிப்புகள் மீண்டும் திட்டமிடப்பட்டன';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'அறிவிப்புகளை மீண்டும் திட்டமிடுவதில் பிழை: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'அறிவிப்பு அனுமதிகள் தேவை';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'உங்கள் அமர்வுகளுக்கான நினைவூட்டல்களைப் பெற அறிவிப்பு அனுமதிகளை வழங்கவும். அனுமதிகளைக் கோர கீழே உள்ள பொத்தானைத் தட்டவும்.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'அனுமதிகளைக் கோரவும்';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'அறிவிப்பு அனுமதிகள் வழங்கப்பட்டன!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'அறிவிப்பு அனுமதிகள் மறுக்கப்பட்டன. தயவுசெய்து அமைப்புகளில் அவற்றை இயக்கவும்.';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 நிமிடம்';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 நிமிடம்';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 நிமிடங்கள்';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 நிமிடங்கள்';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 மணி';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 மணி';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count நிமிடங்கள்';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count மணி';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count மணி';
   }
 
   @override
@@ -488,4 +488,17 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get themeInfo =>
       'தீமை மாற்றுவது ஆப்பில் உள்ள வண்ணங்களைப் புதுப்பிக்கும், இதில் பொத்தான்கள், ஆப் பட்டைகள் மற்றும் பிற UI கூறுகள் அடங்கும்। உங்கள் தீம் விருப்பம் சேமிக்கப்படும் மற்றும் நீங்கள் ஆப்பை மீண்டும் தொடங்கும்போது தானாகப் பயன்படுத்தப்படும்।';
+
+  @override
+  String get enableNotifications => 'அறிவிப்புகளை இயக்கவும்';
+
+  @override
+  String get enableNotificationsDescription =>
+      'அறிவிப்புகளை இயக்கவும் அல்லது முடக்கவும். முடக்கப்பட்டால், உங்கள் அமர்வுகளுக்கு எந்த அறிவிப்புகளும் அனுப்பப்படாது.';
+
+  @override
+  String get notificationsEnabled => 'அறிவிப்புகள் இயக்கப்பட்டன';
+
+  @override
+  String get notificationsDisabled => 'அறிவிப்புகள் முடக்கப்பட்டன';
 }

@@ -335,72 +335,72 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Ilmoitusasetukset';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Ilmoitusten ajoitus';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Valitse, milloin vastaanottaa ilmoituksia ennen kuin jokainen istunto alkaa';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Tapahtuman alussa';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing ennen tapahtuman alkua';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Ilmoitusten ajoitus päivitetty';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Tietoja ilmoituksista';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Saat ilmoituksia ennen kuin jokainen ajoitettu istunto alkaa. Ilmoitukset ajautuvat automaattisesti, kun luot tai päivität istuntoja, ja kaikki olemassa olevat istunnot ajautuvat sovelluksen käynnistyessä.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Ajoita ilmoitukset uudelleen';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Ajoita ilmoitukset manuaalisesti uudelleen kaikille olemassa oleville tuleville istunnoille. Hyödyllinen, jos olet juuri ottanut ilmoitukset käyttöön tai haluat varmistaa, että kaikilla tapahtumilla on ajoitettuja ilmoituksia.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Ajoita uudelleen nyt';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Ajautetaan uudelleen...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Ilmoitukset ajautettu uudelleen $count tulevalle istunnolle';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Virhe ilmoitusten uudelleenajossa: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Ilmoitusoikeudet vaaditaan';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Anna ilmoitusoikeudet vastaanottaaksesi muistutuksia istunnoistasi. Napauta alla olevaa painiketta pyytääksesi oikeuksia.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Pyydä oikeuksia';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Ilmoitusoikeudet myönnetty!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Ilmoitusoikeudet evättiin. Ota ne käyttöön Asetukset-valikossa.';
 
   @override
   String get timing0Min => '0 min';
@@ -409,30 +409,30 @@ class AppLocalizationsFi extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 tunti';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 tuntia';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count tunti';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count tuntia';
   }
 
   @override
@@ -485,4 +485,17 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get themeInfo =>
       'Teeman muuttaminen päivittää värit koko sovelluksessa, mukaan lukien painikkeet, sovelluspalkit ja muut käyttöliittymän elementit. Teemamieltymyksesi tallennetaan ja sovelletaan automaattisesti, kun käynnistät sovelluksen uudelleen.';
+
+  @override
+  String get enableNotifications => 'Ota ilmoitukset käyttöön';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Ota ilmoitukset päälle tai pois. Kun ne on poistettu käytöstä, ilmoituksia ei lähetetä istunnoillesi.';
+
+  @override
+  String get notificationsEnabled => 'Ilmoitukset käytössä';
+
+  @override
+  String get notificationsDisabled => 'Ilmoitukset poistettu käytöstä';
 }

@@ -135,7 +135,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String error(String error) {
-    return 'Error: $error';
+    return 'Error';
   }
 
   @override
@@ -490,6 +490,19 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get themeInfo =>
       'Cambiar el tema actualizará los colores en toda la aplicación, incluyendo botones, barras de aplicación y otros elementos de la interfaz. Tu preferencia de tema se guardará y se aplicará automáticamente cuando reinicies la aplicación.';
+
+  @override
+  String get enableNotifications => 'Activar notificaciones';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Activa o desactiva las notificaciones. Cuando están desactivadas, no se enviarán notificaciones para tus sesiones.';
+
+  @override
+  String get notificationsEnabled => 'Notificaciones activadas';
+
+  @override
+  String get notificationsDisabled => 'Notificaciones desactivadas';
 }
 
 /// The translations for Spanish Castilian, as used in Mexico (`es_MX`).
@@ -623,7 +636,7 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
 
   @override
   String error(String error) {
-    return 'Error: $error';
+    return 'Error';
   }
 
   @override
@@ -824,72 +837,73 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Configuración de notificaciones';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Hora de las notificaciones';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Elige cuándo recibir notificaciones antes de que comience cada sesión';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Al inicio del evento';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing antes del inicio del evento';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated =>
+      'Hora de las notificaciones actualizada';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Acerca de las notificaciones';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Recibirás notificaciones antes de que comience cada sesión programada. Las notificaciones se programan automáticamente al crear o actualizar sesiones, y todas las sesiones existentes se programan cuando se inicia la aplicación.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Reprogramar notificaciones';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Reprograma manualmente las notificaciones para todas las sesiones futuras existentes. Útil si acabas de habilitar las notificaciones o deseas asegurarte de que todos los eventos tengan notificaciones programadas.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Reprogramar ahora';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Reprogramando...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Notificaciones reprogramadas para $count sesión(es) futura(s)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Error al reprogramar notificaciones: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Se requieren permisos de notificación';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Por favor, otorga permisos de notificación para recibir recordatorios de tus sesiones. Toca el botón a continuación para solicitar permisos.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Solicitar permisos';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => '¡Permisos de notificación otorgados!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Los permisos de notificación fueron denegados. Por favor, actívalos en Configuración.';
 
   @override
   String get timing0Min => '0 min';
@@ -898,30 +912,30 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 hora';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 horas';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count hora';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count horas';
   }
 
   @override
@@ -977,4 +991,17 @@ class AppLocalizationsEsMx extends AppLocalizationsEs {
   @override
   String get themeInfo =>
       'Cambiar el tema actualizará los colores en toda la aplicación, incluyendo botones, barras de aplicación y otros elementos de la interfaz. Tu preferencia de tema se guardará y se aplicará automáticamente cuando reinicies la aplicación.';
+
+  @override
+  String get enableNotifications => 'Activar notificaciones';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Activa o desactiva las notificaciones. Cuando están desactivadas, no se enviarán notificaciones para tus sesiones.';
+
+  @override
+  String get notificationsEnabled => 'Notificaciones activadas';
+
+  @override
+  String get notificationsDisabled => 'Notificaciones desactivadas';
 }

@@ -531,6 +531,22 @@
   "themeInfo": "Changing the theme will update the colors throughout the app, including buttons, app bars, and other UI elements. Your theme preference will be saved and applied automatically when you restart the app.",
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Enable Notifications",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "Turn notifications on or off. When disabled, no notifications will be sent for your sessions.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Notifications enabled",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Notifications disabled",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }
 

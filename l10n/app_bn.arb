@@ -326,35 +326,35 @@
     }
   },
 
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
+  "notificationSettings": "বিজ্ঞপ্তি সেটিংস",
+  "notificationTiming": "বিজ্ঞপ্তি সময়",
+  "notificationTimingDescription": "প্রতিটি সেশন শুরু হওয়ার আগে কখন বিজ্ঞপ্তি পেতে চান তা নির্বাচন করুন",
+  "atEventStart": "ইভেন্ট শুরুর সময়",
+  "beforeEventStart": "ইভেন্ট শুরুর {timing} আগে",
+  "notificationTimingUpdated": "বিজ্ঞপ্তি সময় আপডেট করা হয়েছে",
+  "aboutNotifications": "বিজ্ঞপ্তি সম্পর্কে",
+  "notificationInfo": "আপনি প্রতিটি নির্ধারিত সেশন শুরু হওয়ার আগে বিজ্ঞপ্তি পাবেন। আপনি সেশন তৈরি বা আপডেট করার সময় বিজ্ঞপ্তিগুলি স্বয়ংক্রিয়ভাবে নির্ধারিত হয়, এবং অ্যাপ চালু হলে সমস্ত বিদ্যমান সেশন নির্ধারিত হয়।",
+  "rescheduleNotifications": "বিজ্ঞপ্তি পুনঃনির্ধারণ করুন",
+  "rescheduleNotificationsDescription": "সমস্ত বিদ্যমান ভবিষ্যত সেশনের জন্য বিজ্ঞপ্তিগুলি ম্যানুয়ালি পুনঃনির্ধারণ করুন। এটি দরকারী যদি আপনি সবেমাত্র বিজ্ঞপ্তি সক্ষম করেছেন বা নিশ্চিত করতে চান যে সমস্ত ইভেন্টে বিজ্ঞপ্তি নির্ধারিত আছে।",
+  "rescheduleNow": "এখনই পুনঃনির্ধারণ করুন",
+  "rescheduling": "পুনঃনির্ধারণ করা হচ্ছে...",
+  "notificationsRescheduled": "{count} ভবিষ্যত সেশনের জন্য বিজ্ঞপ্তি পুনঃনির্ধারণ করা হয়েছে",
+  "errorReschedulingNotifications": "বিজ্ঞপ্তি পুনঃনির্ধারণে ত্রুটি: {error}",
+  "permissionsRequired": "বিজ্ঞপ্তি অনুমতি প্রয়োজন",
+  "permissionsRequiredDescription": "আপনার সেশনের জন্য অনুস্মারক পেতে অনুগ্রহ করে বিজ্ঞপ্তি অনুমতি দিন। অনুমতি অনুরোধ করতে নীচের বোতামটি ট্যাপ করুন।",
+  "requestPermissions": "অনুমতি অনুরোধ করুন",
+  "permissionsGranted": "বিজ্ঞপ্তি অনুমতি দেওয়া হয়েছে!",
+  "permissionsDenied": "বিজ্ঞপ্তি অনুমতি অস্বীকার করা হয়েছে। অনুগ্রহ করে সেটিংসে সেগুলি সক্ষম করুন।"
 ,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
+  "timing0Min": "0 মিনিট",
+  "timing1Min": "1 মিনিট",
+  "timing5Mins": "5 মিনিট",
+  "timing30Mins": "30 মিনিট",
+  "timing1Hour": "1 ঘন্টা",
+  "timing6Hours": "6 ঘন্টা",
+  "timingMinutes": "{count} মিনিট",
+  "timingHours": "{count} ঘন্টা",
+  "timingHoursPlural": "{count} ঘন্টা"
 ,
   "testNotifications": "পরীক্ষা বিজ্ঞপ্তি",
   "testNotificationsDescription": "বিজ্ঞপ্তিগুলি কাজ করছে কিনা তা যাচাই করতে 2 সেকেন্ডে একটি পরীক্ষা বিজ্ঞপ্তি পাঠান।",
@@ -422,5 +422,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "বিজ্ঞপ্তি সক্ষম করুন",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "বিজ্ঞপ্তি চালু বা বন্ধ করুন। যখন নিষ্ক্রিয় থাকে, আপনার সেশনের জন্য কোনো বিজ্ঞপ্তি পাঠানো হবে না।",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "বিজ্ঞপ্তি সক্ষম করা হয়েছে",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "বিজ্ঞপ্তি নিষ্ক্রিয় করা হয়েছে",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

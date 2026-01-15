@@ -108,7 +108,7 @@
   "importSuccessful": "Importación Exitosa",
   "importFailed": "Error en la Importación",
   "errorReadingFile": "Error al leer el archivo",
-  "error": "Error: {error}",
+  "error": "Error",
   "@error": {
     "description": "Generic error message",
     "placeholders": {
@@ -352,8 +352,7 @@
   "timing6Hours": "6 horas",
   "timingMinutes": "{count} min",
   "timingHours": "{count} hora",
-  "timingHoursPlural": "{count} horas"
-,
+  "timingHoursPlural": "{count} horas",
   "testNotifications": "Notificaciones de prueba",
   "testNotificationsDescription": "Enviar una notificación de prueba en 2 segundos para verificar que las notificaciones funcionan.",
   "sendTestNotification": "Enviar notificación de prueba",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "Notificación de prueba",
   "testNotificationBody": "Si ves esto, ¡las notificaciones están funcionando!",
   "scheduledTestNotificationTitle": "Notificación de prueba programada",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "Configuración del tema",
   "selectTheme": "Seleccionar tema",
   "selectThemeDescription": "Elige un tema de color para la aplicación. El tema se aplicará en toda la aplicación.",
@@ -420,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Activar notificaciones",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "Activa o desactiva las notificaciones. Cuando están desactivadas, no se enviarán notificaciones para tus sesiones.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Notificaciones activadas",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Notificaciones desactivadas",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

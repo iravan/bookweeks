@@ -352,8 +352,7 @@
   "timing6Hours": "6 heures",
   "timingMinutes": "{count} min",
   "timingHours": "{count} heure",
-  "timingHoursPlural": "{count} heures"
-,
+  "timingHoursPlural": "{count} heures",
   "testNotifications": "Notifications de test",
   "testNotificationsDescription": "Envoyer une notification de test dans 2 secondes pour vérifier que les notifications fonctionnent.",
   "sendTestNotification": "Envoyer une notification de test",
@@ -369,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "Notification de test",
   "testNotificationBody": "Si vous voyez ceci, les notifications fonctionnent !",
   "scheduledTestNotificationTitle": "Notification de test programmée",
@@ -395,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "Paramètres du thème",
   "selectTheme": "Sélectionner un thème",
   "selectThemeDescription": "Choisissez un thème de couleur pour l'application. Le thème sera appliqué dans toute l'application.",
@@ -420,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "Activer les notifications",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "Activez ou désactivez les notifications. Lorsqu'elles sont désactivées, aucune notification ne sera envoyée pour vos sessions.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "Notifications activées",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "Notifications désactivées",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

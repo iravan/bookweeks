@@ -325,37 +325,34 @@
       }
     }
   },
-
-  "notificationSettings": "Notification Settings",
-  "notificationTiming": "Notification Timing",
-  "notificationTimingDescription": "Choose when to receive notifications before each session starts",
-  "atEventStart": "At event start",
-  "beforeEventStart": "{timing} before event start",
-  "notificationTimingUpdated": "Notification timing updated",
-  "aboutNotifications": "About Notifications",
-  "notificationInfo": "You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.",
-  "rescheduleNotifications": "Reschedule Notifications",
-  "rescheduleNotificationsDescription": "Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.",
-  "rescheduleNow": "Reschedule Now",
-  "rescheduling": "Rescheduling...",
-  "notificationsRescheduled": "Notifications rescheduled for {count} future session(s)",
-  "errorReschedulingNotifications": "Error rescheduling notifications: {error}",
-  "permissionsRequired": "Notification Permissions Required",
-  "permissionsRequiredDescription": "Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.",
-  "requestPermissions": "Request Permissions",
-  "permissionsGranted": "Notification permissions granted!",
-  "permissionsDenied": "Notification permissions were denied. Please enable them in Settings."
-,
-  "timing0Min": "0 min",
-  "timing1Min": "1 min",
-  "timing5Mins": "5 mins",
-  "timing30Mins": "30 mins",
-  "timing1Hour": "1 hour",
-  "timing6Hours": "6 hours",
-  "timingMinutes": "{count} mins",
-  "timingHours": "{count} hour",
-  "timingHoursPlural": "{count} hours"
-,
+  "notificationSettings": "അറിയിപ്പ് സെറ്റിംഗുകൾ",
+  "notificationTiming": "അറിയിപ്പ് സമയം",
+  "notificationTimingDescription": "ഓരോ സെഷൻ ആരംഭിക്കുന്നതിന് മുമ്പ് അറിയിപ്പുകൾ എപ്പോൾ സ്വീകരിക്കണമെന്ന് തിരഞ്ഞെടുക്കുക",
+  "atEventStart": "ഇവന്റ് ആരംഭത്തിൽ",
+  "beforeEventStart": "ഇവന്റ് ആരംഭിക്കുന്നതിന് {timing} മുമ്പ്",
+  "notificationTimingUpdated": "അറിയിപ്പ് സമയം അപ്‌ഡേറ്റ് ചെയ്തു",
+  "aboutNotifications": "അറിയിപ്പുകളെക്കുറിച്ച്",
+  "notificationInfo": "ഓരോ ഷെഡ്യൂൾ ചെയ്ത സെഷൻ ആരംഭിക്കുന്നതിന് മുമ്പ് നിങ്ങൾക്ക് അറിയിപ്പുകൾ ലഭിക്കും. നിങ്ങൾ സെഷനുകൾ സൃഷ്ടിക്കുമ്പോഴോ അപ്‌ഡേറ്റ് ചെയ്യുമ്പോഴോ അറിയിപ്പുകൾ സ്വയമേവ ഷെഡ്യൂൾ ചെയ്യപ്പെടുന്നു, കൂടാതെ ആപ്പ് ലോഞ്ച് ചെയ്യുമ്പോൾ എല്ലാ നിലവിലുള്ള സെഷനുകളും ഷെഡ്യൂൾ ചെയ്യപ്പെടുന്നു.",
+  "rescheduleNotifications": "അറിയിപ്പുകൾ വീണ്ടും ഷെഡ്യൂൾ ചെയ്യുക",
+  "rescheduleNotificationsDescription": "എല്ലാ നിലവിലുള്ള ഭാവി സെഷനുകൾക്കും അറിയിപ്പുകൾ മാനുവലായി വീണ്ടും ഷെഡ്യൂൾ ചെയ്യുക. നിങ്ങൾ ഇപ്പോൾ അറിയിപ്പുകൾ പ്രവർത്തനക്ഷമമാക്കിയിട്ടുണ്ടെങ്കിൽ അല്ലെങ്കിൽ എല്ലാ ഇവന്റുകൾക്കും അറിയിപ്പുകൾ ഷെഡ്യൂൾ ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കാൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ ഇത് ഉപയോഗപ്രദമാണ്.",
+  "rescheduleNow": "ഇപ്പോൾ വീണ്ടും ഷെഡ്യൂൾ ചെയ്യുക",
+  "rescheduling": "വീണ്ടും ഷെഡ്യൂൾ ചെയ്യുന്നു...",
+  "notificationsRescheduled": "{count} ഭാവി സെഷൻ(കൾ)‌ക്കായി അറിയിപ്പുകൾ വീണ്ടും ഷെഡ്യൂൾ ചെയ്തു",
+  "errorReschedulingNotifications": "അറിയിപ്പുകൾ വീണ്ടും ഷെഡ്യൂൾ ചെയ്യുന്നതിൽ പിശക്: {error}",
+  "permissionsRequired": "അറിയിപ്പ് അനുമതികൾ ആവശ്യമാണ്",
+  "permissionsRequiredDescription": "നിങ്ങളുടെ സെഷനുകൾക്കായി ഓർമ്മപ്പെടുത്തലുകൾ സ്വീകരിക്കാൻ ദയവായി അറിയിപ്പ് അനുമതികൾ നൽകുക. അനുമതികൾ അഭ്യർത്ഥിക്കാൻ താഴെയുള്ള ബട്ടൺ ടാപ്പ് ചെയ്യുക.",
+  "requestPermissions": "അനുമതികൾ അഭ്യർത്ഥിക്കുക",
+  "permissionsGranted": "അറിയിപ്പ് അനുമതികൾ നൽകി!",
+  "permissionsDenied": "അറിയിപ്പ് അനുമതികൾ നിരസിക്കപ്പെട്ടു. ദയവായി സെറ്റിംഗുകളിൽ അവ പ്രവർത്തനക്ഷമമാക്കുക.",
+  "timing0Min": "0 മിനിറ്റ്",
+  "timing1Min": "1 മിനിറ്റ്",
+  "timing5Mins": "5 മിനിറ്റ്",
+  "timing30Mins": "30 മിനിറ്റ്",
+  "timing1Hour": "1 മണിക്കൂർ",
+  "timing6Hours": "6 മണിക്കൂർ",
+  "timingMinutes": "{count} മിനിറ്റ്",
+  "timingHours": "{count} മണിക്കൂർ",
+  "timingHoursPlural": "{count} മണിക്കൂർ",
   "testNotifications": "ടെസ്റ്റ് അറിയിപ്പുകൾ",
   "testNotificationsDescription": "അറിയിപ്പുകൾ പ്രവർത്തിക്കുന്നുവെന്ന് പരിശോധിക്കാൻ 2 സെക്കൻഡിൽ ഒരു ടെസ്റ്റ് അറിയിപ്പ് അയയ്ക്കുക।",
   "sendTestNotification": "ടെസ്റ്റ് അറിയിപ്പ് അയയ്ക്കുക",
@@ -371,8 +368,7 @@
   },
   "@testNotificationScheduled": {
     "description": "Success message when test notification is scheduled"
-  }
-,
+  },
   "testNotificationTitle": "ടെസ്റ്റ് അറിയിപ്പ്",
   "testNotificationBody": "നിങ്ങൾ ഇത് കാണുന്നുവെങ്കിൽ, അറിയിപ്പുകൾ പ്രവർത്തിക്കുന്നു!",
   "scheduledTestNotificationTitle": "ഷെഡ്യൂൾ ചെയ്ത ടെസ്റ്റ് അറിയിപ്പ്",
@@ -397,8 +393,7 @@
         "type": "String"
       }
     }
-  }
-,
+  },
   "themeSettings": "തീം സെറ്റിംഗുകൾ",
   "selectTheme": "തീം തിരഞ്ഞെടുക്കുക",
   "selectThemeDescription": "ആപ്പിനായി ഒരു നിറ തീം തിരഞ്ഞെടുക്കുക। തീം മുഴുവൻ ആപ്ലിക്കേഷനിലും പ്രയോഗിക്കും।",
@@ -422,5 +417,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "അറിയിപ്പുകൾ പ്രവർത്തനക്ഷമമാക്കുക",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "അറിയിപ്പുകൾ ഓണോ ഓഫോ ചെയ്യുക. പ്രവർത്തനരഹിതമാക്കുമ്പോൾ, നിങ്ങളുടെ സെഷനുകൾക്കായി അറിയിപ്പുകൾ അയയ്ക്കില്ല.",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "അറിയിപ്പുകൾ പ്രവർത്തനക്ഷമമാക്കി",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "അറിയിപ്പുകൾ പ്രവർത്തനരഹിതമാക്കി",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

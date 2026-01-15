@@ -419,5 +419,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "启用通知",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "开启或关闭通知。关闭后，不会为您的会话发送通知。",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "通知已启用",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "通知已禁用",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }

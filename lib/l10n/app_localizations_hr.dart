@@ -139,7 +139,7 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get ok => 'U redu';
+  String get ok => 'OK';
 
   @override
   String get searchEvents => 'Pretraži događaje...';
@@ -336,72 +336,72 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Postavke obavijesti';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Vrijeme obavijesti';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Odaberite kada primati obavijesti prije početka svake sesije';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'Na početku događaja';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing prije početka događaja';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Vrijeme obavijesti ažurirano';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'O obavijestima';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Primat ćete obavijesti prije početka svake zakazane sesije. Obavijesti se automatski zakazuju kada kreirate ili ažurirate sesije, a sve postojeće sesije se zakazuju pri pokretanju aplikacije.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Ponovno zakazivanje obavijesti';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Ručno ponovno zakazite obavijesti za sve postojeće buduće sesije. Korisno je ako ste upravo omogućili obavijesti ili želite osigurati da svi događaji imaju zakazane obavijesti.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Ponovno zakazati sada';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Ponovno zakazivanje...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Obavijesti ponovno zakazane za $count buduću sesiju(e)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Greška pri ponovnom zakazivanju obavijesti: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Potrebne dozvole za obavijesti';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Molimo dodijelite dozvole za obavijesti da biste primali podsjetnike za svoje sesije. Dodirnite gumb ispod da biste zatražili dozvole.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Zatraži dozvole';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Dozvole za obavijesti dodijeljene!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Dozvole za obavijesti su odbijene. Molimo omogućite ih u Postavkama.';
 
   @override
   String get timing0Min => '0 min';
@@ -410,30 +410,30 @@ class AppLocalizationsHr extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 sat';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 sati';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count sat';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count sati';
   }
 
   @override
@@ -486,4 +486,17 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get themeInfo =>
       'Promjena teme će ažurirati boje u cijeloj aplikaciji, uključujući gumbove, trake aplikacije i druge elemente korisničkog sučelja. Vaša preferencija teme bit će spremljena i automatski primijenjena kada ponovno pokrenete aplikaciju.';
+
+  @override
+  String get enableNotifications => 'Omogući obavijesti';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Uključite ili isključite obavijesti. Kada su isključene, obavijesti se neće slati za vaše sesije.';
+
+  @override
+  String get notificationsEnabled => 'Obavijesti omogućene';
+
+  @override
+  String get notificationsDisabled => 'Obavijesti onemogućene';
 }

@@ -334,104 +334,104 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'การตั้งค่าการแจ้งเตือน';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'เวลาการแจ้งเตือน';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'เลือกเวลาที่จะรับการแจ้งเตือนก่อนเริ่มแต่ละเซสชัน';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'เมื่อเริ่มกิจกรรม';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing ก่อนเริ่มกิจกรรม';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'อัปเดตเวลาการแจ้งเตือนแล้ว';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'เกี่ยวกับการแจ้งเตือน';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'คุณจะได้รับการแจ้งเตือนก่อนเริ่มแต่ละเซสชันที่กำหนดไว้ การแจ้งเตือนจะถูกกำหนดเวลาโดยอัตโนมัติเมื่อคุณสร้างหรืออัปเดตเซสชัน และเซสชันที่มีอยู่ทั้งหมดจะถูกกำหนดเวลาเมื่อเปิดแอป';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'กำหนดเวลาการแจ้งเตือนใหม่';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'กำหนดเวลาการแจ้งเตือนใหม่ด้วยตนเองสำหรับเซสชันในอนาคตที่มีอยู่ทั้งหมด มีประโยชน์หากคุณเพิ่งเปิดใช้งานการแจ้งเตือนหรือต้องการให้แน่ใจว่ากิจกรรมทั้งหมดมีการแจ้งเตือนที่กำหนดไว้';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'กำหนดเวลาใหม่ตอนนี้';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'กำลังกำหนดเวลาใหม่...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'กำหนดเวลาการแจ้งเตือนใหม่สำหรับ $count เซสชันในอนาคต';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'เกิดข้อผิดพลาดในการกำหนดเวลาการแจ้งเตือนใหม่: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'ต้องใช้สิทธิ์การแจ้งเตือน';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'โปรดให้สิทธิ์การแจ้งเตือนเพื่อรับการแจ้งเตือนสำหรับเซสชันของคุณ แตะปุ่มด้านล่างเพื่อขอสิทธิ์';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'ขอสิทธิ์';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'ให้สิทธิ์การแจ้งเตือนแล้ว!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'ปฏิเสธสิทธิ์การแจ้งเตือน โปรดเปิดใช้งานในการตั้งค่า';
 
   @override
-  String get timing0Min => '0 min';
+  String get timing0Min => '0 นาที';
 
   @override
-  String get timing1Min => '1 min';
+  String get timing1Min => '1 นาที';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 นาที';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 นาที';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ชั่วโมง';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 ชั่วโมง';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count นาที';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ชั่วโมง';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count ชั่วโมง';
   }
 
   @override
@@ -486,4 +486,17 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get themeInfo =>
       'การเปลี่ยนธีมจะอัปเดตสีทั่วทั้งแอป รวมถึงปุ่ม แถบแอป และองค์ประกอบ UI อื่นๆ การตั้งค่าธีมของคุณจะถูกบันทึกและนำไปใช้โดยอัตโนมัติเมื่อคุณเริ่มแอปใหม่';
+
+  @override
+  String get enableNotifications => 'เปิดใช้งานการแจ้งเตือน';
+
+  @override
+  String get enableNotificationsDescription =>
+      'เปิดหรือปิดการแจ้งเตือน เมื่อปิดแล้ว จะไม่มีการส่งการแจ้งเตือนสำหรับเซสชันของคุณ';
+
+  @override
+  String get notificationsEnabled => 'เปิดใช้งานการแจ้งเตือนแล้ว';
+
+  @override
+  String get notificationsDisabled => 'ปิดการแจ้งเตือนแล้ว';
 }

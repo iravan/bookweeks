@@ -337,72 +337,72 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get notificationSettings => 'Impostazioni notifiche';
 
   @override
-  String get notificationTiming => 'Notification Timing';
+  String get notificationTiming => 'Tempistica notifiche';
 
   @override
   String get notificationTimingDescription =>
-      'Choose when to receive notifications before each session starts';
+      'Scegli quando ricevere le notifiche prima dell\'inizio di ogni sessione';
 
   @override
-  String get atEventStart => 'At event start';
+  String get atEventStart => 'All\'inizio dell\'evento';
 
   @override
   String beforeEventStart(String timing) {
-    return '$timing before event start';
+    return '$timing prima dell\'inizio dell\'evento';
   }
 
   @override
-  String get notificationTimingUpdated => 'Notification timing updated';
+  String get notificationTimingUpdated => 'Tempistica notifiche aggiornata';
 
   @override
-  String get aboutNotifications => 'About Notifications';
+  String get aboutNotifications => 'Informazioni sulle notifiche';
 
   @override
   String get notificationInfo =>
-      'You will receive notifications before each scheduled session starts. Notifications are automatically scheduled when you create or update sessions, and all existing sessions are scheduled when the app launches.';
+      'Riceverai notifiche prima dell\'inizio di ogni sessione programmata. Le notifiche vengono programmate automaticamente quando crei o aggiorni le sessioni, e tutte le sessioni esistenti vengono programmate all\'avvio dell\'app.';
 
   @override
-  String get rescheduleNotifications => 'Reschedule Notifications';
+  String get rescheduleNotifications => 'Ripianifica notifiche';
 
   @override
   String get rescheduleNotificationsDescription =>
-      'Manually reschedule notifications for all existing future sessions. This is useful if you have just enabled notifications or want to ensure all events have notifications scheduled.';
+      'Ripianifica manualmente le notifiche per tutte le sessioni future esistenti. Utile se hai appena abilitato le notifiche o vuoi assicurarti che tutti gli eventi abbiano notifiche programmate.';
 
   @override
-  String get rescheduleNow => 'Reschedule Now';
+  String get rescheduleNow => 'Ripianifica ora';
 
   @override
-  String get rescheduling => 'Rescheduling...';
+  String get rescheduling => 'Ripianificazione...';
 
   @override
   String notificationsRescheduled(int count) {
-    return 'Notifications rescheduled for $count future session(s)';
+    return 'Notifiche ripianificate per $count sessione(i) futura(e)';
   }
 
   @override
   String errorReschedulingNotifications(String error) {
-    return 'Error rescheduling notifications: $error';
+    return 'Errore nella ripianificazione delle notifiche: $error';
   }
 
   @override
-  String get permissionsRequired => 'Notification Permissions Required';
+  String get permissionsRequired => 'Autorizzazioni notifiche richieste';
 
   @override
   String get permissionsRequiredDescription =>
-      'Please grant notification permissions to receive reminders for your sessions. Tap the button below to request permissions.';
+      'Concedi le autorizzazioni per le notifiche per ricevere promemoria per le tue sessioni. Tocca il pulsante qui sotto per richiedere le autorizzazioni.';
 
   @override
-  String get requestPermissions => 'Request Permissions';
+  String get requestPermissions => 'Richiedi autorizzazioni';
 
   @override
-  String get permissionsGranted => 'Notification permissions granted!';
+  String get permissionsGranted => 'Autorizzazioni notifiche concesse!';
 
   @override
   String get permissionsDenied =>
-      'Notification permissions were denied. Please enable them in Settings.';
+      'Le autorizzazioni per le notifiche sono state negate. Abilitalle nelle Impostazioni.';
 
   @override
   String get timing0Min => '0 min';
@@ -411,30 +411,30 @@ class AppLocalizationsIt extends AppLocalizations {
   String get timing1Min => '1 min';
 
   @override
-  String get timing5Mins => '5 mins';
+  String get timing5Mins => '5 min';
 
   @override
-  String get timing30Mins => '30 mins';
+  String get timing30Mins => '30 min';
 
   @override
-  String get timing1Hour => '1 hour';
+  String get timing1Hour => '1 ora';
 
   @override
-  String get timing6Hours => '6 hours';
+  String get timing6Hours => '6 ore';
 
   @override
   String timingMinutes(int count) {
-    return '$count mins';
+    return '$count min';
   }
 
   @override
   String timingHours(int count) {
-    return '$count hour';
+    return '$count ora';
   }
 
   @override
   String timingHoursPlural(int count) {
-    return '$count hours';
+    return '$count ore';
   }
 
   @override
@@ -488,4 +488,17 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get themeInfo =>
       'Cambiare il tema aggiornerà i colori in tutta l\'app, inclusi pulsanti, barre dell\'app e altri elementi dell\'interfaccia. La tua preferenza del tema verrà salvata e applicata automaticamente quando riavvii l\'app.';
+
+  @override
+  String get enableNotifications => 'Abilita notifiche';
+
+  @override
+  String get enableNotificationsDescription =>
+      'Attiva o disattiva le notifiche. Quando disattivate, non verranno inviate notifiche per le tue sessioni.';
+
+  @override
+  String get notificationsEnabled => 'Notifiche abilitate';
+
+  @override
+  String get notificationsDisabled => 'Notifiche disabilitate';
 }

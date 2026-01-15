@@ -420,5 +420,21 @@
   },
   "@themeInfo": {
     "description": "Information text about themes"
+  },
+  "enableNotifications": "啟用通知",
+  "@enableNotifications": {
+    "description": "Title for enable notifications toggle"
+  },
+  "enableNotificationsDescription": "開啟或關閉通知。關閉後，不會為您的會話發送通知。",
+  "@enableNotificationsDescription": {
+    "description": "Description text for enable notifications toggle"
+  },
+  "notificationsEnabled": "通知已啟用",
+  "@notificationsEnabled": {
+    "description": "Success message when notifications are enabled"
+  },
+  "notificationsDisabled": "通知已停用",
+  "@notificationsDisabled": {
+    "description": "Success message when notifications are disabled"
   }
 }
