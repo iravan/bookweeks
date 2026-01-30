@@ -72,8 +72,12 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
     try {
       await _notificationService.initialize();
       final allSessions = _sessionService.getAllSessions();
+      final l10n = AppLocalizations.of(context)!;
       
-      await _notificationService.rescheduleAllNotifications(allSessions);
+      await _notificationService.rescheduleAllNotifications(
+        allSessions,
+        startsAtLocalizer: l10n.startsAt,
+      );
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -112,8 +116,12 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
     try {
       await _notificationService.initialize();
       final allSessions = _sessionService.getAllSessions();
+      final l10n = AppLocalizations.of(context)!;
       
-      await _notificationService.rescheduleAllNotifications(allSessions);
+      await _notificationService.rescheduleAllNotifications(
+        allSessions,
+        startsAtLocalizer: l10n.startsAt,
+      );
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

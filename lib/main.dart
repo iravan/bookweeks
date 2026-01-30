@@ -160,6 +160,8 @@ class _MainPageState extends State<MainPage>
     // Set initial tab to today if current week is selected
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _setTabToCurrentDay();
+      // Set localization function for notifications after context is available
+      _setNotificationLocalization();
     });
   }
 
@@ -168,6 +170,36 @@ class _MainPageState extends State<MainPage>
     NotificationService().setForegroundNotificationHandler((title, body) {
       _showForegroundNotification(title, body);
     });
+  }
+
+  void _setNotificationLocalization() {
+    // Set localization function for notifications
+    // This is called after the first frame when BuildContext is available
+    if (!mounted) return;
+    
+    final l10n = AppLocalizations.of(context);
+    if (l10n != null) {
+      NotificationService().setLocalizationFunction(l10n.startsAt);
+      // Also reschedule notifications with the correct localization
+      // This ensures existing notifications use the correct language
+      _rescheduleNotificationsWithLocalization();
+    }
+  }
+
+  Future<void> _rescheduleNotificationsWithLocalization() async {
+    if (!mounted) return;
+    try {
+      final l10n = AppLocalizations.of(context);
+      if (l10n != null) {
+        final allSessions = _sessionService.getAllSessions();
+        await NotificationService().rescheduleAllNotifications(
+          allSessions,
+          startsAtLocalizer: l10n.startsAt,
+        );
+      }
+    } catch (e) {
+      print('MainPage: Error rescheduling notifications with localization: $e');
+    }
   }
 
   void _showForegroundNotification(String title, String body) {
@@ -320,18 +352,8 @@ class _MainPageState extends State<MainPage>
     // - Android: android/app/src/main/res/raw/notification_sound.mp3
     NotificationService().setCustomSoundFileName('notification_sound.caf');
 
-    // Schedule all notifications for existing sessions on app launch
-    // This ensures all events have notifications scheduled correctly
-    try {
-      final allSessions = _sessionService.getAllSessions();
-      await NotificationService().rescheduleAllNotifications(allSessions);
-      print(
-        'MainPage: Scheduled notifications for ${allSessions.length} sessions on app launch',
-      );
-    } catch (e) {
-      print('MainPage: Error scheduling notifications on launch: $e');
-      // Continue even if notification scheduling fails
-    }
+    // Note: Notifications will be rescheduled with localization after first frame
+    // in _setNotificationLocalization() to ensure correct language is used
     if (mounted) {
       setState(() {
         _isInitialized = true;
@@ -603,10 +625,14 @@ class _MainPageState extends State<MainPage>
                 controller: _tabController,
                 isScrollable: true,
                 tabs: _selectedWeekDays.map((date) {
+                  final isWeekend = date.weekday == 6 || date.weekday == 7;
                   return Tab(
                     child: Text(
                       _getDayTabLabel(date, context),
                       textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: isWeekend ? Colors.red : null,
+                      ),
                     ),
                   );
                 }).toList(),
@@ -716,8 +742,11 @@ class _MainPageState extends State<MainPage>
             try {
               await NotificationService().initialize();
               final allSessions = _sessionService.getAllSessions();
+              // Use localization if available, otherwise use stored/default
+              final l10n = AppLocalizations.of(context);
               await NotificationService().rescheduleAllNotifications(
                 allSessions,
+                startsAtLocalizer: l10n?.startsAt,
               );
               print('MainPage: Scheduled notifications for imported sessions');
             } catch (e) {

@@ -29,6 +29,10 @@ class NotificationService {
   final Set<int> _scheduledNotificationIds = {};
   final Map<int, DateTime> _scheduledNotificationTimes = {};
 
+  // Localization function for notification body text
+  // This should be set from the app initialization
+  String Function(String time)? _startsAtLocalizer;
+
   Future<void> initialize() async {
     if (_isInitialized) return;
 
@@ -461,7 +465,10 @@ class NotificationService {
     return true; // Default to true for other platforms
   }
 
-  Future<void> scheduleSessionNotification(Session session) async {
+  Future<void> scheduleSessionNotification(
+    Session session, {
+    String Function(String time)? startsAtLocalizer,
+  }) async {
     if (!_isInitialized) {
       await initialize();
     }
@@ -617,11 +624,14 @@ class NotificationService {
     );
 
     try {
+      // Use provided localizer or fall back to stored one
+      final localizer = startsAtLocalizer ?? _startsAtLocalizer;
+      
       // Schedule the notification
       await _notifications.zonedSchedule(
         notificationId, // Use hash code as notification ID
         session.title,
-        _getNotificationBody(session),
+        _getNotificationBody(session, localizer),
         scheduledDate,
         notificationDetails,
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
@@ -647,11 +657,25 @@ class NotificationService {
     }
   }
 
-  String _getNotificationBody(Session session) {
+  /// Sets the localization function for notification body text
+  /// This should be called during app initialization with the localized startsAt function
+  void setLocalizationFunction(String Function(String time) startsAtLocalizer) {
+    _startsAtLocalizer = startsAtLocalizer;
+  }
+
+  String _getNotificationBody(
+    Session session, [
+    String Function(String time)? localizer,
+  ]) {
     final startTime =
         '${session.startTime.hour.toString().padLeft(2, '0')}:${session.startTime.minute.toString().padLeft(2, '0')}';
     if (session.description != null && session.description!.isNotEmpty) {
       return '$startTime - ${session.description}';
+    }
+    // Use provided localizer, stored localizer, or fall back to English
+    final effectiveLocalizer = localizer ?? _startsAtLocalizer;
+    if (effectiveLocalizer != null) {
+      return effectiveLocalizer(startTime);
     }
     return 'Starts at $startTime';
   }
@@ -677,7 +701,10 @@ class NotificationService {
     _scheduledNotificationTimes.clear();
   }
 
-  Future<void> rescheduleAllNotifications(List<Session> sessions) async {
+  Future<void> rescheduleAllNotifications(
+    List<Session> sessions, {
+    String Function(String time)? startsAtLocalizer,
+  }) async {
     if (!_isInitialized) {
       await initialize();
     }
@@ -701,7 +728,10 @@ class NotificationService {
     for (final session in sessions) {
       if (session.startTime.isAfter(now)) {
         try {
-          await scheduleSessionNotification(session);
+          await scheduleSessionNotification(
+            session,
+            startsAtLocalizer: startsAtLocalizer,
+          );
           scheduledCount++;
         } catch (e) {
           print(
@@ -913,7 +943,7 @@ class NotificationService {
           // Show foreground notification
           await showForegroundNotification(
             session.title,
-            _getNotificationBody(session),
+            _getNotificationBody(session, _startsAtLocalizer),
           );
 
           print(

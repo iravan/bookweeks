@@ -7,11 +7,9 @@ class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(l10n.help),
-      ),
+      appBar: AppBar(title: Text(l10n.help)),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -33,8 +31,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.gettingStarted,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -66,8 +64,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.creatingSessions,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -99,8 +97,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.managingStudents,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -132,8 +130,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.usingTemplates,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -165,8 +163,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.notificationsHelp,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -198,8 +196,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.exportImport,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),
@@ -231,8 +229,8 @@ class HelpPage extends StatelessWidget {
                       Text(
                         l10n.navigationTips,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   ),

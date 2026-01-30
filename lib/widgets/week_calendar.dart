@@ -52,13 +52,13 @@ class WeekCalendar extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    _buildDayHeader(AppLocalizations.of(context)!.mon, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.tue, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.wed, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.thu, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.fri, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.sat, context),
-                    _buildDayHeader(AppLocalizations.of(context)!.sun, context),
+                    _buildDayHeader(AppLocalizations.of(context)!.mon, context, 1),
+                    _buildDayHeader(AppLocalizations.of(context)!.tue, context, 2),
+                    _buildDayHeader(AppLocalizations.of(context)!.wed, context, 3),
+                    _buildDayHeader(AppLocalizations.of(context)!.thu, context, 4),
+                    _buildDayHeader(AppLocalizations.of(context)!.fri, context, 5),
+                    _buildDayHeader(AppLocalizations.of(context)!.sat, context, 6),
+                    _buildDayHeader(AppLocalizations.of(context)!.sun, context, 7),
                   ],
                 ),
               ),
@@ -72,7 +72,10 @@ class WeekCalendar extends StatelessWidget {
     );
   }
 
-  Widget _buildDayHeader(String day, BuildContext context) {
+  Widget _buildDayHeader(String day, BuildContext context, int weekday) {
+    // Saturday (6) and Sunday (7) should be red
+    final isWeekend = weekday == 6 || weekday == 7;
+    
     return Expanded(
       child: Center(
         child: Text(
@@ -80,7 +83,7 @@ class WeekCalendar extends StatelessWidget {
           style: TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w600,
-            color: Colors.grey.shade700,
+            color: isWeekend ? Colors.red : Colors.grey.shade700,
             letterSpacing: 0.5,
           ),
         ),
@@ -117,6 +120,8 @@ class WeekCalendar extends StatelessWidget {
     final isSelected = isWeekSelected && isToday;
     final hasSessions = sessionService.hasSessionsForDate(day);
     final primaryColor = Theme.of(context).colorScheme.primary;
+    // Saturday (6) and Sunday (7) should be red
+    final isWeekend = day.weekday == 6 || day.weekday == 7;
     
     return Expanded(
       child: Center(
@@ -139,7 +144,13 @@ class WeekCalendar extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
-                      color: isSelected ? Colors.white : (isToday ? primaryColor : Colors.black87),
+                      color: isSelected 
+                          ? Colors.white 
+                          : (isToday 
+                              ? primaryColor 
+                              : (isWeekend 
+                                  ? Colors.red 
+                                  : Colors.black87)),
                     ),
                   ),
                 ),
