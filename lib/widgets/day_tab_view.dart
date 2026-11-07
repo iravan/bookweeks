@@ -22,77 +22,158 @@ class DayTabView extends StatefulWidget {
 class _DayTabViewState extends State<DayTabView> {
   final SessionService _sessionService = SessionService();
 
-  @override
-  Widget build(BuildContext context) {
-    final sessions = _sessionService.getSessionsForDate(widget.date);
+  String _formatDate(BuildContext context, DateTime date) {
+    return MaterialLocalizations.of(context).formatShortDate(date);
+  }
 
-    return Scaffold(
-      body: sessions.isEmpty
-          ? Center(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(24),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                        shape: BoxShape.circle,
-                      ),
-                      child: Icon(
-                        Icons.event_note_outlined,
-                        size: 48,
-                        color: Theme.of(context).colorScheme.primary.withOpacity(0.6),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-                    Text(
-                      AppLocalizations.of(context)!.noSessionsScheduled,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.grey.shade700,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      AppLocalizations.of(context)!.tapToAddSession,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.grey.shade500,
-                      ),
-                    ),
-                  ],
-                ),
+  String _formatTime(DateTime date) {
+    return MaterialLocalizations.of(context).formatTimeOfDay(
+      TimeOfDay.fromDateTime(date),
+    );
+  }
+
+  Widget _timeChip(String start, String end) {
+    final primary = Theme.of(context).colorScheme.primary;
+    return Container(
+      width: 64,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: primary.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              start,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                height: 1.1,
+                color: primary,
               ),
-            )
-          : ListView.builder(
-              padding: const EdgeInsets.only(
-                left: 16,
-                right: 16,
-                top: 16,
-                bottom: 80, // Extra space for floating action button
-              ),
-              itemCount: sessions.length,
-              itemBuilder: (context, index) {
-                final session = sessions[index];
-                return _buildSessionCard(session);
-              },
             ),
-      floatingActionButton: FloatingActionButton(
-        heroTag: 'fab_${widget.date.year}_${widget.date.month}_${widget.date.day}',
-        onPressed: () => _showAddSessionDialog(),
-        child: const Icon(Icons.add),
+          ),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              end,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 10,
+                height: 1.1,
+                color: Colors.grey[600],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 
+  @override
+  Widget build(BuildContext context) {
+    final sessions = _sessionService.getSessionsForDate(widget.date);
+    final primaryColor = Theme.of(context).colorScheme.primary;
+
+    // Body-only (no nested Scaffold) — parent MainPage owns the outer Scaffold.
+    return Stack(
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              child: Text(
+                _formatDate(context, widget.date),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.grey.shade800,
+                ),
+              ),
+            ),
+            Expanded(
+              child: sessions.isEmpty
+                  ? Center(
+                      child: SingleChildScrollView(
+                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 96),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(24),
+                              decoration: BoxDecoration(
+                                color: primaryColor.withOpacity(0.1),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(
+                                Icons.event_note_outlined,
+                                size: 48,
+                                color: primaryColor.withOpacity(0.6),
+                              ),
+                            ),
+                            const SizedBox(height: 24),
+                            Text(
+                              AppLocalizations.of(context)!.noSessionsScheduled,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.grey.shade700,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              AppLocalizations.of(context)!.tapToAddSession,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey.shade500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  : ListView.builder(
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        top: 16,
+                        bottom: 80, // Extra space for floating action button
+                      ),
+                      itemCount: sessions.length,
+                      itemBuilder: (context, index) {
+                        final session = sessions[index];
+                        return _buildSessionCard(session);
+                      },
+                    ),
+            ),
+          ],
+        ),
+        PositionedDirectional(
+          end: 16,
+          bottom: 16,
+          child: FloatingActionButton(
+            heroTag:
+                'fab_${widget.date.year}_${widget.date.month}_${widget.date.day}',
+            tooltip: AppLocalizations.of(context)!.tapToAddSession,
+            onPressed: () => _showAddSessionDialog(),
+            child: const Icon(Icons.add),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _buildSessionCard(Session session) {
-    final startTime = '${session.startTime.hour.toString().padLeft(2, '0')}:${session.startTime.minute.toString().padLeft(2, '0')}';
-    final endTime = '${session.endTime.hour.toString().padLeft(2, '0')}:${session.endTime.minute.toString().padLeft(2, '0')}';
+    final startTime = _formatTime(session.startTime);
+    final endTime = _formatTime(session.endTime);
     final studentCount = session.studentIds.length;
 
     return Card(
@@ -106,34 +187,8 @@ class _DayTabViewState extends State<DayTabView> {
         borderRadius: BorderRadius.circular(12),
         child: ListTile(
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          leading: Container(
-            width: 60,
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  startTime,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                ),
-                Text(
-                  endTime,
-                  style: TextStyle(
-                    fontSize: 10,
-                    color: Colors.grey[600],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          minLeadingWidth: 64,
+          leading: _timeChip(startTime, endTime),
           title: Text(
             session.title,
             style: const TextStyle(
@@ -209,10 +264,13 @@ class _DayTabViewState extends State<DayTabView> {
     );
 
     if (session != null) {
-      await _sessionService.addSession(session);
-      if (mounted) {
-        setState(() {});
-        widget.onSessionChanged?.call();
+      try {
+        await _sessionService.addSession(session);
+      } finally {
+        if (mounted) {
+          setState(() {});
+          widget.onSessionChanged?.call();
+        }
       }
     }
   }
@@ -227,10 +285,13 @@ class _DayTabViewState extends State<DayTabView> {
     );
 
     if (updatedSession != null) {
-      await _sessionService.updateSession(updatedSession, widget.date);
-      if (mounted) {
-        setState(() {});
-        widget.onSessionChanged?.call();
+      try {
+        await _sessionService.updateSession(updatedSession, widget.date);
+      } finally {
+        if (mounted) {
+          setState(() {});
+          widget.onSessionChanged?.call();
+        }
       }
     }
   }

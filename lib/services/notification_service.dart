@@ -1,4 +1,4 @@
-import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
@@ -98,8 +98,8 @@ class NotificationService {
       '@mipmap/ic_launcher',
     );
 
-    // iOS initialization settings
-    const iosSettings = DarwinInitializationSettings(
+    // iOS / macOS initialization settings
+    const darwinSettings = DarwinInitializationSettings(
       requestAlertPermission: true,
       requestBadgePermission: true,
       requestSoundPermission: true,
@@ -108,12 +108,13 @@ class NotificationService {
     // Initialization settings
     const initSettings = InitializationSettings(
       android: androidSettings,
-      iOS: iosSettings,
+      iOS: darwinSettings,
+      macOS: darwinSettings,
     );
 
     // Initialize the plugin with foreground notification handler
     final initialized = await _notifications.initialize(
-      initSettings,
+      settings: initSettings,
       onDidReceiveNotificationResponse: _onNotificationTapped,
     );
 
@@ -136,6 +137,19 @@ class NotificationService {
         >();
     if (iosImplementation != null) {
       await iosImplementation.requestPermissions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+    }
+
+    // Request permissions for macOS
+    final macOSImplementation = _notifications
+        .resolvePlatformSpecificImplementation<
+          MacOSFlutterLocalNotificationsPlugin
+        >();
+    if (macOSImplementation != null) {
+      await macOSImplementation.requestPermissions(
         alert: true,
         badge: true,
         sound: true,
@@ -221,7 +235,9 @@ class NotificationService {
   Future<void> showForegroundNotification(String title, String body) async {
     // On iOS, play sound file directly for foreground notifications
     // iOS doesn't reliably play notification sounds when app is in foreground
-    if (Platform.isIOS && _customSoundFileName != null) {
+    if (!kIsWeb &&
+        defaultTargetPlatform == TargetPlatform.iOS &&
+        _customSoundFileName != null) {
       await _playSoundFileDirectlyForForeground(_customSoundFileName!);
     } else {
       // For Android or when using default sound, use notification sound
@@ -278,6 +294,7 @@ class NotificationService {
       final notificationDetails = NotificationDetails(
         android: androidDetails,
         iOS: iosDetails,
+        macOS: iosDetails,
       );
 
       // Use a unique ID to avoid conflicts
@@ -295,10 +312,10 @@ class NotificationService {
       // Show notification with sound
       // The notification will play sound and show briefly
       await _notifications.show(
-        notificationId,
-        title,
-        body,
-        notificationDetails,
+        id: notificationId,
+        title: title,
+        body: body,
+        notificationDetails: notificationDetails,
       );
 
       print('NotificationService: Sound notification displayed');
@@ -313,7 +330,7 @@ class NotificationService {
       // Cancel after 4 seconds to avoid cluttering notification center
       Future.delayed(const Duration(milliseconds: 4000), () async {
         try {
-          await _notifications.cancel(notificationId);
+          await _notifications.cancel(id: notificationId);
           print(
             'NotificationService: Canceled sound notification after playback (4 seconds)',
           );
@@ -451,6 +468,20 @@ class NotificationService {
       return result ?? false;
     }
 
+    // Request macOS permissions
+    final macOSImplementation = _notifications
+        .resolvePlatformSpecificImplementation<
+          MacOSFlutterLocalNotificationsPlugin
+        >();
+    if (macOSImplementation != null) {
+      final result = await macOSImplementation.requestPermissions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+      return result ?? false;
+    }
+
     // Request Android permissions
     final androidImplementation = _notifications
         .resolvePlatformSpecificImplementation<
@@ -469,6 +500,14 @@ class NotificationService {
     Session session, {
     String Function(String time)? startsAtLocalizer,
   }) async {
+    // Web cannot schedule zoned notifications
+    if (kIsWeb) {
+      print(
+        'NotificationService: Skipping schedule on web (zonedSchedule unsupported)',
+      );
+      return;
+    }
+
     if (!_isInitialized) {
       await initialize();
     }
@@ -578,6 +617,7 @@ class NotificationService {
     final notificationDetails = NotificationDetails(
       android: androidDetails,
       iOS: iosDetails,
+      macOS: iosDetails,
     );
 
     // Log sound configuration for debugging
@@ -629,14 +669,12 @@ class NotificationService {
       
       // Schedule the notification
       await _notifications.zonedSchedule(
-        notificationId, // Use hash code as notification ID
-        session.title,
-        _getNotificationBody(session, localizer),
-        scheduledDate,
-        notificationDetails,
+        id: notificationId, // Use hash code as notification ID
+        title: session.title,
+        body: _getNotificationBody(session, localizer),
+        scheduledDate: scheduledDate,
+        notificationDetails: notificationDetails,
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-        uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime,
         payload: session.id, // Store session ID in payload
       );
 
@@ -653,7 +691,6 @@ class NotificationService {
       _setupForegroundNotificationCheck(session, scheduledDate, notificationId);
     } catch (e) {
       print('NotificationService: Error scheduling notification: $e');
-      rethrow;
     }
   }
 
@@ -685,7 +722,7 @@ class NotificationService {
       await initialize();
     }
     final notificationId = sessionId.hashCode;
-    await _notifications.cancel(notificationId);
+    await _notifications.cancel(id: notificationId);
     // Remove from tracking
     _scheduledNotificationIds.remove(notificationId);
     _scheduledNotificationTimes.remove(notificationId);
@@ -794,6 +831,7 @@ class NotificationService {
     final notificationDetails = NotificationDetails(
       android: androidDetails,
       iOS: iosDetails,
+      macOS: iosDetails,
     );
 
     print('NotificationService: ==========================================');
@@ -821,10 +859,10 @@ class NotificationService {
 
       // Also show system notification (works even in foreground)
       await _notifications.show(
-        999999, // Test notification ID
-        title,
-        body,
-        notificationDetails,
+        id: 999999, // Test notification ID
+        title: title,
+        body: body,
+        notificationDetails: notificationDetails,
       );
 
       print('NotificationService: Immediate test notification shown');
@@ -857,14 +895,12 @@ class NotificationService {
       );
 
       await _notifications.zonedSchedule(
-        999998, // Different ID for scheduled test
-        schedTitle,
-        schedBody,
-        scheduledDate,
-        notificationDetails,
+        id: 999998, // Different ID for scheduled test
+        title: schedTitle,
+        body: schedBody,
+        scheduledDate: scheduledDate,
+        notificationDetails: notificationDetails,
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-        uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime,
         payload: 'test',
       );
 

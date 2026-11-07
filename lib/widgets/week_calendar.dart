@@ -137,6 +137,9 @@ class WeekCalendar extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isSelected ? primaryColor : Colors.transparent,
                   shape: BoxShape.circle,
+                  border: isToday
+                      ? Border.all(color: primaryColor, width: 2)
+                      : null,
                 ),
                 child: Center(
                   child: Text(
@@ -144,12 +147,12 @@ class WeekCalendar extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
-                      color: isSelected 
-                          ? Colors.white 
-                          : (isToday 
-                              ? primaryColor 
-                              : (isWeekend 
-                                  ? Colors.red 
+                      color: isSelected
+                          ? Colors.white
+                          : (isToday
+                              ? primaryColor
+                              : (isWeekend
+                                  ? Colors.red
                                   : Colors.black87)),
                     ),
                   ),

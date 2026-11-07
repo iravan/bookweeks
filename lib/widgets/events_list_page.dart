@@ -35,10 +35,9 @@ class _EventsListPageState extends State<EventsListPage> {
     final allSessions = _sessionService.getAllSessions();
     // Sort by start time
     allSessions.sort((a, b) => a.startTime.compareTo(b.startTime));
-    setState(() {
-      _allSessions = allSessions;
-      _filteredSessions = allSessions;
-    });
+    _allSessions = allSessions;
+    // Re-apply search so edit/delete/return don't clear an active query.
+    _filterSessions();
   }
 
   void _filterSessions() {
@@ -66,12 +65,57 @@ class _EventsListPageState extends State<EventsListPage> {
       l10n.sat,
       l10n.sun,
     ];
-    // Use Intl for month names - for now, use numeric format
-    return '${days[date.weekday - 1]}, ${date.day}/${date.month}/${date.year}';
+    final short = MaterialLocalizations.of(context).formatShortDate(date);
+    return '${days[date.weekday - 1]}, $short';
   }
 
   String _formatTime(DateTime date) {
-    return '${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}';
+    return MaterialLocalizations.of(context).formatTimeOfDay(
+      TimeOfDay.fromDateTime(date),
+    );
+  }
+
+  Widget _timeChip(String start, String end) {
+    final primary = Theme.of(context).colorScheme.primary;
+    return Container(
+      width: 64,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: primary.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              start,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                height: 1.1,
+                color: primary,
+              ),
+            ),
+          ),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              end,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 10,
+                height: 1.1,
+                color: Colors.grey[600],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Future<void> _openStudentsPage(Session session) async {
@@ -271,38 +315,10 @@ class _EventsListPageState extends State<EventsListPage> {
                                   horizontal: 16,
                                   vertical: 12,
                                 ),
-                                leading: Container(
-                                  width: 60,
-                                  padding: const EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .primary
-                                        .withOpacity(0.1),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        _formatTime(session.startTime),
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.bold,
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .primary,
-                                        ),
-                                      ),
-                                      Text(
-                                        _formatTime(session.endTime),
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          color: Colors.grey[600],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                                minLeadingWidth: 64,
+                                leading: _timeChip(
+                                  _formatTime(session.startTime),
+                                  _formatTime(session.endTime),
                                 ),
                                 title: Text(
                                   session.title,

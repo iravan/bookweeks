@@ -71,9 +71,8 @@ class SessionService {
     // Sort by start time
     _sessions[dateKey]!.sort((a, b) => a.startTime.compareTo(b.startTime));
     await _saveToStorage();
-    // Schedule notification for the new session
-    await _notificationService.initialize();
-    await _notificationService.scheduleSessionNotification(session);
+    // Notifications are best-effort (unsupported on web)
+    await _tryScheduleNotification(session);
   }
 
   Future<void> removeSession(String sessionId, DateTime date) async {
@@ -89,10 +88,8 @@ class SessionService {
     );
     _sessions[dateKey]?.removeWhere((s) => s.id == sessionId);
     await _saveToStorage();
-    // Cancel notification for the deleted session
     if (session != null) {
-      await _notificationService.initialize();
-      await _notificationService.cancelSessionNotification(session.id);
+      await _tryCancelNotification(session.id);
     }
   }
 
@@ -109,9 +106,25 @@ class SessionService {
     _sessions[newDateKey]!.sort((a, b) => a.startTime.compareTo(b.startTime));
     
     await _saveToStorage();
-    // Reschedule notification for the updated session
-    await _notificationService.initialize();
-    await _notificationService.scheduleSessionNotification(updatedSession);
+    await _tryScheduleNotification(updatedSession);
+  }
+
+  Future<void> _tryScheduleNotification(Session session) async {
+    try {
+      await _notificationService.initialize();
+      await _notificationService.scheduleSessionNotification(session);
+    } catch (e) {
+      print('SessionService: Notification schedule skipped: $e');
+    }
+  }
+
+  Future<void> _tryCancelNotification(String sessionId) async {
+    try {
+      await _notificationService.initialize();
+      await _notificationService.cancelSessionNotification(sessionId);
+    } catch (e) {
+      print('SessionService: Notification cancel skipped: $e');
+    }
   }
 
   bool hasSessionsForDate(DateTime date) {

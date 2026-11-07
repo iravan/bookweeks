@@ -431,8 +431,7 @@ class _MainPageState extends State<MainPage>
   }
 
   String _getDayTabLabel(DateTime date, BuildContext context) {
-    final dayName = _getDayName(date, context);
-    return '$dayName\n${date.day}/${date.month}';
+    return _getDayName(date, context);
   }
 
   @override
@@ -448,7 +447,7 @@ class _MainPageState extends State<MainPage>
             Text(AppLocalizations.of(context)!.appTitle),
             if (kDebugMode && DebugService().isSimulating())
               Padding(
-                padding: const EdgeInsets.only(left: 8),
+                padding: const EdgeInsetsDirectional.only(start: 8),
                 child: Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -673,19 +672,23 @@ class _MainPageState extends State<MainPage>
       // Use a small delay to ensure UI is ready
       await Future.delayed(const Duration(milliseconds: 100));
 
-      String? outputPath = await FilePicker.platform.saveFile(
+      final outputUri = await FilePicker.saveFile(
         dialogTitle: AppLocalizations.of(context)!.saveExportFile,
         fileName: defaultFileName,
-        bytes: Uint8List.fromList(bytes),
+        bytes: bytes,
+        mimeType: 'application/x-yaml',
       );
 
-      if (outputPath != null && outputPath.isNotEmpty) {
+      if (outputUri != null) {
+        final savedPath = outputUri.scheme == 'file'
+            ? outputUri.toFilePath()
+            : outputUri.toString();
         // Show success message
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                AppLocalizations.of(context)!.exportSuccessful(outputPath),
+                AppLocalizations.of(context)!.exportSuccessful(savedPath),
               ),
               backgroundColor: Colors.green,
               duration: const Duration(seconds: 3),
@@ -712,13 +715,13 @@ class _MainPageState extends State<MainPage>
   Future<void> _importData(BuildContext context) async {
     try {
       // Pick YAML file
-      FilePickerResult? result = await FilePicker.platform.pickFiles(
+      final files = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['yaml', 'yml'],
       );
 
-      if (result != null && result.files.single.path != null) {
-        final file = File(result.files.single.path!);
+      if (files.isNotEmpty && files.first.path != null) {
+        final file = File(files.first.path!);
 
         // Show loading dialog
         showDialog(

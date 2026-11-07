@@ -77,11 +77,56 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
   }
 
   String _formatTime(int hour, int minute) {
-    return '${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}';
+    return MaterialLocalizations.of(context).formatTimeOfDay(
+      TimeOfDay(hour: hour, minute: minute),
+    );
+  }
+
+  Widget _timeChip(String start, String end) {
+    final primary = Theme.of(context).colorScheme.primary;
+    return Container(
+      width: 64,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: primary.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              start,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                height: 1.1,
+                color: primary,
+              ),
+            ),
+          ),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              end,
+              maxLines: 1,
+              style: TextStyle(
+                fontSize: 10,
+                height: 1.1,
+                color: Colors.grey[600],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   String _formatDate(DateTime date) {
-    return '${date.day}/${date.month}/${date.year}';
+    return MaterialLocalizations.of(context).formatShortDate(date);
   }
 
   @override
@@ -155,36 +200,10 @@ class _TemplateManagementPageState extends State<TemplateManagementPage> {
                             horizontal: 16,
                             vertical: 12,
                           ),
-                          leading: Container(
-                            width: 60,
-                            padding: const EdgeInsets.all(8),
-                            decoration: BoxDecoration(
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .primary
-                                  .withOpacity(0.1),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  _formatTime(template.startHour, template.startMinute),
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
-                                    color: Theme.of(context).colorScheme.primary,
-                                  ),
-                                ),
-                                Text(
-                                  _formatTime(template.endHour, template.endMinute),
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    color: Colors.grey[600],
-                                  ),
-                                ),
-                              ],
-                            ),
+                          minLeadingWidth: 64,
+                          leading: _timeChip(
+                            _formatTime(template.startHour, template.startMinute),
+                            _formatTime(template.endHour, template.endMinute),
                           ),
                           title: Text(
                             template.name,
