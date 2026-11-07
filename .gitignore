@@ -48,3 +48,6 @@ linux
 macos
 windows
 web
+
+# graphify knowledge graph (generated)
+graphify-out/
