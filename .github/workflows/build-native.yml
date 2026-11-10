@@ -16,9 +16,9 @@ jobs:
   android:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: 17
@@ -37,7 +37,7 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bookweeks-android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
@@ -46,12 +46,12 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Linux desktop libraries
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 
       - uses: subosito/flutter-action@v2
         with:
@@ -70,7 +70,7 @@ jobs:
       - name: Package Linux app
         run: tar -C build/linux/x64/release -czf bookweeks-linux.tar.gz bundle
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bookweeks-linux
           path: bookweeks-linux.tar.gz
@@ -79,7 +79,7 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: subosito/flutter-action@v2
         with:
@@ -98,7 +98,7 @@ jobs:
       - name: Package Windows app
         run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath bookweeks-windows.zip
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bookweeks-windows
           path: bookweeks-windows.zip
@@ -107,7 +107,7 @@ jobs:
   macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: subosito/flutter-action@v2
         with:
@@ -128,7 +128,7 @@ jobs:
           APP=$(echo build/macos/Build/Products/Release/*.app)
           ditto -c -k --keepParent "$APP" bookweeks-macos.zip
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bookweeks-macos
           path: bookweeks-macos.zip
