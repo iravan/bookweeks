@@ -12,6 +12,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get appTitle => 'ຈອງອາທິດ';
 
   @override
+  String get earlierWeeks => 'ອາທິດກ່ອນໜ້າ';
+
+  @override
+  String get older => 'ເກົ່າກວ່າ';
+
+  @override
   String get selectWeek => 'ເລືອກອາທິດ';
 
   @override

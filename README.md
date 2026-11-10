@@ -2,7 +2,7 @@
 
 A Flutter app for tutors, coaches, and educators to manage weekly class schedules and student rosters. Plan sessions on a week calendar, track who’s attending, reuse templates for recurring classes, and get reminders before each session — all stored locally on device.
 
-**Version:** 1.0.7
+**Version:** 1.0.8
 
 ## Features
 

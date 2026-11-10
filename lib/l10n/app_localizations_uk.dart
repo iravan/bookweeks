@@ -12,6 +12,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get appTitle => 'Бронювання Тижнів';
 
   @override
+  String get earlierWeeks => 'Попередні тижні';
+
+  @override
+  String get older => 'Раніше';
+
+  @override
   String get selectWeek => 'Вибрати Тиждень';
 
   @override

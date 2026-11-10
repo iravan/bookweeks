@@ -12,6 +12,12 @@ class AppLocalizationsFil extends AppLocalizations {
   String get appTitle => 'Mag-book ng Linggo';
 
   @override
+  String get earlierWeeks => 'Mga nakaraang linggo';
+
+  @override
+  String get older => 'Mas luma';
+
+  @override
   String get selectWeek => 'Pumili ng Linggo';
 
   @override

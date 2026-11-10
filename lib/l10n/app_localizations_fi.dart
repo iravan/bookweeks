@@ -12,6 +12,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get appTitle => 'Varaa Viikot';
 
   @override
+  String get earlierWeeks => 'Aiemmat viikot';
+
+  @override
+  String get older => 'Vanhemmat';
+
+  @override
   String get selectWeek => 'Valitse Viikko';
 
   @override

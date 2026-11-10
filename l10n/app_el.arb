@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "Προηγούμενες εβδομάδες",
+  "older": "Παλαιότερα",
   "selectWeek": "Επιλέξτε Εβδομάδα",
   "@selectWeek": {
     "description": "Label for the week selection section"

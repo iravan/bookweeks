@@ -12,6 +12,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get appTitle => 'Долоо Хоног Захиалах';
 
   @override
+  String get earlierWeeks => 'Өмнөх долоо хоног';
+
+  @override
+  String get older => 'Хуучин';
+
+  @override
   String get selectWeek => 'Долоо Хоног Сонгох';
 
   @override

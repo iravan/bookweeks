@@ -12,6 +12,12 @@ class AppLocalizationsGu extends AppLocalizations {
   String get appTitle => 'અઠવાડિયા બુકિંગ';
 
   @override
+  String get earlierWeeks => 'અગાઉના અઠવાડિયા';
+
+  @override
+  String get older => 'જૂના';
+
+  @override
   String get selectWeek => 'અઠવાડિયો પસંદ કરો';
 
   @override

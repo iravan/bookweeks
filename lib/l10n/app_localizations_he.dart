@@ -12,6 +12,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get appTitle => 'הזמנת שבועות';
 
   @override
+  String get earlierWeeks => 'שבועות קודמים';
+
+  @override
+  String get older => 'ישן יותר';
+
+  @override
   String get selectWeek => 'בחר שבוע';
 
   @override

@@ -12,6 +12,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get appTitle => 'Bóka Vikur';
 
   @override
+  String get earlierWeeks => 'Fyrri vikur';
+
+  @override
+  String get older => 'Eldra';
+
+  @override
   String get selectWeek => 'Veldu Viku';
 
   @override

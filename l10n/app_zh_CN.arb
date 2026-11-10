@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "较早的周次",
+  "older": "更早",
   "selectWeek": "选择周次",
   "@selectWeek": {
     "description": "Label for the week selection section"

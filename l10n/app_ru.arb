@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "Более ранние недели",
+  "older": "Раньше",
   "selectWeek": "Выбрать Неделю",
   "@selectWeek": {
     "description": "Label for the week selection section"

@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "Mga nakaraang linggo",
+  "older": "Mas luma",
   "selectWeek": "Pumili ng Linggo",
   "@selectWeek": {
     "description": "Label for the week selection section"

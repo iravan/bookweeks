@@ -12,6 +12,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get appTitle => 'Reservar Semanas';
 
   @override
+  String get earlierWeeks => 'Semanas anteriores';
+
+  @override
+  String get older => 'Anterior';
+
+  @override
   String get selectWeek => 'Selecionar Semana';
 
   @override

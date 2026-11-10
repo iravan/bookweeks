@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "Raniji tjedni",
+  "older": "Starije",
   "selectWeek": "Odaberi Tjedan",
   "@selectWeek": {
     "description": "Label for the week selection section"

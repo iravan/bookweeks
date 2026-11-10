@@ -12,6 +12,12 @@ class AppLocalizationsRm extends AppLocalizations {
   String get appTitle => 'Reservar Emnas';
 
   @override
+  String get earlierWeeks => 'Emnas pli baud';
+
+  @override
+  String get older => 'Pli vegl';
+
+  @override
   String get selectWeek => 'Tscherner Emna';
 
   @override

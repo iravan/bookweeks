@@ -12,6 +12,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Book Weeks';
 
   @override
+  String get earlierWeeks => 'Earlier Weeks';
+
+  @override
+  String get older => 'Older';
+
+  @override
   String get selectWeek => 'Select Week';
 
   @override

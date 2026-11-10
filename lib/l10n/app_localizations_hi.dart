@@ -12,6 +12,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get appTitle => 'सप्ताह बुकिंग';
 
   @override
+  String get earlierWeeks => 'पिछले सप्ताह';
+
+  @override
+  String get older => 'और पुराना';
+
+  @override
   String get selectWeek => 'सप्ताह चुनें';
 
   @override

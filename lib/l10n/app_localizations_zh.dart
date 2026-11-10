@@ -12,6 +12,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get appTitle => '週次預約';
 
   @override
+  String get earlierWeeks => '較早的週次';
+
+  @override
+  String get older => '更早';
+
+  @override
   String get selectWeek => '選擇週次';
 
   @override
@@ -548,6 +554,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get appTitle => '周次预约';
 
   @override
+  String get earlierWeeks => '较早的周次';
+
+  @override
+  String get older => '更早';
+
+  @override
   String get selectWeek => '选择周次';
 
   @override
@@ -1082,6 +1094,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get appTitle => '週次預約';
+
+  @override
+  String get earlierWeeks => '較早的週次';
+
+  @override
+  String get older => '更早';
 
   @override
   String get selectWeek => '選擇週次';

@@ -13,28 +13,41 @@ class EventsListPage extends StatefulWidget {
 }
 
 class _EventsListPageState extends State<EventsListPage> {
+  static const int _pageSize = 20;
+
   final SessionService _sessionService = SessionService();
   List<Session> _allSessions = [];
   List<Session> _filteredSessions = [];
   final TextEditingController _searchController = TextEditingController();
+  final ScrollController _scrollController = ScrollController();
+  int _visibleCount = _pageSize;
+  String _appliedQuery = '';
+  bool _loadingPage = false;
+
+  List<Session> get _visibleSessions {
+    if (_filteredSessions.length <= _visibleCount) return _filteredSessions;
+    return _filteredSessions.sublist(0, _visibleCount);
+  }
 
   @override
   void initState() {
     super.initState();
+    _scrollController.addListener(_onScroll);
     _loadAllSessions();
     _searchController.addListener(_filterSessions);
   }
 
   @override
   void dispose() {
+    _scrollController.dispose();
     _searchController.dispose();
     super.dispose();
   }
 
   void _loadAllSessions() {
     final allSessions = _sessionService.getAllSessions();
-    // Sort by start time
-    allSessions.sort((a, b) => a.startTime.compareTo(b.startTime));
+    // Newest event first, oldest at the bottom.
+    allSessions.sort((a, b) => b.startTime.compareTo(a.startTime));
     _allSessions = allSessions;
     // Re-apply search so edit/delete/return don't clear an active query.
     _filterSessions();
@@ -42,7 +55,9 @@ class _EventsListPageState extends State<EventsListPage> {
 
   void _filterSessions() {
     final query = _searchController.text.toLowerCase();
+    final queryChanged = query != _appliedQuery;
     setState(() {
+      _appliedQuery = query;
       if (query.isEmpty) {
         _filteredSessions = _allSessions;
       } else {
@@ -50,6 +65,48 @@ class _EventsListPageState extends State<EventsListPage> {
           return session.title.toLowerCase().contains(query) ||
               (session.description?.toLowerCase().contains(query) ?? false);
         }).toList();
+      }
+      if (queryChanged) {
+        _visibleCount = _pageSize;
+        if (_scrollController.hasClients) {
+          _scrollController.jumpTo(0);
+        }
+      }
+    });
+    _loadMoreIfListDoesNotScroll();
+  }
+
+  void _onScroll() {
+    if (!_scrollController.hasClients || _loadingPage) return;
+    final position = _scrollController.position;
+    if (position.maxScrollExtent <= 0) return;
+    if (position.pixels >= position.maxScrollExtent - 200) {
+      _showNextPage();
+    }
+  }
+
+  void _showNextPage() {
+    if (_loadingPage || _visibleCount >= _filteredSessions.length) return;
+    _loadingPage = true;
+    setState(() {
+      final next = _visibleCount + _pageSize;
+      _visibleCount =
+          next > _filteredSessions.length ? _filteredSessions.length : next;
+    });
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadingPage = false;
+      _loadMoreIfListDoesNotScroll();
+    });
+  }
+
+  /// Keep revealing older pages when the loaded events do not fill the screen,
+  /// so there is something to scroll.
+  void _loadMoreIfListDoesNotScroll() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || !_scrollController.hasClients || _loadingPage) return;
+      if (_visibleCount >= _filteredSessions.length) return;
+      if (_scrollController.position.maxScrollExtent <= 0) {
+        _showNextPage();
       }
     });
   }
@@ -267,16 +324,17 @@ class _EventsListPageState extends State<EventsListPage> {
                     ),
                   )
                 : ListView.builder(
+                    controller: _scrollController,
                     padding: const EdgeInsets.only(
                       left: 16,
                       right: 16,
                       bottom: 16,
                     ),
-                    itemCount: _filteredSessions.length,
+                    itemCount: _visibleSessions.length,
                     itemBuilder: (context, index) {
-                      final session = _filteredSessions[index];
+                      final session = _visibleSessions[index];
                       final studentCount = session.studentIds.length;
-                      final previousSession = index > 0 ? _filteredSessions[index - 1] : null;
+                      final previousSession = index > 0 ? _visibleSessions[index - 1] : null;
                       final isFirstOfDate = index == 0 ||
                           previousSession == null ||
                           previousSession.startTime.day != session.startTime.day ||

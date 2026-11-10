@@ -12,6 +12,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get appTitle => 'Đặt Tuần';
 
   @override
+  String get earlierWeeks => 'Các tuần trước';
+
+  @override
+  String get older => 'Cũ hơn';
+
+  @override
   String get selectWeek => 'Chọn Tuần';
 
   @override

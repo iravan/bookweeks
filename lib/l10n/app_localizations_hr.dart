@@ -12,6 +12,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get appTitle => 'Rezerviraj Tjedne';
 
   @override
+  String get earlierWeeks => 'Raniji tjedni';
+
+  @override
+  String get older => 'Starije';
+
+  @override
   String get selectWeek => 'Odaberi Tjedan';
 
   @override

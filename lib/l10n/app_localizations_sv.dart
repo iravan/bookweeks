@@ -12,6 +12,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get appTitle => 'Boka Veckor';
 
   @override
+  String get earlierWeeks => 'Tidigare veckor';
+
+  @override
+  String get older => 'Äldre';
+
+  @override
   String get selectWeek => 'Välj Vecka';
 
   @override

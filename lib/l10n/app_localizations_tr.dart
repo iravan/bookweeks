@@ -12,6 +12,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'Hafta Rezervasyonu';
 
   @override
+  String get earlierWeeks => 'Önceki Haftalar';
+
+  @override
+  String get older => 'Daha Eski';
+
+  @override
   String get selectWeek => 'Hafta Seç';
 
   @override

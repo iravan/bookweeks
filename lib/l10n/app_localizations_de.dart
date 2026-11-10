@@ -12,6 +12,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get appTitle => 'Wochen Buchen';
 
   @override
+  String get earlierWeeks => 'Frühere Wochen';
+
+  @override
+  String get older => 'Älter';
+
+  @override
   String get selectWeek => 'Woche Auswählen';
 
   @override

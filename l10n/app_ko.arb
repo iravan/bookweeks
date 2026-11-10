@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "이전 주",
+  "older": "더 이전",
   "selectWeek": "주 선택",
   "@selectWeek": {
     "description": "Label for the week selection section"

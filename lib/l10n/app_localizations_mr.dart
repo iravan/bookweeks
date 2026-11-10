@@ -12,6 +12,12 @@ class AppLocalizationsMr extends AppLocalizations {
   String get appTitle => 'आठवडे बुकिंग';
 
   @override
+  String get earlierWeeks => 'आधीचे आठवडे';
+
+  @override
+  String get older => 'जुने';
+
+  @override
   String get selectWeek => 'आठवडा निवडा';
 
   @override

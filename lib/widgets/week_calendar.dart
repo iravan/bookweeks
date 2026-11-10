@@ -9,6 +9,8 @@ class WeekCalendar extends StatelessWidget {
   final Week selectedWeek;
   final Function(Week) onWeekSelected;
   final SessionService sessionService;
+  final String? heading;
+  final DateTime? focusMonth;
 
   const WeekCalendar({
     super.key,
@@ -16,6 +18,8 @@ class WeekCalendar extends StatelessWidget {
     required this.selectedWeek,
     required this.onWeekSelected,
     required this.sessionService,
+    this.heading,
+    this.focusMonth,
   });
 
   @override
@@ -38,7 +42,7 @@ class WeekCalendar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            AppLocalizations.of(context)!.selectWeek,
+            heading ?? AppLocalizations.of(context)!.selectWeek,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
@@ -122,6 +126,8 @@ class WeekCalendar extends StatelessWidget {
     final primaryColor = Theme.of(context).colorScheme.primary;
     // Saturday (6) and Sunday (7) should be red
     final isWeekend = day.weekday == 6 || day.weekday == 7;
+    final outsideMonth = focusMonth != null &&
+        (day.year != focusMonth!.year || day.month != focusMonth!.month);
     
     return Expanded(
       child: Center(
@@ -149,11 +155,13 @@ class WeekCalendar extends StatelessWidget {
                       fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
                       color: isSelected
                           ? Colors.white
-                          : (isToday
-                              ? primaryColor
-                              : (isWeekend
-                                  ? Colors.red
-                                  : Colors.black87)),
+                          : outsideMonth
+                              ? Colors.grey.shade400
+                              : (isToday
+                                  ? primaryColor
+                                  : (isWeekend
+                                      ? Colors.red
+                                      : Colors.black87)),
                     ),
                   ),
                 ),

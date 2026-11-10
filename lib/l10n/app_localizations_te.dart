@@ -12,6 +12,12 @@ class AppLocalizationsTe extends AppLocalizations {
   String get appTitle => 'వారాల బుకింగ్';
 
   @override
+  String get earlierWeeks => 'మునుపటి వారాలు';
+
+  @override
+  String get older => 'పాతవి';
+
+  @override
   String get selectWeek => 'వారం ఎంచుకోండి';
 
   @override

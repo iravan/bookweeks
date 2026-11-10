@@ -36,5 +36,19 @@ class Week {
       return Week(startDate: startDate, endDate: endDate);
     });
   }
+
+  /// Monday-Sunday weeks that include at least one day of [month].
+  static List<Week> weeksInMonth(DateTime month) {
+    final first = DateTime(month.year, month.month, 1);
+    final last = DateTime(month.year, month.month + 1, 0);
+    var start = first.subtract(Duration(days: first.weekday - 1));
+    final weeks = <Week>[];
+    while (!start.isAfter(last)) {
+      final end = start.add(const Duration(days: 6));
+      weeks.add(Week(startDate: start, endDate: end));
+      start = start.add(const Duration(days: 7));
+    }
+    return weeks;
+  }
 }
 

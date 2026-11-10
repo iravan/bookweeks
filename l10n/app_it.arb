@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "Settimane precedenti",
+  "older": "Precedente",
   "selectWeek": "Seleziona Settimana",
   "@selectWeek": {
     "description": "Label for the week selection section"

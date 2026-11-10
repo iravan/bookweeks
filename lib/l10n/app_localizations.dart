@@ -173,6 +173,18 @@ abstract class AppLocalizations {
   /// **'Book Weeks'**
   String get appTitle;
 
+  /// Title shown when viewing the calendar from three months earlier
+  ///
+  /// In en, this message translates to:
+  /// **'Earlier Weeks'**
+  String get earlierWeeks;
+
+  /// Button that loads the next three earlier months
+  ///
+  /// In en, this message translates to:
+  /// **'Older'**
+  String get older;
+
   /// Label for the week selection section
   ///
   /// In en, this message translates to:

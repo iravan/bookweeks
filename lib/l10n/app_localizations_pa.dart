@@ -12,6 +12,12 @@ class AppLocalizationsPa extends AppLocalizations {
   String get appTitle => 'ਹਫ਼ਤੇ ਬੁਕਿੰਗ';
 
   @override
+  String get earlierWeeks => 'ਪਿਛਲੇ ਹਫ਼ਤੇ';
+
+  @override
+  String get older => 'ਪੁਰਾਣੇ';
+
+  @override
   String get selectWeek => 'ਹਫ਼ਤਾ ਚੁਣੋ';
 
   @override

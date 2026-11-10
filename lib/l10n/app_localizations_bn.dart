@@ -12,6 +12,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get appTitle => 'সপ্তাহ বুকিং';
 
   @override
+  String get earlierWeeks => 'আগের সপ্তাহ';
+
+  @override
+  String get older => 'আরও পুরনো';
+
+  @override
   String get selectWeek => 'সপ্তাহ নির্বাচন করুন';
 
   @override

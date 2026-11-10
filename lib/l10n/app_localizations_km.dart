@@ -12,6 +12,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get appTitle => 'ការកក់សប្តាហ៍';
 
   @override
+  String get earlierWeeks => 'សប្តាហ៍មុនៗ';
+
+  @override
+  String get older => 'ចាស់ជាង';
+
+  @override
   String get selectWeek => 'ជ្រើសរើសសប្តាហ៍';
 
   @override

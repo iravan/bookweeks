@@ -4,6 +4,8 @@
   "@appTitle": {
     "description": "The title of the application"
   },
+  "earlierWeeks": "पिछले सप्ताह",
+  "older": "और पुराना",
   "selectWeek": "सप्ताह चुनें",
   "@selectWeek": {
     "description": "Label for the week selection section"

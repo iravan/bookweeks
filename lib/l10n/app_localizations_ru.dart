@@ -12,6 +12,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get appTitle => 'Бронирование Недель';
 
   @override
+  String get earlierWeeks => 'Более ранние недели';
+
+  @override
+  String get older => 'Раньше';
+
+  @override
   String get selectWeek => 'Выбрать Неделю';
 
   @override

@@ -12,6 +12,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get appTitle => '주간 예약';
 
   @override
+  String get earlierWeeks => '이전 주';
+
+  @override
+  String get older => '더 이전';
+
+  @override
   String get selectWeek => '주 선택';
 
   @override

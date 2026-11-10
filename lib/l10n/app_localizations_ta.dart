@@ -12,6 +12,12 @@ class AppLocalizationsTa extends AppLocalizations {
   String get appTitle => 'வாரங்கள் முன்பதிவு';
 
   @override
+  String get earlierWeeks => 'முந்தைய வாரங்கள்';
+
+  @override
+  String get older => 'பழையது';
+
+  @override
   String get selectWeek => 'வாரத்தைத் தேர்ந்தெடுக்கவும்';
 
   @override

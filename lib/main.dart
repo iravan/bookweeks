@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:bookweeks/l10n/app_localizations.dart';
 import 'models/week.dart';
@@ -130,6 +131,13 @@ class MainPage extends StatefulWidget {
   State<MainPage> createState() => _MainPageState();
 }
 
+class _EarlierMonthSection {
+  final DateTime month;
+  final List<Week> weeks;
+
+  const _EarlierMonthSection(this.month, this.weeks);
+}
+
 class _MainPageState extends State<MainPage>
     with TickerProviderStateMixin, WidgetsBindingObserver {
   late TabController _tabController;
@@ -140,6 +148,10 @@ class _MainPageState extends State<MainPage>
   final StudentService _studentService = StudentService();
   final ExportImportService _exportImportService = ExportImportService();
   bool _isInitialized = false;
+  bool _showingEarlierWeeks = false;
+  int _earlierPage = 0;
+  List<_EarlierMonthSection> _earlierSections = [];
+  final ScrollController _calendarScrollController = ScrollController();
   DateTime? _lastCheckedDate;
   OverlayEntry? _notificationOverlay;
 
@@ -240,6 +252,7 @@ class _MainPageState extends State<MainPage>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _tabController.dispose();
+    _calendarScrollController.dispose();
     _hideForegroundNotification();
     super.dispose();
   }
@@ -263,11 +276,9 @@ class _MainPageState extends State<MainPage>
         _lastCheckedDate!.day != currentDate.day) {
       _lastCheckedDate = currentDate;
 
-      // Refresh weeks and reset to current week
+      // Refresh the calendar for the view that is currently open.
       setState(() {
         _updateWeeks();
-        _selectedWeek = _weeks[0]; // Current week
-        _selectedWeekDays = _getFilteredWeekDays(_selectedWeek);
         // Update TabController length if needed
         if (_tabController.length != _selectedWeekDays.length) {
           _tabController.dispose();
@@ -282,41 +293,96 @@ class _MainPageState extends State<MainPage>
     }
   }
 
+  DateTime _dateOnly(DateTime date) => DateTime(date.year, date.month, date.day);
+
+  /// Latest month first. Within each month, the latest week is first.
+  List<_EarlierMonthSection> _sectionsForMonths(
+    DateTime startMonth,
+    DateTime endMonth, {
+    DateTime? excludeWeeksOnOrAfter,
+  }) {
+    final sections = <_EarlierMonthSection>[];
+    var month = DateTime(startMonth.year, startMonth.month, 1);
+    final last = DateTime(endMonth.year, endMonth.month, 1);
+    while (!month.isAfter(last)) {
+      final limit = excludeWeeksOnOrAfter;
+      var weeks = Week.weeksInMonth(month);
+      if (limit != null) {
+        weeks = weeks
+            .where((week) => _dateOnly(week.startDate).isBefore(limit))
+            .toList();
+      }
+      if (weeks.isNotEmpty) {
+        sections.add(_EarlierMonthSection(month, weeks.reversed.toList()));
+      }
+      month = DateTime(month.year, month.month + 1, 1);
+    }
+    return sections.reversed.toList();
+  }
+
+  /// Page 0 runs from three months ago through the week before this week.
+  /// Each later page is the three months before that.
+  List<_EarlierMonthSection> _buildEarlierSections(DateTime referenceDate) {
+    if (_earlierPage == 0) {
+      final currentMonday = _dateOnly(
+        Week.getCurrentWeek(referenceDate).startDate,
+      );
+      final firstMonth = DateTime(
+        referenceDate.year,
+        referenceDate.month - 3,
+        1,
+      );
+      final lastEarlierDay = currentMonday.subtract(const Duration(days: 1));
+      final lastMonth = DateTime(lastEarlierDay.year, lastEarlierDay.month, 1);
+      return _sectionsForMonths(
+        firstMonth,
+        lastMonth,
+        excludeWeeksOnOrAfter: currentMonday,
+      );
+    }
+
+    final oldest = DateTime(
+      referenceDate.year,
+      referenceDate.month - 3 - (3 * _earlierPage),
+      1,
+    );
+    final newest = DateTime(oldest.year, oldest.month + 2, 1);
+    return _sectionsForMonths(oldest, newest);
+  }
+
   void _updateWeeks() {
     final debugService = DebugService();
     final referenceDate = debugService.getCurrentDate();
-    _weeks = Week.getNext4Weeks(referenceDate);
-    _selectedWeek = _weeks[0]; // Current week
-    _selectedWeekDays = _getFilteredWeekDays(_selectedWeek);
+    if (_showingEarlierWeeks) {
+      _earlierSections = _buildEarlierSections(referenceDate);
+      _weeks = _earlierSections.expand((section) => section.weeks).toList();
+      _selectedWeek = _weeks.first;
+    } else {
+      _earlierSections = [];
+      _weeks = Week.getNext4Weeks(referenceDate);
+      _selectedWeek = _weeks[0]; // Current week
+    }
+    _selectedWeekDays = _selectedWeek.days;
   }
 
-  List<DateTime> _getFilteredWeekDays(Week week) {
-    final debugService = DebugService();
-    final currentDate = debugService.getCurrentDate();
-    final today = DateTime(
-      currentDate.year,
-      currentDate.month,
-      currentDate.day,
-    );
-
-    // Check if this is the current week
-    final isCurrentWeek = week.days.any(
-      (day) =>
-          day.year == currentDate.year &&
-          day.month == currentDate.month &&
-          day.day == currentDate.day,
-    );
-
-    if (isCurrentWeek) {
-      // Filter out days before today
-      return week.days.where((day) {
-        final dayDate = DateTime(day.year, day.month, day.day);
-        return !dayDate.isBefore(today);
-      }).toList();
-    } else {
-      // For future weeks, show all days
-      return week.days;
+  void _toggleEarlierWeeks() {
+    _showingEarlierWeeks = !_showingEarlierWeeks;
+    if (!_showingEarlierWeeks) {
+      _earlierPage = 0;
     }
+    _updateWeeks();
+    _onWeekSelected(_selectedWeek);
+  }
+
+  void _showOlderMonths() {
+    _earlierPage += 1;
+    _updateWeeks();
+    _onWeekSelected(_selectedWeek);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_calendarScrollController.hasClients) {
+        _calendarScrollController.jumpTo(0);
+      }
+    });
   }
 
   void _setTabToCurrentDay() {
@@ -365,8 +431,7 @@ class _MainPageState extends State<MainPage>
     final debugService = DebugService();
     final currentDate = debugService.getCurrentDate();
 
-    // Get filtered days (excludes past days if current week)
-    final filteredDays = _getFilteredWeekDays(week);
+    final filteredDays = week.days;
 
     // Check if this is the current week
     final isCurrentWeek = week.days.any(
@@ -378,7 +443,7 @@ class _MainPageState extends State<MainPage>
 
     int tabIndex = 0;
     if (isCurrentWeek) {
-      // Find the index of today in the filtered days
+      // Find the index of today
       final todayIndex = filteredDays.indexWhere(
         (day) =>
             day.year == currentDate.year &&
@@ -389,14 +454,14 @@ class _MainPageState extends State<MainPage>
         tabIndex = todayIndex;
       }
     } else {
-      // For non-current weeks, find the first day with events in filtered days
+      // For other weeks, find the first day with events
       for (int i = 0; i < filteredDays.length; i++) {
         if (_sessionService.hasSessionsForDate(filteredDays[i])) {
           tabIndex = i;
           break;
         }
       }
-      // If no events found, tabIndex remains 0 (first day in filtered list)
+      // If no events found, tabIndex remains 0 (Monday)
     }
 
     setState(() {
@@ -414,6 +479,55 @@ class _MainPageState extends State<MainPage>
         _tabController.animateTo(tabIndex);
       }
     });
+  }
+
+  Widget _buildOlderButton(BuildContext context) {
+    final primary = Theme.of(context).colorScheme.primary;
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Material(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: _showOlderMonths,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 14),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.expand_more, color: primary),
+                const SizedBox(width: 4),
+                Text(
+                  AppLocalizations.of(context)!.older,
+                  style: TextStyle(
+                    color: primary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _monthName(BuildContext context, DateTime month) {
+    return DateFormat.MMMM(
+      Localizations.localeOf(context).toString(),
+    ).format(month);
   }
 
   String _getDayName(DateTime date, BuildContext context) {
@@ -444,7 +558,11 @@ class _MainPageState extends State<MainPage>
       appBar: AppBar(
         title: Row(
           children: [
-            Text(AppLocalizations.of(context)!.appTitle),
+            Text(
+              _showingEarlierWeeks
+                  ? AppLocalizations.of(context)!.earlierWeeks
+                  : AppLocalizations.of(context)!.appTitle,
+            ),
             if (kDebugMode && DebugService().isSimulating())
               Padding(
                 padding: const EdgeInsetsDirectional.only(start: 8),
@@ -470,6 +588,16 @@ class _MainPageState extends State<MainPage>
           ],
         ),
         actions: [
+          IconButton(
+            tooltip: AppLocalizations.of(context)!.earlierWeeks,
+            style: IconButton.styleFrom(
+              backgroundColor: _showingEarlierWeeks
+                  ? Colors.white.withOpacity(0.2)
+                  : Colors.transparent,
+            ),
+            icon: const Icon(Icons.history),
+            onPressed: _toggleEarlierWeeks,
+          ),
           IconButton(
             icon: const Icon(Icons.event_note),
             tooltip: AppLocalizations.of(context)!.allEvents,
@@ -597,14 +725,36 @@ class _MainPageState extends State<MainPage>
                 maxHeight: MediaQuery.of(context).size.height * 0.4,
               ),
               child: SingleChildScrollView(
+                controller: _calendarScrollController,
                 child: Padding(
                   padding: const EdgeInsets.all(16),
-                  child: WeekCalendar(
-                    weeks: _weeks,
-                    selectedWeek: _selectedWeek,
-                    onWeekSelected: _onWeekSelected,
-                    sessionService: _sessionService,
-                  ),
+                  child: _showingEarlierWeeks
+                      ? Column(
+                          children: [
+                            for (var i = 0; i < _earlierSections.length; i++) ...[
+                              if (i > 0) const SizedBox(height: 16),
+                              WeekCalendar(
+                                weeks: _earlierSections[i].weeks,
+                                selectedWeek: _selectedWeek,
+                                onWeekSelected: _onWeekSelected,
+                                sessionService: _sessionService,
+                                heading: _monthName(
+                                  context,
+                                  _earlierSections[i].month,
+                                ),
+                                focusMonth: _earlierSections[i].month,
+                              ),
+                            ],
+                            const SizedBox(height: 16),
+                            _buildOlderButton(context),
+                          ],
+                        )
+                      : WeekCalendar(
+                          weeks: _weeks,
+                          selectedWeek: _selectedWeek,
+                          onWeekSelected: _onWeekSelected,
+                          sessionService: _sessionService,
+                        ),
                 ),
               ),
             ),

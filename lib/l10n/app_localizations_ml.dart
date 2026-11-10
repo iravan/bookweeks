@@ -12,6 +12,12 @@ class AppLocalizationsMl extends AppLocalizations {
   String get appTitle => 'വാരങ്ങൾ ബുക്കിംഗ്';
 
   @override
+  String get earlierWeeks => 'മുൻ ആഴ്ചകൾ';
+
+  @override
+  String get older => 'പഴയത്';
+
+  @override
   String get selectWeek => 'വാരം തിരഞ്ഞെടുക്കുക';
 
   @override

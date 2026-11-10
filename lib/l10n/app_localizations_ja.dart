@@ -12,6 +12,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get appTitle => '週次予約';
 
   @override
+  String get earlierWeeks => '以前の週';
+
+  @override
+  String get older => 'さらに前';
+
+  @override
   String get selectWeek => '週を選択';
 
   @override

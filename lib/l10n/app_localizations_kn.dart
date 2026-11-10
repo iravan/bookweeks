@@ -12,6 +12,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get appTitle => 'ವಾರಗಳ ಬುಕಿಂಗ್';
 
   @override
+  String get earlierWeeks => 'ಹಿಂದಿನ ವಾರಗಳು';
+
+  @override
+  String get older => 'ಹಳೆಯದು';
+
+  @override
   String get selectWeek => 'ವಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ';
 
   @override

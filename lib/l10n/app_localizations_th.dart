@@ -12,6 +12,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get appTitle => 'จองสัปดาห์';
 
   @override
+  String get earlierWeeks => 'สัปดาห์ก่อนหน้า';
+
+  @override
+  String get older => 'ก่อนหน้า';
+
+  @override
   String get selectWeek => 'เลือกสัปดาห์';
 
   @override

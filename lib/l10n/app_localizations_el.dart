@@ -12,6 +12,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get appTitle => 'Κράτηση Εβδομάδων';
 
   @override
+  String get earlierWeeks => 'Προηγούμενες εβδομάδες';
+
+  @override
+  String get older => 'Παλαιότερα';
+
+  @override
   String get selectWeek => 'Επιλέξτε Εβδομάδα';
 
   @override
