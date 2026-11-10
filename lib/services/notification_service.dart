@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart' show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
@@ -27,6 +29,7 @@ class NotificationService {
 
   // Track scheduled notifications to prevent duplicates
   final Set<int> _scheduledNotificationIds = {};
+  final Map<int, Timer> _linuxTimers = {};
   final Map<int, DateTime> _scheduledNotificationTimes = {};
 
   // Localization function for notification body text
@@ -618,6 +621,8 @@ class NotificationService {
       android: androidDetails,
       iOS: iosDetails,
       macOS: iosDetails,
+      windows: const WindowsNotificationDetails(),
+      linux: const LinuxNotificationDetails(),
     );
 
     // Log sound configuration for debugging
@@ -666,12 +671,34 @@ class NotificationService {
     try {
       // Use provided localizer or fall back to stored one
       final localizer = startsAtLocalizer ?? _startsAtLocalizer;
-      
-      // Schedule the notification
+      final body = _getNotificationBody(session, localizer);
+
+      // Linux can show a notification, but it cannot keep one scheduled
+      // after the app quits. Fire it from this process at the right time.
+      if (defaultTargetPlatform == TargetPlatform.linux) {
+        _linuxTimers.remove(notificationId)?.cancel();
+        _linuxTimers[notificationId] = Timer(
+          scheduledDateTime.difference(DateTime.now()),
+          () async {
+            _linuxTimers.remove(notificationId);
+            await _notifications.show(
+              id: notificationId,
+              title: session.title,
+              body: body,
+              notificationDetails: notificationDetails,
+              payload: session.id,
+            );
+          },
+        );
+        _scheduledNotificationIds.add(notificationId);
+        _scheduledNotificationTimes[notificationId] = scheduledDateTime;
+        return;
+      }
+
       await _notifications.zonedSchedule(
         id: notificationId, // Use hash code as notification ID
         title: session.title,
-        body: _getNotificationBody(session, localizer),
+        body: body,
         scheduledDate: scheduledDate,
         notificationDetails: notificationDetails,
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
@@ -722,6 +749,7 @@ class NotificationService {
       await initialize();
     }
     final notificationId = sessionId.hashCode;
+    _linuxTimers.remove(notificationId)?.cancel();
     await _notifications.cancel(id: notificationId);
     // Remove from tracking
     _scheduledNotificationIds.remove(notificationId);
@@ -733,7 +761,10 @@ class NotificationService {
       await initialize();
     }
     await _notifications.cancelAll();
-    // Clear tracking
+    for (final timer in _linuxTimers.values) {
+      timer.cancel();
+    }
+    _linuxTimers.clear();
     _scheduledNotificationIds.clear();
     _scheduledNotificationTimes.clear();
   }

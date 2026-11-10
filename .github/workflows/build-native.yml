@@ -1,0 +1,138 @@
+name: Build Android, desktop, and macOS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: native-builds
+  cancel-in-progress: true
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localizations
+        run: flutter gen-l10n
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bookweeks-android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Linux desktop libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localizations
+        run: flutter gen-l10n
+
+      - name: Build Linux app
+        run: flutter build linux --release
+
+      - name: Package Linux app
+        run: tar -C build/linux/x64/release -czf bookweeks-linux.tar.gz bundle
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bookweeks-linux
+          path: bookweeks-linux.tar.gz
+          if-no-files-found: error
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localizations
+        run: flutter gen-l10n
+
+      - name: Build Windows app
+        run: flutter build windows --release
+
+      - name: Package Windows app
+        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath bookweeks-windows.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bookweeks-windows
+          path: bookweeks-windows.zip
+          if-no-files-found: error
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localizations
+        run: flutter gen-l10n
+
+      - name: Build macOS app
+        run: flutter build macos --release
+
+      - name: Package macOS app
+        run: |
+          APP=$(echo build/macos/Build/Products/Release/*.app)
+          ditto -c -k --keepParent "$APP" bookweeks-macos.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bookweeks-macos
+          path: bookweeks-macos.zip
+          if-no-files-found: error
+
+      - name: Build iOS without signing
+        run: flutter build ios --release --no-codesign

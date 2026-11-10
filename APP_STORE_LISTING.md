@@ -71,6 +71,18 @@ Start organizing your teaching schedule today with Book Weeks!
 ## Keywords (100 characters max)
 **education,class,schedule,calendar,tutor,student,lesson,coach,teaching,organizer,attendance,weekly**
 
+## Web app
+
+The GitHub Pages build uses the same keywords. Title, description, and social tags live in `web/index.html`. The install name and longer description live in `web/manifest.json`.
+
+**Title:** Book Weeks — Schedule classes and manage students
+
+**Description:** Schedule weekly classes and manage students. Create sessions, reuse templates, and look back through earlier weeks. For tutors, coaches, and educators.
+
+**Install description:** Schedule weekly classes and manage your student roster. Create sessions, reuse templates, and look back through earlier weeks. For tutors, coaches, and educators. Your data stays in the browser.
+
+Reminders are not part of the web copy. The web app does not deliver them.
+
 ## Support URL
 (Add your support website or email)
 

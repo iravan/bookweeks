@@ -117,6 +117,27 @@ class _MyAppState extends State<MyApp> {
             const Locale('el'), // Greek
           ],
           theme: currentTheme.themeData,
+          builder: (context, child) {
+            const maxWidth = 560.0;
+            if (child == null) return const SizedBox.shrink();
+            final media = MediaQuery.of(context);
+            if (media.size.width <= maxWidth) return child;
+            return ColoredBox(
+              color: currentTheme.background,
+              child: Center(
+                child: MediaQuery(
+                  data: media.copyWith(
+                    size: Size(maxWidth, media.size.height),
+                  ),
+                  child: SizedBox(
+                    width: maxWidth,
+                    height: media.size.height,
+                    child: child,
+                  ),
+                ),
+              ),
+            );
+          },
           home: const MainPage(),
         );
       },

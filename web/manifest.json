@@ -1,0 +1,36 @@
+{
+    "name": "Book Weeks",
+    "short_name": "Book Weeks",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fbf2e9",
+    "theme_color": "#4fb7ae",
+    "description": "Schedule weekly classes and manage your student roster. Create sessions, reuse templates, and look back through earlier weeks. For tutors, coaches, and educators. Your data stays in the browser.",
+    "categories": ["education", "productivity"],
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
