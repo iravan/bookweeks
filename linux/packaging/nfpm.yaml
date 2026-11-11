@@ -1,0 +1,43 @@
+name: bookweeks
+arch: amd64
+platform: linux
+version: ${BOOKWEEKS_VERSION}
+release: ${BOOKWEEKS_RELEASE}
+section: education
+priority: optional
+maintainer: iravan <iravan@users.noreply.github.com>
+description: |
+  Schedule weekly classes and manage students.
+  For tutors, coaches, and educators.
+homepage: https://github.com/iravan/bookweeks
+depends:
+  - libgtk-3-0t64 | libgtk-3-0
+  - libblkid1
+  - liblzma5
+  - libgstreamer1.0-0
+  - gstreamer1.0-plugins-base
+  - gstreamer1.0-plugins-good
+contents:
+  - src: build/linux/x64/release/bundle/
+    dst: /opt/bookweeks
+    type: tree
+  - src: linux/packaging/bookweeks.sh
+    dst: /usr/bin/bookweeks
+    file_info:
+      mode: 0755
+  - src: linux/packaging/bookweeks.desktop
+    dst: /usr/share/applications/bookweeks.desktop
+  - src: linux/packaging/bookweeks.png
+    dst: /usr/share/icons/hicolor/256x256/apps/bookweeks.png
+overrides:
+  rpm:
+    depends:
+      - gtk3
+      - libblkid
+      - xz-libs
+      - gstreamer1
+      - gstreamer1-plugins-base
+      - gstreamer1-plugins-good
+rpm:
+  group: Applications/Productivity
+  summary: Schedule weekly classes and manage students.

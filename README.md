@@ -62,7 +62,7 @@ flutter build apk
 flutter build appbundle
 ```
 
-Pushes to `main` publish the web app with **Deploy Flutter Web to GitHub Pages** at https://iravan.github.io/bookweeks/. The same push builds an Android APK and Linux, Windows, and macOS apps, and compiles the iOS app without signing. Download the installable builds from the **Build Android, desktop, and macOS** workflow artifacts. The macOS app is unsigned. The APK is signed with the debug key so it can be installed without a Play Store upload key. The iOS check only confirms the project compiles. A signed IPA still has to be built on a Mac with your Apple certificate.
+Pushes to `main` publish the web app with **Deploy Flutter Web to GitHub Pages** at https://iravan.github.io/bookweeks/. The same push builds an Android APK and Linux, Windows, and macOS apps, and compiles the iOS app without signing. Download the installable builds from the **Build Android, desktop, and macOS** workflow artifacts. The Linux artifact includes a tarball plus a `.deb` for Debian and Ubuntu and a `.rpm` for Fedora and RHEL. The macOS app is unsigned. The APK is signed with the debug key so it can be installed without a Play Store upload key. The iOS check only confirms the project compiles. A signed IPA still has to be built on a Mac with your Apple certificate.
 
 ## Project structure
 

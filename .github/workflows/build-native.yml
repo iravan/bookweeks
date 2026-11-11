@@ -68,12 +68,35 @@ jobs:
         run: flutter build linux --release
 
       - name: Package Linux app
-        run: tar -C build/linux/x64/release -czf bookweeks-linux.tar.gz bundle
+        run: |
+          tar -C build/linux/x64/release -czf bookweeks-linux.tar.gz bundle
+          version=$(awk '/^version:/ {print $2; exit}' pubspec.yaml)
+          case "$version" in
+            *+*)
+              export BOOKWEEKS_VERSION="${version%%+*}"
+              export BOOKWEEKS_RELEASE="${version#*+}"
+              ;;
+            *)
+              export BOOKWEEKS_VERSION="$version"
+              export BOOKWEEKS_RELEASE=1
+              ;;
+          esac
+          curl -fsSL -o nfpm.tar.gz https://github.com/goreleaser/nfpm/releases/download/v2.48.0/nfpm_2.48.0_Linux_x86_64.tar.gz
+          tar -xzf nfpm.tar.gz nfpm
+          mkdir -p dist
+          ./nfpm package -f linux/packaging/nfpm.yaml -p deb -t "dist/bookweeks_${BOOKWEEKS_VERSION}-${BOOKWEEKS_RELEASE}_amd64.deb"
+          ./nfpm package -f linux/packaging/nfpm.yaml -p rpm -t "dist/bookweeks-${BOOKWEEKS_VERSION}-${BOOKWEEKS_RELEASE}.x86_64.rpm"
+          dpkg-deb --info "dist/bookweeks_${BOOKWEEKS_VERSION}-${BOOKWEEKS_RELEASE}_amd64.deb"
+          sudo apt-get install -y rpm
+          rpm -qip "dist/bookweeks-${BOOKWEEKS_VERSION}-${BOOKWEEKS_RELEASE}.x86_64.rpm"
 
       - uses: actions/upload-artifact@v7
         with:
           name: bookweeks-linux
-          path: bookweeks-linux.tar.gz
+          path: |
+            bookweeks-linux.tar.gz
+            dist/*.deb
+            dist/*.rpm
           if-no-files-found: error
 
   windows:

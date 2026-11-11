@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Book Weeks
+Comment=Schedule weekly classes and manage students.
+Exec=bookweeks
+Icon=bookweeks
+Terminal=false
+Categories=Education;Office;
+StartupWMClass=bookweeks
